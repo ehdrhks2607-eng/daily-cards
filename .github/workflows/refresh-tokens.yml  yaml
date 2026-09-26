@@ -1,0 +1,23 @@
+name: refresh-tokens
+
+on:
+  schedule:
+    - cron: "0 18 * * 0"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pynacl
+      - env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          JAK_THREADS_TOKEN: ${{ secrets.JAK_THREADS_TOKEN }}
+          JAK_IG_TOKEN: ${{ secrets.JAK_IG_TOKEN }}
+          SEOUL_THREADS_TOKEN: ${{ secrets.SEOUL_THREADS_TOKEN }}
+          SEOUL_IG_TOKEN: ${{ secrets.SEOUL_IG_TOKEN }}
+        run: python scripts/refresh_tokens.py
