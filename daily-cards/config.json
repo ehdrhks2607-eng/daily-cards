@@ -1,0 +1,32 @@
+{
+  "require_approval": true,
+  "skip_if_late_hours": 12,
+  "accounts": {
+    "jak": {
+      "label": "작심삼일",
+      "theme": {
+        "bg": "#F4ECDF",
+        "fg": "#2B2118",
+        "accent": "#E8742C",
+        "muted": "#8A7A68"
+      },
+      "publish_time_kst": {
+        "weekday": "12:30",
+        "weekend": "13:30"
+      }
+    },
+    "seoul": {
+      "label": "서울적응기",
+      "theme": {
+        "bg": "#FFFFFF",
+        "fg": "#141B2D",
+        "accent": "#23407A",
+        "muted": "#7C8496"
+      },
+      "publish_time_kst": {
+        "weekday": "07:30",
+        "weekend": "09:00"
+      }
+    }
+  }
+}
