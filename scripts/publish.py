@@ -94,7 +94,11 @@ def raw_url(rel_path):
 
 # ---------------- main ----------------
 def process(post_file, cfg, now):
-    post = json.loads(post_file.read_text(encoding="utf-8"))
+    try:
+        post = json.loads(post_file.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        log(post_file.parent, "SKIPPED: broken JSON ->", e)
+        return False
     if post.get("status") in ("posted", "expired", "skipped"):
         return False
     if cfg["require_approval"] and not post.get("approved"):
