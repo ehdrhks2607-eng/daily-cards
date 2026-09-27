@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>작심삼일이 쓰는 것들</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4ECDF;--fg:#2B2118;--ac:#E8742C;--mu:#8A7A68;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:'Noto Sans KR',sans-serif;word-break:keep-all;min-height:100vh}
+.wrap{max-width:480px;margin:0 auto;padding:40px 16px 48px}
+h1{font-size:28px;font-weight:900;letter-spacing:-1px}
+.sub{margin-top:8px;color:var(--mu);font-size:15px;line-height:1.5}
+.bar{width:48px;height:6px;border-radius:3px;background:var(--ac);margin:20px 0 24px}
+.note{font-size:12px;color:var(--mu);line-height:1.5;margin-bottom:20px}
+a.item{display:flex;justify-content:space-between;align-items:center;gap:12px;text-decoration:none;color:var(--fg);
+ background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:16px 18px;margin-bottom:10px}
+a.item:active{transform:scale(.99)}
+.name{font-size:17px;font-weight:700}
+.cat{font-size:13px;color:var(--mu);margin-top:3px}
+.go{flex:none;font-size:13px;font-weight:700;color:#fff;background:var(--ac);padding:7px 12px;border-radius:20px}
+.empty{color:var(--mu);font-size:14px;padding:20px 0}
+footer{margin-top:28px;font-size:12px;color:var(--mu)}
+</style></head><body><div class="wrap">
+<h1>작심삼일이 쓰는 것들</h1>
+<p class="sub">3일만 해보자고 시작할 때 실제로 쓰는 템들</p>
+<div class="bar"></div>
+<p class="note">이 페이지의 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
+<div id="list"><p class="empty">불러오는 중…</p></div>
+<footer>@3_day_hump</footer>
+</div>
+<script>
+const ACC="jak";
+fetch("https://raw.githubusercontent.com/ehdrhks2607-eng/daily-cards/main/links.json?"+Date.now())
+ .then(r=>r.json()).then(d=>{
+  const items=(d[ACC]||[]).filter(x=>x.url);
+  const el=document.getElementById("list"); el.innerHTML="";
+  if(!items.length){el.innerHTML='<p class="empty">준비 중이에요.</p>';return;}
+  items.forEach(x=>{const a=document.createElement("a");a.className="item";a.href=x.url;a.target="_blank";a.rel="noopener sponsored";
+   a.innerHTML='<div><div class="name"></div><div class="cat"></div></div><span class="go">보러가기</span>';
+   a.querySelector(".name").textContent=x.keyword;a.querySelector(".cat").textContent=x.category||"";el.appendChild(a);});
+ }).catch(()=>{document.getElementById("list").innerHTML='<p class="empty">잠시 후 다시 열어주세요.</p>';});
+</script></body></html>
