@@ -3,7 +3,7 @@
   "date": "2026-09-27",
   "publish_at": "2026-09-27T13:30:00+09:00",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "추석 연휴 마지막 날(9/26 토), 내일부터 전국 맑음",
   "sources": [
     "https://www.ajunews.com/view/20260925151455111",
@@ -62,6 +62,8 @@
   },
   "result": {
     "threads": "17950597959274575",
-    "instagram": "18106097069525893"
-  }
+    "instagram": "18106097069525893",
+    "threads_comment": "18115061270106313"
+  },
+  "posted_at": "2026-09-27T16:54:56.399401+09:00"
 }
