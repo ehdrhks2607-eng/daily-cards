@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "추석 연휴 끝 첫 출근(9/28 월), 명절 후 붓기·체중 증가는 수분·나트륨 영향",
   "sources": [
     "https://www.kpanews.co.kr/news/articleView.html?idxno=544793",
@@ -15,6 +15,10 @@
     "text": "연휴 끝 첫 출근, 얼굴이 퉁퉁 부었어\n거울 보고 좀 놀랐는데\n전이랑 송편을 4일 내내 먹었으니 그럴만 하지\n\n찾아보니 명절 뒤 늘어난 건\n물이랑 짠 거 영향이 크대\n\n그래서 오늘은 물 1.5L만 마셔보기로 함\n살 빼기 말고 붓기 빼기부터,\n그 정도는 할 수 있을꺼같애",
     "comment": "시간 적혀있는 물병 여기 둘게\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-09-28T07:30:00+09:00"
+  "result": {
+    "threads": "18352173253220639",
+    "threads_comment": "18141805822604922"
+  },
+  "publish_at": "2026-09-28T07:30:00+09:00",
+  "posted_at": "2026-09-28T07:30:36.654842+09:00"
 }
