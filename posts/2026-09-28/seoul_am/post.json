@@ -1,0 +1,67 @@
+{
+  "account": "seoul",
+  "date": "2026-09-28",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "9/28 월 연휴 뒤 첫 출근길, 서울 18~26도 일교차 10도 이상·서해안 빗방울",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6302138",
+    "https://www.cbci.co.kr/news/articleView.html?idxno=610205",
+    "https://www.etoday.co.kr/news/view/2628563",
+    "https://www.wikitree.co.kr/articles/1161815"
+  ],
+  "threads": {
+    "text": "아침 18도, 낮 26도래\n연휴 끝 첫 출근인데 옷부터 고민이더라\n\n반팔 입자니 아침이 춥고\n긴팔 입자니 오후가 덥고\n\n그래서 반팔에 얇은 셔츠 하나 걸치고 나옴\n서해안 쪽은 비 소식도 있어서\n작은 우산도 가방에 넣었어\n별거 아닌데 이게 월요일 생존인듯\n\n다들 오늘 뭐 입고 나왔어?",
+    "comment": "가방에 넣고 다니는 우산 여기 둘게\nhttps://link.coupang.com/a/hnLSpmcsM0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "아침 18도\n낮 26도",
+      "sub": "연휴 끝 첫 출근,\n뭐 입고 나가지?"
+    },
+    {
+      "type": "tip",
+      "label": "01",
+      "title": "반팔 +\n얇은 겉옷",
+      "body": "아침엔 걸치고\n낮엔 벗어서 가방에"
+    },
+    {
+      "type": "tip",
+      "label": "02",
+      "title": "우산은\n접이식으로",
+      "body": "빗방울 소식 있는 날엔\n가방에 하나 넣어두기"
+    },
+    {
+      "type": "tip",
+      "label": "03",
+      "title": "사무실 에어컨\n대비하기",
+      "body": "실내는 아직 서늘할 수 있어\n겉옷은 의자에 걸어두기"
+    },
+    {
+      "type": "tip",
+      "label": "04",
+      "title": "퇴근길은\n다시 쌀쌀",
+      "body": "해 지면 기온이 금방 떨어져\n겉옷 꼭 챙겨서 나오기"
+    },
+    {
+      "type": "end",
+      "title": "일교차 10도,\n옷으로 버티기",
+      "sub": "쓰는 접이식 우산은 프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "연휴 끝 첫 출근, 오늘 옷 고르기 어렵지 않으셨어요?\n아침과 낮 기온 차이가 10도 넘게 벌어진다고 해요.\n반팔에 얇은 겉옷 하나, 가방엔 접이식 우산 하나 넣고 나왔어요.\n\n쓰고 있는 우산은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#일교차 #출근룩 #환절기 #서울직장인 #자취생활",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-09-28T08:00:00+09:00"
+}
