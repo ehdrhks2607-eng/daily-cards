@@ -1,5 +1,5 @@
 {
-  "require_approval": true,
+  "require_approval": false,
   "skip_if_late_hours": 12,
   "accounts": {
     "jak": {
