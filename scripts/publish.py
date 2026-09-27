@@ -117,7 +117,9 @@ def process(post_file, cfg, now):
     errors = []
     changed = False
 
-    th_token = os.environ.get(f"{acc}_THREADS_TOKEN")
+    has_threads = bool(post.get("threads", {}).get("text"))
+    has_ig = bool(post.get("instagram", {}).get("images"))
+    th_token = os.environ.get(f"{acc}_THREADS_TOKEN") if has_threads else None
     if th_token and not res.get("threads"):
         try:
             res["threads"] = threads_post(th_token, post["threads"]["text"])
@@ -125,7 +127,7 @@ def process(post_file, cfg, now):
             changed = True
         except Exception as e:
             errors.append(f"threads: {e}")
-    comment = post["threads"].get("comment", "")
+    comment = post.get("threads", {}).get("comment", "")
     if th_token and res.get("threads") and not res.get("threads_comment") and comment:
         if PLACEHOLDER in comment:
             log(acc, "comment skipped: coupang link placeholder not replaced")
@@ -136,7 +138,7 @@ def process(post_file, cfg, now):
             except Exception as e:
                 errors.append(f"threads comment: {e}")
 
-    ig_token = os.environ.get(f"{acc}_IG_TOKEN")
+    ig_token = os.environ.get(f"{acc}_IG_TOKEN") if has_ig else None
     if ig_token and not res.get("instagram"):
         try:
             rel_dir = post_file.parent.relative_to(ROOT).as_posix()
