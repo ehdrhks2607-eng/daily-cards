@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 뒤 첫 출근 마무리 + 다음 주 10/5(월) 개천절 대체공휴일",
   "sources": [
     "https://www.vegannews.co.kr/news/article.html?no=385759",
@@ -14,6 +14,10 @@
     "text": "연휴 끝 첫 출근, 겨우 버텼다\n오후 3시쯤엔 진짜 눈이 감기더라\n\n퇴근길 지하철에서 이어폰 끼고\n아무것도 안 틀고 10분 눈 감고 왔어\n소음만 줄여도 좀 살 것 같더라\n\n찾아보니까 다음 주 월요일 10월 5일이 대체공휴일이래\n이번 주만 버티면 또 3일 쉬는 거지\n\n다들 첫 출근 어떻게 버텼어?",
     "comment": "퇴근길에 쓰는 이어폰 여기 둘게\nhttps://link.coupang.com/a/hnLXEiiJ2G\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-09-28T21:30:00+09:00"
+  "result": {
+    "threads": "18052929437587908",
+    "threads_comment": "17949172989293591"
+  },
+  "publish_at": "2026-09-28T21:30:00+09:00",
+  "posted_at": "2026-09-28T21:30:38.739596+09:00"
 }
