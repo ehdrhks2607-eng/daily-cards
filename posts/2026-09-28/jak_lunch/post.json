@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "명절에 찐 2~3kg, 대부분 수분·글리코겐… 굶기보다 평소 리듬 회복(9/25~26 보도)",
   "sources": [
     "https://www.kpanews.co.kr/news/articleView.html?idxno=544793",
@@ -60,6 +60,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-09-28T12:30:00+09:00"
+  "result": {
+    "threads": "17878590297629671",
+    "threads_comment": "18127314112878729",
+    "instagram": "17906449563333689"
+  },
+  "publish_at": "2026-09-28T12:30:00+09:00",
+  "posted_at": "2026-09-28T12:30:33.925110+09:00"
 }
