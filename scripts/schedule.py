@@ -2,7 +2,8 @@
 
 usage: python scripts/schedule.py posts/2026-09-28/jak_am/post.json [...]
 post.json needs "account", "date" and "slot" (am | lunch | pm; default lunch).
-Sat/Sun use the weekend times. Instagram cards go only in the account's instagram_slot.
+Sat/Sun use the weekend times. Instagram cards go only in the account's instagram_slot
+(null = no instagram for that account).
 """
 import json
 import sys
@@ -27,7 +28,7 @@ if __name__ == "__main__":
         slot = post.setdefault("slot", "lunch")
         post["publish_at"] = publish_at(post["account"], post["date"], slot)
         ig_slot = CFG["accounts"][post["account"]]["publish_time_kst"]["instagram_slot"]
-        if slot != ig_slot and post.get("instagram", {}).get("images"):
+        if ig_slot and slot != ig_slot and post.get("instagram", {}).get("images"):
             print(f"WARNING {p}: instagram cards in non-instagram slot ({slot}); expected {ig_slot}")
         p.write_text(json.dumps(post, ensure_ascii=False, indent=2), encoding="utf-8")
         wd = "월화수목금토일"[date.fromisoformat(post["date"]).weekday()]

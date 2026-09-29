@@ -13,57 +13,9 @@
     "text": "내일부터 기온이 뚝 떨어진대\n오늘 낮엔 27도까지 올라서 아직 반팔인데\n아침저녁은 벌써 서늘하더라\n\n그래서 오늘 퇴근하고 전기요 꺼내보려고\n자취방 바닥이 은근 빨리 차가워지거든\n\n너는 보일러 언제부터 틀어?",
     "comment": "내가 쓰는 전기요 여기 둘게\nhttps://link.coupang.com/a/hnMacEXM7g\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "cards": [
-    {
-      "type": "cover",
-      "title": "내일부터\n기온 뚝",
-      "sub": "낮 27도인 오늘이\n마지막 늦더위래"
-    },
-    {
-      "type": "tip",
-      "label": "01",
-      "title": "전기요는\n미리 켜보기",
-      "body": "꺼내서 한 번 켜보고\n이상 없는지 확인해두기"
-    },
-    {
-      "type": "tip",
-      "label": "02",
-      "title": "이불은\n한 겹 추가",
-      "body": "갑자기 추워지는 밤\n덮을 게 하나 더 있으면 안심"
-    },
-    {
-      "type": "tip",
-      "label": "03",
-      "title": "창틀 틈\n막아두기",
-      "body": "찬바람은 창틀로 들어와\n문풍지 하나면 충분해"
-    },
-    {
-      "type": "tip",
-      "label": "04",
-      "title": "출근 전\n따뜻한 물 한 잔",
-      "body": "속이 데워지면\n아침이 덜 힘들어"
-    },
-    {
-      "type": "end",
-      "title": "환절기 자취방\n미리 준비",
-      "sub": "쓰는 전기요는 프로필 링크에"
-    }
-  ],
-  "instagram": {
-    "caption": "내일부터 기온이 뚝 떨어진다는 소식 들으셨나요?\n오늘 낮엔 27도까지 올라도 아침저녁은 벌써 서늘해요.\n저는 오늘 퇴근하고 전기요부터 꺼내보려고요.\n\n쓰고 있는 전기요는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#환절기 #자취생활 #서울직장인 #전기요 #가을준비",
-    "images": [
-      "card_1.png",
-      "card_2.png",
-      "card_3.png",
-      "card_4.png",
-      "card_5.png",
-      "card_6.png"
-    ]
-  },
   "result": {
     "threads": "18089661608675853",
     "threads_comment": "18069022556768890"
   },
-  "publish_at": "2026-09-29T08:00:00+09:00",
-  "last_error": "instagram: 400 https://graph.instagram.com/v21.0/me: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AVkH8VupFGXQC6g-1uQHeEg\"}}"
+  "publish_at": "2026-09-29T08:00:00+09:00"
 }

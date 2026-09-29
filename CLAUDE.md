@@ -8,11 +8,12 @@
 2. 아래 "2. 주제 선정" 규칙대로 WebSearch로 오늘/어제/이번 주 이슈를 찾는다("오늘 실시간 검색어", "네이버 많이 본 뉴스", "오늘 날씨" 등 3회 이상 검색). 후보를 **"3-1. 조회수 규칙"의 화제성 점수**로 매겨 상위 주제로 계정별 am·lunch·pm 3개 = **총 6개 글**을 정한다.
 3. 폴더 `posts/<오늘>/<계정>_<슬롯>/post.json` 6개를 만든다 (계정: jak, seoul / 슬롯: am, lunch, pm).
    - 필드: account, date, slot, approved(**true**), status("pending"), issue, sources, threads{text, comment}, result{}
-   - 인스타 슬롯(config.json의 instagram_slot: jak=lunch, seoul=am)에만 cards(6장)와 instagram{caption, images: []}를 넣는다.
+   - 인스타 슬롯(config.json의 instagram_slot: jak=lunch)에만 cards(6장)와 instagram{caption, images: []}를 넣는다.
+   - **seoul은 인스타를 당분간 운영하지 않는다(instagram_slot: null).** seoul 3개 post.json에는 cards·instagram 필드를 넣지 않고 스레드만 만든다.
 4. 쿠팡 링크: `links.json`에서 글 내용과 맞는 카테고리의 링크를 골라 comment의 링크 자리에 넣는다. 같은 링크는 2일(48시간) 안에 다시 쓰지 않는다(최근 posts의 comment를 확인). 쓸 수 있는 링크가 모자라면 해당 계정 링크 중 가장 오래전에 쓴 링크를 쓴다. 자리표시자 `[쿠팡링크:...]`는 절대 남기지 않는다(모든 comment에 실제 링크가 들어가야 함).
 5. `python scripts/schedule.py posts/<오늘>/*/post.json` 로 publish_at을 채운다.
 6. 카드 렌더링: `pip install playwright requests` 와 `python -m playwright install --with-deps chromium`(필요 시), 한글 폰트가 없으면 `sudo apt-get install -y fonts-noto-cjk` 설치 후
-   `python scripts/render_cards.py posts/<오늘>/jak_lunch/post.json posts/<오늘>/seoul_am/post.json`
+   `python scripts/render_cards.py posts/<오늘>/jak_lunch/post.json` (seoul은 카드 없음)
    생성된 PNG를 직접 열어 **한글 깨짐(□)·잘림이 없는지** 확인한다. 문제가 있으면 문구를 줄이거나 폰트를 고친 뒤 다시 렌더링한다.
 7. 모든 post.json이 올바른 JSON인지 `python -m json.tool`로 검사한다.
 8. `git add posts && git commit -m "daily posts <오늘>" && git push` 로 main에 올린다. push 충돌 시 `git pull --rebase` 후 다시 push.
@@ -29,8 +30,8 @@
 | 이슈 비틀기 | 이슈 → "그래서 이번엔 이거 3일만 해보기로 함" | 이슈 → "오늘 이렇게 버틴 법" |
 | 연결 상품 | 홈트·다이어트·다이어리·습관·정리용품 | 자취·생활용품·출퇴근템·날씨템 |
 | 스레드 (하루 3번, KST) | 평일 07:30 / 12:30 / 21:00 · 주말 08:30 / 13:30 / 22:00 | 평일 08:00 / 13:00 / 21:30 · 주말 09:00 / 14:00 / 22:30 |
-| 인스타 카드뉴스 (하루 1번) | 점심 슬롯(lunch) | 오전 슬롯(am) |
-| 카드뉴스 톤 | 베이지 배경 + 주황 포인트 | 흰 배경 + 남색 포인트 |
+| 인스타 카드뉴스 (하루 1번) | 점심 슬롯(lunch) | **운영 중지 (스레드만)** |
+| 카드뉴스 톤 | 베이지 배경 + 주황 포인트 | (재개 시) 흰 배경 + 남색 포인트 |
 
 - **익명 유지 필수**: 매장명·지점명·직함·동네(반포 등)·본명·동료 이름 절대 언급 금지. 미용 업계라는 것도 드러내지 않음. 두 계정이 같은 사람이라는 것도 드러내지 않음(서로 태그·언급 금지).
 - 수익화: 쿠팡파트너스 제휴 링크
@@ -83,7 +84,7 @@
 
 ## 3. 결과물 형식 (계정마다 하루 3세트: am · lunch · pm)
 
-- 계정당 하루 **스레드 3개**(오전·점심·저녁)와 **인스타 카드뉴스 1개**를 만든다. 카드뉴스는 0번 표의 인스타 슬롯 post.json에만 넣고, 나머지 두 슬롯은 스레드만(instagram 필드 없음).
+- 계정당 하루 **스레드 3개**(오전·점심·저녁)를 만든다. **인스타 카드뉴스 1개는 jak만** 만들어 lunch 슬롯 post.json에만 넣고, 나머지 슬롯은 스레드만(instagram 필드 없음). seoul은 카드뉴스 없이 스레드 3개만 만든다.
 - 세 슬롯은 같은 날이라도 서로 다른 이슈 또는 다른 각도로 쓴다. 오전은 출근길·날씨, 점심은 오늘의 이슈, 저녁은 하루 마무리·루틴·내일 준비 느낌.
 - 쿠팡 링크는 슬롯마다 다른 상품으로 고른다.
 
@@ -104,7 +105,7 @@
 - links.json의 실제 링크만 쓴다. 자리표시자(`[쿠팡링크: 키워드]`)는 남기지 않는다(4번 규칙: 2일 재사용 금지, 모자라면 가장 오래전에 쓴 링크)
 - 대가성 문구는 절대 생략하지 않는다
 
-### C. 인스타 카드뉴스 (6장)
+### C. 인스타 카드뉴스 (6장, jak 전용 — seoul은 운영 중지)
 - 1장: 훅(오늘 이슈 장면, 15자 이내 큰 글씨)
 - 2~5장: 한 장에 한 팁, 2~3줄
 - 6장: 마무리 + "링크는 프로필에"
