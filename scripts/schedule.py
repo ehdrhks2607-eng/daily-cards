@@ -1,7 +1,7 @@
-"""Fill publish_at in post.json from config.json (3 slots a day, weekday/weekend, KST).
+"""Fill publish_at in post.json from config.json (5 slots a day, weekday/weekend, KST).
 
 usage: python scripts/schedule.py posts/2026-09-28/jak_am/post.json [...]
-post.json needs "account", "date" and "slot" (am | lunch | pm; default lunch).
+post.json needs "account", "date" and "slot" (am | mid | lunch | eve | pm; default lunch).
 Sat/Sun use the weekend times. Instagram cards go only in the account's instagram_slot
 (null = no instagram for that account).
 """
