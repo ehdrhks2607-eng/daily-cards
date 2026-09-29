@@ -12,13 +12,25 @@
    - 인스타 슬롯(config.json의 instagram_slot: jak=lunch)에만 cards(6장)와 instagram{caption, images: []}를 넣는다.
    - **seoul은 인스타를 당분간 운영하지 않는다(instagram_slot: null).** seoul 5개 post.json에는 cards·instagram 필드를 넣지 않고 스레드만 만든다.
 4. 쿠팡 링크: **am·lunch·pm 3개 슬롯에만** 넣는다. mid·eve는 `threads.comment`를 빈 문자열("")로 둔다(링크 댓글 없음). am·lunch·pm은 `links.json`에서 글 내용과 맞는 카테고리의 링크를 골라 comment의 링크 자리에 넣는다. 같은 링크는 2일(48시간) 안에 다시 쓰지 않는다(최근 posts의 comment를 확인). 쓸 수 있는 링크가 모자라면 해당 계정 링크 중 가장 오래전에 쓴 링크를 쓴다. 자리표시자 `[쿠팡링크:...]`는 절대 남기지 않는다(am·lunch·pm의 comment에는 반드시 실제 링크가 들어가야 함).
+   - 링크를 고르기 전에 **"4-1. 링크 요청 알림"** 규칙대로 `link_requests.md`를 정리하고, 고른 뒤 필요한 요청을 추가한다.
 5. `python scripts/schedule.py posts/<오늘>/*/post.json` 로 publish_at을 채운다.
 6. 카드 렌더링: `pip install playwright requests` 와 `python -m playwright install --with-deps chromium`(필요 시), 한글 폰트가 없으면 `sudo apt-get install -y fonts-noto-cjk` 설치 후
    `python scripts/render_cards.py posts/<오늘>/jak_lunch/post.json` (seoul은 카드 없음)
    생성된 PNG를 직접 열어 **한글 깨짐(□)·잘림이 없는지** 확인한다. 문제가 있으면 문구를 줄이거나 폰트를 고친 뒤 다시 렌더링한다.
 7. 모든 post.json이 올바른 JSON인지 `python -m json.tool`로 검사한다.
-8. `git add posts && git commit -m "daily posts <오늘>" && git push` 로 main에 올린다. push 충돌 시 `git pull --rebase` 후 다시 push.
+8. `git add posts link_requests.md && git commit -m "daily posts <오늘>" && git push` 로 main에 올린다. push 충돌 시 `git pull --rebase` 후 다시 push.
 9. 마지막에 오늘 10개 글의 주제·화제성 점수·첫 줄(훅)·게시 시간·링크 유무를 표로 요약한다.
+   - 요약의 **맨 첫 줄**은 링크 요청 상태다. `link_requests.md`에 남아 있는 요청이 있으면 `🔗 링크 요청: 상품1, 상품2 (계정)` 형식으로 쓰고(계정이 둘이면 `🔗 링크 요청: 상품1, 상품2 (jak) / 상품3 (seoul)`, 링크 부족 줄도 함께 적음), 없으면 `🔗 링크 요청 없음`이라고 쓴다.
+
+### 4-1. 링크 요청 알림 (`link_requests.md`)
+1. **먼저 정리**: `links.json`에 새로 추가된 링크가 있으면, 그 상품을 요청한 줄("요청 상품")을 `link_requests.md`에서 지운다. 상품명이 정확히 같지 않아도 같은 품목이면 지운다.
+2. **상품 요청**: am·lunch·pm 글에 가장 잘 맞는 상품이 `links.json`에 없거나, 2일 재사용 금지 때문에 맞는 링크를 쓸 수 없으면
+   - 그날 글은 **가장 비슷한 기존 링크**로 채운다(빈칸·자리표시자 금지, 4번 규칙대로).
+   - "요청 상품" 아래에 `날짜 | 계정 | 원하는 상품 | 이유` 한 줄을 추가한다. 예: `2026-09-30 | seoul | 무릎담요 | 쌀쌀해진 아침 출근길 글, 맞는 링크 없음`
+   - 같은 계정에 같은 상품 줄이 이미 있으면 추가하지 않는다.
+3. **링크 부족**: 오늘 글을 다 쓴 뒤, 계정별로 앞으로 2일 안에 쓸 수 있는 링크 수를 센다. 이 수는 `links.json` 해당 계정 링크 중 **오늘·어제 글에 쓰지 않은 링크 수**다.
+   - 6개 미만이면 "링크 부족" 아래에 `링크 부족: jak N개 남음 (<오늘> 기준)`을 쓴다. 계정당 한 줄만 두고, 이미 있으면 숫자·날짜만 갱신한다.
+   - 6개 이상이 되면 그 계정의 링크 부족 줄을 지운다.
 
 ## 0. 계정 정보 (about-me)
 
@@ -175,6 +187,7 @@
 - [ ] 같은 계정 5개 글이 서로 다른 주제·각도이고 비슷한 문장이 없나
 - [ ] 주제 화제성 점수 12점 이상인가
 - [ ] 대가성 문구가 들어갔나
+- [ ] `link_requests.md`를 정리·갱신했고, 요약 첫 줄에 링크 요청 상태를 적었나
 - [ ] 이슈 출처 링크를 사용자에게 함께 보여줬나
 
 ## 참고
