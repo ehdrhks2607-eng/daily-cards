@@ -3,7 +3,7 @@
   "date": "2026-09-29",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "9/29 화 낮 최고 27도, 9/30부터 기온 뚝 → 자취방 전기요 미리 꺼내기",
   "sources": [
     "https://www.khan.co.kr/article/202609282159015/",
@@ -17,5 +17,6 @@
     "threads": "18089661608675853",
     "threads_comment": "18069022556768890"
   },
-  "publish_at": "2026-09-29T08:00:00+09:00"
+  "publish_at": "2026-09-29T08:00:00+09:00",
+  "posted_at": "2026-09-29T11:30:32.918302+09:00"
 }
