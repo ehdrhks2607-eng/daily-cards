@@ -9,7 +9,7 @@
 3. 폴더 `posts/<오늘>/<계정>_<슬롯>/post.json` 6개를 만든다 (계정: jak, seoul / 슬롯: am, lunch, pm).
    - 필드: account, date, slot, approved(**true**), status("pending"), issue, sources, threads{text, comment}, result{}
    - 인스타 슬롯(config.json의 instagram_slot: jak=lunch, seoul=am)에만 cards(6장)와 instagram{caption, images: []}를 넣는다.
-4. 쿠팡 링크: `links.json`에서 글 내용과 맞는 카테고리의 링크를 골라 comment의 링크 자리에 넣는다. 같은 링크는 7일 안에 다시 쓰지 않는다(최근 posts의 comment를 확인). 맞는 링크가 없으면 `[쿠팡링크: 상품 키워드]` 자리표시자로 둔다(그 댓글은 링크가 채워질 때까지 게시되지 않음).
+4. 쿠팡 링크: `links.json`에서 글 내용과 맞는 카테고리의 링크를 골라 comment의 링크 자리에 넣는다. 같은 링크는 2일(48시간) 안에 다시 쓰지 않는다(최근 posts의 comment를 확인). 쓸 수 있는 링크가 모자라면 해당 계정 링크 중 가장 오래전에 쓴 링크를 쓴다. 자리표시자 `[쿠팡링크:...]`는 절대 남기지 않는다(모든 comment에 실제 링크가 들어가야 함).
 5. `python scripts/schedule.py posts/<오늘>/*/post.json` 로 publish_at을 채운다.
 6. 카드 렌더링: `pip install playwright requests` 와 `python -m playwright install --with-deps chromium`(필요 시), 한글 폰트가 없으면 `sudo apt-get install -y fonts-noto-cjk` 설치 후
    `python scripts/render_cards.py posts/<오늘>/jak_lunch/post.json posts/<오늘>/seoul_am/post.json`
@@ -97,11 +97,11 @@
 ### B. 스레드 첫 댓글 (링크용)
 ```
 내가 쓰는 거 여기 둘게
-[쿠팡링크: 상품 키워드]
+<links.json에서 고른 쿠팡 링크 URL>
 
 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
 ```
-- 쿠팡 API 승인 전까지는 `[쿠팡링크: 키워드]` 자리표시자로 두고, 사용자가 만든 링크를 받아 교체한다
+- links.json의 실제 링크만 쓴다. 자리표시자(`[쿠팡링크: 키워드]`)는 남기지 않는다(4번 규칙: 2일 재사용 금지, 모자라면 가장 오래전에 쓴 링크)
 - 대가성 문구는 절대 생략하지 않는다
 
 ### C. 인스타 카드뉴스 (6장)
