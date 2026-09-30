@@ -3,7 +3,7 @@
   "date": "2026-09-30",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "10월 초 최대 9일 연휴(10/5 대체공휴일+10/9 한글날, 연차 3일) → 연휴 하루 15분 밴드 운동 계획",
   "sources": [
     "https://www.ajunews.com/view/20260926202201378",
@@ -60,6 +60,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-09-30T12:30:00+09:00"
+  "result": {
+    "threads": "18167193835474590",
+    "threads_comment": "18027266360855842",
+    "instagram": "18117675316957613"
+  },
+  "publish_at": "2026-09-30T12:30:00+09:00",
+  "posted_at": "2026-09-30T12:30:31.829010+09:00"
 }
