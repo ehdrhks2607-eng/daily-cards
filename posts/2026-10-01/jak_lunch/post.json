@@ -3,7 +3,7 @@
   "date": "2026-10-01",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "10월 첫날(월초) → 9월 목표 회고, 이번 달은 하나만 + 체크 플래너",
   "sources": [],
   "threads": {
@@ -57,6 +57,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-10-01T12:30:00+09:00"
+  "result": {
+    "threads": "18353740372217375",
+    "threads_comment": "18111470614867860",
+    "instagram": "18087993758663168"
+  },
+  "publish_at": "2026-10-01T12:30:00+09:00",
+  "posted_at": "2026-10-01T12:30:30.774190+09:00"
 }
