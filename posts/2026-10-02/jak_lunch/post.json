@@ -3,7 +3,7 @@
   "date": "2026-10-02",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "개천절 사흘 연휴(10/3~5) 전날 금요일 → 연휴 3일 닭가슴살 식단 미리 쟁여두기 [4+5+4+4=17]",
   "sources": [
     "https://www.vegannews.co.kr/news/article.html?no=389679"
@@ -59,6 +59,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-10-02T12:30:00+09:00"
+  "result": {
+    "threads": "18111337184127330",
+    "threads_comment": "18355571785247767",
+    "instagram": "18062495663546318"
+  },
+  "publish_at": "2026-10-02T12:30:00+09:00",
+  "posted_at": "2026-10-02T12:30:31.764188+09:00"
 }
