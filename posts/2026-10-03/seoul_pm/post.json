@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-03",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 밤 일교차(낮 22도·아침 11도) 바닥 냉기 → 전기요, 일=다음 주 준비 [4+5+3+4=16]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "밤 10시 반인데 바닥이 차갑더라\n낮엔 22도였는데 밤 되니까 확 다르네\n\n보일러 틀기엔 아직 이른 것 같아서\n전기요 하나 깔고 누웠어\n등이 따뜻하니까 금방 잠 오는 거 같애\n\n내일 일요일이라 다음 주 준비도 해야 하는데\n오늘은 일단 쉬는 중이야\n\n너는 보일러 언제부터 틀어?",
+    "comment": "깔고 누운 전기요 여기 둘게\nhttps://link.coupang.com/a/hnMacEXM7g\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-03T22:30:00+09:00"
+}

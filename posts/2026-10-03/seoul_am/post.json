@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-03",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 아침, 커튼 틈 햇빛에 일찍 깸 → 수면안대로 늦잠 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 첫날 아침 6시 50분에 깼어\n커튼 틈으로 해가 얼굴에 딱 들어와서\n\n늦잠 자려고 했는데 실패\n그래서 수면안대 쓰고 다시 누웠어\n\n캄캄하니까 한 시간은 더 잔 거 같애\n\n너는 오늘 알람 껐어?",
+    "comment": "그날 쓴 수면안대 여기 둘게\nhttps://link.coupang.com/a/hq1ha0DoUm\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-03T09:00:00+09:00"
+}

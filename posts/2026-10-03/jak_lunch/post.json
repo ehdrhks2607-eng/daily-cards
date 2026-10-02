@@ -1,0 +1,65 @@
+{
+  "account": "jak",
+  "date": "2026-10-03",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 체중계 → 숫자부터 기록하기 (추석 후 체중 불안) [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "체중계 올라가는 데 3분 걸렸어\n\n지난 추석 때 먹고 눕고 한 게 생각나서\n올라갈까 말까 계속 고민했거든\n\n근데 숫자 모르고 지내는 게 더 불안해서\n오늘 숫자부터 적어두기로 했어\n뭐가 나와도 시작점이니까\n\n너는 체중계 자주 올라가는 편이야?",
+    "comment": "기록하려고 올라가는 체중계 여기 둘게\nhttps://link.coupang.com/a/hnLdodKoDY\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "cards": [
+    {
+      "type": "cover",
+      "title": "연휴 첫날\n체중계 3분",
+      "sub": "올라갈까 말까\n한참 고민했어"
+    },
+    {
+      "type": "tip",
+      "label": "01",
+      "title": "숫자부터\n적어두기",
+      "body": "모르는 게\n더 불안하더라"
+    },
+    {
+      "type": "tip",
+      "label": "02",
+      "title": "아침 공복\n같은 시간에",
+      "body": "조건이 같아야\n비교가 돼"
+    },
+    {
+      "type": "tip",
+      "label": "03",
+      "title": "하루 말고\n일주일 보기",
+      "body": "하루 숫자엔\n흔들리지 않기"
+    },
+    {
+      "type": "tip",
+      "label": "04",
+      "title": "연휴에도\n20분 걷기",
+      "body": "밖에 나가는 것만\n이어가기"
+    },
+    {
+      "type": "end",
+      "title": "시작점부터\n적어봐요",
+      "sub": "쓰는 체중계는 프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "연휴 첫날, 체중계 올라가 보셨어요?\n저는 올라가기까지 3분 걸렸어요.\n뭐가 나와도 시작점이라 생각하고 숫자부터 적어두기로 했어요.\n\n쓰는 체중계는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #연휴 #체중기록 #직장인루틴 #습관만들기",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "publish_at": "2026-10-03T13:30:00+09:00"
+}

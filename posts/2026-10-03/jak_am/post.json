@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-03",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "10/3 토 개천절 연휴 첫날, 서울 아침 11도·낮 22도 → 늦잠 대신 동네 걷기 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 첫날인데 7시 40분에 눈이 떠졌어\n\n서울 아침 11도, 낮엔 22도래\n걷기 좋은 날이라고 해서\n밴드 차고 동네 한 바퀴 나가는 중\n\n누워만 있으면 연휴 끝날 때 더 힘들 것 같애\n\n너는 연휴 첫날 몇 시에 일어났어?",
+    "comment": "오늘 차고 나온 스마트밴드 여기 둘게\nhttps://link.coupang.com/a/hnK7Em0sBo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-03T08:30:00+09:00"
+}
