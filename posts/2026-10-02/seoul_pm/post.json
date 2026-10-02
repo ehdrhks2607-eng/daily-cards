@@ -3,7 +3,7 @@
   "date": "2026-10-02",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "금=주말 준비: 연휴 전날 퇴근길 지하철 쪽잠 → 목베개 [4+5+3+4=16]",
   "sources": [
     "https://www.vegannews.co.kr/news/article.html?no=389679"
@@ -12,6 +12,10 @@
     "text": "금요일 퇴근길 지하철, 밤 9시 반인데도 자리가 없더라\n서서 40분 가야 하는데\n\n그래도 내일부터 사흘 쉰다고 생각하니까 버텨지긴 해\n\n앉아서 갈 땐 목베개 하고 눈 감는 편이야\n목이 덜 아파서 내리고 나서 좀 덜 피곤한거 같애\n\n다들 연휴 첫날 뭐 하고 보내?",
     "comment": "내가 쓰는 목베개 여기 둘게\nhttps://link.coupang.com/a/hq1eSEetie\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-02T21:30:00+09:00"
+  "result": {
+    "threads": "17920509915443420",
+    "threads_comment": "18108156512349660"
+  },
+  "publish_at": "2026-10-02T21:30:00+09:00",
+  "posted_at": "2026-10-02T21:30:36.915159+09:00"
 }
