@@ -3,7 +3,7 @@
   "date": "2026-10-03",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "개천절 3일 연휴 외식비 계산 → 보온 도시락통으로 나들이 도시락 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,10 @@
     "text": "연휴 3일 외식비 세어봤어\n\n오늘 점심만 밖에서 먹어도 만원은 넘고\n3일이면 아홉 끼니까 좀 부담되더라\n\n그래서 내일 나갈 때 밥이랑 반찬 싸가볼까 해\n보온 도시락통이면 식어도 괜찮을 것 같애\n\n연휴에 밖에서 먹는 거 하루에 몇 번이야?",
     "comment": "도시락 싸려고 본 보온 도시락통 여기 둘게\nhttps://link.coupang.com/a/hnLY3eFj7Q\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-03T14:00:00+09:00"
+  "result": {
+    "threads": "18051850403811730",
+    "threads_comment": "17912852520533224"
+  },
+  "publish_at": "2026-10-03T14:00:00+09:00",
+  "posted_at": "2026-10-03T14:00:43.072627+09:00"
 }
