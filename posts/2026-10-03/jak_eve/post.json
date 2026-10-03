@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-03",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 배달 지출 고백 — 배달 안 시키기 다짐 첫날 실패 [4+5+5+1=15]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 첫날, 배달로만 3만 2천 원 썼어\n\n이번 연휴엔 배달 안 시키기로 했었거든\nDAY 6까지 왔으니까 먹는 것도 좀 챙겨보자 해서\n\n근데 점심 귀찮아서 한 번,\n저녁에 또 한 번 눌러버림\n\n첫날부터 실패라 좀 웃기긴 한데\n내일은 냉장고에 있는 걸로 버텨보려고\n\n너는 연휴에 배달 몇 번까지 괜찮다고 봐?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-03T19:30:00+09:00"
+}

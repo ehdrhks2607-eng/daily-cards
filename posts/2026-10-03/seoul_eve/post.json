@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-03",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 저녁, 집콕 vs 약속 [4+5+5+1=15]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 첫날 저녁, 집콕 vs 약속\n\n친구가 저녁 먹자고 연락 왔는데\n30분째 답장 못 하고 있어\n\n나가면 재밌을 거 아는데\n씻고 옷 입고 지하철 40분 탈 생각하니까\n벌써 지치더라\n\n결국 다음 주에 보자고 했어\n오늘은 그냥 집에서 쉬는 중이야\n\n너는 연휴 저녁에 나가는 편이야, 집에 있는 편이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-03T19:00:00+09:00"
+}
