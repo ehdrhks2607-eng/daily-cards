@@ -3,7 +3,7 @@
   "date": "2026-10-03",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "3일 도전 DAY 6(10/2 DAY 5 이어받기) — 연휴 첫날 밤 근육통, 쉬기 vs 하기 → 마사지건 [4+5+5+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,10 @@
     "text": "근육통 있는 날, 쉰다 vs 그래도 한다\n\nDAY 6, 연휴 첫날 밤 10시\n허벅지가 3일째 뻐근해\n계단 내려갈 때마다 살짝 절뚝거리는 중이야\n\n여기서 쉬면 또 작심삼일로 끝날 것 같고\n무리하면 내일 DAY 7을 못 갈 것 같고\n\n그래서 오늘은 스트레칭만 하고\n마사지건 리뷰 많은 걸로 골라서 장바구니에 넣어놨어\n\n너는 근육통 오면 쉬는 편이야, 그냥 하는 편이야?",
     "comment": "운동 다음 날 다리 뭉치는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0Q966zO8\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-03T22:00:00+09:00"
+  "result": {
+    "threads": "18090049040679693",
+    "threads_comment": "18019005122938824"
+  },
+  "publish_at": "2026-10-03T22:00:00+09:00",
+  "posted_at": "2026-10-03T22:00:39.058500+09:00"
 }
