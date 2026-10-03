@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-04",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 둘째날 저녁, 계획 3개 중 1개만 한 실패 고백 [4+5+5+1=15]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 계획 세 개 중에 한 개만 했어\n\n걷기는 했고\n정리랑 책 읽기는 아직 손도 못 댔어\n해가 지니까 마음만 급해지는 중이야\n\n그래도 하나 한 게 어디냐 싶은데\n너는 연휴에 계획한 거 다 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-04T19:30:00+09:00"
+}

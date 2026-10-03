@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-04",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 둘째날 낮, 낮잠 vs 외출 (공감·질문) [4+5+5+1=15]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "연휴 둘째날 낮 12시 전인데\n벌써 소파에 누워 있어\n\n나가야 하나 싶다가도\n누우면 일어나기가 진짜 어려운 거 같애\n\n오늘 하루 낮잠 vs 외출, 너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-04T11:30:00+09:00"
+}

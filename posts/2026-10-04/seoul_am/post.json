@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-04",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 아침 방바닥 냉기, 보일러 켤까 말까 → 전기요 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "일요일 아침 방바닥 차가운 거 나만 그래?\n\n9시에 눈 떴는데\n이불 밖으로 발 내밀기가 싫더라\n보일러 틀자니 가스비가 걱정이고\n\n그래서 전기요 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어",
+    "comment": "자취방 바닥이 차가워서 아침마다 움츠러드는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMacEXM7g\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-04T09:00:00+09:00"
+}

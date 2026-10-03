@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-04",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일=다음 주 준비: 지난주 식비 9만 원 → 냉동 소분 용기 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "지난주 식비 계산해보니 9만 원 넘더라\n\n연휴라고 장 많이 봤는데\n반찬이랑 국이 냉장고에서 시들어 가는 중이야\n버리기 아깝고\n\n그래서 오늘은 소분해서 얼려두기로 함\n냉동 소분 용기 리뷰 많은 걸로 담아놨어\n\n너는 남은 음식 어떻게 해?",
+    "comment": "남은 반찬 자꾸 버리게 되는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLQXDbG5k\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-04T14:00:00+09:00"
+}

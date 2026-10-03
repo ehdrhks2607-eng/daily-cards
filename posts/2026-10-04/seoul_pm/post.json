@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-04",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 밤 다음 주 준비: 지난주 카페값 4잔 1만 8천 원 → 텀블러 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://publicholidays.co.kr/?p=408"
+  ],
+  "threads": {
+    "text": "지난주 카페값 4잔에 1만 8천 원\n\n하루 한 잔은 습관이 돼서 끊기가 어려워\n그래서 다음 주부턴 집에서 내려서 들고 가보려고\n일요일 밤이라 가방부터 미리 챙기는 중이야\n\n텀블러 리뷰 많은 걸로 골라봤어",
+    "comment": "출근길 카페값이 슬슬 부담되는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-04T22:30:00+09:00"
+}
