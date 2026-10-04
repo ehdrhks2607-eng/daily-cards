@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "10/5 휴일 오전 비 → 접이식 장우산 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,10 @@
     "text": "쉬는 날엔 꼭 비 오는 거 나만 그래?\n\n연휴 마지막 날인데 오전에 비래\n우산 3개째 잃어버렸고 남은 건 살이 하나 나갔어\n\n그래서 튼튼한 접이식 우산 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어",
     "comment": "우산 자꾸 잃어버리거나 망가지는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLSpmcsM0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-05T08:00:00+09:00"
+  "result": {
+    "threads": "17909337351542330",
+    "threads_comment": "17957082054250114"
+  },
+  "publish_at": "2026-10-05T08:00:00+09:00",
+  "posted_at": "2026-10-05T08:00:38.936793+09:00"
 }
