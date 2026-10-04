@@ -3,7 +3,7 @@
   "date": "2026-10-04",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 이틀 음료수 지출 → 대용량 물병 물 마시기 습관 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,7 +13,11 @@
     "text": "연휴 이틀 동안 음료수로만 1만 2천 원 썼어\n\n집에 물이 있는데도\n굳이 편의점 가서 사 마신 거 같애\n아이스티 한 잔, 탄산 두 캔, 이런 식으로\n\n그래서 시간 표시 있는 대용량 물병 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 하루에 물 몇 잔 마셔?",
     "comment": "물 마시는 거 자꾸 까먹는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
+  "result": {
+    "threads": "17971059933168806",
+    "threads_comment": "18124679317912654",
+    "instagram": "18126110963307073"
+  },
   "cards": [
     {
       "type": "cover",
@@ -61,5 +65,6 @@
       "card_6.png"
     ]
   },
-  "publish_at": "2026-10-04T13:30:00+09:00"
+  "publish_at": "2026-10-04T13:30:00+09:00",
+  "posted_at": "2026-10-04T13:30:37.308522+09:00"
 }
