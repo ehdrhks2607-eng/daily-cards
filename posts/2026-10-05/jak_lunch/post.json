@@ -1,0 +1,65 @@
+{
+  "account": "jak",
+  "date": "2026-10-05",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 배달비 지출 → 닭가슴살 식단 복귀 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "threads": {
+    "text": "연휴 4번 시켰더니 배달비만 6만 8천 원이야\n\n먹고 나면 속도 더부룩하고\n내일부터 점심 사먹으면 또 만 원씩 나가겠지\n\n그래서 데우기만 하면 되는 닭가슴살 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 연휴에 배달 몇 번 시켰어?",
+    "comment": "연휴 지나고 식단 다시 잡고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "cards": [
+    {
+      "type": "cover",
+      "title": "연휴 배달\n6만 8천 원",
+      "sub": "4번 시켰더니\n이만큼 나왔어"
+    },
+    {
+      "type": "tip",
+      "label": "01",
+      "title": "지출 먼저\n적어보기",
+      "body": "배달앱 내역\n한 번 열어보기"
+    },
+    {
+      "type": "tip",
+      "label": "02",
+      "title": "냉장고\n먼저 열기",
+      "body": "주문 전에\n있는 거 확인"
+    },
+    {
+      "type": "tip",
+      "label": "03",
+      "title": "간단히 데우는\n단백질",
+      "body": "닭가슴살 하나면\n한 끼 해결"
+    },
+    {
+      "type": "tip",
+      "label": "04",
+      "title": "내일 점심\n미리 정하기",
+      "body": "고민하는 시간이\n지출을 늘려요"
+    },
+    {
+      "type": "end",
+      "title": "배달 줄이기\n3일만",
+      "sub": "골라둔 닭가슴살은 프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "연휴 배달 내역 열어보신 적 있으세요?\n저는 4번에 6만 8천 원이 나왔어요.\n내일부터 3일만 줄여보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #연휴끝 #배달비 #식단 #습관만들기",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "publish_at": "2026-10-05T12:30:00+09:00"
+}

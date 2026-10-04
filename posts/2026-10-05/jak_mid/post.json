@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-05",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 마지막 날 밤 수면 리듬 A vs B [5+5+5+0=15]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "threads": {
+    "text": "오늘 밤 일찍 자기 vs 끝까지 버티기\n\n어제도 새벽 1시에 잤거든\n내일 아침 알람은 6시 반인데\n연휴 끝난다는 게 아쉬워서 자꾸 폰만 보게 돼\n\n너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-05T10:30:00+09:00"
+}

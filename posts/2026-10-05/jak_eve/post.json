@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-05",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 마지막 저녁 허탈함 공감 [5+5+4+0=14]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "threads": {
+    "text": "연휴 마지막 저녁인데 아직 잠옷이야\n\n오늘 한 건 먹고 눕고 또 먹고\n해가 지니까 괜히 억울한 기분이 들어\n내일 아침 6시 반 알람이 벌써 무서워\n\n너는 연휴 마지막 저녁 어떻게 보내?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-05T18:30:00+09:00"
+}

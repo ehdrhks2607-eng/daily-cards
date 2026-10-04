@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-05",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 마지막 저녁 공감 [5+5+4+0=14]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "threads": {
+    "text": "연휴 마지막 저녁, 기억나는 게 없어\n\n비 오는 창밖 보다가\n점심은 라면, 저녁은 뭐 먹지 고민만 했어\n\n이런 날 너는 저녁 뭐 먹어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-05T18:00:00+09:00"
+}

@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-05",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "10/5 비·일교차 10도, 연휴 마지막날 걷기 → 경량 바람막이 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "threads": {
+    "text": "비 오면 걷기 접고 싶은 거 나만 그래?\n\nDAY 8인데 오전엔 비 오고 일교차가 10도래\n우산 들고 걷긴 싫고 얇은 겉옷이면 될 것 같애\n\n그래서 가벼운 바람막이 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어",
+    "comment": "비 오는 날 가볍게 걸을 겉옷 찾는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0XG1vgXI\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-05T07:30:00+09:00"
+}
