@@ -1,0 +1,34 @@
+{
+  "account": "jak",
+  "date": "2026-10-05",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 배달비 지출 → 닭가슴살 (jak_lunch 화제성 18)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261005/"
+  ],
+  "reel": {
+    "hook": "연휴 배달비\n*얼마* 나왔어?",
+    "count": {
+      "to": 68000,
+      "suffix": "원",
+      "label": "연휴 4번 시킨 배달"
+    },
+    "pain": "먹고 나면 더부룩하고\n점심값도 또 나가",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "배달앱 내역 열기",
+      "냉장고 먼저 확인",
+      "데우는 단백질"
+    ],
+    "item": "닭가슴살",
+    "item_sub": "리뷰 많은 걸로 골라둠",
+    "cta": "골라둔 *닭가슴살*은\n프로필 링크에",
+    "caption": "연휴 배달 내역 열어보신 적 있으세요?\n저는 4번에 6만 8천 원이 나왔어요.\n내일부터 3일만 줄여보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #연휴끝 #배달비 #식단 #습관만들기",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-05T19:30:00+09:00"
+}
