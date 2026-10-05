@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 배달비 지출 → 닭가슴살 식단 복귀 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,7 +14,11 @@
     "comment": "연휴 지나고 식단 다시 잡고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
+  "result": {
+    "threads": "17918954052240262",
+    "threads_comment": "18125709458307736",
+    "instagram": "18446761015124048"
+  },
   "cards": [
     {
       "type": "cover",
@@ -62,5 +66,6 @@
       "card_6.png"
     ]
   },
-  "publish_at": "2026-10-05T12:30:00+09:00"
+  "publish_at": "2026-10-05T12:30:00+09:00",
+  "posted_at": "2026-10-05T12:31:09.764567+09:00"
 }
