@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "출근 전날 준비 A vs B (월=출근 버티기) [5+5+5+0=15]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,9 @@
     "text": "전날 가방 싸놓기 vs 아침에 후다닥\n\n난 늘 아침에 하다가\n충전기나 사원증 하나씩 빼먹어\n지하철에서 아차 하는 게 한 달에 두세 번이야\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-05T11:00:00+09:00"
+  "result": {
+    "threads": "17911186662490674"
+  },
+  "publish_at": "2026-10-05T11:00:00+09:00",
+  "posted_at": "2026-10-05T11:00:39.737593+09:00"
 }
