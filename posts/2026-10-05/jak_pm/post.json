@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "DAY 8 비 와서 걷기 실패 → 출근 후 30분 루틴 타이머 큐브 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,10 @@
     "text": "DAY 8, 오전엔 비 와서 걷기 못 갔어\n\n대신 밤 9시에 집에서 20분 스트레칭만 했어\n내일 출근하면 퇴근 후 30분 만들기가 제일 어렵잖아\n\n그래서 30분 맞춰두는 타이머 큐브\n리뷰 많은 걸로 골라봤어\n\n너는 퇴근하고 운동 시간 어떻게 지켜?",
     "comment": "퇴근 후 30분 루틴 지키고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnNCYbAWxU\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-05T21:00:00+09:00"
+  "result": {
+    "threads": "18001139225806805",
+    "threads_comment": "18434690935195573"
+  },
+  "publish_at": "2026-10-05T21:00:00+09:00",
+  "posted_at": "2026-10-05T21:01:24.592244+09:00"
 }
