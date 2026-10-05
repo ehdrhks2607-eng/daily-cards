@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "내일 출근 대비 졸음 → 목베개 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,10 @@
     "text": "내일 출근 알람 5개 맞췄어\n\n연휴에 늦게 잤더니\n지하철 40분 내내 졸 것 같아서\n목 받쳐줄 목베개 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n월요일 같은 화요일 아침, 너는 어떻게 일어나?",
     "comment": "출근길 지하철에서 쪽잠 자는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1eSEetie\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-05T21:30:00+09:00"
+  "result": {
+    "threads": "18009872783991833",
+    "threads_comment": "18117258983061850"
+  },
+  "publish_at": "2026-10-05T21:30:00+09:00",
+  "posted_at": "2026-10-05T21:30:40.051458+09:00"
 }
