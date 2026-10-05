@@ -4,6 +4,7 @@ Runs inside GitHub Actions. For every posts/<date>/<account>/post.json that is
 approved (or approval not required) and whose publish_at has passed, it posts:
   - Threads: text post, then the first comment (coupang link) as a reply
   - Instagram: carousel of the card PNGs with the caption
+  - Instagram Reels: reel.mp4 (rendered by render_reel.py) with reel.caption
 Results are written back into post.json so a platform is never posted twice.
 
 Secrets (env): <ACCOUNT>_THREADS_TOKEN, <ACCOUNT>_IG_TOKEN  e.g. JAK_THREADS_TOKEN
@@ -56,8 +57,8 @@ def threads_post(token, text, reply_to=None):
 
 
 # ---------------- Instagram ----------------
-def ig_wait(token, container_id):
-    for _ in range(30):
+def ig_wait(token, container_id, tries=30):
+    for _ in range(tries):
         s = call("GET", f"{IG}/{container_id}", fields="status_code", access_token=token)
         if s.get("status_code") == "FINISHED":
             return
@@ -84,6 +85,45 @@ def ig_carousel(token, image_urls, caption):
     ig_wait(token, parent["id"])
     p = call("POST", f"{IG}/{uid}/media_publish", creation_id=parent["id"], access_token=token)
     return p["id"]
+
+
+def ig_reel(token, video_urls, local_file, caption):
+    """Publish a Reel. Tries public video URLs first (jsDelivr serves video/mp4),
+    then falls back to a resumable upload of the local file."""
+    uid = ig_uid(token)
+    errs = []
+    for url in video_urls:
+        try:
+            c = call("POST", f"{IG}/{uid}/media", media_type="REELS", video_url=url,
+                     caption=caption, share_to_feed="true", access_token=token)
+            ig_wait(token, c["id"], tries=60)
+            p = call("POST", f"{IG}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+            return p["id"]
+        except Exception as e:
+            errs.append(f"{url.split('/')[2]}: {e}")
+            log("reel via url failed, trying next:", str(e)[:200])
+    try:
+        c = call("POST", f"{IG}/{uid}/media", media_type="REELS", upload_type="resumable",
+                 caption=caption, share_to_feed="true", access_token=token)
+        if not DRY_RUN:
+            data = Path(local_file).read_bytes()
+            r = requests.post(c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/v21.0/{c['id']}",
+                              headers={"Authorization": f"OAuth {token}", "offset": "0",
+                                       "file_size": str(len(data))}, data=data, timeout=300)
+            if r.status_code >= 400:
+                raise RuntimeError(f"rupload {r.status_code}: {r.text[:300]}")
+        ig_wait(token, c["id"], tries=60)
+        p = call("POST", f"{IG}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+        return p["id"]
+    except Exception as e:
+        errs.append(f"resumable: {e}")
+    raise RuntimeError(" / ".join(errs))
+
+
+def cdn_url(rel_path):
+    repo = os.environ.get("GITHUB_REPOSITORY", "OWNER/REPO")
+    ref = os.environ.get("GITHUB_SHA") or os.environ.get("GITHUB_REF_NAME", "main")
+    return f"https://cdn.jsdelivr.net/gh/{repo}@{ref}/{rel_path}"
 
 
 def raw_url(rel_path):
@@ -149,7 +189,19 @@ def process(post_file, cfg, now):
         except Exception as e:
             errors.append(f"instagram: {e}")
 
-    need = [k for k, tok in (("threads", th_token), ("instagram", ig_token)) if tok]
+    has_reel = bool(post.get("reel", {}).get("video"))
+    reel_token = os.environ.get(f"{acc}_IG_TOKEN") if has_reel else None
+    if reel_token and not res.get("reel"):
+        try:
+            rel = f"{post_file.parent.relative_to(ROOT).as_posix()}/{post['reel']['video']}"
+            res["reel"] = ig_reel(reel_token, [cdn_url(rel), raw_url(rel)], ROOT / rel,
+                                  post["reel"].get("caption", ""))
+            log(acc, "reel posted", res["reel"])
+            changed = True
+        except Exception as e:
+            errors.append(f"reel: {e}")
+
+    need = [k for k, tok in (("threads", th_token), ("instagram", ig_token), ("reel", reel_token)) if tok]
     if th_token and comment:
         need.append("threads_comment")  # waits until the coupang link is filled in
     if need and all(res.get(k) for k in need):

@@ -4,13 +4,13 @@
 "오늘 분량 만들어줘" 또는 예약 작업이 실행되면 아래 **[매일 작업 순서]**를 그대로 따른다.
 
 ## [매일 작업 순서]
-1. `TZ=Asia/Seoul date '+%Y-%m-%d %a'`로 오늘 날짜·요일을 확인한다(추측 금지). 이미 `posts/<오늘>/`에 10개 폴더가 있으면 중복 생성하지 않고 종료한다.
+1. `TZ=Asia/Seoul date '+%Y-%m-%d %a'`로 오늘 날짜·요일을 확인한다(추측 금지). 이미 `posts/<오늘>/`에 12개 폴더(글 10 + 릴스 2)가 있으면 중복 생성하지 않고 종료한다. 글 10개만 있고 `jak_reel`·`seoul_reel`이 없으면 7-1단계(릴스)만 한다.
 2. 아래 "2. 주제 선정" 규칙대로 WebSearch로 오늘/어제/이번 주 이슈를 찾는다("오늘 실시간 검색어", "네이버 많이 본 뉴스", "오늘 날씨" 등 3회 이상 검색). 후보를 **"3-1. 조회수 규칙"의 화제성 점수**로 매겨 상위 주제로 계정별 am·mid·lunch·eve·pm 5개 = **총 10개 글**을 정한다.
 3. 폴더 `posts/<오늘>/<계정>_<슬롯>/post.json` 10개를 만든다 (계정: jak, seoul / 슬롯: am, mid, lunch, eve, pm).
    - 폴더: jak_am, jak_mid, jak_lunch, jak_eve, jak_pm / seoul_am, seoul_mid, seoul_lunch, seoul_eve, seoul_pm
    - 필드: account, date, slot, approved(**true**), status("pending"), issue, sources, threads{text, comment}, result{}
    - 인스타 슬롯(config.json의 instagram_slot: jak=lunch)에만 cards(6장)와 instagram{caption, images: []}를 넣는다.
-   - **seoul은 인스타를 당분간 운영하지 않는다(instagram_slot: null).** seoul 5개 post.json에는 cards·instagram 필드를 넣지 않고 스레드만 만든다.
+   - **seoul은 인스타 카드뉴스를 당분간 운영하지 않는다(instagram_slot: null).** seoul 5개 post.json에는 cards·instagram 필드를 넣지 않고 스레드만 만든다. (인스타 릴스는 두 계정 모두 운영 — 7-1단계)
 4. 쿠팡 링크: **am·lunch·pm 3개 슬롯에만** 넣는다. mid·eve는 `threads.comment`를 빈 문자열("")로 둔다(링크 댓글 없음). am·lunch·pm은 `links.json`에서 글 내용과 맞는 카테고리의 링크를 골라 comment의 링크 자리에 넣는다. 같은 링크는 2일(48시간) 안에 다시 쓰지 않는다(최근 posts의 comment를 확인). 쓸 수 있는 링크가 모자라면 해당 계정 링크 중 가장 오래전에 쓴 링크를 쓴다. 자리표시자 `[쿠팡링크:...]`는 절대 남기지 않는다(am·lunch·pm의 comment에는 반드시 실제 링크가 들어가야 함).
    - 링크를 고르기 전에 **"4-1. 링크 요청 알림"** 규칙대로 `link_requests.md`를 정리하고, 고른 뒤 필요한 요청을 추가한다.
 5. `python scripts/schedule.py posts/<오늘>/*/post.json` 로 publish_at을 채운다.
@@ -18,8 +18,13 @@
    `python scripts/render_cards.py posts/<오늘>/jak_lunch/post.json` (seoul은 카드 없음)
    생성된 PNG를 직접 열어 **한글 깨짐(□)·잘림이 없는지** 확인한다. 문제가 있으면 문구를 줄이거나 폰트를 고친 뒤 다시 렌더링한다.
 7. 모든 post.json이 올바른 JSON인지 `python -m json.tool`로 검사한다.
+7-1. **인스타 릴스(두 계정 각 1개)**: 아래 "3-D. 인스타 릴스" 규칙대로 `posts/<오늘>/jak_reel/post.json`, `posts/<오늘>/seoul_reel/post.json`을 만든다.
+   - 필드: account, date, slot("reel"), approved(true), status("pending"), issue, sources, reel{...}, result{} (threads·cards·instagram 필드 없음)
+   - `python scripts/schedule.py posts/<오늘>/*_reel/post.json` → publish_at 채우기
+   - `python scripts/render_reel.py posts/<오늘>/jak_reel/post.json posts/<오늘>/seoul_reel/post.json` (2편에 약 2분, ffmpeg 필요: 없으면 `apt-get install -y ffmpeg`)
+   - 생성된 `reel_sheet.png`(핵심 장면 5컷)를 직접 열어 **한글 깨짐·잘림·글자 겹침**을 확인한다. 문제가 있으면 문구를 줄여 다시 렌더링한다. `reel.mp4`가 실제로 생겼는지, 15초인지 `ffprobe`로 확인한다.
 8. `git add posts link_requests.md && git commit -m "daily posts <오늘>" && git push` 로 main에 올린다. push 충돌 시 `git pull --rebase` 후 다시 push.
-9. 마지막에 오늘 10개 글의 주제·화제성 점수·첫 줄(훅)·게시 시간·링크 유무를 표로 요약한다.
+9. 마지막에 오늘 10개 글의 주제·화제성 점수·첫 줄(훅)·게시 시간·링크 유무를 표로 요약하고, 릴스 2개(계정·훅·상품·게시 시간)를 아래에 한 줄씩 덧붙인다.
    - 요약의 **맨 첫 줄**은 링크 요청 상태다. `link_requests.md`에 남아 있는 요청이 있으면 `🔗 링크 요청: 상품1, 상품2 (계정)` 형식으로 쓰고(계정이 둘이면 `🔗 링크 요청: 상품1, 상품2 (jak) / 상품3 (seoul)`, 링크 부족 줄도 함께 적음), 없으면 `🔗 링크 요청 없음`이라고 쓴다.
 
 ### 4-1. 링크 요청 알림 (`link_requests.md`)
@@ -44,6 +49,7 @@
 | 연결 상품 | 홈트·다이어트·다이어리·습관·정리용품 | 자취·생활용품·출퇴근템·날씨템 |
 | 스레드 (하루 5번, KST: am / mid / lunch / eve / pm) | 평일 07:30 / 10:30 / 12:30 / 18:30 / 21:00 · 주말 08:30 / 11:30 / 13:30 / 19:30 / 22:00 | 평일 08:00 / 11:00 / 13:00 / 18:00 / 21:30 · 주말 09:00 / 12:00 / 14:00 / 19:00 / 22:30 |
 | 인스타 카드뉴스 (하루 1번) | 점심 슬롯(lunch) | **운영 중지 (스레드만)** |
+| 인스타 릴스 (하루 1번, 15초 모션그래픽) | 평일 19:30 · 주말 20:30 | 평일 20:00 · 주말 21:00 |
 | 카드뉴스 톤 | 베이지 배경 + 주황 포인트 | (재개 시) 흰 배경 + 남색 포인트 |
 
 - **익명 유지 필수**: 매장명·지점명·직함·동네(반포 등)·본명·동료 이름 절대 언급 금지. 미용 업계라는 것도 드러내지 않음. 두 계정이 같은 사람이라는 것도 드러내지 않음(서로 태그·언급 금지).
@@ -139,6 +145,23 @@
 - 이미지 제작: 1080x1350 HTML을 만들고 Playwright로 PNG 렌더링. 계정별 톤(0번 표)을 지키고, NotoSansCJK 폰트, 미니멀
 - 인스타 캡션 링크는 클릭이 안 되므로 캡션에 URL을 넣지 않는다
 
+### D. 인스타 릴스 (15초 세로 모션그래픽, 두 계정 각 1개/일)
+촬영 없이 `scripts/reel_template.html`(데이터 주도 애니메이션)을 `render_reel.py`가 MP4로 렌더링한다. **템플릿 디자인은 고치지 않고 문구 데이터만 바꾼다.**
+- 주제: 그 계정의 오늘 링크 글(am·lunch·pm) 중 화제성 점수가 가장 높은 글의 이슈·상품을 그대로 가져온다. 두 계정 릴스는 서로 다른 이슈·상품이어야 한다.
+- 흐름(고정 5장면): 훅 → 숫자(카운터) + 불편 → 그래서 해보는 3가지 → 찾아본 품목 → "프로필 링크" CTA
+- `reel` 필드(글자 수 제한을 지킨다. 넘치면 글자가 자동으로 작아져 덜 보기 좋아진다):
+  - `hook`: 2줄 이내, 줄당 7자 이내. 질문형 또는 숫자 고백형. 강조할 단어는 `*단어*` (예: `"연휴 배달비\n*얼마* 나왔어?"`)
+  - `count`: `{"to": 숫자, "suffix": "원", "label": "줄 12자 이내 설명"}` — 그날 스레드 글에 나온 **실제 생활 숫자와 같은 값**만. 숫자가 없는 이슈면 count를 빼고 pain만 크게 쓴다
+  - `pain`: 2줄 이내, 줄당 12자 이내 (반말)
+  - `tips_title`(선택, 15자 이내): 작심삼일 "그래서 3일만 해보기로 함" / 서울적응기 "그래서 이렇게 버티는 중" 류
+  - `tips`: 정확히 3개, 각 9자 이내
+  - `item`: 품목 이름만(브랜드·상품명 금지), 6자 이내 / `item_sub`: 16자 이내, "골라둠·담아둠·찾아봄"까지만
+  - `cta`: `"골라둔 *품목*은\n프로필 링크에"` 형식
+  - `series`(선택): 작심삼일 DAY 연재 중이면 `"DAY 9"`처럼
+  - `caption`: 높임말 3~5줄(첫 줄은 훅과 다른 질문·공감형) + 빈 줄 + "골라둔 ○○은 프로필 링크에 있어요." + 대가성 문구 전문 + 해시태그 5개 이내. URL 넣지 않음
+- 금지: 사용 후기 표현("써봤더니", "매일 쓰는 중"), 과장 숫자, 어그로 단어, 매장·미용 관련 내용
+- 영상 하단에 "쿠팡 파트너스 활동으로 수수료를 받을 수 있어요" 문구가 자동으로 들어간다(지우지 않음)
+- 게시는 publish.py가 Instagram Reels로 올린다(공개 URL → 실패 시 파일 직접 업로드). 소리는 무음 트랙이라, 사용자가 원하면 인스타 앱에서 음악을 나중에 붙일 수 있다.
 
 ## 3-1. 조회수 규칙 (모든 스레드 글에 적용)
 
@@ -199,6 +222,7 @@
 - [ ] 대가성 문구가 들어갔나
 - [ ] `link_requests.md`를 정리·갱신했고, 요약 첫 줄에 링크 요청 상태를 적었나
 - [ ] 이슈 출처 링크를 사용자에게 함께 보여줬나
+- [ ] 릴스 2개: 글자 수 제한 지킴, reel_sheet.png로 깨짐·잘림 확인, reel.mp4 15초 생성, 두 계정 상품이 서로 다름
 
 ## 참고
 - 게시는 GitHub Actions(publish.yml)가 30분마다 한다. 외부 타이머(cron-job.org)가 workflow_dispatch로 깨운다.

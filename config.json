@@ -8,7 +8,8 @@
         "bg": "#F4ECDF",
         "fg": "#2B2118",
         "accent": "#E8742C",
-        "muted": "#8A7A68"
+        "muted": "#8A7A68",
+        "card": "rgba(255,255,255,.62)"
       },
       "publish_time_kst": {
         "weekday": {
@@ -16,17 +17,21 @@
           "mid": "10:30",
           "lunch": "12:30",
           "eve": "18:30",
-          "pm": "21:00"
+          "pm": "21:00",
+          "reel": "19:30"
         },
         "weekend": {
           "am": "08:30",
           "mid": "11:30",
           "lunch": "13:30",
           "eve": "19:30",
-          "pm": "22:00"
+          "pm": "22:00",
+          "reel": "20:30"
         },
-        "instagram_slot": "lunch"
-      }
+        "instagram_slot": "lunch",
+        "reel_enabled": true
+      },
+      "handle": "3_day_hump"
     },
     "seoul": {
       "label": "서울적응기",
@@ -34,7 +39,8 @@
         "bg": "#FFFFFF",
         "fg": "#141B2D",
         "accent": "#23407A",
-        "muted": "#7C8496"
+        "muted": "#7C8496",
+        "card": "#EEF2F8"
       },
       "publish_time_kst": {
         "weekday": {
@@ -42,17 +48,21 @@
           "mid": "11:00",
           "lunch": "13:00",
           "eve": "18:00",
-          "pm": "21:30"
+          "pm": "21:30",
+          "reel": "20:00"
         },
         "weekend": {
           "am": "09:00",
           "mid": "12:00",
           "lunch": "14:00",
           "eve": "19:00",
-          "pm": "22:30"
+          "pm": "22:30",
+          "reel": "21:00"
         },
-        "instagram_slot": null
-      }
+        "instagram_slot": null,
+        "reel_enabled": true
+      },
+      "handle": "survive.seoul"
     }
   }
 }
