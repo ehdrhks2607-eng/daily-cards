@@ -1,0 +1,34 @@
+{
+  "account": "seoul",
+  "date": "2026-10-06",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "출근길 배터리 → 보조배터리 (seoul_lunch 화제성 17)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261006/"
+  ],
+  "reel": {
+    "hook": "출근길 배터리\n*12%*였어",
+    "count": {
+      "to": 12,
+      "suffix": "%",
+      "label": "지하철 탈 때 배터리"
+    },
+    "pain": "충전 깜빡한 날은\n길 찾기가 불안해",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "자기 전 충전",
+      "가방에 하나 넣기",
+      "영상은 내려서"
+    ],
+    "item": "보조배터리",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *보조배터리*는\n프로필 링크에",
+    "caption": "출근길에 폰 배터리 걱정해 보신 적 있으세요?\n저는 지하철 타자마자 12%였어요.\n충전을 깜빡한 날은 길 찾기도 불안하더라고요.\n\n골라둔 보조배터리는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #출근길 #보조배터리 #직장인 #자취",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-06T20:00:00+09:00"
+}

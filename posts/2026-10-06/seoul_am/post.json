@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-06",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 끝 사무실 건조 → 가습기 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261006/"
+  ],
+  "threads": {
+    "text": "아침부터 목이 칼칼한 거 나만 그래?\n\n연휴 끝나고 첫 출근인데\n물을 하루 5잔 마셔도 입이 마르거든\n책상 위에 올려둘 미니 가습기 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너네 사무실도 이렇게 건조해?",
+    "comment": "사무실 공기 건조해서 목 아픈 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq02m1jx0e\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-06T08:00:00+09:00"
+}

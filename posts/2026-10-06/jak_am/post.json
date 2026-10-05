@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-06",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 끝 첫 출근 → 걷기 DAY 9 [4+5+4+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261006/"
+  ],
+  "threads": {
+    "text": "첫 출근길 발걸음 무거운 거 나만 그래?\n\nDAY 9인데 알람 6시 반에 겨우 일어났어\n지하철 한 정거장 먼저 내려서 걷기로 했는데\n몇 걸음인지 모르면 금방 접을 거 같애\n\n그래서 스마트밴드 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 출근길에 걷는 편이야?",
+    "comment": "출근길에 걸음 수 챙기고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnK7Em0sBo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-06T07:30:00+09:00"
+}

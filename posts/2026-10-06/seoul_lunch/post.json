@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-06",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "출근길 배터리 12% → 보조배터리 [5+5+3+4=17]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://datedb.net/calendar/day/20261006/"
+  ],
+  "threads": {
+    "text": "지하철 타자마자 배터리가 12%였어\n\n어제 충전을 깜빡했는데\n출근 40분 동안 영상 보다 보니 이 모양이야\n내려서 길 찾아야 되는데 불안하더라\n\n그래서 가벼운 보조배터리 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 폰 배터리 몇 퍼센트에서 충전해?",
+    "comment": "출근길에 폰 배터리 불안한 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-06T13:00:00+09:00"
+}
