@@ -2,7 +2,7 @@
 
 Runs inside GitHub Actions. For every posts/<date>/<account>/post.json that is
 approved (or approval not required) and whose publish_at has passed, it posts:
-  - Threads: text post, then the first comment (coupang link) as a reply
+  - Threads: text post (or video post when threads.video is set), then the first comment (coupang link) as a reply
   - Instagram: carousel of the card PNGs with the caption
   - Instagram Reels: reel.mp4 (rendered by render_reel.py) with reel.caption
 Results are written back into post.json so a platform is never posted twice.
@@ -11,6 +11,7 @@ Secrets (env): <ACCOUNT>_THREADS_TOKEN, <ACCOUNT>_IG_TOKEN  e.g. JAK_THREADS_TOK
 """
 import json
 import os
+import posixpath
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -45,13 +46,41 @@ def threads_uid(token):
     return call("GET", f"{THREADS}/me", fields="id", access_token=token)["id"]
 
 
-def threads_post(token, text, reply_to=None):
+def threads_wait(token, container_id, tries=60):
+    if DRY_RUN:
+        return
+    for _ in range(tries):
+        s = call("GET", f"{THREADS}/{container_id}", fields="status", access_token=token)
+        if s.get("status") == "FINISHED":
+            return
+        if s.get("status") in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Threads container {container_id} {s.get('status')}: {s.get('error_message', '')}")
+        time.sleep(0 if DRY_RUN else 5)
+    raise RuntimeError(f"Threads container {container_id} timeout")
+
+
+def threads_post(token, text, reply_to=None, video_urls=None):
+    """Text post, or (video_urls given) a VIDEO post; tries each public URL in turn."""
     uid = threads_uid(token)
-    params = {"media_type": "TEXT", "text": text, "access_token": token}
-    if reply_to:
-        params["reply_to_id"] = reply_to
-    c = call("POST", f"{THREADS}/{uid}/threads", **params)
-    time.sleep(3 if DRY_RUN else 10)
+    if not video_urls:
+        params = {"media_type": "TEXT", "text": text, "access_token": token}
+        if reply_to:
+            params["reply_to_id"] = reply_to
+        c = call("POST", f"{THREADS}/{uid}/threads", **params)
+        time.sleep(3 if DRY_RUN else 10)
+    else:
+        errs = []
+        for url in video_urls:
+            try:
+                c = call("POST", f"{THREADS}/{uid}/threads", media_type="VIDEO", video_url=url,
+                         text=text, access_token=token)
+                threads_wait(token, c["id"])
+                break
+            except Exception as e:
+                errs.append(str(e)[:200])
+                log("threads video via url failed, trying next:", errs[-1])
+        else:
+            raise RuntimeError(" / ".join(errs))
     p = call("POST", f"{THREADS}/{uid}/threads_publish", creation_id=c["id"], access_token=token)
     return p["id"]
 
@@ -162,7 +191,12 @@ def process(post_file, cfg, now):
     th_token = os.environ.get(f"{acc}_THREADS_TOKEN") if has_threads else None
     if th_token and not res.get("threads"):
         try:
-            res["threads"] = threads_post(th_token, post["threads"]["text"])
+            video = post["threads"].get("video")  # path relative to this post folder, e.g. ../jak_reel/reel.mp4
+            vurls = None
+            if video:
+                rel = posixpath.normpath(f"{post_file.parent.relative_to(ROOT).as_posix()}/{video}")
+                vurls = [cdn_url(rel), raw_url(rel)]
+            res["threads"] = threads_post(th_token, post["threads"]["text"], video_urls=vurls)
             log(acc, "threads posted", res["threads"])
             changed = True
         except Exception as e:

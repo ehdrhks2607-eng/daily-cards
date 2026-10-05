@@ -20,6 +20,7 @@
 7. 모든 post.json이 올바른 JSON인지 `python -m json.tool`로 검사한다.
 7-1. **인스타 릴스(두 계정 각 1개)**: 아래 "3-D. 인스타 릴스" 규칙대로 `posts/<오늘>/jak_reel/post.json`, `posts/<오늘>/seoul_reel/post.json`을 만든다.
    - 필드: account, date, slot("reel"), approved(true), status("pending"), issue, sources, reel{...}, result{} (threads·cards·instagram 필드 없음)
+   - **스레드에도 같은 영상을 올린다**: 두 계정 lunch 글 post.json의 `threads`에 `"video": "../<계정>_reel/reel.mp4"`를 추가한다(publish.py가 스레드 VIDEO 글로 올림). 이를 위해 릴스 주제·상품은 **그 계정 lunch 글**과 같게 한다(숫자도 동일).
    - `python scripts/schedule.py posts/<오늘>/*_reel/post.json` → publish_at 채우기
    - `python scripts/render_reel.py posts/<오늘>/jak_reel/post.json posts/<오늘>/seoul_reel/post.json` (2편에 약 2분, ffmpeg 필요: 없으면 `apt-get install -y ffmpeg`)
    - 생성된 `reel_sheet.png`(핵심 장면 5컷)를 직접 열어 **한글 깨짐·잘림·글자 겹침**을 확인한다. 문제가 있으면 문구를 줄여 다시 렌더링한다. `reel.mp4`가 실제로 생겼는지, 15초인지 `ffprobe`로 확인한다.
@@ -147,7 +148,7 @@
 
 ### D. 인스타 릴스 (15초 세로 모션그래픽, 두 계정 각 1개/일)
 촬영 없이 `scripts/reel_template.html`(데이터 주도 애니메이션)을 `render_reel.py`가 MP4로 렌더링한다. **템플릿 디자인은 고치지 않고 문구 데이터만 바꾼다.**
-- 주제: 그 계정의 오늘 링크 글(am·lunch·pm) 중 화제성 점수가 가장 높은 글의 이슈·상품을 그대로 가져온다. 두 계정 릴스는 서로 다른 이슈·상품이어야 한다.
+- 주제: 그 계정의 오늘 **lunch 글**의 이슈·상품·숫자를 그대로 가져온다(스레드 lunch 글에 같은 영상을 붙이기 때문). 두 계정 릴스는 서로 다른 이슈·상품이어야 한다.
 - 흐름(고정 5장면): 훅 → 숫자(카운터) + 불편 → 그래서 해보는 3가지 → 찾아본 품목 → "프로필 링크" CTA
 - `reel` 필드(글자 수 제한을 지킨다. 넘치면 글자가 자동으로 작아져 덜 보기 좋아진다):
   - `hook`: 2줄 이내, 줄당 7자 이내. 질문형 또는 숫자 고백형. 강조할 단어는 `*단어*` (예: `"연휴 배달비\n*얼마* 나왔어?"`)
