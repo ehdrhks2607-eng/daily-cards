@@ -3,7 +3,7 @@
   "date": "2026-10-05",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "expired",
   "issue": "점심값 부담 → 즉석밥 (seoul_lunch 화제성 17)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
