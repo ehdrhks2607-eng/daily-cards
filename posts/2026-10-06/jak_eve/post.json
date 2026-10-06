@@ -3,7 +3,7 @@
   "date": "2026-10-06",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "퇴근길 소파 유혹 [4+5+4+1=14]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,9 @@
     "text": "퇴근길인데 벌써 소파가 눈앞에 있어\n\n집 가면 10분만 쉬자고 하는 순간\n1시간이 지나가 버리는 거 같애\nDAY 9부터 흔들리는 중이야\n\n일단 현관에서 운동복부터 갈아입어 보려고\n\n너는 퇴근하고 바로 움직여, 쉬고 나서 움직여?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-06T18:30:00+09:00"
+  "result": {
+    "threads": "18106703369338242"
+  },
+  "publish_at": "2026-10-06T18:30:00+09:00",
+  "posted_at": "2026-10-06T18:30:39.767705+09:00"
 }
