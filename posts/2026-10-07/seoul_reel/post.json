@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-07",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "카페값 지출 → 텀블러 (seoul_lunch 화제성 17)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://www.ytn.co.kr/_ln/0108_202610010733030454",
+    "https://datedb.net/calendar/day/20261007/"
+  ],
+  "reel": {
+    "hook": "카페값\n*얼마* 썼어?",
+    "count": {
+      "to": 90000,
+      "suffix": "원",
+      "label": "이번 달 카페 커피값"
+    },
+    "pain": "하루 4천 원대가\n모이니까 무서워",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "카페는 주 2번만",
+      "텀블러에 타 가기",
+      "아침 커피 집에서"
+    ],
+    "item": "텀블러",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *텀블러*는\n프로필 링크에",
+    "caption": "한 달 카페값 계산해 보신 적 있으세요?\n저는 이번 달에만 9만 원이 나왔어요.\n집에서 커피를 타 가보려고 해요.\n\n골라둔 텀블러는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #카페값 #직장인 #절약 #출근길",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-07T20:00:00+09:00"
+}

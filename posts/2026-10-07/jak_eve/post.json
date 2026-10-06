@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-07",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "운동 흐름 끊김 실패 고백 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://www.ytn.co.kr/_ln/0108_202610010733030454",
+    "https://datedb.net/calendar/day/20261007/"
+  ],
+  "threads": {
+    "text": "DAY 10인데 오늘 한 정거장 못 걸었어\n\n퇴근하니까 다리가 천근만근이고\n안개 낀 아침엔 나갈 엄두도 안 났어\n작심삼일 지나서 흔들리는 건 알겠는데\n그래도 내일 한 번만 더 해보려고\n\n너는 운동 흐름 끊기면 어떻게 다시 시작해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-07T18:30:00+09:00"
+}

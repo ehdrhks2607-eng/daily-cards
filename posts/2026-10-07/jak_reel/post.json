@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-07",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "아침 편의점 지출 → 단백질 쉐이크 (jak_lunch 화제성 18)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://www.ytn.co.kr/_ln/0108_202610010733030454",
+    "https://datedb.net/calendar/day/20261007/"
+  ],
+  "reel": {
+    "hook": "아침 편의점\n*얼마* 썼어?",
+    "count": {
+      "to": 66000,
+      "suffix": "원",
+      "label": "이번 달 아침 편의점"
+    },
+    "pain": "삼각김밥에 커피\n하루 3천 원씩",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "아침값 합계 내기",
+      "전날 밤 챙겨두기",
+      "타 먹는 단백질"
+    ],
+    "item": "단백질쉐이크",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *단백질쉐이크*는\n프로필 링크에",
+    "series": "DAY 10",
+    "caption": "아침 편의점값 합쳐보신 적 있으세요?\n저는 이번 달에만 6만 6천 원이 나왔어요.\n이번 주는 3일만 아침을 챙겨보려고 해요.\n\n골라둔 단백질 쉐이크는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #아침식사 #편의점 #습관만들기 #식단",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-07T19:30:00+09:00"
+}

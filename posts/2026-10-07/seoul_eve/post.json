@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-07",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "퇴근길 저녁 메뉴 고민 공감 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/short-term.do",
+    "https://www.ytn.co.kr/_ln/0108_202610010733030454",
+    "https://datedb.net/calendar/day/20261007/"
+  ],
+  "threads": {
+    "text": "퇴근길에 저녁 뭐 먹지 고민만 10분째야\n\n지하철에서 배달앱 열었다 닫았다 하다가\n결국 집 앞에서 정해\n메뉴 고르는 것도 하루 끝엔 일이 되는 거 같애\n\n너는 저녁 메뉴 언제 정해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-07T18:00:00+09:00"
+}
