@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "아침 12도 쌀쌀한 날 물 안 마심 → 물병 DAY 10 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,10 @@
     "text": "쌀쌀한 아침엔 물 안 마시게 되는 거 나만 그래?\n\n오늘 서울 아침 12도래\n어제도 점심 전까지 한 잔도 못 마셨어\n눈금 있는 대용량 물병 찾아봤어\n리뷰 많은 걸로 담아둠\n\nDAY 10인데 너는 하루에 물 몇 잔 마셔?",
     "comment": "물 마시는 거 자꾸 까먹는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-07T07:30:00+09:00"
+  "result": {
+    "threads": "17919130377448232",
+    "threads_comment": "18116302175043751"
+  },
+  "publish_at": "2026-10-07T07:30:00+09:00",
+  "posted_at": "2026-10-07T07:30:34.518797+09:00"
 }
