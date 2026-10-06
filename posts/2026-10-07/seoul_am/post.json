@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "일교차 10도 사무실 냉기 → 극세사 담요 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,10 @@
     "text": "아침 12도에 반팔 입고 나온 거 나만 그래?\n\n낮엔 23도라길래 얇게 입었는데\n지하철에서 10분 떨었어\n사무실 냉기도 있어서 무릎에 덮을 담요 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 오늘 뭐 입고 나왔어?",
     "comment": "사무실 냉기에 무릎 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq09cWx29A\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-07T08:00:00+09:00"
+  "result": {
+    "threads": "18064914494513649",
+    "threads_comment": "18115279448035563"
+  },
+  "publish_at": "2026-10-07T08:00:00+09:00",
+  "posted_at": "2026-10-07T08:00:44.592453+09:00"
 }
