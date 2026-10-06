@@ -3,7 +3,7 @@
   "date": "2026-10-06",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 야식 지출 → 곤약젤리 (jak_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -30,6 +30,9 @@
     "caption": "연휴 야식 영수증 열어보신 적 있으세요?\n저는 야식에만 2만 4천 원이 나왔어요.\n이번 주는 3일만 줄여보려고 해요.\n\n골라둔 곤약젤리는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #연휴끝 #야식 #다이어트 #습관만들기",
     "video": "reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-06T19:30:00+09:00"
+  "result": {
+    "reel": "18111017585143015"
+  },
+  "publish_at": "2026-10-06T19:30:00+09:00",
+  "posted_at": "2026-10-06T19:30:37.778646+09:00"
 }
