@@ -3,7 +3,7 @@
   "date": "2026-10-06",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "출근길 배터리 12% → 보조배터리 [5+5+3+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,10 @@
     "comment": "출근길에 폰 배터리 불안한 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-06T13:00:00+09:00"
+  "result": {
+    "threads": "18100501880528752",
+    "threads_comment": "18108937262586320"
+  },
+  "publish_at": "2026-10-06T13:00:00+09:00",
+  "posted_at": "2026-10-06T13:00:45.006345+09:00"
 }
