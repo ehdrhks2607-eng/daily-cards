@@ -3,7 +3,7 @@
   "date": "2026-10-06",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "점심 후 졸음 A vs B [4+5+5+1=15]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,9 @@
     "text": "점심 먹고 바로 앉기 vs 10분 걷기\n너는 어느 쪽이야?\n\n난 밥 먹으면 졸려서 책상에 바로 앉는 쪽인데\n오후 3시쯤 되면 눈이 감겨\n\n연휴 끝난 날이라 더 심한 거 같애\n오늘은 10분만 걸어볼까 고민 중이야\n\n다들 점심 먹고 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-06T10:30:00+09:00"
+  "result": {
+    "threads": "18025035077876577"
+  },
+  "publish_at": "2026-10-06T10:30:00+09:00",
+  "posted_at": "2026-10-06T10:30:36.276823+09:00"
 }
