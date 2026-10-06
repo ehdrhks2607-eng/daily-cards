@@ -3,7 +3,7 @@
   "date": "2026-10-06",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "점심 혼밥 A vs B [3+5+5+1=14]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -13,6 +13,9 @@
     "text": "점심 같이 먹기 vs 혼자 먹기\n너는 어느 쪽이야?\n\n난 연휴 끝난 날은 혼자 먹고 싶은데\n눈치 보여서 매번 같이 나가는 거 같애\n밥 먹는 40분이 제일 길게 느껴질 때도 있고\n\n그래도 혼자 먹는 날 하나 있으면 버틸만 해\n다들 어떻게 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-06T11:00:00+09:00"
+  "result": {
+    "threads": "18016317977747591"
+  },
+  "publish_at": "2026-10-06T11:00:00+09:00",
+  "posted_at": "2026-10-06T11:00:42.521271+09:00"
 }
