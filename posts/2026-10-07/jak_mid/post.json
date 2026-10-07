@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "오후 간식 A vs B [4+5+5+0=14→공감 mid]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,9 @@
     "text": "오후 3시 간식 참기 vs 먹고 걷기\n너는 어느 쪽이야?\n\n난 참다가 결국 4시에 과자 뜯는 쪽이야\n연휴 끝나고 일주일째 이러는 중이라\n오늘은 먹고 10분 걷는 걸로 바꿔볼까 고민 중이야\n\n다들 오후 간식 어떻게 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-07T10:30:00+09:00"
+  "result": {
+    "threads": "18105082631096116"
+  },
+  "publish_at": "2026-10-07T10:30:00+09:00",
+  "posted_at": "2026-10-07T10:30:37.263703+09:00"
 }
