@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "바닥 차가워진 새벽 → 수면양말 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,10 @@
     "text": "새벽 5시에 발 시려서 깼어\n\n어제까지 괜찮았는데 바닥이 갑자기 차가워졌더라\n보일러 틀기엔 아직 이른 거 같고\n그래서 수면양말 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 보일러 언제부터 틀어?",
     "comment": "자다가 발 시려서 깨는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1avWGA8W\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-07T21:30:00+09:00"
+  "result": {
+    "threads": "18088293710260358",
+    "threads_comment": "17961879783234476"
+  },
+  "publish_at": "2026-10-07T21:30:00+09:00",
+  "posted_at": "2026-10-07T21:30:40.039626+09:00"
 }
