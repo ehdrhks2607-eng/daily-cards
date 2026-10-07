@@ -3,7 +3,7 @@
   "date": "2026-10-08",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "아침 걷기 추위 → 경량 바람막이 DAY 11 [4+5+4+4=17]",
   "sources": [
     "https://datedb.net/calendar/day/20261008/",
@@ -14,6 +14,10 @@
     "text": "아침 걷기 중에 추워서 멈춘 거 나만 그래?\n\n오늘 한로래, 찬 이슬 내린다는 절기\nDAY 11인데 10분 걷고 손이 시렸어\n얇은 바람막이 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 아침에 뭐 걸치고 나가?",
     "comment": "아침에 걷다 추워서 멈추는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0XG1vgXI\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-08T07:30:00+09:00"
+  "result": {
+    "threads": "18371727709208968",
+    "threads_comment": "18186231679416341"
+  },
+  "publish_at": "2026-10-08T07:30:00+09:00",
+  "posted_at": "2026-10-08T07:30:33.703602+09:00"
 }
