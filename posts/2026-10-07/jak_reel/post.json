@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "아침 편의점 지출 → 단백질 쉐이크 (jak_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -31,6 +31,9 @@
     "caption": "아침 편의점값 합쳐보신 적 있으세요?\n저는 이번 달에만 6만 6천 원이 나왔어요.\n이번 주는 3일만 아침을 챙겨보려고 해요.\n\n골라둔 단백질 쉐이크는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #아침식사 #편의점 #습관만들기 #식단",
     "video": "reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-07T19:30:00+09:00"
+  "result": {
+    "reel": "18643823578045518"
+  },
+  "publish_at": "2026-10-07T19:30:00+09:00",
+  "posted_at": "2026-10-07T19:30:37.500122+09:00"
 }
