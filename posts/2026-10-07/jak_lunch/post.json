@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "아침 편의점 지출 → 단백질 쉐이크 [4+5+5+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -15,6 +15,10 @@
     "comment": "아침 챙기고 싶은데 시간 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLlM3xnRQ\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-07T12:30:00+09:00"
+  "result": {
+    "threads": "18079199039716191",
+    "threads_comment": "18098355572183734"
+  },
+  "publish_at": "2026-10-07T12:30:00+09:00",
+  "posted_at": "2026-10-07T12:31:16.599780+09:00"
 }
