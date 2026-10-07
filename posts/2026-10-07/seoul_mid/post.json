@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "일교차 겉옷 A vs B [5+5+5+0=15→mid]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,9 @@
     "text": "아침 겉옷 챙기기 vs 그냥 나가기\n너는 어느 쪽이야?\n\n난 낮엔 덥겠지 하고 그냥 나가는 쪽인데\n저녁에 후회하는 날이 일주일에 두세 번이야\n일교차 10도 넘는 날엔 가방에 넣는 게 답인 거 같애\n\n다들 어떻게 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-07T11:00:00+09:00"
+  "result": {
+    "threads": "18101866412036589"
+  },
+  "publish_at": "2026-10-07T11:00:00+09:00",
+  "posted_at": "2026-10-07T11:00:45.292066+09:00"
 }
