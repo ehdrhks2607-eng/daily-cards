@@ -3,7 +3,7 @@
   "date": "2026-10-07",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "걷기 놓친 날 밤 스트레칭 → 요가매트 DAY 10 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/short-term.do",
@@ -14,6 +14,10 @@
     "text": "밤 10시에 스트레칭 15분 했어\n\nDAY 10, 오늘 걸음은 놓쳤으니까\n바닥에서 목이랑 허리만 풀었어\n맨바닥은 무릎이 아파서 요가매트 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 운동 놓친 날 뭐 해?",
     "comment": "집에서 바닥 운동할 때 무릎 아픈 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-07T21:00:00+09:00"
+  "result": {
+    "threads": "18146559700604335",
+    "threads_comment": "18389723485162454"
+  },
+  "publish_at": "2026-10-07T21:00:00+09:00",
+  "posted_at": "2026-10-07T21:00:45.715603+09:00"
 }
