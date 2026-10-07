@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-08",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 집콕 vs 외출 A vs B [4+5+5+0=14→mid]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261008/",
+    "https://www.ytn.co.kr/_ln/0108_202610010907230721",
+    "https://futurechosun.com/?p=161786"
+  ],
+  "threads": {
+    "text": "연휴 집콕 vs 밖으로, 너는 어느 쪽이야?\n\n난 첫날은 무조건 누워 있는 쪽이야\n둘째 날 되면 죄책감 올라와서 억지로 나가고\n이번엔 내일 하루만 푹 쉬고 토요일에 걷기로 정했어\n\n다들 연휴에 어떻게 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-08T10:30:00+09:00"
+}

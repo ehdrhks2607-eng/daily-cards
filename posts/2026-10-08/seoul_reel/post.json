@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-08",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "점심값 → 보온 도시락통 (seoul_lunch 화제성 18)",
+  "sources": [
+    "https://datedb.net/calendar/day/20261008/",
+    "https://www.ytn.co.kr/_ln/0108_202610010907230721",
+    "https://futurechosun.com/?p=161786"
+  ],
+  "reel": {
+    "hook": "점심값\n*얼마* 썼어?",
+    "count": {
+      "to": 189000,
+      "suffix": "원",
+      "label": "이번 달 점심값"
+    },
+    "pain": "하루 9천 원씩\n21일 치야",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "주 2번 도시락",
+      "전날 밤 밥 해두기",
+      "반찬 한 가지만"
+    ],
+    "item": "도시락통",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *도시락통*은\n프로필 링크에",
+    "caption": "한 달 점심값 계산해 보신 적 있으세요?\n저는 이번 달에만 18만 9천 원이 나왔어요.\n주 2번은 도시락을 싸 가보려고 해요.\n\n골라둔 도시락통은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #점심값 #직장인 #도시락 #절약",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-08T20:00:00+09:00"
+}

@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-08",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "야식비 → 닭가슴살 (jak_lunch 화제성 18)",
+  "sources": [
+    "https://datedb.net/calendar/day/20261008/",
+    "https://www.ytn.co.kr/_ln/0108_202610010907230721",
+    "https://futurechosun.com/?p=161786"
+  ],
+  "reel": {
+    "hook": "야식비\n*얼마* 썼어?",
+    "count": {
+      "to": 72000,
+      "suffix": "원",
+      "label": "이번 달 야식비"
+    },
+    "pain": "한 번에 1만 8천 원\n네 번 시켰어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "야식비 합계 내기",
+      "냉동실 먼저 채우기",
+      "데워 먹는 단백질"
+    ],
+    "item": "닭가슴살",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *닭가슴살*은\n프로필 링크에",
+    "series": "DAY 11",
+    "caption": "야식비 한 달 치 합쳐보신 적 있으세요?\n저는 이번 달에만 7만 2천 원이 나왔어요.\n연휴 3일은 냉동실부터 채워보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #야식 #연휴 #습관만들기 #식단",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-08T19:30:00+09:00"
+}

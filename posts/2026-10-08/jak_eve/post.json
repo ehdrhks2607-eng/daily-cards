@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-08",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "계단 대신 엘리베이터 실패 고백 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261008/",
+    "https://www.ytn.co.kr/_ln/0108_202610010907230721",
+    "https://futurechosun.com/?p=161786"
+  ],
+  "threads": {
+    "text": "오늘 퇴근길에 계단 대신 엘리베이터 탔어\n\nDAY 11 걷기는 아침에 했는데\n저녁 되니까 다리가 말을 안 듣더라\n하나 해냈으면 됐다고 생각하는 중이야\n\n너는 하나만 해도 뿌듯해? 아쉬워?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-08T18:30:00+09:00"
+}

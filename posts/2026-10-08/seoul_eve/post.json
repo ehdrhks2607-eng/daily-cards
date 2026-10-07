@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-08",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 전날 월요일 걱정 공감 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261008/",
+    "https://www.ytn.co.kr/_ln/0108_202610010907230721",
+    "https://futurechosun.com/?p=161786"
+  ],
+  "threads": {
+    "text": "연휴 전날인데 벌써 월요일이 걱정돼\n\n퇴근길 지하철에서 문득 생각났어\n3일 쉬고 나면 출근 리듬이 또 깨질 거 같애\n지난 연휴 끝엔 월요일 아침에 알람을 세 번 껐거든\n이번엔 일요일 밤 12시 전에 눕는 게 목표야\n\n너는 연휴 끝나고 적응 며칠 걸려?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-08T18:00:00+09:00"
+}
