@@ -3,7 +3,7 @@
   "date": "2026-10-08",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 본가 vs 서울 남기 A vs B [5+5+5+0=15→mid]",
   "sources": [
     "https://datedb.net/calendar/day/20261008/",
@@ -14,6 +14,9 @@
     "text": "연휴 본가 vs 서울 남기, 너는 어느 쪽이야?\n\n난 이번엔 서울에 남는 쪽이야\n차 막히는 거 생각하면 가는 길에 반이 지나가거든\n대신 전화 길게 하는 걸로 퉁치는 중이야\n\n다들 어디서 보내?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-08T11:00:00+09:00"
+  "result": {
+    "threads": "17903321586598192"
+  },
+  "publish_at": "2026-10-08T11:00:00+09:00",
+  "posted_at": "2026-10-08T11:00:45.321760+09:00"
 }
