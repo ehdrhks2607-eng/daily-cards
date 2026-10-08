@@ -3,7 +3,7 @@
   "date": "2026-10-08",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "점심값 지출 → 보온 도시락통 [4+5+5+4=18]",
   "sources": [
     "https://datedb.net/calendar/day/20261008/",
@@ -15,6 +15,10 @@
     "comment": "점심값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLY3eFj7Q\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-08T13:00:00+09:00"
+  "result": {
+    "threads": "18026557763699655",
+    "threads_comment": "17971539495176343"
+  },
+  "publish_at": "2026-10-08T13:00:00+09:00",
+  "posted_at": "2026-10-08T13:00:44.561575+09:00"
 }
