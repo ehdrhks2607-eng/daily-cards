@@ -3,7 +3,7 @@
   "date": "2026-10-08",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "연휴 앞 야식비 지출 → 닭가슴살 DAY 11 [4+5+5+4=18]",
   "sources": [
     "https://datedb.net/calendar/day/20261008/",
@@ -15,6 +15,10 @@
     "comment": "연휴에 야식 시킬까 고민되는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-08T12:30:00+09:00"
+  "result": {
+    "threads": "18122398459907220",
+    "threads_comment": "17898030960607179"
+  },
+  "publish_at": "2026-10-08T12:30:00+09:00",
+  "posted_at": "2026-10-08T12:30:39.207851+09:00"
 }
