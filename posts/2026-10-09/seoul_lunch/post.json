@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-09",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "편의점 도시락값 지출 → 즉석밥 [4+5+5+4=18]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "threads": {
+    "text": "이번 달 편의점 도시락값만 8만 4천 원이야\n\n하루 6천 원씩 14번 사 먹었더라\n연휴 3일은 집에서 해결하자고 마음먹었는데\n반찬 만드는 건 자신 없어서 밥이라도 쟁여두려고\n\n그래서 즉석밥 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 연휴 끼니 어떻게 해?",
+    "comment": "연휴 끼니 값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1bZgLA5Y\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-09T13:00:00+09:00"
+}

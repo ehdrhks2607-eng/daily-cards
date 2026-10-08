@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-09",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 계획 0개 실패 고백 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "threads": {
+    "text": "연휴 계획 3개 세웠는데 0개 했어\n\n빨래, 장보기, 서랍 정리\n오늘 해야지 했는데 소파에서 안 일어났어\n저녁 6시 되니까 하루가 끝난 느낌이야\n그래도 내일 하나만 하면 된다고 생각하는 중이야\n내일로 미루는 게 제일 쉬운 생존인듯\n\n너는 쉬는 날 계획 몇 개나 해내?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-09T18:00:00+09:00"
+}

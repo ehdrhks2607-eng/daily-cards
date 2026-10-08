@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-09",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 늦잠 vs 일찍 기상 A vs B [5+5+5+0=15→mid]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "threads": {
+    "text": "연휴 첫날 늦잠 vs 일찍 기상, 너는?\n\n난 평소 시간에 눈이 먼저 떠지는데\n억울해서 다시 누워버리는 쪽이야\n눈 뜨고 폰 보다가 한 시간 가는 건 똑같고\n그러다 11시 되면 하루가 반 지난 느낌이라 좀 허무해\n\n쉬는 날 아침엔 제일 먼저 뭐 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-09T10:30:00+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-09",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "도시락값 → 즉석밥 (seoul_lunch 화제성 18)",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "reel": {
+    "hook": "도시락값\n*얼마* 썼어?",
+    "count": {
+      "to": 84000,
+      "suffix": "원",
+      "label": "이번 달 편의점 도시락"
+    },
+    "pain": "하루 6천 원씩\n14번 사 먹었어",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "도시락값 합계내기",
+      "밥부터 쟁여두기",
+      "반찬은 하나만"
+    ],
+    "item": "즉석밥",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *즉석밥*은\n프로필 링크에",
+    "caption": "한 달 편의점 도시락값 더해보신 적 있으세요?\n저는 이번 달에 8만 4천 원이 나왔어요.\n연휴 3일은 밥부터 쟁여두려고 해요.\n\n골라둔 즉석밥은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #자취 #연휴 #식비절약 #직장인",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-09T20:00:00+09:00"
+}

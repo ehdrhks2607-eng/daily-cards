@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-09",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 첫날 나들이 배터리 → 보조배터리 [5+5+4+4=18]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "threads": {
+    "text": "폰 배터리 27%로 집 나온 거 나만 그래?\n\n오늘 연휴 첫날이라 나들이 가는데\n자기 전에 충전을 깜빡했어\n지도 보고 사진 찍으면 반나절이면 꺼질 거 같애\n지하철 타는 40분 동안에도 10%는 줄어드니까\n보조배터리 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 외출할 때 뭐 꼭 챙겨?",
+    "comment": "나들이 가다 폰 꺼질까 걱정되는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-09T08:00:00+09:00"
+}

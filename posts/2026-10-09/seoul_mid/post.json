@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-09",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 청소 몰아서 vs 조금씩 A vs B [5+5+5+0=15→mid]",
+  "sources": [
+    "https://datedb.net/calendar/day/20261009/",
+    "https://publicholidays.co.kr/ko/hangeul-day/",
+    "https://datedb.net/calendar/holidays/2026/"
+  ],
+  "threads": {
+    "text": "청소 몰아서 vs 매일 조금씩, 너는?\n\n난 쉬는 날에 몰아서 하는 쪽이야\n평일엔 설거지만 해도 대단한 거 같애\n근데 몰아서 하면 2시간 걸려서 쉬는 날이 반쯤 사라져\n그래서 요즘은 토요일 오전 30분만 해보는 중이야\n\n연휴 청소는 언제 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-09T11:00:00+09:00"
+}
