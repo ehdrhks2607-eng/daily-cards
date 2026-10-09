@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-10",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "토요일 일교차 아침 9도 → 요가매트 DAY 13 [나만그래 5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "토요일인데 알람 7시 반인 거 나만 그래?\n\n오늘 아침 기온이 9도래\n이불 밖이 추워서 걷기는 안 나갈 거 같애\n그래서 오늘은 집에서 10분 스트레칭만 해보려고\n바닥에 깔 요가매트 찾아봤어\n리뷰 많은 걸로 담아둠\n\nDAY 13인데 너는 주말 아침에 뭐 해?",
+    "comment": "주말 아침에 집에서 스트레칭하고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-10T08:30:00+09:00"
+}

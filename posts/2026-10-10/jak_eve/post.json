@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-10",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "배달앱 지출 9만 6천 원 돈 고백 [4+5+5+0=14→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "이번 달 배달앱 결제 내역 열어봤어\n\n12번에 9만 6천 원이더라\n퇴근하고 요리할 힘이 없어서 시킨 건데\n합쳐놓고 보니까 좀 놀랐어\n그래도 일주일에 한 번은 만들어 먹어보는 중이야\n\n너는 한 달에 배달 몇 번 시켜?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-10T19:30:00+09:00"
+}

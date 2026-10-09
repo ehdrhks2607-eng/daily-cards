@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-10",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "연휴 후 체중계 3일째 회피 → 체중계 DAY 13 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "체중계 3일째 못 올라갔어\n\n쉬는 동안 먹고 누워만 있었더니\n숫자 보는 게 무서워서 피하는 중이야\n근데 모르는 것도 더 불안하더라\n그래서 매일 같은 시간에 재보려고\n\n기록되는 체중계 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 체중계 얼마나 자주 올라가?",
+    "comment": "체중 기록 꾸준히 해보고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLdodKoDY\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-10T13:30:00+09:00"
+}

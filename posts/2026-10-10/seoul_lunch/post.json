@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-10",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "지난달 카페값 지출 → 텀블러 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "지난달 카페값만 11만 2천 원이야\n\n하루 4천 원씩 28번 마셨더라\n한 잔씩이라 몰랐는데 합치니까 좀 놀랐어\n아예 끊을 자신은 없어서\n내 음료를 챙겨 다니는 쪽으로 바꿔보려고\n\n그래서 텀블러 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 한 달 카페값 얼마쯤 써?",
+    "comment": "카페값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-10T14:00:00+09:00"
+}

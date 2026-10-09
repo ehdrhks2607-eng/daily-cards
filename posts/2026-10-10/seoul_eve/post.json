@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-10",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "토요일 첫 끼 저녁 6시 실패 고백 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "토요일 첫 끼를 저녁 6시에 먹었어\n\n11시에 일어나서 폰만 보다가\n정신 차리니까 해가 지고 있더라\n쉬는 날은 이렇게 순식간에 가는 거 같애\n그래도 내일은 아침에 물 한 잔부터 마셔보려는 중이야\n\n너는 쉬는 날 첫 끼 몇 시에 먹어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-10T19:00:00+09:00"
+}

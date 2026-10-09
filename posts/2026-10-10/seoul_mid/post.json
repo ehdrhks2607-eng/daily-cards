@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-10",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "주말 빨래 토요일 vs 일요일 A vs B [5+5+5+0=15→mid]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "주말 빨래 토요일 vs 일요일, 너는 어느 쪽이야?\n\n난 토요일에 돌리는 쪽이야\n일요일에 하면 마르기 전에 월요일이 오는 느낌이라서\n근데 널어놓고 나가면 하루가 금방 가더라\n오늘은 낮에 25도라 금방 마를 거 같애\n\n너는 빨래 건조대 써 건조기 써?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-10T12:00:00+09:00"
+}

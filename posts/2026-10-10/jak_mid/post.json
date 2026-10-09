@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-10",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "쉬는 날 약속 vs 집콕 A vs B [5+5+5+0=15→mid]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "약속 나가기 vs 집콕, 너는 어느 쪽이야?\n\n난 쉬는 날엔 집에 있고 싶은데\n약속 취소하면 또 마음에 걸리는 쪽이야\n그래서 나가는 날엔 걷기 20분만 끼워 넣는 중이야\n\n쉬는 날은 쉬는 게 맞는지 움직이는 게 맞는지 아직도 헷갈려\n너는 주말에 어떻게 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-10T11:30:00+09:00"
+}

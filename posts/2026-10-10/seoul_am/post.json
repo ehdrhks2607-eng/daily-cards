@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-10",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "일교차 아침 9도 바닥 냉기 → 수면양말 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
+    "https://www.month2k.com/weather/2026-10"
+  ],
+  "threads": {
+    "text": "아침에 맨발로 바닥 밟고 깬 거 나만 그래?\n\n오늘 아침 기온이 9도라는데\n방바닥이 벌써 차갑더라\n보일러 틀기엔 아직 아까워서\n수면양말 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 보일러 언제부터 틀어?",
+    "comment": "아침에 바닥이 차가워서 깨는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1avWGA8W\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-10T09:00:00+09:00"
+}
