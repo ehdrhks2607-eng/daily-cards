@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 점심값 6만 8천 원 → 밀프렙 도시락 용기 (jak_lunch 화제성 18)",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "reel": {
+    "hook": "이번 주\n점심값 *얼마*?",
+    "count": {
+      "to": 68000,
+      "suffix": "원",
+      "label": "이번 주 점심값"
+    },
+    "pain": "5번 사먹었더니\n한 끼 1만 3천 원",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "미리 만들어두기",
+      "소분해서 담기",
+      "3일만 싸가기"
+    ],
+    "item": "도시락 용기",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *도시락 용기*는\n프로필 링크에",
+    "series": "DAY 14",
+    "caption": "이번 주 점심값 더해보신 적 있으세요?\n저는 6만 8천 원이 나왔어요.\n이번엔 일요일에 몇 개만 미리 만들어보려고 해요.\n\n골라둔 도시락 용기는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #도시락 #점심값 #습관만들기 #DAY14",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-11T20:30:00+09:00"
+}

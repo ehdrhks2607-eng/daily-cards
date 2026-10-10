@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 낮잠 vs 산책 A vs B [5+5+5+0=15→mid]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "일요일 낮잠 vs 산책, 너는 어느 쪽이야?\n\n난 낮잠 자고 싶은데\n자고 일어나면 해가 져 있어서 아쉽더라\n그래서 낮잠 30분만 자고 나가보는 중이야\n\n일요일은 푹 쉬는 게 맞는지 움직이는 게 맞는지 아직도 모르겠어\n너는 어떻게 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-11T11:30:00+09:00"
+}

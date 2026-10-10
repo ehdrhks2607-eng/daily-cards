@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-11",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 출근길 정류장 12분 → 충전식 손난로 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "아침 정류장 12분 손 시린 거 나만 그래?\n\n낮엔 따뜻한데 아침저녁엔 쌀쌀한 요즘\n장갑 끼기엔 아직 이른 거 같고\n주머니에 손 넣고 서 있는 게 전부야\n\n내일 월요일이라 충전식 손난로 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 출근길에 뭐 챙겨?",
+    "comment": "출근길 정류장에서 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-11T14:00:00+09:00"
+}

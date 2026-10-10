@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-11",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "환절기 이불 교체 → 이불 압축팩 A vs B [5+5+5+4=19]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "여름 이불 vs 겨울 이불, 너는 지금 뭐 덮어?\n\n난 아직 얇은 이불 덮는데\n새벽엔 좀 춥고 낮엔 덥더라\n겨울 이불 꺼내려니\n여름 이불 넣을 데가 없어서 미루는 중이야\n압축팩 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 이불 언제 바꿔?",
+    "comment": "원룸에 이불 둘 자리가 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4qvuqT6G\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-11T09:00:00+09:00"
+}

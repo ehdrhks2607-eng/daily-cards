@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 저녁 냉장고 텅 빔 나만그래 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "냉장고 열었는데 텅 빈 거 나만 그래?\n\n장 보러 가기엔 귀찮고\n배달은 이번 주에 이미 많이 시켰고\n결국 계란 두 개 꺼내서 대충 때웠어\n그래도 내일은 하나라도 챙겨 먹어보려는 중이야\n\n너는 일요일 저녁 뭐 먹어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-11T19:30:00+09:00"
+}

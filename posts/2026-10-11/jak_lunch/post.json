@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 점심값 6만 8천 원 → 밀프렙 도시락 용기 DAY 14 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "이번 주 점심값만 6만 8천 원 나왔어\n\n5번 사먹었는데 한 끼에 1만 3천 원쯤이더라\n하나씩 계산할 땐 몰랐는데 합치니까 좀 놀랐어\n그래서 일요일에 몇 개만 미리 만들어두려고\n\n소분해서 담을 밀프렙 용기 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 일주일 점심값 얼마쯤 써?",
+    "comment": "점심값 줄여보고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-11T13:30:00+09:00"
+}

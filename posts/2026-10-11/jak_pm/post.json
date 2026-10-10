@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "내일 할 일 3개 적는 데 20분 → 2027 다이어리 DAY 14 [5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "내일 할 일 3개 적는 데 20분 걸렸어\n\n적다 보니 자꾸 욕심이 나서\n지웠다 썼다만 하고 있더라\n그래서 한 줄에 하나씩, 딱 3개만 적어보려고\n\n2027 다이어리 찾아봤어\n리뷰 많은 걸로 담아둠\n\nDAY 14 마무리, 너는 월요일 계획 세워놔?",
+    "comment": "할 일 적어두면 마음이 편해지는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI44OpwuI0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-11T22:00:00+09:00"
+}

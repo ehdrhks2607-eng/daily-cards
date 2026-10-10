@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-11",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 낮 12시 기상 실패고백 [4+5+4+0=13→mid]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "일요일 낮 12시에 일어났어\n\n알람은 8시에 맞춰놨는데\n끄고 다시 눕다가 이렇게 됐더라\n쉬는 날은 아침이 없는 거 같애\n그래도 오후에는 빨래부터 돌려보는 중이야\n\n너는 일요일에 몇 시에 일어나?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-11T12:00:00+09:00"
+}

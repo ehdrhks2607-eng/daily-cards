@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-11",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 출근옷 미리 vs 아침에 A vs B [5+5+5+0=15→eve]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "출근옷 전날 꺼내놓기 vs 아침에 정하기, 너는 어느 쪽이야?\n\n난 아침에 정하는 쪽인데\n거울 앞에서 10분 넘게 서 있을 때가 많아\n일교차 큰 요즘은 더 헷갈리더라\n오늘은 내일 입을 거 하나만 걸어두려는 중이야\n\n너는 어떻게 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-11T19:00:00+09:00"
+}

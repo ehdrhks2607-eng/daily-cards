@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-11",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "일교차 큰 일요일 아침 → 경량 바람막이 DAY 14 [실패고백 5+5+4+4=18]",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
+    "https://www.ytn.co.kr/_ln/0108_202610090347089890"
+  ],
+  "threads": {
+    "text": "걷기 DAY 14인데 이불에서 못 나왔어\n\n오늘도 일교차가 크대\n아침엔 쌀쌀해서 나갈 엄두가 안 나더라\n가볍게 걸칠 바람막이 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 일요일 아침에 나가?",
+    "comment": "쌀쌀한 아침에 걷기 나가고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0XG1vgXI\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-11T08:30:00+09:00"
+}
