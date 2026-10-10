@@ -3,7 +3,7 @@
   "date": "2026-10-10",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "밤마다 따뜻한 물 → 전기포트 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
@@ -13,6 +13,10 @@
     "text": "밤마다 따뜻한 물 찾는 거 나만 그래?\n\n밤 10시에 몸이 으슬으슬해서\n냄비 꺼내 끓이려니 귀찮아서 그냥 찬물 마셨어\n낮엔 25도인데 밤엔 확 쌀쌀한 날이라 그런 거 같애\n물 금방 끓이는 전기포트 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 자기 전에 따뜻한 거 마셔?",
     "comment": "자기 전에 따뜻한 물 한 잔 하고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq05Ff5tlI\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-10T22:30:00+09:00"
+  "result": {
+    "threads": "18261522043314886",
+    "threads_comment": "18008958870002941"
+  },
+  "publish_at": "2026-10-10T22:30:00+09:00",
+  "posted_at": "2026-10-10T22:30:38.199908+09:00"
 }
