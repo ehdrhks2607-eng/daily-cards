@@ -3,7 +3,7 @@
   "date": "2026-10-10",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "스트레칭 5분 실패 → 폼롤러 DAY 13 [4+5+4+4=17]",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
@@ -13,6 +13,10 @@
     "text": "스트레칭 5분도 못 채우고 멈췄어\n\n하루 종일 앉아 있었더니\n밤 9시에 종아리가 뭉쳤더라\n누워서 굴리기만 하면 되는 폼롤러 찾아봤어\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n내일 DAY 14에 이어서 해볼게\n너는 자기 전에 몸 풀어?",
     "comment": "자기 전에 몸 풀고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLjBPQZoW\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-10T22:00:00+09:00"
+  "result": {
+    "threads": "18287672719291359",
+    "threads_comment": "18036542171655790"
+  },
+  "publish_at": "2026-10-10T22:00:00+09:00",
+  "posted_at": "2026-10-10T22:00:44.622181+09:00"
 }
