@@ -3,7 +3,7 @@
   "date": "2026-10-10",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "체중계 3일째 회피 → 체중계 (jak_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
@@ -30,6 +30,9 @@
     "caption": "체중계 올라가기 미루고 계신 분 계세요?\n저는 3일째 피하고 있어요.\n이번엔 같은 시간에 재는 것부터 해보려고 해요.\n\n골라둔 체중계는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #체중관리 #습관만들기 #다이어트 #주말",
     "video": "reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-10T20:30:00+09:00"
+  "result": {
+    "reel": "18097318538354854"
+  },
+  "publish_at": "2026-10-10T20:30:00+09:00",
+  "posted_at": "2026-10-10T20:30:37.320698+09:00"
 }
