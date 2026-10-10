@@ -3,7 +3,7 @@
   "date": "2026-10-10",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "지난달 카페값 지출 → 텀블러 [5+5+4+4=18]",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
@@ -14,6 +14,10 @@
     "comment": "카페값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-10T14:00:00+09:00"
+  "result": {
+    "threads": "17891676687447879",
+    "threads_comment": "18478625773117409"
+  },
+  "publish_at": "2026-10-10T14:00:00+09:00",
+  "posted_at": "2026-10-10T14:00:44.558508+09:00"
 }
