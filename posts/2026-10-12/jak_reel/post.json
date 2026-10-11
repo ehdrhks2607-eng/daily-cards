@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-12",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "편의점 음료값 1만 4천 원 → 대용량 물병 (jak_lunch 화제성 18)",
+  "sources": [
+    "https://www.segye.com/newsView/20261010503694",
+    "https://biz.heraldcorp.com/article/10898199"
+  ],
+  "reel": {
+    "hook": "음료값\n*얼마* 썼어?",
+    "count": {
+      "to": 14000,
+      "suffix": "원",
+      "label": "일주일 편의점 음료값"
+    },
+    "pain": "하루 2천 원씩\n7번 샀더라",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "음료값 합쳐보기",
+      "물병 챙겨 나가기",
+      "3일만 물 마시기"
+    ],
+    "item": "물병",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *물병*은\n프로필 링크에",
+    "series": "DAY 15",
+    "caption": "일주일 음료값 더해보신 적 있으세요?\n저는 1만 4천 원이 나왔어요.\n이번엔 물을 챙겨 다니는 것부터 해보려고 해요.\n\n골라둔 물병은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #물마시기 #음료값 #습관만들기 #DAY15",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-12T19:30:00+09:00"
+}

@@ -1,0 +1,34 @@
+{
+  "account": "seoul",
+  "date": "2026-10-12",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 점심 4만 5천 원 → 보온 도시락 (seoul_lunch 화제성 19)",
+  "sources": [
+    "https://www.segye.com/newsView/20261010503694",
+    "https://biz.heraldcorp.com/article/10898199"
+  ],
+  "reel": {
+    "hook": "점심값\n*얼마* 나왔어?",
+    "count": {
+      "to": 45000,
+      "suffix": "원",
+      "label": "5일 사먹은 점심값"
+    },
+    "pain": "한 끼 9천 원씩\n5일 사먹었어",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "싸갈 날 정하기",
+      "전날 밤 담아두기",
+      "이틀만 싸가기"
+    ],
+    "item": "도시락통",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *도시락통*은\n프로필 링크에",
+    "caption": "지난주 점심값 더해보신 적 있으세요?\n저는 5일에 4만 5천 원이 나왔어요.\n이번 주는 이틀만 싸가보려고 해요.\n\n골라둔 도시락통은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #점심값 #도시락 #직장인 #절약",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-12T20:00:00+09:00"
+}

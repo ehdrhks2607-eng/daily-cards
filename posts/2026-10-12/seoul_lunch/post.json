@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-12",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 점심 사먹기 vs 도시락 A vs B 4만 5천 원 → 보온 도시락 [5+5+5+4=19]",
+  "sources": [
+    "https://www.segye.com/newsView/20261010503694",
+    "https://biz.heraldcorp.com/article/10898199"
+  ],
+  "threads": {
+    "text": "점심 사먹기 vs 도시락, 너는 어느 쪽이야?\n\n난 지난주 내내 사먹는 쪽이었는데\n한 끼 9천 원씩 5일이면 4만 5천 원이더라\n그래서 이번 주는 이틀만 싸가보려고\n\n보온되는 도시락 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 점심 어떻게 해?",
+    "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4xtBjfLU\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-12T13:00:00+09:00"
+}

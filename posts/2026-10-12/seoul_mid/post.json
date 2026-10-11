@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-12",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 출근길 편의점 지출 돈 고백 [5+5+4+0=14→mid]",
+  "sources": [
+    "https://www.segye.com/newsView/20261010503694",
+    "https://biz.heraldcorp.com/article/10898199"
+  ],
+  "threads": {
+    "text": "월요일 아침에 편의점에서 또 4천 원 썼어\n\n커피랑 삼각김밥 하나 집었는데\n계산하니까 4천 원이더라\n한 번은 별거 아닌데 주 5번이면 2만 원이야\n그래서 내일은 집에서 챙겨 나가보려는 중이야\n\n너는 출근길에 뭐 사 먹어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-12T11:00:00+09:00"
+}

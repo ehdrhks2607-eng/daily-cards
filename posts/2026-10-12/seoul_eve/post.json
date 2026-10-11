@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-12",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 퇴근길 비 나만그래 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://www.segye.com/newsView/20261010503694",
+    "https://biz.heraldcorp.com/article/10898199"
+  ],
+  "threads": {
+    "text": "퇴근길에 신발 젖는 거 나만 그래?\n\n비 올 거라 해서 운동화 신고 나왔는데\n정류장까지 뛰었더니 양말까지 젖었어\n내일도 비 온다는데 신발 두 켤레 돌려 신는 중이야\n\n너는 비 오는 날 뭐 신어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-12T18:00:00+09:00"
+}
