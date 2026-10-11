@@ -3,7 +3,7 @@
   "date": "2026-10-10",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "expired",
   "issue": "지난달 카페값 → 텀블러 (seoul_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610060600_108.pdf",
