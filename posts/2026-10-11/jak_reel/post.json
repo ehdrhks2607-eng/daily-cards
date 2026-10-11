@@ -3,7 +3,7 @@
   "date": "2026-10-11",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 주 점심값 6만 8천 원 → 밀프렙 도시락 용기 (jak_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
@@ -30,6 +30,9 @@
     "caption": "이번 주 점심값 더해보신 적 있으세요?\n저는 6만 8천 원이 나왔어요.\n이번엔 일요일에 몇 개만 미리 만들어보려고 해요.\n\n골라둔 도시락 용기는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #도시락 #점심값 #습관만들기 #DAY14",
     "video": "reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-11T20:30:00+09:00"
+  "result": {
+    "reel": "18644384845035810"
+  },
+  "publish_at": "2026-10-11T20:30:00+09:00",
+  "posted_at": "2026-10-11T20:30:36.091209+09:00"
 }
