@@ -3,7 +3,7 @@
   "date": "2026-10-11",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "expired",
   "issue": "월요일 출근길 정류장 12분 → 충전식 손난로 (seoul_lunch 화제성 18)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202610071700_108.pdf",
