@@ -3,7 +3,7 @@
   "date": "2026-10-12",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "편의점 음료값 1만 4천 원 돈 고백 → 대용량 물병 DAY 15 [5+5+4+4=18]",
   "sources": [
     "https://www.segye.com/newsView/20261010503694",
@@ -14,6 +14,10 @@
     "comment": "물 마시는 습관 만들고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-12T12:30:00+09:00"
+  "result": {
+    "threads": "18046018400827476",
+    "threads_comment": "18167028601485239"
+  },
+  "publish_at": "2026-10-12T12:30:00+09:00",
+  "posted_at": "2026-10-12T12:30:37.956359+09:00"
 }
