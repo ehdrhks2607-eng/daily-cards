@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-13",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "오전 점심 메뉴 고민 나만그래 [3+5+5+0=13→mid]",
+  "sources": [
+    "https://biz.sbs.co.kr/amp/article/20000338286",
+    "https://www.ytn.co.kr/_ln/0108_202609301632157210"
+  ],
+  "threads": {
+    "text": "오전 11시부터 점심 메뉴 고민하는 거 나만 그래?\n\n후보 3개 놓고 10분 쓰다가\n결국 늘 먹던 걸로 가더라\n그래서 전날 밤에 미리 정해놓는 걸 해보는 중이야\n생각보다 마음이 편한 거 같애\n\n너는 메뉴 어떻게 골라?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-13T11:00:00+09:00"
+}
