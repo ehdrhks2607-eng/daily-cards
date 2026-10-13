@@ -3,7 +3,7 @@
   "date": "2026-10-13",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "운동 아침형 vs 저녁형 A vs B [3+5+5+0=13→mid]",
   "sources": [
     "https://biz.sbs.co.kr/amp/article/20000338286",
@@ -13,6 +13,9 @@
     "text": "운동은 아침형 vs 저녁형, 너는 어느 쪽이야?\n\n난 늘 저녁에 하겠다고 하는데\n퇴근하면 열 번 중 일곱 번은 못 해\n그래서 점심 먹고 5분 걷기부터 해보는 중이야\n\n아침에 하는 사람들은 진짜 어떻게 하는 건지 모르겠어\n너는 운동 언제 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-13T10:30:00+09:00"
+  "result": {
+    "threads": "18355578184171467"
+  },
+  "publish_at": "2026-10-13T10:30:00+09:00",
+  "posted_at": "2026-10-13T10:30:36.420404+09:00"
 }
