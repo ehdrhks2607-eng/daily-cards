@@ -3,7 +3,7 @@
   "date": "2026-10-13",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "퇴근길 지하철 40분 서서 나만그래 [4+5+4+0=13→eve]",
   "sources": [
     "https://biz.sbs.co.kr/amp/article/20000338286",
@@ -13,6 +13,9 @@
     "text": "퇴근길에 40분 서서 오는 거 나만 그래?\n\n앉을 자리는 없고\n폰 보다가 내릴 역 지나칠 뻔했어\n그래서 요즘은 한 정거장 전에 내려서 걷는 중이야\n\n너는 퇴근길에 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-13T18:00:00+09:00"
+  "result": {
+    "threads": "18446822665131933"
+  },
+  "publish_at": "2026-10-13T18:00:00+09:00",
+  "posted_at": "2026-10-13T18:00:46.618981+09:00"
 }
