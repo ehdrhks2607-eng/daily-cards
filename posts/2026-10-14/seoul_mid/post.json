@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-14",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "오전 커피 두 잔 나만그래 [3+5+5+0=13→mid]",
+  "sources": [
+    "https://inews24.com/view/2003990",
+    "https://biz.sbs.co.kr/amp/article/20000334332"
+  ],
+  "threads": {
+    "text": "커피 두 잔 마신 날 잠 설친 거 나만 그래?\n\n어제 새벽 1시까지 천장만 봤어\n그래서 오늘은 두 잔째를 따뜻한 물로 바꿔보는 중이야\n\n너는 커피 몇 시까지 마셔?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-14T11:00:00+09:00"
+}

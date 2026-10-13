@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-14",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "출근길 폰 배터리 12% 나만그래 → 보조배터리 [4+5+4+4=17]",
+  "sources": [
+    "https://inews24.com/view/2003990",
+    "https://biz.sbs.co.kr/amp/article/20000334332"
+  ],
+  "threads": {
+    "text": "출근길에 폰 배터리 12%인 거 나만 그래?\n\n어젯밤 충전을 깜빡해서\n지하철 40분 내내 불안했어\n그래서 가방에 넣어둘 보조배터리 찾아봤어\n리뷰 많은 걸로 담아둠\n\n너는 배터리 몇 %로 나가?",
+    "comment": "출근길에 배터리 자꾸 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-14T08:00:00+09:00"
+}

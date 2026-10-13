@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-14",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "퇴근 후 장보기 미룸 실패고백 [4+5+4+0=13→eve]",
+  "sources": [
+    "https://inews24.com/view/2003990",
+    "https://biz.sbs.co.kr/amp/article/20000334332"
+  ],
+  "threads": {
+    "text": "퇴근하고 장보기 3일 미루다 냉장고가 텅 비었어\n\n오늘도 마트 앞까지 갔다가\n짐 들 생각에 그냥 돌아왔어\n그래서 내일은 딱 두 가지만 사 오는 걸로 정해둔 중이야\n\n너는 장 언제 봐?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-14T18:00:00+09:00"
+}
