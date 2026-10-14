@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-15",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "목요일 금요일병 나만그래 [3+5+5+0=13→mid]",
+  "sources": [
+    "https://www.ajunews.com/view/20261014180430536",
+    "https://www.newspim.com/news/view/20261013000664"
+  ],
+  "threads": {
+    "text": "목요일인데 벌써 금요일 같은 거 나만 그래?\n\n달력 보면 아직 하루 더 남았는데\n마음은 이미 퇴근 후 치킨 쪽에 가 있어\n\n나는 오늘 점심에 산책 한 바퀴로 버텨보는 중이야\n\n너는 목요일 어떻게 버텨?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-15T11:00:00+09:00"
+}

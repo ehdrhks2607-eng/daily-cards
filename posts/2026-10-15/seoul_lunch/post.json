@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-15",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "전기요 vs 보일러 A vs B 가스비 8만 4천 원 → 1인용 전기요 [5+5+5+5=20]",
+  "sources": [
+    "https://www.ajunews.com/view/20261014180430536",
+    "https://www.newspim.com/news/view/20261013000664"
+  ],
+  "threads": {
+    "text": "전기요 켤까 vs 보일러 켤까\n\n아침이 3도까지 내려가니까 슬슬 고민돼\n작년 12월 가스비가 8만 4천 원 나왔었거든\n보일러를 하루 종일 돌린 탓 같애\n\n그래서 이번엔 1인용 전기요 리뷰 많은 걸로 담아둠\n\n너는 어느 쪽이야?",
+    "comment": "난방비 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4oVL8aib\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-15T13:00:00+09:00"
+}
