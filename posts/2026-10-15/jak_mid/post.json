@@ -3,7 +3,7 @@
   "date": "2026-10-15",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "점심 걷기 A vs B [3+5+5+0=13→mid]",
   "sources": [
     "https://www.ajunews.com/view/20261014180430536",
@@ -13,6 +13,9 @@
     "text": "점심에 10분 걷기 vs 그냥 앉아 쉬기\n\n나는 늘 앉아 쉬는 쪽이었어\n오전 내내 앉아 있었는데도 또 앉는 거지\n\n이번 주부터 점심에 10분만 걸어보는 중이야\n오후 2시 졸음이 조금 덜한 거 같애\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-15T10:30:00+09:00"
+  "result": {
+    "threads": "17968632467965262"
+  },
+  "publish_at": "2026-10-15T10:30:00+09:00",
+  "posted_at": "2026-10-15T10:30:37.571733+09:00"
 }
