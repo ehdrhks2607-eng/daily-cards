@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-16",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "아침 14도·낮 23도 + 카페 커피값 → 텀블러 [A vs B·돈]",
+  "sources": [
+    "https://www.dt.co.kr/article/12089443",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=92640"
+  ],
+  "threads": {
+    "text": "카페 커피 vs 텀블러, 너는 어느 쪽이야?\n\n오늘 아침 14도에 낮 23도래\n따뜻한 커피 사 들고 가면 하루 4,500원씩이더라\n한 달이면 9만 원이라 좀 놀랐어\n\n텀블러 리뷰 많은 걸로 찾아봤어\n\n너는 한 달 커피값 얼마나 써?",
+    "comment": "출근길 커피값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-16T08:00:00+09:00"
+}

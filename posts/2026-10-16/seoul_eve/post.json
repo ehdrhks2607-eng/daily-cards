@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-16",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "주말 할 일 반도 못 함 [실패고백]",
+  "sources": [
+    "https://www.dt.co.kr/article/12089443",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=92640"
+  ],
+  "threads": {
+    "text": "주말에 하려던 거 또 반도 못 했어\n\n금요일 퇴근길엔 늘 의욕이 넘치거든\n일요일 밤에 보면 항상 8개가 남아 있어\n\n이번 주말엔 3개만 적어보는 중이야\n청소 하나, 밥 해먹기 하나, 그리고 아무것도 안 하기\n\n너는 주말에 하고 싶은 거 몇 개 적어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-16T18:00:00+09:00"
+}

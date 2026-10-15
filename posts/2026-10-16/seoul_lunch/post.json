@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-16",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "건조비 1만 2천 원 돈고백 → 실내 빨래건조대",
+  "sources": [
+    "https://www.dt.co.kr/article/12089443",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=92640"
+  ],
+  "threads": {
+    "text": "빨래 건조비로만 이번 달 1만 2천 원 썼어\n\n코인세탁방 건조기 한 번에 3천 원, 4번 갔더라\n오늘 구름 많은 날이라 잘 안 마를 거 같고\n원룸이라 널 데도 없어서\n\n그래서 접히는 실내 빨래건조대 리뷰 많은 걸로 담아둠\n\n너는 빨래 어떻게 말려?",
+    "comment": "빨래 말릴 데 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4s2YGvtY\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-16T13:00:00+09:00"
+}
