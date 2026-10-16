@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-17",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "주말 집콕 vs 나가기 [A vs B]",
+  "sources": [
+    "https://www.ajunews.com/view/20261016172402496",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801439",
+    "https://news.tf.co.kr/read/livingculture/2377397.htm"
+  ],
+  "threads": {
+    "text": "주말 집콕 vs 나가기, 너는 어느 쪽이야?\n\n오늘 아침 13도에 낮 27도라 어정쩡한 날씨야\n나가고 싶긴 한데 오후에 바람 분다 해서 고민 중이고\n\n일단 점심 먹고 정하려고 미루는 중\n내일은 비라서 오늘이 기회인 건 아는데\n\n너는 오늘 집이야 밖이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-17T12:00:00+09:00"
+}

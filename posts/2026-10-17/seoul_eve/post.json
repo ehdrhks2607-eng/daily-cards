@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-17",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "주말 청소하려다 유튜브 3시간 [실패고백]",
+  "sources": [
+    "https://www.ajunews.com/view/20261016172402496",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801439",
+    "https://news.tf.co.kr/read/livingculture/2377397.htm"
+  ],
+  "threads": {
+    "text": "주말 청소하려다 유튜브 3시간 봄\n\n세탁기 돌리고 바닥만 닦으려 했거든\n정신 차려보니 저녁이고 먼지는 그대로야\n내일 비 오면 또 못 할 거 같애\n\n그래도 세탁기는 돌렸으니까 반은 한 걸로 치는 중\n\n너는 오늘 하려던 거 했어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-17T19:00:00+09:00"
+}

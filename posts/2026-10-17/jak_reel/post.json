@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-17",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "헬스장 3만 9천 원 → 요가매트 (jak_lunch)",
+  "sources": [
+    "https://www.ajunews.com/view/20261016172402496",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008801439",
+    "https://news.tf.co.kr/read/livingculture/2377397.htm"
+  ],
+  "reel": {
+    "hook": "헬스장 한 달\n*얼마* 냈게?",
+    "count": {
+      "to": 39000,
+      "suffix": "원",
+      "label": "이번 달 헬스장비"
+    },
+    "pain": "3번 가서\n한 번에 1만 3천 원꼴",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "매트부터 깔기",
+      "10분만 스트레칭",
+      "비 와도 집에서"
+    ],
+    "item": "요가매트",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *요가매트*는\n프로필 링크에",
+    "caption": "운동 등록하고 몇 번 가보셨어요?\n이번 달 헬스장비가 3만 9천 원이었는데 3번 갔어요.\n이번엔 집에서 3일만 해보려고 해요.\n\n골라둔 요가매트는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #요가매트 #습관 #운동",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-17T20:30:00+09:00"
+}
