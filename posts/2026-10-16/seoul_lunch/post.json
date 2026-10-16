@@ -3,7 +3,7 @@
   "date": "2026-10-16",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "건조비 1만 2천 원 돈고백 → 실내 빨래건조대",
   "sources": [
     "https://www.dt.co.kr/article/12089443",
@@ -14,6 +14,10 @@
     "comment": "빨래 말릴 데 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4s2YGvtY\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-16T13:00:00+09:00"
+  "result": {
+    "threads": "18032237825889533",
+    "threads_comment": "18002032820807044"
+  },
+  "publish_at": "2026-10-16T13:00:00+09:00",
+  "posted_at": "2026-10-16T13:00:48.454701+09:00"
 }
