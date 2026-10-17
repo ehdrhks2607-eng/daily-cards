@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-18",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 비 + 낮 21도 기온 하락 → 극세사 담요",
+  "sources": [
+    "https://www.sidae.com/article/2026101615084791877",
+    "https://www.dailian.co.kr/news/view/1702712/%EC%A0%84%EA%B5%AD-%EC%B2%9C%EB%91%A5%EB%B2%88%EA%B0%9C-%EB%8F%99%EB%B0%98-%EC%9A%94%EB%9E%80%ED%95%9C-%EB%B9%84-%EB%82%AE-%EA%B8%B0-2026",
+    "https://obsnews.co.kr/news/articleView.html?idxno=1540810"
+  ],
+  "threads": {
+    "text": "오늘 낮 21도래, 나만 갑자기 추워?\n\n엊그제까지 늦더위라더니 비 오니까 확 떨어졌더라\n어제 밤엔 방 안에서 양말 두 켤레 신었어\n보일러 틀기엔 아깝고 방은 쌀쌀해서\n\n그래서 담요 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 보일러 언제부터 틀어?",
+    "comment": "방이 쌀쌀해서 몸 웅크리는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq09cWx29A\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-18T14:00:00+09:00"
+}

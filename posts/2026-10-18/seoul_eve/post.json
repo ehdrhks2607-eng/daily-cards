@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-18",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 저녁 메뉴 고민 공감",
+  "sources": [
+    "https://www.sidae.com/article/2026101615084791877",
+    "https://www.dailian.co.kr/news/view/1702712/%EC%A0%84%EA%B5%AD-%EC%B2%9C%EB%91%A5%EB%B2%88%EA%B0%9C-%EB%8F%99%EB%B0%98-%EC%9A%94%EB%9E%80%ED%95%9C-%EB%B9%84-%EB%82%AE-%EA%B8%B0-2026",
+    "https://obsnews.co.kr/news/articleView.html?idxno=1540810"
+  ],
+  "threads": {
+    "text": "일요일 저녁 6시, 냉장고 열고 닫기 4번째야\n\n먹을 건 있는데 먹고 싶은 게 없어\n비 와서 나가기도 싫고, 배달은 이번 주에 이미 두 번 시켰고\n\n결국 계란 2개 풀어서 밥에 얹는 중이야\n\n너는 일요일 저녁 뭐 먹어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-18T19:00:00+09:00"
+}

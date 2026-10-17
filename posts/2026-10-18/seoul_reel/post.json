@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-18",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "일요일 비 + 낮 21도 → 담요 (seoul_lunch)",
+  "sources": [
+    "https://www.sidae.com/article/2026101615084791877",
+    "https://www.dailian.co.kr/news/view/1702712/%EC%A0%84%EA%B5%AD-%EC%B2%9C%EB%91%A5%EB%B2%88%EA%B0%9C-%EB%8F%99%EB%B0%98-%EC%9A%94%EB%9E%80%ED%95%9C-%EB%B9%84-%EB%82%AE-%EA%B8%B0-2026",
+    "https://obsnews.co.kr/news/articleView.html?idxno=1540810"
+  ],
+  "reel": {
+    "hook": "갑자기 쌀쌀\n낮 *21도*래",
+    "count": {
+      "to": 21,
+      "suffix": "도",
+      "label": "오늘 서울 낮 최고기온"
+    },
+    "pain": "엊그제 늦더위였는데\n방이 벌써 쌀쌀해",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "보일러는 참기",
+      "양말 두 겹",
+      "담요 어깨까지"
+    ],
+    "item": "담요",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *담요*는\n프로필 링크에",
+    "caption": "요즘 방이 좀 쌀쌀하지 않으세요?\n비 오는 일요일이라 그런지 낮 기온이 21도라고 해요.\n보일러 틀기엔 아깝고, 이렇게 버티는 중이에요.\n\n골라둔 담요는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #담요 #환절기 #자취 #일요일",
+    "video": "reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-18T21:00:00+09:00"
+}

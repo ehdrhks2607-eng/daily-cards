@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-18",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "비 오는 일요일 걸음수 실패 고백",
+  "sources": [
+    "https://www.sidae.com/article/2026101615084791877",
+    "https://www.dailian.co.kr/news/view/1702712/%EC%A0%84%EA%B5%AD-%EC%B2%9C%EB%91%A5%EB%B2%88%EA%B0%9C-%EB%8F%99%EB%B0%98-%EC%9A%94%EB%9E%80%ED%95%9C-%EB%B9%84-%EB%82%AE-%EA%B8%B0-2026",
+    "https://obsnews.co.kr/news/articleView.html?idxno=1540810"
+  ],
+  "threads": {
+    "text": "오늘 걸음수 412보 나왔어\n\n비 와서 현관 밖으로 한 번 나갔다 들어온 게 전부야\n홈트 영상은 3개 저장했고\n저장만 하면 한 거 같은 기분이 드는 게 문제인 듯\n\n그래도 내일 출근길엔 한 정거장 걸어보려는 중이야\n\n너는 오늘 몇 보 걸었어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-18T19:30:00+09:00"
+}
