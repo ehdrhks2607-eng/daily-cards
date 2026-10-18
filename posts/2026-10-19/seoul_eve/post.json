@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-19",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 월요일 퇴근길 피로",
+  "sources": [
+    "https://www.wikitree.co.kr/articles/1166825",
+    "https://www.kizmom.com/news/articleView.html?idxno=113367",
+    "https://www.fnnews.com/news/202610181653063501"
+  ],
+  "threads": {
+    "text": "월요일 저녁인데 벌써 금요일 같아, 나만 그래?\n\n지하철에서 40분 서서 왔어\n집 가면 씻고 눕는 것만 하려는 중이야\n내일은 화요일이라 조금 낫겠지 하고 버티는 중\n\n너는 월요일 제일 힘든 시간이 언제야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-19T18:00:00+09:00"
+}

@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-19",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 서울 아침 11도·목요일 한 자릿수 예보 → 충전식 손난로",
+  "sources": [
+    "https://www.wikitree.co.kr/articles/1166825",
+    "https://www.kizmom.com/news/articleView.html?idxno=113367",
+    "https://www.fnnews.com/news/202610181653063501"
+  ],
+  "threads": {
+    "text": "아직 10월인데 손이 벌써 시려, 나만 그래?\n\n오늘 아침 서울 11도였어\n목요일엔 아침 한 자릿수로 떨어지는 곳도 있대\n\n출근길에 손끝이 차가워서 주머니에 넣었다 뺐다 했어\n그래서 충전식 손난로 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 손난로 언제부터 챙겨?",
+    "comment": "아침 출근길에 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-19T13:00:00+09:00"
+}

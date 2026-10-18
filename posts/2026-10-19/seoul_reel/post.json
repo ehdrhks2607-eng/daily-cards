@@ -1,0 +1,36 @@
+{
+  "account": "seoul",
+  "date": "2026-10-19",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "서울 아침 11도·손 시림 → 충전식 손난로 (seoul_lunch)",
+  "sources": [
+    "https://www.wikitree.co.kr/articles/1166825",
+    "https://www.kizmom.com/news/articleView.html?idxno=113367",
+    "https://www.fnnews.com/news/202610181653063501"
+  ],
+  "reel": {
+    "hook": "아침 서울\n*11도*래",
+    "count": {
+      "to": 11,
+      "suffix": "도",
+      "label": "오늘 서울 아침 기온"
+    },
+    "pain": "10월인데 벌써\n손끝이 차가워",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "주머니에 쏙",
+      "장갑은 아직",
+      "따뜻한 물 한 잔"
+    ],
+    "item": "손난로",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *손난로*는\n프로필 링크에",
+    "caption": "요즘 아침에 손끝 시리지 않으세요?\n오늘 서울 아침 기온이 11도였어요.\n아직 장갑은 이르고, 주머니에 넣고 버티는 중이에요.\n\n골라둔 손난로는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #손난로 #환절기 #출근길 #월요일",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-19T20:00:00+09:00"
+}

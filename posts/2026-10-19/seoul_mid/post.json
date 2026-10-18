@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-19",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B 월요일 점심 메뉴",
+  "sources": [
+    "https://www.wikitree.co.kr/articles/1166825",
+    "https://www.kizmom.com/news/articleView.html?idxno=113367",
+    "https://www.fnnews.com/news/202610181653063501"
+  ],
+  "threads": {
+    "text": "월요일 점심, 미리 정해둬 vs 그때 정해?\n\n오전 11시인데 벌써 메뉴 고민 중이야\n\n미리 정해두면 마음은 편한데 막상 때 되면 다른 게 땡기고\n그때 정하면 다 같이 '아무거나' 하다가 15분이 지나가\n\n난 일단 후보 2개만 정해두는 중이야\n\n너는 미리 정해둬, 그때 정해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-19T11:00:00+09:00"
+}

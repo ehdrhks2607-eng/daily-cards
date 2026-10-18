@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-19",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "헬스장 안 간 회비 15만 원 → 덤벨 (jak_lunch)",
+  "sources": [
+    "https://www.wikitree.co.kr/articles/1166825",
+    "https://www.kizmom.com/news/articleView.html?idxno=113367",
+    "https://www.fnnews.com/news/202610181653063501"
+  ],
+  "reel": {
+    "hook": "안 간 헬스장\n회비 *얼마*?",
+    "count": {
+      "to": 150000,
+      "suffix": "원",
+      "label": "3개월 안 간 회비"
+    },
+    "pain": "월 5만 원씩\n3개월째 냈어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "덤벨 1kg부터",
+      "하루 10분만",
+      "거실 한켠에서"
+    ],
+    "item": "덤벨",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *덤벨*은\n프로필 링크에",
+    "caption": "헬스장, 가고 계세요 집에서 하세요?\n3개월 동안 안 간 회비가 15만 원이었어요.\n이번엔 집에서 3일만 해보려고 해요.\n\n골라둔 덤벨은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #덤벨 #운동 #습관",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-19T19:30:00+09:00"
+}
