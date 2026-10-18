@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<!--
+  "punch" reel template: full-bleed color blocks per scene with diagonal wipes, slot-machine counter,
+  slam-in type, burst rays behind the product, marquee CTA strip.
+  Same data contract as scripts/reel_template.html (see render_reel.py): window.__setTime(t), __duration, __ready.
+  Safe area: text stays inside x 110..900, y 260..1480.
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:'Noto Sans CJK KR','Noto Sans KR',sans-serif;background:var(--fg);color:var(--bg);
+  word-break:keep-all;position:relative;-webkit-font-smoothing:antialiased}
+.abs{position:absolute}
+.panel{inset:0}
+#rays{left:540px;top:760px;width:0;height:0}
+#rays i{position:absolute;left:0;top:-30px;width:1400px;height:60px;transform-origin:0 50%;opacity:.14}
+.head{top:236px;left:110px;right:110px;display:flex;justify-content:space-between;align-items:center;
+  font-size:34px;font-weight:900;letter-spacing:-.5px}
+.bar{width:220px;height:10px;border-radius:5px;background:currentColor;opacity:.25;position:relative;overflow:hidden}
+.bar b{position:absolute;inset:0;background:currentColor;transform-origin:left;opacity:1}
+.scene{left:110px;right:180px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-bottom:180px}
+.line{display:block;white-space:nowrap;overflow:hidden;padding:.04em 0}
+.ln{display:inline-block;transform-origin:0 70%}
+.tag{align-self:flex-start;font-size:38px;font-weight:900;padding:10px 28px;border-radius:8px;margin-bottom:40px}
+.hook{font-size:158px;font-weight:900;line-height:1.12;letter-spacing:-6px}
+.lbl{font-size:46px;font-weight:900;margin-bottom:10px;opacity:.85}
+.count{display:flex;white-space:nowrap;font-size:200px;font-weight:900;letter-spacing:-6px;line-height:1.15;height:1.15em;overflow:hidden;font-variant-numeric:tabular-nums}
+.dg{display:inline-block;height:1.15em;overflow:hidden}
+.dg .col{display:flex;flex-direction:column}
+.dg .col span{height:1.15em;display:block;text-align:center}
+.pain{margin-top:54px;font-size:58px;font-weight:900;line-height:1.42;letter-spacing:-1.5px}
+.tips-h{font-size:46px;font-weight:900;margin-bottom:46px;opacity:.75}
+.tip{display:flex;align-items:baseline;gap:34px;margin-bottom:40px}
+.tip .n{flex:none;font-size:118px;font-weight:900;line-height:1;letter-spacing:-4px;-webkit-text-stroke:5px currentColor;color:transparent;width:110px}
+.tip .t{min-width:0;flex:1;white-space:nowrap;overflow:hidden;font-size:72px;font-weight:900;letter-spacing:-2.5px;line-height:1.2}
+.sm{font-size:48px;font-weight:900;margin-bottom:24px;opacity:.8}
+.item{font-size:178px;font-weight:900;letter-spacing:-7px;line-height:1.08}
+.isub{margin-top:40px;font-size:52px;font-weight:900;opacity:.9}
+.cta{font-size:108px;font-weight:900;line-height:1.18;letter-spacing:-4px}
+.mq{left:0;right:0;top:1290px;height:120px;overflow:hidden;transform:rotate(-4deg);transform-origin:50% 50%}
+.mq .track{display:flex;white-space:nowrap;font-size:66px;font-weight:900;line-height:120px;letter-spacing:-1px}
+.mq .track span{padding-right:56px}
+.foot{left:110px;top:1500px;font-size:30px;font-weight:700;opacity:.8}
+</style></head><body>
+<div id="p1" class="panel abs"></div>
+<div id="p2" class="panel abs"></div>
+<div id="p3" class="panel abs"></div>
+<div id="p4" class="panel abs"></div>
+<div id="rays" class="abs"></div>
+<div id="p5" class="panel abs"></div>
+<div id="mq" class="mq abs"><div class="track" id="track"></div></div>
+<div class="head abs" id="head"><span id="label"></span><span class="bar"><b id="barb"></b></span></div>
+<div id="s1" class="scene abs"></div>
+<div id="s2" class="scene abs"></div>
+<div id="s3" class="scene abs"></div>
+<div id="s4" class="scene abs"></div>
+<div id="s5" class="scene abs"></div>
+<div id="foot" class="foot abs"></div>
+<script>
+const DATA = /*__REEL_DATA__*/;
+const THEMES = /*__THEMES__*/;
+const th = THEMES[DATA.account];
+const root = document.documentElement.style;
+root.setProperty('--bg', th.bg); root.setProperty('--fg', th.fg);
+root.setProperty('--ac', th.accent); root.setProperty('--mu', th.muted);
+
+const T = {s1:[0,3.0], s2:[3.0,6.3], s3:[6.3,10.5], s4:[10.5,13.0], s5:[13.0,15.0]};
+const D = DATA.duration || 15;
+// contrast helpers: a dark accent (e.g. navy) vanishes on the dark panel, so emphasis falls back to a readable tint
+const rgb=h=>{h=h.replace('#','');if(h.length===3)h=h.split('').map(c=>c+c).join('');return [0,2,4].map(i=>parseInt(h.substr(i,2),16))};
+const lum=h=>{const [r,g,b]=rgb(h).map(v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)});return .2126*r+.7152*g+.0722*b};
+const contrast=(a,b)=>{const x=lum(a),y=lum(b);return (Math.max(x,y)+.05)/(Math.min(x,y)+.05)};
+const mix=(a,b,w)=>'#'+rgb(a).map((v,i)=>Math.round(v*(1-w)+rgb(b)[i]*w).toString(16).padStart(2,'0')).join('');
+function readable(c,bg,toward){for(let w=0;w<=1.001;w+=.1){const m=mix(c,toward,w);if(contrast(m,bg)>=3.2)return m}return toward}
+const emDark=readable(th.accent,th.fg,th.bg);
+const emAcc=contrast(th.fg,th.accent)>=3.2?th.fg:th.bg;
+// scene palette: [panel background, text color, emphasis color]
+const DARK=[th.fg, th.bg, emDark], ACC=[th.accent, th.bg, emAcc], LIGHT=[th.bg, th.fg, th.accent];
+const PAL={s1:DARK, s2:ACC, s3:LIGHT, s4:DARK, s5:ACC};
+
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>clamp((t-a)/(b-a));
+const oExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
+const oCubic=x=>1-Math.pow(1-x,3);
+const ioCubic=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const oBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+// whole lines slam in (not per character): big, fast, readable. *word* = emphasis color
+function lines(text, em){
+  return String(text||'').split('\n').map(line=>{
+    let acc=false, out='', buf='';
+    const flush=()=>{if(buf){out+=acc?`<span style="color:${em}">${esc(buf)}</span>`:esc(buf);buf=''}};
+    for(const c of Array.from(line)){ if(c==='*'){flush();acc=!acc;continue} buf+=c; }
+    flush();
+    return `<span class="line"><span class="ln">${out||'&nbsp;'}</span></span>`;
+  }).join('');
+}
+const lns=el=>Array.from(el.querySelectorAll('.ln'));
+function slam(list,t,start,stagger=.14,dur=.45){
+  list.forEach((l,i)=>{const a=start+i*stagger, x=oExpo(p(t,a,a+dur));
+    l.style.transform=`translateY(${(1-x)*105}%) scale(${1+(1-oBack(p(t,a,a+dur)))*.0}) skewY(${(1-x)*6}deg)`; l.style.opacity=x>0?1:0;});
+}
+function outUp(el,t,start,dur=.3){const x=ioCubic(p(t,start,start+dur)); el.style.transform=`translateY(${-x*160}px)`; el.style.opacity=1-x;}
+const show=(el,t,[a,b])=>{el.style.visibility=(t>=a-0.001&&t<b+0.4)?'visible':'hidden'};
+// diagonal wipe: panel slides in from the bottom-right corner
+function wipe(el,t,a,dur=.5){
+  const x=ioCubic(p(t,a,a+dur)), y=(1-x)*2600;
+  el.style.clipPath=`polygon(0 ${y+400*(1-x)}px, 1080px ${y}px, 1080px 1920px, 0 1920px)`;
+}
+
+document.getElementById('label').textContent='@'+(th.handle||th.label);
+const panels=['p1','p2','p3','p4','p5'].map(id=>document.getElementById(id));
+Object.values(PAL).forEach((c,i)=>panels[i].style.background=c[0]);
+
+const s1=document.getElementById('s1');
+s1.style.color=DARK[1];
+s1.innerHTML=(DATA.series?`<div class="tag" id="tag" style="background:${emDark};color:${th.fg}">${esc(DATA.series)}</div>`:'')+`<div class="hook">${lines(DATA.hook,DARK[2])}</div>`;
+const s1l=lns(s1), tag=document.getElementById('tag');
+
+const s2=document.getElementById('s2'); s2.style.color=ACC[1];
+const C=DATA.count;
+const fmt=n=>Math.round(n).toLocaleString('ko-KR');
+let digits=[];
+if(C){
+  const str=fmt(C.to)+(C.suffix||'');
+  const cells=Array.from(str).map(ch=>/\d/.test(ch)
+    ?`<span class="dg"><span class="col">${'0123456789'.split('').map(d=>`<span>${d}</span>`).join('')}</span></span>`
+    :`<span class="dg"><span class="col"><span>${esc(ch)}</span></span></span>`);
+  s2.innerHTML=`<div class="lbl" id="clbl">${esc(C.label||'')}</div><div class="count" id="cnt" style="color:${ACC[2]}">${cells.join('')}</div><div class="pain">${lines(DATA.pain,ACC[2])}</div>`;
+  const cols=Array.from(s2.querySelectorAll('.dg .col'));
+  digits=Array.from(str).map((ch,i)=>({col:cols[i], d:/\d/.test(ch)?+ch:null}));
+} else s2.innerHTML=`<div class="pain" style="font-size:88px;letter-spacing:-3px">${lines(DATA.pain,ACC[2])}</div>`;
+const s2l=lns(s2), clbl=document.getElementById('clbl'), cnt=document.getElementById('cnt');
+
+const s3=document.getElementById('s3'); s3.style.color=LIGHT[1];
+s3.innerHTML=`<div class="tips-h" id="tipsh">${esc(DATA.tips_title||'그래서 이렇게 해보는 중')}</div>`+
+  (DATA.tips||[]).slice(0,3).map((x,i)=>`<div class="tip"><div class="n" style="color:transparent;-webkit-text-stroke-color:${th.accent}">${i+1}</div><div class="t">${esc(x)}</div></div>`).join('');
+const tips=Array.from(s3.querySelectorAll('.tip')), tipsh=document.getElementById('tipsh');
+
+const s4=document.getElementById('s4'); s4.style.color=DARK[1];
+s4.innerHTML=`<div class="sm" id="ism">${esc(DATA.item_lead||'그래서 찾아본 것')}</div><div class="item" id="item">${lines(DATA.item,DARK[2])}</div><div class="isub" id="isub" style="color:${emDark}">${esc(DATA.item_sub||'리뷰 많은 걸로 골라둠')}</div>`;
+const ism=document.getElementById('ism'), item=document.getElementById('item'), isub=document.getElementById('isub');
+const rays=document.getElementById('rays');
+rays.innerHTML=Array.from({length:12},(_,i)=>`<i style="transform:rotate(${i*30}deg);background:linear-gradient(90deg,${emDark},transparent)"></i>`).join('');
+
+const s5=document.getElementById('s5'); s5.style.color=ACC[1];
+s5.innerHTML=`<div class="cta">${lines(DATA.cta,ACC[2])}</div>`;
+const s5l=lns(s5);
+const mq=document.getElementById('mq'), track=document.getElementById('track');
+mq.style.background=th.fg; mq.style.color=th.bg;
+track.innerHTML=Array.from({length:8},()=>'<span>프로필 링크 ↗</span>').join('');
+const foot=document.getElementById('foot'); foot.textContent=DATA.disclosure||'쿠팡 파트너스 활동으로 수수료를 받을 수 있어요';
+const head=document.getElementById('head'), barb=document.getElementById('barb');
+
+function render(t){
+  // panels: p1 always under; p2..p5 wipe in at scene starts
+  wipe(panels[1],t,T.s2[0]-.25); wipe(panels[2],t,T.s3[0]-.25); wipe(panels[3],t,T.s4[0]-.25); wipe(panels[4],t,T.s5[0]-.25);
+  const cur=t<T.s2[0]?'s1':t<T.s3[0]?'s2':t<T.s4[0]?'s3':t<T.s5[0]?'s4':'s5';
+  head.style.color=PAL[cur][1]; foot.style.color=PAL[cur][1];
+  barb.style.transform=`scaleX(${t/D})`;
+
+  show(s1,t,T.s1); s1.style.transform=''; s1.style.opacity=1;
+  if(tag){const x=oBack(p(t,.05,.4)); tag.style.transform=`scale(${x})`; tag.style.transformOrigin='left center'; tag.style.opacity=x>0?1:0;}
+  slam(s1l,t,.15,.22,.5);
+  const z=1+p(t,1,2.8)*.04; s1.style.transform=`scale(${z})`; s1.style.transformOrigin='0 40%';
+  if(t>T.s1[1]-.35) outUp(s1,t,T.s1[1]-.35);
+
+  show(s2,t,T.s2); s2.style.transform=''; s2.style.opacity=1;
+  if(C){
+    clbl.style.opacity=oCubic(p(t,3.0,3.35)); clbl.style.transform=`translateX(${(1-oExpo(p(t,3,3.4)))*-80}px)`;
+    // slot machine: each digit spins down to its value, left digits land later
+    const n=digits.length;
+    digits.forEach(({col,d},i)=>{
+      if(d===null){const x=oExpo(p(t,3.4,3.8)); col.style.transform=`translateY(${(1-x)*100}%)`; return;}
+      const a=3.15+(n-1-i)*.0+i*.09, b=a+1.0+i*.05, x=oCubic(p(t,a,b));
+      const spins=2, pos=(spins*10+d)*x;      // in digit heights
+      col.style.transform=`translateY(${-(pos%10)/10*100}%)`;
+    });
+    const bump=p(t,4.6,5.0); cnt.style.transform=`scale(${1+Math.sin(bump*Math.PI)*.07})`; cnt.style.transformOrigin='left center';
+    slam(s2l,t,4.5,.14,.45);
+  } else slam(s2l,t,3.2,.16,.5);
+  if(t>T.s2[1]-.3) outUp(s2,t,T.s2[1]-.3);
+
+  show(s3,t,T.s3); s3.style.transform=''; s3.style.opacity=1;
+  tipsh.style.opacity=oCubic(p(t,6.3,6.6))*.75;
+  tips.forEach((el,i)=>{const st=6.5+i*1.0, x=oExpo(p(t,st,st+.5)), dir=i%2?1:-1;
+    el.style.transform=`translateX(${(1-x)*900*dir}px)`; el.style.opacity=x>0?1:0;
+    el.querySelector('.n').style.color=t>st+.55?th.accent:'transparent';});
+  if(t>T.s3[1]-.3) outUp(s3,t,T.s3[1]-.3);
+
+  show(s4,t,T.s4); s4.style.transform=''; s4.style.opacity=1;
+  ism.style.opacity=oCubic(p(t,10.5,10.8))*.8;
+  const ix=oExpo(p(t,10.6,11.2)); item.style.transform=`scale(${3-2*ix})`; item.style.transformOrigin='0 50%'; item.style.opacity=p(t,10.6,10.75);
+  isub.style.opacity=oCubic(p(t,11.5,11.9)); isub.style.transform=`translateY(${(1-oExpo(p(t,11.5,12)))*30}px)`;
+  const rv=t>=T.s4[0]-.2&&t<T.s5[0];
+  rays.style.visibility=rv?'visible':'hidden';
+  rays.style.transform=`translate(${-140}px,${-40}px) rotate(${t*18}deg) scale(${oExpo(p(t,10.6,11.3))})`;
+  if(t>T.s4[1]-.25) outUp(s4,t,T.s4[1]-.25,.25);
+
+  show(s5,t,T.s5); s5.style.transform=''; s5.style.opacity=1;
+  slam(s5l,t,13.2,.2,.5);
+  const mx=oExpo(p(t,13.6,14.1));
+  mq.style.visibility=t>13.5?'visible':'hidden';
+  mq.style.clipPath=`inset(0 ${(1-mx)*100}% 0 0)`;
+  track.style.transform=`translateX(${-((t-13.5)*220)%460}px)`;
+  foot.style.opacity=t>13.4?oCubic(p(t,13.4,13.8))*.85:0;
+}
+window.__setTime=t=>{render(Math.min(t,D-1e-3));return true};
+window.__duration=D;
+render(0);
+function fit(el,min){
+  if(!el) return;
+  const box=el.closest('.scene')||el.parentElement, W=box.clientWidth;
+  const over=()=>{const ls=el.querySelectorAll('.line');return ls.length?Array.from(ls).some(l=>l.firstElementChild.scrollWidth>W+1):el.scrollWidth>W+1};
+  let fs=parseFloat(getComputedStyle(el).fontSize), n=0;
+  while(over()&&fs>min&&n++<40){fs*=0.95;el.style.fontSize=fs+'px';}
+}
+function fitAll(){
+  [s1,s2,s3,s4,s5].forEach(s=>{s.style.visibility='visible';s.style.transform=''});
+  ['.hook','.count','.pain','.item','.cta'].forEach(q=>document.querySelectorAll(q).forEach(e=>fit(e,40)));
+  document.querySelectorAll('.tip .t').forEach(e=>{let fs=72,n=0;while(e.scrollWidth>e.clientWidth+1&&fs>32&&n++<40){fs*=0.95;e.style.fontSize=fs+'px'}});
+  render(0);
+}
+document.fonts.ready.then(()=>{fitAll();window.__ready=true});
+</script>
+</body></html>

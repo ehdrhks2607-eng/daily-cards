@@ -16,30 +16,53 @@ post.json "reel" schema (text: \n = line break, *word* = accent color in hook/pa
   "item_sub": "리뷰 많은 걸로 골라둠",
   "cta":      "골라둔 닭가슴살은\n프로필 링크에",  <= 2 lines, <= 9 chars per line
   "caption":  "...",                           Instagram caption (honorific, + disclosure + hashtags)
+  "template": "diary",                        optional; else picked by rotation (config.json reel_templates)
   "video":    "reel.mp4"                       filled in by this script
 }
+Templates: scripts/reel_template.html ("classic") and scripts/reel_templates/<name>.html.
+Rotation: config.json "reel_templates" list, shifted by date and account so the two accounts differ.
 Writes reel.mp4 and reel_sheet.png (6 key frames) next to post.json.
 """
 import argparse
 import json
 import subprocess
 import sys
+from datetime import date
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 CFG = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
-TEMPLATE = (ROOT / "scripts" / "reel_template.html").read_text(encoding="utf-8")
 W, H = 1080, 1920
 SHEET_TIMES = [1.6, 5.6, 9.8, 12.2, 14.6]
 
 
-def build_html(post):
+def template_path(name):
+    if name == "classic":
+        return ROOT / "scripts" / "reel_template.html"
+    return ROOT / "scripts" / "reel_templates" / f"{name}.html"
+
+
+def pick_template(post, override=None):
+    """CLI override > reel.template > rotation over config.json reel_templates."""
+    name = override or post["reel"].get("template")
+    if not name:
+        names = CFG.get("reel_templates") or ["classic"]
+        day = date.fromisoformat(post["date"]).toordinal()
+        acc = sorted(CFG["accounts"]).index(post["account"])
+        name = names[(day + acc) % len(names)]
+    if not template_path(name).exists():
+        raise FileNotFoundError(f"reel template not found: {name}")
+    return name
+
+
+def build_html(post, template):
     themes = {k: dict(v["theme"], label=v["label"], handle=v.get("handle", v["label"]))
               for k, v in CFG["accounts"].items()}
     data = dict(post["reel"], account=post["account"])
-    return (TEMPLATE.replace("/*__REEL_DATA__*/", json.dumps(data, ensure_ascii=False))
+    html = template_path(template).read_text(encoding="utf-8")
+    return (html.replace("/*__REEL_DATA__*/", json.dumps(data, ensure_ascii=False))
                     .replace("/*__THEMES__*/", json.dumps(themes, ensure_ascii=False)))
 
 
@@ -57,23 +80,26 @@ def contact_sheet(page, out):
     sheet.save(out)
 
 
-def render(post_path, fps=30, sheet_only=False):
+def render(post_path, fps=30, sheet_only=False, template=None, out_dir=None):
     post_path = Path(post_path)
     post = json.loads(post_path.read_text(encoding="utf-8"))
     if not post.get("reel"):
         print(post_path, "has no 'reel' field, skipped")
         return
-    out_mp4 = post_path.parent / "reel.mp4"
+    template = pick_template(post, template)
+    out = Path(out_dir) if out_dir else post_path.parent
+    out.mkdir(parents=True, exist_ok=True)
+    out_mp4 = out / "reel.mp4"
     with sync_playwright() as p:
         b = p.chromium.launch()
         page = b.new_page(viewport={"width": W, "height": H})
-        page.set_content(build_html(post))
+        page.set_content(build_html(post, template))
         page.wait_for_function("window.__ready === true", timeout=20000)
         page.wait_for_timeout(300)
         errors = []
         page.on("pageerror", lambda e: errors.append(str(e)))
         dur = page.evaluate("window.__duration")
-        contact_sheet(page, post_path.parent / "reel_sheet.png")
+        contact_sheet(page, out / "reel_sheet.png")
         if not sheet_only:
             n = int(round(dur * fps))
             ff = subprocess.Popen(
@@ -94,11 +120,14 @@ def render(post_path, fps=30, sheet_only=False):
         b.close()
         if errors:
             raise RuntimeError(f"template JS error: {errors}")
-    if not sheet_only:
+    if out_dir:
+        print(out, f"-> preview ({template})")
+    elif not sheet_only:
         post["reel"]["video"] = out_mp4.name
+        post["reel"]["template"] = template
         post_path.write_text(json.dumps(post, ensure_ascii=False, indent=2), encoding="utf-8")
         size = out_mp4.stat().st_size / 1e6
-        print(post_path.parent, f"-> reel.mp4 ({dur:.0f}s, {size:.1f} MB) + reel_sheet.png")
+        print(post_path.parent, f"-> reel.mp4 ({template}, {dur:.0f}s, {size:.1f} MB) + reel_sheet.png")
     else:
         print(post_path.parent, "-> reel_sheet.png")
 
@@ -108,6 +137,8 @@ if __name__ == "__main__":
     ap.add_argument("posts", nargs="+")
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--sheet-only", action="store_true")
+    ap.add_argument("--template", help="force a template (classic or a name in scripts/reel_templates/)")
+    ap.add_argument("--out", help="write preview files here instead of next to post.json (post.json untouched)")
     a = ap.parse_args()
     for f in a.posts:
-        render(f, a.fps, a.sheet_only)
+        render(f, a.fps, a.sheet_only, a.template, a.out)

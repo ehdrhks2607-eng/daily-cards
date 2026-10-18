@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<!--
+  "diary" reel template: ruled notebook page, pen-drawn circle/underline/checks, marker highlight, sticky note CTA.
+  Same data contract as scripts/reel_template.html (see render_reel.py): window.__setTime(t), __duration, __ready.
+  Safe area: text stays inside x 110..900, y 260..1480.
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:'Noto Sans CJK KR','Noto Sans KR',sans-serif;background:var(--bg);color:var(--fg);
+  word-break:keep-all;position:relative;-webkit-font-smoothing:antialiased}
+.abs{position:absolute}
+#paper{inset:0;background-image:repeating-linear-gradient(to bottom,transparent 0 95px,var(--mu) 95px 97px);opacity:.16;background-position:0 40px}
+#margin{left:78px;top:0;bottom:0;width:4px;background:var(--ac);opacity:.35}
+#holes{left:22px;top:0;bottom:0;width:30px}
+#holes i{position:absolute;left:0;width:30px;height:30px;border-radius:50%;background:var(--mu);opacity:.22}
+.head{top:236px;left:110px;right:110px;display:flex;justify-content:space-between;align-items:center;
+  font-size:34px;font-weight:700;color:var(--mu);letter-spacing:-.5px}
+.pg{font-variant-numeric:tabular-nums}
+.scene{left:110px;right:180px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-bottom:180px;transform-origin:0 50%}
+.line{display:block;padding:.04em 0;white-space:nowrap;position:relative}
+.ch{display:inline-block;white-space:pre}
+.ac{color:var(--ac)}
+.tag{align-self:flex-start;font-size:36px;font-weight:900;color:var(--ac);border:4px solid var(--ac);padding:6px 24px;border-radius:12px;margin-bottom:44px;transform-origin:left center}
+.hook{font-size:146px;font-weight:900;line-height:1.18;letter-spacing:-5px}
+.pen{position:absolute;overflow:visible;pointer-events:none}
+.pen path{fill:none;stroke:var(--ac);stroke-linecap:round;stroke-linejoin:round}
+.lbl{font-size:44px;font-weight:700;color:var(--mu);margin-bottom:18px}
+.cwrap{position:relative;align-self:flex-start}
+.count{white-space:nowrap;font-size:184px;font-weight:900;letter-spacing:-8px;line-height:1.05;font-variant-numeric:tabular-nums;padding:0 20px}
+.pain{margin-top:60px;font-size:56px;font-weight:700;line-height:1.5;letter-spacing:-1.5px}
+.tips-h{font-size:46px;font-weight:700;color:var(--mu);margin-bottom:44px}
+.tip{display:flex;align-items:center;gap:34px;margin-bottom:42px;position:relative}
+.box{flex:none;width:80px;height:80px;border:6px solid var(--fg);border-radius:14px;position:relative}
+.box svg{position:absolute;left:-14px;top:-26px;width:110px;height:110px;overflow:visible}
+.box path{fill:none;stroke:var(--ac);stroke-width:12;stroke-linecap:round;stroke-linejoin:round}
+.tip .t{min-width:0;flex:1;white-space:nowrap;overflow:hidden;font-size:62px;font-weight:900;letter-spacing:-2px;line-height:1.3}
+.sm{font-size:46px;font-weight:700;color:var(--mu);margin-bottom:30px}
+.iwrap{position:relative;align-self:flex-start}
+.mark{position:absolute;left:-16px;right:-16px;bottom:8%;height:46%;background:var(--ac);opacity:.32;border-radius:10px;transform-origin:left}
+.item{position:relative;font-size:164px;font-weight:900;letter-spacing:-7px;line-height:1.1}
+.isub{margin-top:46px;font-size:50px;font-weight:700}
+.note{align-self:flex-start;background:var(--ac);color:var(--bg);padding:60px 64px 64px;border-radius:8px 8px 8px 40px;
+  box-shadow:0 26px 50px rgba(0,0,0,.16);transform-origin:50% 0;max-width:100%}
+.tape{position:absolute;left:50%;top:-30px;width:200px;height:56px;margin-left:-100px;background:var(--fg);opacity:.12;transform:rotate(-3deg)}
+.cta{font-size:96px;font-weight:900;line-height:1.22;letter-spacing:-4px}
+.cta .ac{color:var(--fg)}
+.pill{margin-top:46px;display:flex;align-items:center;gap:16px;font-size:44px;font-weight:900}
+.pill svg{width:42px;height:42px}
+.foot{left:110px;top:1500px;font-size:30px;color:var(--mu);font-weight:500}
+</style></head><body>
+<div id="paper" class="abs"></div>
+<div id="margin" class="abs"></div>
+<div id="holes" class="abs"></div>
+<div class="head abs"><span id="label"></span><span class="pg" id="pg"></span></div>
+<div id="s1" class="scene abs"></div>
+<div id="s2" class="scene abs"></div>
+<div id="s3" class="scene abs"></div>
+<div id="s4" class="scene abs"></div>
+<div id="s5" class="scene abs"></div>
+<div id="foot" class="foot abs"></div>
+<script>
+const DATA = /*__REEL_DATA__*/;
+const THEMES = /*__THEMES__*/;
+const th = THEMES[DATA.account];
+const root = document.documentElement.style;
+root.setProperty('--bg', th.bg); root.setProperty('--fg', th.fg);
+root.setProperty('--ac', th.accent); root.setProperty('--mu', th.muted);
+
+const T = {s1:[0,3.0], s2:[3.0,6.3], s3:[6.3,10.5], s4:[10.5,13.0], s5:[13.0,15.0]};
+const D = DATA.duration || 15;
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>clamp((t-a)/(b-a));
+const oExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
+const oCubic=x=>1-Math.pow(1-x,3);
+const ioCubic=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const oBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function kinetic(text){
+  return String(text||'').split('\n').map(line=>{
+    let acc=false, out='';
+    for(const c of Array.from(line)){ if(c==='*'){acc=!acc;continue} out+=`<span class="ch${acc?' ac':''}">${esc(c)}</span>`; }
+    return `<span class="line">${out||'&nbsp;'}</span>`;
+  }).join('');
+}
+const chars=el=>Array.from(el.querySelectorAll('.ch'));
+// "handwriting": each character pops in place, left to right
+function write(list,t,start,stagger=.045,dur=.22){
+  list.forEach((c,i)=>{const x=oCubic(p(t,start+i*stagger,start+i*stagger+dur));
+    c.style.opacity=x; c.style.transform=`translateY(${(1-x)*18}px) scale(${.85+x*.15})`;});
+}
+// page turn out: tilt and slide left
+function turnOut(el,t,start,dur=.4){
+  const x=ioCubic(p(t,start,start+dur));
+  el.style.transform=`translateX(${-x*1100}px) rotate(${-x*7}deg)`; el.style.opacity=1-x*.6;
+}
+const show=(el,t,[a,b])=>{el.style.visibility=(t>=a-0.001&&t<b+0.5)?'visible':'hidden'};
+const draw=(path,x)=>{path.style.strokeDashoffset=1-x};
+const PEN='pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"';
+
+document.getElementById('label').textContent='@'+(th.handle||th.label);
+const holes=document.getElementById('holes');
+holes.innerHTML=Array.from({length:9},(_,i)=>`<i style="top:${140+i*205}px"></i>`).join('');
+const pg=document.getElementById('pg');
+
+const s1=document.getElementById('s1');
+s1.innerHTML=(DATA.series?`<div class="tag" id="tag">${esc(DATA.series)}</div>`:'')+`<div class="hook" id="hook">${kinetic(DATA.hook)}</div>`;
+const s1c=chars(s1), tag=document.getElementById('tag'), hook=document.getElementById('hook');
+// pen underline under the last hook line
+const hl=hook.lastElementChild;
+hl.insertAdjacentHTML('beforeend',`<svg class="pen" id="ul" style="left:0;bottom:-24px;width:100%;height:40px"><path ${PEN} style="stroke-width:12px" data-d="M1 60 C 20 20, 40 90, 60 50 S 90 30, 99 60"/></svg>`);
+const ul=document.querySelector('#ul path');
+
+const s2=document.getElementById('s2');
+const C=DATA.count;
+s2.innerHTML = C ? `<div class="lbl" id="clbl">${esc(C.label||'')}</div>
+  <div class="cwrap"><div class="count" id="cnt">0</div>
+  <svg class="pen" style="left:-30px;top:-34px;width:calc(100% + 60px);height:calc(100% + 68px)"><path id="circ" ${PEN} style="stroke-width:10px" data-d="M52 6 C 85 4, 99 30, 97 52 C 95 80, 70 96, 45 95 C 18 94, 2 75, 3 50 C 4 25, 22 7, 58 9"/></svg></div>
+  <div class="pain">${kinetic(DATA.pain)}</div>`
+  : `<div class="pain" style="font-size:84px;letter-spacing:-3px">${kinetic(DATA.pain)}</div>`;
+const s2c=chars(s2), cnt=document.getElementById('cnt'), clbl=document.getElementById('clbl'), circ=document.getElementById('circ');
+
+const s3=document.getElementById('s3');
+s3.innerHTML=`<div class="tips-h" id="tipsh">${esc(DATA.tips_title||'그래서 이렇게 해보는 중')}</div>`+
+  (DATA.tips||[]).slice(0,3).map(x=>`<div class="tip"><div class="box"><svg viewBox="0 0 110 110"><path ${PEN} d="M18 58 L44 84 L100 12"/></svg></div><div class="t">${kinetic(x)}</div></div>`).join('');
+const tips=Array.from(s3.querySelectorAll('.tip')), tipsh=document.getElementById('tipsh');
+
+const s4=document.getElementById('s4');
+s4.innerHTML=`<div class="sm" id="ism">${esc(DATA.item_lead||'그래서 찾아본 것')}</div>
+  <div class="iwrap"><div class="mark" id="mark"></div><div class="item">${kinetic(DATA.item)}</div></div>
+  <div class="isub" id="isub">${esc(DATA.item_sub||'리뷰 많은 걸로 골라둠')}</div>`;
+const s4c=chars(s4), ism=document.getElementById('ism'), mark=document.getElementById('mark'), isub=document.getElementById('isub');
+
+const s5=document.getElementById('s5');
+s5.innerHTML=`<div class="note" id="note" style="position:relative"><div class="tape"></div><div class="cta">${kinetic(DATA.cta)}</div>
+  <div class="pill" id="pill">프로필 링크 <svg viewBox="0 0 44 44"><path d="M12 32 L32 12 M16 12 H32 V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>`;
+const s5c=chars(s5), note=document.getElementById('note'), pill=document.getElementById('pill');
+const foot=document.getElementById('foot'); foot.textContent=DATA.disclosure||'쿠팡 파트너스 활동으로 수수료를 받을 수 있어요';
+const paper=document.getElementById('paper');
+const fmt=n=>Math.round(n).toLocaleString('ko-KR');
+
+function render(t){
+  const idx=Object.values(T).findIndex(([a,b])=>t<b); pg.textContent=`p.${(idx<0?4:idx)+1} / 5`;
+  paper.style.backgroundPosition=`0 ${40-Math.min(t,15)*6}px`;
+
+  show(s1,t,T.s1); s1.style.transform=''; s1.style.opacity=1;
+  if(tag){const x=oBack(p(t,.05,.45)); tag.style.transform=`rotate(${(1-x)*-12}deg) scale(${x})`; tag.style.opacity=x>0?1:0;}
+  write(s1c,t,.2,.06,.25);
+  draw(ul,oCubic(p(t,1.7,2.3)));
+  turnOut(s1,t,T.s1[1]-.35);
+
+  show(s2,t,T.s2); s2.style.transform=''; s2.style.opacity=1;
+  if(C){
+    clbl.style.opacity=oCubic(p(t,3.1,3.45));
+    const cx=oExpo(p(t,3.2,4.5)); cnt.textContent=fmt(C.to*cx)+(C.suffix||'');
+    draw(circ,ioCubic(p(t,4.3,5.0)));
+    write(s2c,t,4.6,.035,.22);
+  } else write(s2c,t,3.2,.045,.25);
+  if(t>=T.s2[0]) turnOut(s2,t,T.s2[1]-.35);
+
+  show(s3,t,T.s3); s3.style.transform=''; s3.style.opacity=1;
+  tipsh.style.opacity=oCubic(p(t,6.4,6.75));
+  tips.forEach((el,i)=>{const st=6.6+i*1.1;
+    el.style.opacity=oCubic(p(t,st,st+.3)); el.style.transform=`translateY(${(1-oExpo(p(t,st,st+.5)))*40}px)`;
+    draw(el.querySelector('path'),oCubic(p(t,st+.45,st+.8)));});
+  if(t>=T.s3[0]) turnOut(s3,t,T.s3[1]-.35);
+
+  show(s4,t,T.s4); s4.style.transform=''; s4.style.opacity=1;
+  ism.style.opacity=oCubic(p(t,10.6,10.9));
+  write(s4c,t,10.75,.07,.25);
+  mark.style.transform=`scaleX(${oExpo(p(t,11.3,11.9))}) rotate(-1deg)`;
+  isub.style.opacity=oCubic(p(t,11.8,12.2));
+  if(t>=T.s4[0]) turnOut(s4,t,T.s4[1]-.3,.35);
+
+  show(s5,t,T.s5); s5.style.transform=''; s5.style.opacity=1;
+  const nx=oBack(p(t,13.05,13.6));
+  note.style.transform=`translateY(${(1-nx)*-500}px) rotate(${-3+(1-nx)*-8+Math.sin(Math.max(0,t-13.6)*3)*.6}deg)`; note.style.opacity=p(t,13.05,13.15);
+  write(s5c,t,13.5,.035,.2);
+  const px=oBack(p(t,14.1,14.45)); pill.style.transform=`scale(${px})`; pill.style.transformOrigin='left center'; pill.style.opacity=px>0?1:0;
+  foot.style.opacity=t>13.4?oCubic(p(t,13.4,13.8))*.9:0;
+}
+window.__setTime=t=>{render(Math.min(t,D-1e-3));return true};
+window.__duration=D;
+render(0);
+function fit(el,min){
+  if(!el) return;
+  const box=el.closest('.scene')||el.parentElement, W=box.clientWidth;
+  const over=()=>{const ls=el.querySelectorAll('.line');return ls.length?Array.from(ls).some(l=>l.scrollWidth>W+1):el.scrollWidth>el.clientWidth+1};
+  let fs=parseFloat(getComputedStyle(el).fontSize), n=0;
+  while(over()&&fs>min&&n++<40){fs*=0.95;el.style.fontSize=fs+'px';}
+}
+// pen paths are written in 0..100 units; map them onto the svg's real pixel box so dashes and stroke width stay true
+function penPaths(){
+  document.querySelectorAll('path[data-d]').forEach(path=>{
+    const svg=path.ownerSVGElement, r=svg.getBoundingClientRect(), w=r.width, h=r.height;
+    svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
+    let i=0; path.setAttribute('d',path.dataset.d.replace(/-?\d+(\.\d+)?/g,n=>(+n/100*(i++%2?h:w)).toFixed(1)));
+  });
+}
+function fitAll(){
+  [s1,s2,s3,s4,s5].forEach(s=>s.style.visibility='visible');
+  if(C&&cnt) cnt.textContent=fmt(C.to)+(C.suffix||'');
+  ['.hook','.count','.pain','.item'].forEach(q=>document.querySelectorAll(q).forEach(e=>fit(e,40)));
+  // CTA sits inside the padded note, so fit against the note's inner width
+  const cta=document.querySelector('.cta'); if(cta){const W=s5.clientWidth-128;let fs=96,n=0;
+    while(Array.from(cta.querySelectorAll('.line')).some(l=>l.scrollWidth>W+1)&&fs>40&&n++<40){fs*=.95;cta.style.fontSize=fs+'px'}}
+  document.querySelectorAll('.tip .t').forEach(e=>{let fs=62,n=0;while(e.scrollWidth>e.clientWidth+1&&fs>32&&n++<40){fs*=0.95;e.style.fontSize=fs+'px'}});
+  penPaths();  // measure while the counter shows its final value
+  render(0);
+}
+document.fonts.ready.then(()=>{fitAll();window.__ready=true});
+</script>
+</body></html>

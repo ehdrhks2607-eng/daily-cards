@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<!--
+  "stack" reel template: each scene is a card that slides up over the previous one, which tucks back into a stack.
+  Counter fills a progress bar, tips fan in as chips, product card in accent color, CTA card with a pulsing button.
+  Same data contract as scripts/reel_template.html (see render_reel.py): window.__setTime(t), __duration, __ready.
+  Safe area: text stays inside x 110..900, y 260..1480.
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:'Noto Sans CJK KR','Noto Sans KR',sans-serif;background:var(--page);color:var(--fg);
+  word-break:keep-all;position:relative;-webkit-font-smoothing:antialiased}
+.abs{position:absolute}
+#glow1,#glow2{width:900px;height:900px;border-radius:50%;filter:blur(120px);opacity:.28}
+#glow1{background:var(--ac);left:-300px;top:-200px}
+#glow2{background:var(--mu);right:-380px;bottom:-260px;opacity:.22}
+.head{z-index:10;top:236px;left:110px;right:110px;display:flex;justify-content:space-between;align-items:center;
+  font-size:34px;font-weight:700;color:var(--mu);letter-spacing:-.5px}
+.dots{display:flex;gap:12px}
+.dots i{display:block;width:14px;height:14px;border-radius:50%;background:var(--mu);opacity:.3}
+.dots i.on{opacity:1;background:var(--ac)}
+.card{left:80px;right:80px;top:362px;height:1088px;border-radius:56px;background:var(--card);
+  box-shadow:0 30px 70px rgba(0,0,0,.14),0 0 0 2px rgba(0,0,0,.03);transform-origin:50% 0;overflow:hidden}
+.in{position:absolute;left:30px;right:100px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;padding:0 0 60px}
+.line{display:block;overflow:hidden;padding:.05em 0;white-space:nowrap}
+.ch{display:inline-block;white-space:pre}
+.ac{color:var(--ac)}
+.tag{align-self:flex-start;font-size:34px;font-weight:900;color:var(--ac);background:var(--soft);padding:10px 26px;border-radius:40px;margin-bottom:40px}
+.hook{font-size:140px;font-weight:900;line-height:1.18;letter-spacing:-5px}
+.lbl{font-size:44px;font-weight:700;color:var(--mu);margin-bottom:14px}
+.count{white-space:nowrap;font-size:176px;font-weight:900;letter-spacing:-7px;line-height:1.1;color:var(--ac);font-variant-numeric:tabular-nums}
+.meter{height:22px;border-radius:11px;background:var(--soft);margin-top:26px;overflow:hidden}
+.meter b{display:block;height:100%;width:100%;background:var(--ac);border-radius:11px;transform-origin:left}
+.pain{margin-top:52px;font-size:54px;font-weight:700;line-height:1.48;letter-spacing:-1.5px}
+.tips-h{font-size:44px;font-weight:700;color:var(--mu);margin-bottom:40px}
+.chip{display:flex;align-items:center;gap:28px;background:var(--soft);border-radius:36px;padding:30px 36px;margin-bottom:24px;transform-origin:0 50%}
+.chip .n{flex:none;width:76px;height:76px;border-radius:24px;background:var(--ac);color:var(--card);font-size:36px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.chip .t{min-width:0;flex:1;white-space:nowrap;overflow:hidden;font-size:58px;font-weight:900;letter-spacing:-2px;line-height:1.25}
+#c4{background:var(--ac);color:var(--card)}
+#c4 .lbl{color:var(--card);opacity:.85}
+.item{font-size:170px;font-weight:900;letter-spacing:-7px;line-height:1.08}
+.isub{margin-top:40px;font-size:50px;font-weight:700;opacity:.92}
+.ring{position:absolute;right:-160px;bottom:-160px;width:560px;height:560px;border-radius:50%;border:40px solid currentColor;opacity:.12}
+.cta{font-size:100px;font-weight:900;line-height:1.2;letter-spacing:-4px}
+.btn{align-self:flex-start;margin-top:60px;display:flex;align-items:center;gap:18px;font-size:46px;font-weight:900;
+  background:var(--fg);color:var(--card);padding:28px 48px;border-radius:60px}
+.btn svg{width:44px;height:44px}
+.foot{left:110px;top:1500px;font-size:30px;color:var(--mu);font-weight:500}
+</style></head><body>
+<div id="glow1" class="abs"></div><div id="glow2" class="abs"></div>
+<div class="head abs"><span id="label"></span><span class="dots" id="dots"></span></div>
+<div id="c1" class="card abs"><div class="in" id="s1"></div></div>
+<div id="c2" class="card abs"><div class="in" id="s2"></div></div>
+<div id="c3" class="card abs"><div class="in" id="s3"></div></div>
+<div id="c4" class="card abs"><div class="ring"></div><div class="in" id="s4"></div></div>
+<div id="c5" class="card abs"><div class="in" id="s5"></div></div>
+<div id="foot" class="foot abs"></div>
+<script>
+const DATA = /*__REEL_DATA__*/;
+const THEMES = /*__THEMES__*/;
+const th = THEMES[DATA.account];
+const rgb=h=>{h=h.replace('#','');if(h.length===3)h=h.split('').map(c=>c+c).join('');return [0,2,4].map(i=>parseInt(h.substr(i,2),16))};
+const mix=(a,b,w)=>'#'+rgb(a).map((v,i)=>Math.round(v*(1-w)+rgb(b)[i]*w).toString(16).padStart(2,'0')).join('');
+const lum=h=>{const [r,g,b]=rgb(h).map(v=>v/255);return .2126*r+.7152*g+.0722*b};
+// solid card on a slightly darker page so the stack reads on both white and beige themes
+const card = lum(th.bg)>.97 ? '#FFFFFF' : mix(th.bg,'#FFFFFF',.7);
+const page = lum(th.bg)>.97 ? mix(th.bg,th.muted,.14) : th.bg;
+const root = document.documentElement.style;
+root.setProperty('--fg', th.fg); root.setProperty('--ac', th.accent); root.setProperty('--mu', th.muted);
+root.setProperty('--card', card); root.setProperty('--page', page); root.setProperty('--soft', mix(card,th.accent,.1));
+
+const T = {s1:[0,3.0], s2:[3.0,6.3], s3:[6.3,10.5], s4:[10.5,13.0], s5:[13.0,15.0]};
+const D = DATA.duration || 15;
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>clamp((t-a)/(b-a));
+const oExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
+const oCubic=x=>1-Math.pow(1-x,3);
+const ioCubic=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const oBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function kinetic(text){
+  return String(text||'').split('\n').map(line=>{
+    let acc=false, out='';
+    for(const c of Array.from(line)){ if(c==='*'){acc=!acc;continue} out+=`<span class="ch${acc?' ac':''}">${esc(c)}</span>`; }
+    return `<span class="line">${out||'&nbsp;'}</span>`;
+  }).join('');
+}
+const chars=el=>Array.from(el.querySelectorAll('.ch'));
+function rise(list,t,start,stagger=.03,dur=.55){
+  list.forEach((c,i)=>{const x=oExpo(p(t,start+i*stagger,start+i*stagger+dur));
+    c.style.transform=`translateY(${(1-x)*100}%)`; c.style.opacity=x>0?1:0;});
+}
+
+document.getElementById('label').textContent='@'+(th.handle||th.label);
+const dots=document.getElementById('dots'); dots.innerHTML='<i></i>'.repeat(5); const dotEls=Array.from(dots.children);
+const cards=['c1','c2','c3','c4','c5'].map(id=>document.getElementById(id));
+const starts=Object.values(T).map(r=>r[0]);
+
+const s1=document.getElementById('s1');
+s1.innerHTML=(DATA.series?`<div class="tag" id="tag">${esc(DATA.series)}</div>`:'')+`<div class="hook">${kinetic(DATA.hook)}</div>`;
+const s1c=chars(s1), tag=document.getElementById('tag');
+
+const s2=document.getElementById('s2');
+const C=DATA.count;
+s2.innerHTML = C ? `<div class="lbl" id="clbl">${esc(C.label||'')}</div><div class="count" id="cnt">0</div><div class="meter"><b id="mb"></b></div><div class="pain">${kinetic(DATA.pain)}</div>`
+                 : `<div class="pain" style="font-size:82px;letter-spacing:-3px">${kinetic(DATA.pain)}</div>`;
+const s2c=chars(s2), cnt=document.getElementById('cnt'), mb=document.getElementById('mb');
+
+const s3=document.getElementById('s3');
+s3.innerHTML=`<div class="tips-h" id="tipsh">${esc(DATA.tips_title||'그래서 이렇게 해보는 중')}</div>`+
+  (DATA.tips||[]).slice(0,3).map((x,i)=>`<div class="chip"><div class="n">${i+1}</div><div class="t">${esc(x)}</div></div>`).join('');
+const chips=Array.from(s3.querySelectorAll('.chip')), tipsh=document.getElementById('tipsh');
+
+const s4=document.getElementById('s4');
+s4.innerHTML=`<div class="lbl" id="ism">${esc(DATA.item_lead||'그래서 찾아본 것')}</div><div class="item">${kinetic(DATA.item)}</div><div class="isub" id="isub">${esc(DATA.item_sub||'리뷰 많은 걸로 골라둠')}</div>`;
+s4.querySelectorAll('.ac').forEach(e=>e.classList.remove('ac'));
+const s4c=chars(s4), isub=document.getElementById('isub'), ring=document.querySelector('#c4 .ring');
+
+const s5=document.getElementById('s5');
+s5.innerHTML=`<div class="cta">${kinetic(DATA.cta)}</div>
+  <div class="btn" id="btn">프로필 링크 <svg viewBox="0 0 44 44"><path d="M12 32 L32 12 M16 12 H32 V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+const s5c=chars(s5), btn=document.getElementById('btn');
+const foot=document.getElementById('foot'); foot.textContent=DATA.disclosure||'쿠팡 파트너스 활동으로 수수료를 받을 수 있어요';
+const fmt=n=>Math.round(n).toLocaleString('ko-KR');
+
+function render(t){
+  // card k enters at its scene start (slides up from below); every later scene pushes it one step back into the stack
+  cards.forEach((c,k)=>{
+    const a=starts[k]-(k?.35:0);
+    const enter=k?oExpo(p(t,a,a+.6)):1;
+    let depth=0; for(let j=k+1;j<5;j++) depth+=ioCubic(p(t,starts[j]-.35,starts[j]+.15));
+    const y=(1-enter)*1700 - depth*28, s=1-depth*.06, r=(1-enter)*6;
+    c.style.transform=`translateY(${y}px) scale(${s}) rotate(${r}deg)`;
+    c.style.visibility=(t>=a-0.001&&depth<2.6)?'visible':'hidden';
+    c.style.filter=depth>0?`brightness(${1-Math.min(depth,2)*.06})`:'';
+    c.style.zIndex=k+1;
+  });
+  const cur=Math.max(0,starts.filter(s=>t>=s).length-1);
+  dotEls.forEach((d,i)=>d.classList.toggle('on',i===cur));
+
+  if(tag){const x=oBack(p(t,.1,.5)); tag.style.transform=`scale(${x})`; tag.style.transformOrigin='left center'; tag.style.opacity=x>0?1:0;}
+  rise(s1c,t,.25,.035,.6);
+
+  if(C){
+    const cx=oExpo(p(t,3.3,4.6)); cnt.textContent=fmt(C.to*cx)+(C.suffix||'');
+    mb.style.transform=`scaleX(${cx})`;
+    document.getElementById('clbl').style.opacity=oCubic(p(t,3.2,3.5));
+    rise(s2c,t,4.5,.022,.5);
+  } else rise(s2c,t,3.4,.03,.55);
+
+  tipsh.style.opacity=oCubic(p(t,6.6,6.9));
+  chips.forEach((el,i)=>{const st=6.8+i*1.0, x=oBack(p(t,st,st+.55));
+    el.style.transform=`translateX(${(1-oExpo(p(t,st,st+.5)))*120}px) rotate(${(1-x)*-6}deg) scale(${.9+.1*x})`; el.style.opacity=oCubic(p(t,st,st+.25));});
+
+  document.getElementById('ism').style.opacity=oCubic(p(t,10.8,11.1));
+  rise(s4c,t,10.9,.05,.55);
+  isub.style.opacity=oCubic(p(t,11.7,12.1));
+  ring.style.transform=`scale(${.6+oExpo(p(t,10.7,11.8))*.4}) rotate(${t*10}deg)`;
+
+  rise(s5c,t,13.3,.03,.55);
+  const bx=oBack(p(t,13.9,14.3)); btn.style.transform=`scale(${bx*(1+Math.max(0,Math.sin((t-14.3)*6))*.04)})`; btn.style.transformOrigin='left center'; btn.style.opacity=bx>0?1:0;
+  foot.style.opacity=t>13.4?oCubic(p(t,13.4,13.8))*.9:0;
+}
+window.__setTime=t=>{render(Math.min(t,D-1e-3));return true};
+window.__duration=D;
+render(0);
+function fit(el,min){
+  if(!el) return;
+  const W=el.closest('.in').clientWidth;
+  const over=()=>{const ls=el.querySelectorAll('.line');return ls.length?Array.from(ls).some(l=>l.scrollWidth>W+1):el.scrollWidth>W+1};
+  let fs=parseFloat(getComputedStyle(el).fontSize), n=0;
+  while(over()&&fs>min&&n++<40){fs*=0.95;el.style.fontSize=fs+'px';}
+}
+function fitAll(){
+  cards.forEach(c=>{c.style.visibility='visible';c.style.transform=''});
+  if(C&&cnt) cnt.textContent=fmt(C.to)+(C.suffix||'');
+  ['.hook','.count','.pain','.item','.cta'].forEach(q=>document.querySelectorAll(q).forEach(e=>fit(e,40)));
+  document.querySelectorAll('.chip .t').forEach(e=>{let fs=58,n=0;while(e.scrollWidth>e.clientWidth+1&&fs>32&&n++<40){fs*=0.95;e.style.fontSize=fs+'px'}});
+  render(0);
+}
+document.fonts.ready.then(()=>{fitAll();window.__ready=true});
+</script>
+</body></html>
