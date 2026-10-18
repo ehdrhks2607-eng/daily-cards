@@ -1,6 +1,10 @@
 {
   "require_approval": false,
   "skip_if_late_hours": 12,
+  "reel_templates": [
+    "diary",
+    "stack"
+  ],
   "accounts": {
     "jak": {
       "label": "작심삼일",
