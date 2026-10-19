@@ -33,5 +33,5 @@
   },
   "result": {},
   "publish_at": "2026-10-19T20:00:00+09:00",
-  "last_error": "reel: 400 https://graph.instagram.com/v21.0/me: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AiOd48ImVAJGR0phIH2a1Ez\"}}"
+  "last_error": "reel: 400 https://graph.instagram.com/v21.0/me: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AEBk6xHU-5Bi8Gq1IckCrI3\"}}"
 }
