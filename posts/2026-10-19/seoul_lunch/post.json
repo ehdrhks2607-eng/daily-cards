@@ -3,7 +3,7 @@
   "date": "2026-10-19",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래? 서울 아침 11도·목요일 한 자릿수 예보 → 충전식 손난로",
   "sources": [
     "https://www.wikitree.co.kr/articles/1166825",
@@ -15,6 +15,10 @@
     "comment": "아침 출근길에 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-19T13:00:00+09:00"
+  "result": {
+    "threads": "18115201925032700",
+    "threads_comment": "18027447263867066"
+  },
+  "publish_at": "2026-10-19T13:00:00+09:00",
+  "posted_at": "2026-10-19T13:00:44.493666+09:00"
 }
