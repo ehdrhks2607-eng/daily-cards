@@ -3,7 +3,7 @@
   "date": "2026-10-19",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(헬스장 회비 3개월 15만 원) → 홈트 덤벨",
   "sources": [
     "https://www.wikitree.co.kr/articles/1166825",
@@ -15,6 +15,10 @@
     "comment": "헬스장 가기 귀찮은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0M71ItY4\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-19T12:30:00+09:00"
+  "result": {
+    "threads": "18116494655047239",
+    "threads_comment": "17938396749382990"
+  },
+  "publish_at": "2026-10-19T12:30:00+09:00",
+  "posted_at": "2026-10-19T12:30:40.061915+09:00"
 }
