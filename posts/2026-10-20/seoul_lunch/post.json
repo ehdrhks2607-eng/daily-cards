@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-20",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(점심값 월·화 2만 7천 원) + 쌀쌀한 날씨 → 보온 도시락(불만 포인트: 부품·무게)",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "threads": {
+    "text": "이번 주 점심값 벌써 2만 7천 원이야\n\n월, 화 이틀 만에 이만큼 썼더라\n날 쌀쌀해지니까 차가운 도시락은 또 싫고\n보온 도시락은 무겁고 씻을 부품이 많다는 얘기가 있더라\n그거 보고 리뷰 많은 걸로 골라봤어\n\n너는 점심에 하루 얼마 써?",
+    "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4xtBjfLU\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-20T13:00:00+09:00"
+}

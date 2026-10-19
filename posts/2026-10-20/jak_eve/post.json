@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-20",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 퇴근길 계획만 세우다 끝",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "threads": {
+    "text": "퇴근길에 계획만 3개째야, 나만 그래?\n\n운동할까, 정리할까, 그냥 누울까\n버스 창밖 보면서 세 번 바꿨어\n결국 집 가서 샤워부터 하는 걸로 정했어\n\n너는 오늘 계획 몇 개 해낼 거 같애?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-20T18:30:00+09:00"
+}

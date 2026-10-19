@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-20",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B 점심 후 산책 vs 책상",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "threads": {
+    "text": "점심 먹고 산책 vs 책상, 너는 어느 쪽이야?\n\n오전 11시인데 벌써 점심시간 계획 중이야\n산책하면 머리는 맑은데 날이 쌀쌀해서 귀찮고\n책상에 있으면 편한데 오후에 더 졸린 거 같애\n\n난 10분만 걷고 오는 중이야\n\n너는 추워지면 산책 건너뛰는 편이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-20T11:00:00+09:00"
+}

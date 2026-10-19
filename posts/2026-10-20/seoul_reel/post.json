@@ -1,0 +1,36 @@
+{
+  "account": "seoul",
+  "date": "2026-10-20",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "월·화 점심값 2만 7천 원 → 보온 도시락 (seoul_lunch)",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "reel": {
+    "hook": "점심값\n이틀에 *얼마*?",
+    "count": {
+      "to": 27000,
+      "suffix": "원",
+      "label": "월·화 이틀 점심값"
+    },
+    "pain": "차가운 도시락은\n또 싫더라",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "전날 밥 소분",
+      "반찬 2개만",
+      "보온통에 담기"
+    ],
+    "item": "도시락통",
+    "item_sub": "리뷰 많은 걸로 찾아봄",
+    "cta": "골라둔 *도시락통*은\n프로필 링크에",
+    "caption": "이번 주 점심값, 벌써 얼마나 쓰셨나요?\n월, 화 이틀 만에 2만 7천 원이 나왔어요.\n날이 쌀쌀해져서 따뜻한 도시락을 찾아보는 중이에요.\n\n골라둔 도시락통은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #점심값 #도시락 #직장인 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-20T20:00:00+09:00"
+}

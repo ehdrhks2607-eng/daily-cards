@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-20",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "비슷한 가디건 또 구매 3만 9천 원 → 옷장 수납함 (jak_lunch)",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "reel": {
+    "hook": "또 산 가디건\n*얼마*야?",
+    "count": {
+      "to": 39000,
+      "suffix": "원",
+      "label": "또 산 가디건 값"
+    },
+    "pain": "옷장 안쪽에\n똑같은 게 있었어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "서랍 한 칸씩",
+      "안 입는 건 빼기",
+      "수납함에 세우기"
+    ],
+    "item": "수납함",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *수납함*은\n프로필 링크에",
+    "caption": "옷장 속 옷, 다 기억하세요?\n비슷한 가디건을 또 사서 3만 9천 원을 썼어요.\n이번엔 3일만 옷장 정리를 해보려고 해요.\n\n골라둔 수납함은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #옷장정리 #수납함 #정리 #습관",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-20T19:30:00+09:00"
+}

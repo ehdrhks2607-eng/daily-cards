@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-20",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 목요일 아침 한 자릿수 예보 + 외풍 → 창문 문풍지 틈막이",
+  "sources": [
+    "https://etoday.co.kr/news/view/2637568",
+    "http://www.mediadale.com/news/articleView.html?idxno=293121",
+    "https://www.newsworks.co.kr/news/articleView.html?idxno=856814"
+  ],
+  "threads": {
+    "text": "아직 보일러 안 틀었어, 나만 그래?\n\n창문 쪽에 손 대면 바람이 슬슬 들어오더라\n틀기엔 아깝고 안 틀면 새벽에 깨고\n그래서 창문 틈막이 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 보일러 틀었어?",
+    "comment": "창문 쪽 바람 때문에 새벽에 깨는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4fRQkchw\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-20T08:00:00+09:00"
+}
