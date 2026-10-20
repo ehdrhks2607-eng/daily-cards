@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(우산 또 구매 5천 원) + 수요일 아침 비 → 접이식 장우산",
   "sources": [
     "https://www.slist.kr/news/articleView.html?idxno=774908",
@@ -15,6 +15,10 @@
     "text": "비 오는 아침 편의점 우산 또 샀어, 5천 원\n\n접이식이 가방에 있는 줄 알았는데 없더라\n이번 달 우산만 3개째야\n\n그래서 가방에 넣어둘 접이식 장우산 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 우산 몇 개째야?",
     "comment": "비 오는 날 우산 없어서 또 사는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLSpmcsM0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-21T08:00:00+09:00"
+  "result": {
+    "threads": "18285229033293469",
+    "threads_comment": "17917442667259727"
+  },
+  "publish_at": "2026-10-21T08:00:00+09:00",
+  "posted_at": "2026-10-21T08:00:47.430745+09:00"
 }
