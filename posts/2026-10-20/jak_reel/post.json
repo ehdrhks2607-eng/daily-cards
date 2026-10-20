@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "비슷한 가디건 또 구매 3만 9천 원 → 옷장 수납함 (jak_lunch)",
   "sources": [
     "https://etoday.co.kr/news/view/2637568",
@@ -31,6 +31,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-10-20T19:30:00+09:00"
+  "result": {
+    "reel": "18073317245746309"
+  },
+  "publish_at": "2026-10-20T19:30:00+09:00",
+  "posted_at": "2026-10-20T19:30:42.786548+09:00"
 }
