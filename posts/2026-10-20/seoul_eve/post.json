@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "실패 고백 퇴근길 장보기",
   "sources": [
     "https://etoday.co.kr/news/view/2637568",
@@ -14,6 +14,9 @@
     "text": "퇴근길에 장 보려다 편의점만 들렀어\n\n오늘은 채소 사서 해 먹으려고 했는데\n마트 앞까지 갔다가 그냥 지나쳐버렸어\n삼각김밥 2개 들고 집 가는 중이야\n\n너는 퇴근길에 계획한 거 잘 지켜?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-20T18:00:00+09:00"
+  "result": {
+    "threads": "18116653358097725"
+  },
+  "publish_at": "2026-10-20T18:00:00+09:00",
+  "posted_at": "2026-10-20T18:00:45.898690+09:00"
 }
