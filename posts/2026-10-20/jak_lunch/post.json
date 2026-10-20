@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(비슷한 가디건 또 구매 3만 9천 원) + 목요일 아침 한 자릿수 예보 → 옷장 수납함",
   "sources": [
     "https://etoday.co.kr/news/view/2637568",
@@ -15,6 +15,10 @@
     "comment": "옷장 정리 미루고 있는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4UM21zeS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-20T12:30:00+09:00"
+  "result": {
+    "threads": "17993735259068574",
+    "threads_comment": "17912940405532946"
+  },
+  "publish_at": "2026-10-20T12:30:00+09:00",
+  "posted_at": "2026-10-20T12:30:35.213281+09:00"
 }
