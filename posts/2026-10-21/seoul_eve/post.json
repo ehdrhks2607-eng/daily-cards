@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-21",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백 퇴근길 걷기 포기(강풍)",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "threads": {
+    "text": "퇴근길에 한 정거장 걸으려다 버스 탔어\n\n바람이 너무 세서 5분 만에 마음 접었어\n요즘 이런 날이 계속 쌓이는 거 같애\n\n그래도 바람 덜 부는 날 다시 해보려는 중이야\n\n너는 추워지면 퇴근길이 더 길게 느껴져?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-21T18:00:00+09:00"
+}

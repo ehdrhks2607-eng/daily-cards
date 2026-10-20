@@ -1,0 +1,21 @@
+{
+  "account": "seoul",
+  "date": "2026-10-21",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 목요일 아침 서울 4도·올가을 가장 추움 → 1인용 전기요(불만 포인트: 타이머)",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "threads": {
+    "text": "목요일 아침 서울 4도래, 나만 놀랐어?\n\n올가을 들어 제일 춥대\n보일러 아껴보려던 마음이 오늘로 끝날 거 같애\n\n찾아보니까 타이머 없는 거 샀다가 밤새 켜둔 사람이 많더라\n그래서 그거 보고 전기요 골라봤어\n\n너는 보일러 vs 전기요, 어느 쪽이야?",
+    "comment": "이번 주 추위에 보일러 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4oVL8aib\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-21T13:00:00+09:00"
+}

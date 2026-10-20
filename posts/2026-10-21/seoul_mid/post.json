@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-21",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B 오전 간식 vs 참기",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "threads": {
+    "text": "오전 11시 벌써 배고파, 간식 vs 참기?\n\n점심까지 한 시간 남았는데 배에서 소리나\n먹으면 점심이 안 들어가고 참으면 일이 안 돼\n\n난 오늘 물 한 컵 먼저 마셔보는 중이야\n\n너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-21T11:00:00+09:00"
+}

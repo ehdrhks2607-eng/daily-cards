@@ -1,0 +1,37 @@
+{
+  "account": "jak",
+  "date": "2026-10-21",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 배달비 4만 2천 원 → 밀프렙 도시락 용기 (jak_lunch)",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "reel": {
+    "hook": "배달비\n*얼마* 나왔어?",
+    "count": {
+      "to": 42000,
+      "suffix": "원",
+      "label": "이번 주 배달비"
+    },
+    "pain": "수요일인데\n벌써 세 번 시킴",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "반찬 2개만",
+      "전날 밤 담기",
+      "용기에 소분"
+    ],
+    "item": "도시락 용기",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *도시락 용기*는\n프로필 링크에",
+    "caption": "이번 주 배달비, 얼마나 나오셨어요?\n수요일인데 벌써 4만 2천 원을 썼어요.\n이번엔 3일만 도시락을 싸보려고 해요.\n\n골라둔 도시락 용기는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #배달비 #도시락 #밀프렙 #습관",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-21T19:30:00+09:00"
+}

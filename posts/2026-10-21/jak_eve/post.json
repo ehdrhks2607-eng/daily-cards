@@ -1,0 +1,20 @@
+{
+  "account": "jak",
+  "date": "2026-10-21",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백 비 맞고 퇴근 → 운동 계획 무산",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "threads": {
+    "text": "비 맞고 퇴근했더니 운동 계획이 사라졌어\n\n집 오자마자 씻고 누웠어\n하려던 스쿼트 20개도 내일로 밀린 거 같애\n\n이번 주 벌써 3번째라 좀 찔려\n그래도 내일은 5개만 해보려는 중이야\n\n너는 퇴근하고 바로 눕는 편이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-21T18:30:00+09:00"
+}

@@ -1,0 +1,20 @@
+{
+  "account": "jak",
+  "date": "2026-10-21",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B 오전 커피 vs 물",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "threads": {
+    "text": "커피 한 잔 더 vs 물 한 잔?\n\n오전 10시 반인데 벌써 커피 두 잔째야\n속이 좀 쓰린 거 같애\n근데 물만 마시면 졸려서 일이 안 돼\n\n난 오늘 반 잔씩 섞어서 버텨보는 중이야\n\n너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-21T10:30:00+09:00"
+}

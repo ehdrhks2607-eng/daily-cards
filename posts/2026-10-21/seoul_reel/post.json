@@ -1,0 +1,37 @@
+{
+  "account": "seoul",
+  "date": "2026-10-21",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "목요일 아침 서울 4도 예보 → 1인용 전기요 (seoul_lunch)",
+  "sources": [
+    "https://www.slist.kr/news/articleView.html?idxno=774908",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16252733",
+    "https://www.kizmom.com/news/articleView.html?idxno=113398",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008806873"
+  ],
+  "reel": {
+    "hook": "목요일 아침\n*몇 도*래?",
+    "count": {
+      "to": 4,
+      "suffix": "도",
+      "label": "목요일 아침 서울 예보"
+    },
+    "pain": "올가을 들어\n제일 춥대",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "보일러 조금만",
+      "잘 때 전기요",
+      "발은 양말로"
+    ],
+    "item": "전기요",
+    "item_sub": "타이머 보고 담아둠",
+    "cta": "골라둔 *전기요*는\n프로필 링크에",
+    "caption": "목요일 아침 서울이 4도라는 얘기, 들으셨나요?\n올가을 들어 가장 추운 아침이라고 해요.\n보일러만 믿기엔 아까워서 전기요를 찾아보는 중이에요.\n\n골라둔 전기요는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #전기요 #추위 #자취 #환절기",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-21T20:00:00+09:00"
+}
