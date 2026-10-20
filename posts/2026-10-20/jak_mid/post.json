@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B 퇴근 후 30분 운동 vs 부업",
   "sources": [
     "https://etoday.co.kr/news/view/2637568",
@@ -14,6 +14,9 @@
     "text": "퇴근하고 30분, 운동 vs 부업 뭐 해?\n\n오전 10시 반인데 벌써 퇴근 후 계획 세우는 중이야\n운동하면 몸은 가벼운데 부업은 또 밀리고\n부업하면 뿌듯한데 어깨가 뻐근해지는 거 같애\n\n난 요일 나눠서 해보려는 중이야\n\n너는 어느 쪽이 먼저야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-20T10:30:00+09:00"
+  "result": {
+    "threads": "18158571376517214"
+  },
+  "publish_at": "2026-10-20T10:30:00+09:00",
+  "posted_at": "2026-10-20T10:30:38.149171+09:00"
 }
