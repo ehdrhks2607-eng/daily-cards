@@ -3,7 +3,7 @@
   "date": "2026-10-20",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 + 건조한 환절기 밤 → 미니 USB 가습기",
   "sources": [
     "https://etoday.co.kr/news/view/2637568",
@@ -14,6 +14,10 @@
     "text": "자고 일어나면 목이 칼칼한 게 3일째야\n\n화요일 밤 10시, 방이 건조해진 건가 싶어\n자기 전에 물 한 컵 떠놓고 자는 중이고\n그래서 책상에 둘 작은 USB 가습기 리뷰 많은 걸로 찾아봤어\n\n너는 자고 일어나면 목 괜찮아?",
     "comment": "방이 건조해서 목 칼칼한 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4mNXey8i\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-20T21:30:00+09:00"
+  "result": {
+    "threads": "17909846463589720",
+    "threads_comment": "18125796718925428"
+  },
+  "publish_at": "2026-10-20T21:30:00+09:00",
+  "posted_at": "2026-10-20T21:30:37.344843+09:00"
 }
