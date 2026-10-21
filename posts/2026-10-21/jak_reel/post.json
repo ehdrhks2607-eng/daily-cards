@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 주 배달비 4만 2천 원 → 밀프렙 도시락 용기 (jak_lunch)",
   "sources": [
     "https://www.slist.kr/news/articleView.html?idxno=774908",
@@ -32,6 +32,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-10-21T19:30:00+09:00"
+  "result": {
+    "reel": "17864149986695146"
+  },
+  "publish_at": "2026-10-21T19:30:00+09:00",
+  "posted_at": "2026-10-21T19:30:42.344292+09:00"
 }
