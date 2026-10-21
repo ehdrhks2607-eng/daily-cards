@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백(겨울 이불 2주째 미룸) + 목요일 4도 → 이불 압축팩",
   "sources": [
     "https://www.slist.kr/news/articleView.html?idxno=774908",
@@ -15,6 +15,10 @@
     "text": "겨울 이불 꺼내는 걸 2주째 미루고 있어\n\n이불장이 꽉 차서 뭘 빼야 할지 모르겠더라\n내일 아침 4도래서 마음이 급해졌어\n\n그래서 여름 이불 넣어둘 압축팩 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 겨울 이불 꺼냈어?",
     "comment": "겨울 이불 꺼낼 자리가 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4qvuqT6G\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-21T21:30:00+09:00"
+  "result": {
+    "threads": "17973253023154768",
+    "threads_comment": "17951667150291298"
+  },
+  "publish_at": "2026-10-21T21:30:00+09:00",
+  "posted_at": "2026-10-21T21:30:41.888845+09:00"
 }
