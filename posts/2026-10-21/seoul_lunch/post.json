@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래? 목요일 아침 서울 4도·올가을 가장 추움 → 1인용 전기요(불만 포인트: 타이머)",
   "sources": [
     "https://www.slist.kr/news/articleView.html?idxno=774908",
@@ -16,6 +16,10 @@
     "comment": "이번 주 추위에 보일러 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4oVL8aib\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-21T13:00:00+09:00"
+  "result": {
+    "threads": "17974232604148519",
+    "threads_comment": "18640714540050163"
+  },
+  "publish_at": "2026-10-21T13:00:00+09:00",
+  "posted_at": "2026-10-21T13:00:46.239736+09:00"
 }
