@@ -1,0 +1,20 @@
+{
+  "account": "jak",
+  "date": "2026-10-22",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B(퇴근 후 씻기)",
+  "sources": [
+    "https://mt.co.kr/society/2026/10/21/2026102113582479639",
+    "https://www.fnnews.com/news/202610211956287698",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008808944",
+    "https://www.etoday.co.kr/news/view/2638585"
+  ],
+  "threads": {
+    "text": "퇴근하고 바로 씻기 vs 좀 쉬었다 씻기, 너는 어느 쪽이야?\n\n바로 씻으면 개운한데 다시 나갈 일이 없어져\n쉬었다 씻으면 그대로 누워서 30분이 사라지고\n\n오전 10시 반인데 벌써 퇴근 후 생각하는 중이야",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-22T10:30:00+09:00"
+}

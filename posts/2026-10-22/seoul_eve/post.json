@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-22",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백(지하철 졸다 지나침)",
+  "sources": [
+    "https://mt.co.kr/society/2026/10/21/2026102113582479639",
+    "https://www.fnnews.com/news/202610211956287698",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008808944",
+    "https://www.etoday.co.kr/news/view/2638585"
+  ],
+  "threads": {
+    "text": "퇴근길 지하철에서 졸다가 두 정거장 지나쳤어\n\n히터 틀어놔서 앉자마자 눈이 감기더라\n다시 반대편으로 건너가니까 15분이 더 걸렸고\n\n요즘 이런 날이 은근 많은 거 같애\n\n다들 안 지나치는 비결 있어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-22T18:00:00+09:00"
+}

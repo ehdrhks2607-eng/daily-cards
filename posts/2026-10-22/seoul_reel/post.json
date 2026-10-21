@@ -1,0 +1,37 @@
+{
+  "account": "seoul",
+  "date": "2026-10-22",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "커피값 1만 8천 원 → 텀블러 (seoul_lunch)",
+  "sources": [
+    "https://mt.co.kr/society/2026/10/21/2026102113582479639",
+    "https://www.fnnews.com/news/202610211956287698",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008808944",
+    "https://www.etoday.co.kr/news/view/2638585"
+  ],
+  "reel": {
+    "hook": "커피값\n*얼마* 썼어?",
+    "count": {
+      "to": 18000,
+      "suffix": "원",
+      "label": "이번 주 커피값"
+    },
+    "pain": "목요일인데\n벌써 네 잔째",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "사무실서 타기",
+      "점심 후 한 잔",
+      "따뜻한 물"
+    ],
+    "item": "텀블러",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *텀블러*는\n프로필 링크에",
+    "caption": "이번 주 커피값은 얼마나 나오셨어요?\n목요일인데 벌써 1만 8천 원을 썼어요.\n이번엔 사무실에서 타 마셔볼까 해요.\n\n골라둔 텀블러는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #커피값 #텀블러 #출근길 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-22T20:00:00+09:00"
+}
