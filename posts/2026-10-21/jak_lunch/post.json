@@ -3,7 +3,7 @@
   "date": "2026-10-21",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(이번 주 배달비 4만 2천 원) + 목요일 서울 4도 예보 → 밀프렙 도시락 용기",
   "sources": [
     "https://www.slist.kr/news/articleView.html?idxno=774908",
@@ -16,6 +16,10 @@
     "comment": "배달비 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-21T12:30:00+09:00"
+  "result": {
+    "threads": "17975324664150784",
+    "threads_comment": "18166807741470801"
+  },
+  "publish_at": "2026-10-21T12:30:00+09:00",
+  "posted_at": "2026-10-21T12:30:38.371110+09:00"
 }
