@@ -3,7 +3,7 @@
   "date": "2026-10-22",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B(겉옷)",
   "sources": [
     "https://mt.co.kr/society/2026/10/21/2026102113582479639",
@@ -15,6 +15,9 @@
     "text": "겉옷 두껍게 하나 vs 얇게 여러 겹, 너는 어느 쪽이야?\n\n두껍게 입으면 사무실에서 덥고\n얇게 입으면 아침에 떨고\n\n오전 11시인데 아직도 정답을 모르겠어",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-22T11:00:00+09:00"
+  "result": {
+    "threads": "18114663362030162"
+  },
+  "publish_at": "2026-10-22T11:00:00+09:00",
+  "posted_at": "2026-10-22T11:00:48.608645+09:00"
 }
