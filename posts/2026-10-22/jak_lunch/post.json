@@ -3,7 +3,7 @@
   "date": "2026-10-22",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(헬스장 15만 원) + 첫 한파주의보 → 요가매트",
   "sources": [
     "https://mt.co.kr/society/2026/10/21/2026102113582479639",
@@ -16,6 +16,10 @@
     "comment": "집에서 운동 시작해보고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-22T12:30:00+09:00"
+  "result": {
+    "threads": "18013641743762891",
+    "threads_comment": "18097747181535099"
+  },
+  "publish_at": "2026-10-22T12:30:00+09:00",
+  "posted_at": "2026-10-22T12:30:41.497962+09:00"
 }
