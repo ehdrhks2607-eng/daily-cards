@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-23",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B 사무실 히터 틀자 vs 참자",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
+    "https://www.wikitree.co.kr/articles/1168228",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=93319"
+  ],
+  "threads": {
+    "text": "사무실 히터 틀자 vs 참자, 어느 쪽?\n\n금요일 오전 11시인데 옆자리는 덥다 하고 나는 춥다 하고\n틀면 졸리고 끄면 손이 시려\n\n난 오늘 무릎에 가디건 올려놓고 버텨보는 중이야\n\n다들 사무실 온도 어떻게 맞춰?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-23T11:00:00+09:00"
+}

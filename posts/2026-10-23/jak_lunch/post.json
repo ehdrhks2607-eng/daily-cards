@@ -1,0 +1,21 @@
+{
+  "account": "jak",
+  "date": "2026-10-23",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(이번 주 점심값 5만 8천 원) + 금요일 물가·금리 이슈 → 닭가슴살",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
+    "https://www.wikitree.co.kr/articles/1168228",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=93319",
+    "https://seoul.co.kr/news/economy/finance/2026/10/22/20261022500281"
+  ],
+  "threads": {
+    "text": "이번 주 점심값만 5만 8천 원 썼어\n\n목요일까지 4일인데 하루에 1만 4천 원 넘게 쓴 거야\n금요일 되니까 지갑보다 통장이 먼저 떨려\n\n그래서 다음 주는 3일만 샐러드에 닭가슴살 올려서 싸가보기로 함\n닭가슴살 리뷰 많은 걸로 담아둠\n\n너는 점심값 하루에 얼마 써?",
+    "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-23T12:30:00+09:00"
+}

@@ -1,0 +1,37 @@
+{
+  "account": "jak",
+  "date": "2026-10-23",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 점심값 5만 8천 원 → 닭가슴살 (jak_lunch)",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
+    "https://www.wikitree.co.kr/articles/1168228",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=93319",
+    "https://seoul.co.kr/news/economy/finance/2026/10/22/20261022500281"
+  ],
+  "reel": {
+    "hook": "이번 주 점심\n*5만 8천 원*",
+    "count": {
+      "to": 58000,
+      "suffix": "원",
+      "label": "이번 주 점심값 4일치"
+    },
+    "pain": "금요일 되니\n통장이 떨림",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "샐러드 싸기",
+      "닭가슴살 올리기",
+      "3일만 해보기"
+    ],
+    "item": "닭가슴살",
+    "item_sub": "리뷰 많은 걸로 담아둠",
+    "cta": "골라둔 *닭가슴살*은\n프로필 링크에",
+    "caption": "이번 주 점심값은 얼마나 쓰셨어요?\n목요일까지 4일 동안 5만 8천 원을 썼어요.\n다음 주는 3일만 샐러드를 싸가보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #점심값 #도시락 #닭가슴살 #습관",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-23T19:30:00+09:00"
+}

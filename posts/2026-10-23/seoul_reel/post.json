@@ -1,0 +1,36 @@
+{
+  "account": "seoul",
+  "date": "2026-10-23",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "작년 11월 가스비 6만 원 → 수면양말 (seoul_lunch)",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
+    "https://www.wikitree.co.kr/articles/1168228",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=93319"
+  ],
+  "reel": {
+    "hook": "작년 11월\n가스비 *6만*",
+    "count": {
+      "to": 60000,
+      "suffix": "원",
+      "label": "작년 11월 가스비"
+    },
+    "pain": "올해는 최대한\n늦게 틀어볼래",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "양말 신기",
+      "창가 틈 막기",
+      "보일러 늦게"
+    ],
+    "item": "수면양말",
+    "item_sub": "장바구니에 담아둠",
+    "cta": "골라둔 *수면양말*은\n프로필 링크에",
+    "caption": "보일러는 언제부터 트세요?\n작년 11월 가스비가 6만 원 넘게 나왔어요.\n올해는 발부터 챙겨보려고 해요.\n\n골라둔 수면양말은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #가스비 #수면양말 #자취 #절약",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-23T20:00:00+09:00"
+}

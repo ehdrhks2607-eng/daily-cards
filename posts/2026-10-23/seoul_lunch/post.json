@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-23",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(작년 11월 가스비 6만 원) + 아침 7도 → 수면양말",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
+    "https://www.wikitree.co.kr/articles/1168228",
+    "https://www.mediafine.co.kr/news/articleView.html?idxno=93319"
+  ],
+  "threads": {
+    "text": "작년 11월 가스비가 6만 원 넘게 나왔어\n\n올해는 보일러 최대한 늦게 틀어보려는데\n아침 7도에 바닥이 얼음장이더라\n\n그래서 일단 수면양말 리뷰 많은 걸로 장바구니에 넣어놨어\n보일러 대신 발부터 챙겨보는 중이야\n\n다들 첫 보일러 언제 틀어?",
+    "comment": "바닥 차가워서 보일러 켜기 싫은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1avWGA8W\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-23T13:00:00+09:00"
+}
