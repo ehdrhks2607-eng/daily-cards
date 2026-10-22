@@ -3,7 +3,7 @@
   "date": "2026-10-22",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "헬스장 15만 원 결제 → 요가매트 (jak_lunch)",
   "sources": [
     "https://mt.co.kr/society/2026/10/21/2026102113582479639",
@@ -32,6 +32,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-10-22T19:30:00+09:00"
+  "result": {
+    "reel": "17992660443115471"
+  },
+  "publish_at": "2026-10-22T19:30:00+09:00",
+  "posted_at": "2026-10-22T19:30:41.086006+09:00"
 }
