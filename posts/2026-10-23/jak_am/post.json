@@ -3,7 +3,7 @@
   "date": "2026-10-23",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래? 상강 아침 7도·낮 21도 → 1인용 미니 전기포트",
   "sources": [
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
@@ -14,6 +14,10 @@
     "text": "아침 7도인데 낮엔 21도래, 나만 헷갈려?\n\n상강이라 하루 만에 10도 떨어졌대\n알람 3번 끄고 겨우 일어났어\n\n그래서 일어나자마자 따뜻한 물 한 잔 마시려고\n1인용 미니 전기포트 리뷰 많은 걸로 찾아봤어\n\n너는 아침에 뭐부터 해?",
     "comment": "아침에 따뜻한 물부터 마시고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4BINIOwS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-23T07:30:00+09:00"
+  "result": {
+    "threads": "18113200835598275",
+    "threads_comment": "18636020299047975"
+  },
+  "publish_at": "2026-10-23T07:30:00+09:00",
+  "posted_at": "2026-10-23T07:30:45.045958+09:00"
 }
