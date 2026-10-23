@@ -3,7 +3,7 @@
   "date": "2026-10-23",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 + DAY 26 연재(체중계 5일째) → 2027 다이어리·플래너",
   "sources": [
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
@@ -14,6 +14,10 @@
     "text": "체중계에 올라간 지 5일째야 (DAY 26)\n\n숫자를 폰 메모에 적다가 사흘 치를 날렸어\n그래서 오늘은 종이에 한 줄 손으로 적어봤는데 이게 더 오래 갈 거 같애\n\n마침 10월 말이라 2027 다이어리 리뷰 많은 걸로 찾아봤어\n내년엔 3일 말고 한 달은 적어보려고\n\n너는 기록 어디다 해?",
     "comment": "기록 꾸준히 해보고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI44OpwuI0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-23T21:00:00+09:00"
+  "result": {
+    "threads": "18018345236745091",
+    "threads_comment": "18152082190526611"
+  },
+  "publish_at": "2026-10-23T21:00:00+09:00",
+  "posted_at": "2026-10-23T21:00:50.786706+09:00"
 }
