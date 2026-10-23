@@ -3,7 +3,7 @@
   "date": "2026-10-23",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(작년 11월 가스비 6만 원) + 아침 7도 → 수면양말",
   "sources": [
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
@@ -15,6 +15,10 @@
     "comment": "바닥 차가워서 보일러 켜기 싫은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1avWGA8W\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-23T13:00:00+09:00"
+  "result": {
+    "threads": "17911330197602720",
+    "threads_comment": "18116598593027557"
+  },
+  "publish_at": "2026-10-23T13:00:00+09:00",
+  "posted_at": "2026-10-23T13:00:47.854080+09:00"
 }
