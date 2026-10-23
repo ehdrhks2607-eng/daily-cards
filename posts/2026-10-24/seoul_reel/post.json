@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-24",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "다이소 6천 원 → 냉동 소분 용기 (seoul_lunch)",
+  "sources": [
+    "https://www.newspim.com/news/view/20261022000789",
+    "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3038637"
+  ],
+  "reel": {
+    "hook": "다이소 갔다가\n*6천 원* 씀",
+    "count": {
+      "to": 6000,
+      "suffix": "원",
+      "label": "하나 사러 갔다가"
+    },
+    "pain": "그것만 품절이라\n다른 것만 사옴",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "쿠팡에서 찾기",
+      "리뷰 많은 순",
+      "장바구니에 담기"
+    ],
+    "item": "소분 용기",
+    "item_sub": "장바구니에 담아둠",
+    "cta": "골라둔 *소분 용기*는\n프로필 링크에",
+    "caption": "하나 사러 갔다가 다른 것만 사온 적 있으세요?\n이번엔 다이소에서 6천 원을 또 썼어요.\n그래서 비슷한 소분 용기를 찾아봤어요.\n\n골라둔 소분 용기는 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #자취 #소분 #냉동밥 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-24T21:00:00+09:00"
+}

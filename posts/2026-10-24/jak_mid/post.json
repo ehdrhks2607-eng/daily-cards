@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-24",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 토요일 약속 vs 집콕",
+  "sources": [
+    "https://www.newspim.com/news/view/20261022000789",
+    "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3038637"
+  ],
+  "threads": {
+    "text": "토요일 약속 잡기 vs 집에서 쉬기, 너는 어느 쪽이야?\n\n나는 나가면 3시간은 훌쩍 가버리는데\n집에 있으면 또 아무것도 못 해서 죄책감이 들고\n\n쉬는 것도 일정에 넣어야 하나 싶어, 요즘",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-24T11:30:00+09:00"
+}
