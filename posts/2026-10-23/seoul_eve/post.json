@@ -3,7 +3,7 @@
   "date": "2026-10-23",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 금요일 퇴근 지하철 40분 서서 옴",
   "sources": [
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=91550",
@@ -14,6 +14,9 @@
     "text": "금요일 지하철 40분 서서 왔어 나만 그래?\n\n사람이 너무 많아서 문 앞에서 한 발로 서 있었어\n내려서 계단 오르는데 다리가 풀리는 거 같애\n\n그래도 주말이라고 생각하니까 버티게 되더라\n\n너는 금요일 퇴근길 어때?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-23T18:00:00+09:00"
+  "result": {
+    "threads": "18038575916907279"
+  },
+  "publish_at": "2026-10-23T18:00:00+09:00",
+  "posted_at": "2026-10-23T18:00:48.853282+09:00"
 }
