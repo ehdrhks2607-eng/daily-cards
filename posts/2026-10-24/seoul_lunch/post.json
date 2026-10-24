@@ -3,7 +3,7 @@
   "date": "2026-10-24",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백 + 다이소 패턴: 6천 원 → 냉동 소분 용기",
   "sources": [
     "https://www.newspim.com/news/view/20261022000789",
@@ -14,6 +14,10 @@
     "comment": "밥 소분해서 얼려두고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLQXDbG5k\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-24T14:00:00+09:00"
+  "result": {
+    "threads": "18376346974209885",
+    "threads_comment": "18097928693114779"
+  },
+  "publish_at": "2026-10-24T14:00:00+09:00",
+  "posted_at": "2026-10-24T14:00:46.591386+09:00"
 }
