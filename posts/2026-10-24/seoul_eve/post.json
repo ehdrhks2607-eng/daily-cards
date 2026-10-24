@@ -3,7 +3,7 @@
   "date": "2026-10-24",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "실패 고백: 토요일 한 게 없음",
   "sources": [
     "https://www.newspim.com/news/view/20261022000789",
@@ -13,6 +13,9 @@
     "text": "토요일 저녁 7시인데 오늘 한 게 빨래 하나야\n\n계획은 청소에 장보기까지 있었는데\n누워 있다 보니 해가 졌더라, 쉽지않아\n\n내일은 하나만 하자고 정해둠\n너는 주말에 계획 몇 개나 지켜?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-24T19:00:00+09:00"
+  "result": {
+    "threads": "18096001466674391"
+  },
+  "publish_at": "2026-10-24T19:00:00+09:00",
+  "posted_at": "2026-10-24T19:00:47.825458+09:00"
 }
