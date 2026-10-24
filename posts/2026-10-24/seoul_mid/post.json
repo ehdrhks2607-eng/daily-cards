@@ -3,7 +3,7 @@
   "date": "2026-10-24",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 청소 vs 빨래",
   "sources": [
     "https://www.newspim.com/news/view/20261022000789",
@@ -13,6 +13,9 @@
     "text": "토요일에 청소 먼저 vs 빨래 먼저, 너는 어느 쪽이야?\n\n나는 빨래부터 돌려놓고 하는데\n돌려놓고 까먹어서 다음 날 꺼낸 적이 두 번 있어\n\n그래도 이 순서가 그나마 덜 힘든 거 같애\n다들 어떻게 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-24T12:00:00+09:00"
+  "result": {
+    "threads": "17919132906453192"
+  },
+  "publish_at": "2026-10-24T12:00:00+09:00",
+  "posted_at": "2026-10-24T12:00:47.058761+09:00"
 }
