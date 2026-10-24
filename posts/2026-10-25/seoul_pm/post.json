@@ -1,0 +1,17 @@
+{
+  "account": "seoul",
+  "date": "2026-10-25",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "숫자 고백 월요일 점심 1만 원 → 보온 도시락(불만: 무게·부품)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "threads": {
+    "text": "월요일 점심, 사먹으면 또 1만 원이야\n\n일요일 밤이면 다음 주 지출부터 계산하게 돼\n도시락 싸가자 하면서 늘 안 싸고\n\n찾아보니까 무겁고 씻을 부품 많다는 얘기가 있더라\n그래서 가벼운 걸로 리뷰 보고 담아둠\n\n너는 월요일 점심 어떻게 해?",
+    "comment": "월요일 점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4xtBjfLU\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-25T22:30:00+09:00"
+}

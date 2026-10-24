@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-25",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 주말 카페값 1만 8천 원 → 텀블러",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "threads": {
+    "text": "주말 카페값만 1만 8천 원 썼어\n\n토요일 한 번, 오늘 한 번\n커피 두 잔인데 영수증 보고 좀 놀랐어\n\n그래서 텀블러 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 주말에 카페 몇 번 가?",
+    "comment": "카페값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-25T14:00:00+09:00"
+}

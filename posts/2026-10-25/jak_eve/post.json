@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-10-25",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "숫자 고백 일요일 폰 화면 시간 6시간",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "threads": {
+    "text": "오늘 폰 화면 시간이 6시간 찍혔어\n\n일요일이라 쉰다고 누워 있다가\n유튜브만 보다 저녁이 됐더라\n\n쉬는 것도 쉽지않아, 내일은 30분만 폰 내려놓고 걸어보는 중이야\n\n너는 오늘 화면 시간 몇 시간이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-25T19:30:00+09:00"
+}

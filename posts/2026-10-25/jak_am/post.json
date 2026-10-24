@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-10-25",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 일요일 아침 쌀쌀+낮 20도 안팎 → 경량 바람막이",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "threads": {
+    "text": "일요일 아침 쌀쌀한데 걷기 나갈까 말까 나만 그래?\n\n낮엔 20도쯤 된다는데 아침엔 쌀쌀하대\n겉옷 고르다가 20분이 갔어\n\n그래서 가볍게 걸칠 바람막이 리뷰 많은 걸로 찾아봤어\n\n너는 일요일 아침에 밖에 나가?",
+    "comment": "아침 걷기 나가려는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0XG1vgXI\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-25T08:30:00+09:00"
+}

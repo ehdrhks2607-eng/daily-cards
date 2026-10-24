@@ -1,0 +1,17 @@
+{
+  "account": "seoul",
+  "date": "2026-10-25",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래? 일요일 12시 아직 잠옷",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "threads": {
+    "text": "일요일 12시인데 아직 잠옷이야, 나만 그래?\n\n씻고 나가야지 하면서 폰만 보다 보니\n벌써 점심때더라\n\n그래도 주말이니까 오늘은 이대로 두는 중이야\n\n다들 일요일 오전에 뭐 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-25T12:00:00+09:00"
+}

@@ -1,0 +1,34 @@
+{
+  "account": "jak",
+  "date": "2026-10-25",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 달 야식비 7만 원 → 곤약젤리 (jak_lunch)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
+  ],
+  "reel": {
+    "hook": "이번 달\n*야식비* 얼마?",
+    "count": {
+      "to": 70000,
+      "suffix": "원",
+      "label": "이번 달 편의점 14번"
+    },
+    "pain": "밤 11시만 되면\n손이 먼저 감",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "야식 대신 젤리",
+      "3일만 바꾸기",
+      "결제내역 확인"
+    ],
+    "item": "곤약젤리",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *곤약젤리*는\n프로필 링크에",
+    "caption": "이번 달 야식비는 얼마나 나왔어요?\n저는 편의점만 14번 가서 7만 원이 나왔어요.\n이번 주는 3일만 야식 대신 먹어보려고 해요.\n\n골라둔 곤약젤리은 프로필 링크에 있어요.\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #야식 #다이어트 #습관 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-25T20:30:00+09:00"
+}
