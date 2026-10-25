@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B 일요일 오전 정리 vs 쉬기",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -12,6 +12,9 @@
     "text": "일요일 오전, 정리 vs 쉬기 어느 쪽?\n\n정리하면 개운한데 한 시간이 순삭이고\n쉬면 마음 한쪽이 계속 찜찜해\n\n난 오늘 서랍 하나만 정리해보는 중이야\n\n너는 일요일 오전에 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-25T11:30:00+09:00"
+  "result": {
+    "threads": "18067206287795222"
+  },
+  "publish_at": "2026-10-25T11:30:00+09:00",
+  "posted_at": "2026-10-25T11:30:40.795248+09:00"
 }
