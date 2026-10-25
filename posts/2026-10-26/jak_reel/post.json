@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-26",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 달 점심값 15만 원 → 닭가슴살 (jak_lunch)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "reel": {
+    "hook": "이번 달\n*점심값* 얼마?",
+    "count": {
+      "to": 150000,
+      "suffix": "원",
+      "label": "이번 달 점심 17번"
+    },
+    "pain": "하루 9천 원씩\n쌓이고 있었음",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "점심 한 번 바꾸기",
+      "3일만 해보기",
+      "결제내역 확인"
+    ],
+    "item": "닭가슴살",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *닭가슴살*은\n프로필 링크에",
+    "caption": "이번 달 점심값은 얼마나 나왔어요?\n저는 17번 사먹고 15만 원이 나왔어요.\n이번 주는 3일만 점심 한 번씩 바꿔보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #점심값 #식단 #습관 #절약",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-26T19:30:00+09:00"
+}

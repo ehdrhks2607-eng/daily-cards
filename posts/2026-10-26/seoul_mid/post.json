@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-26",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 출근 버티기: 나만 그래?",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "threads": {
+    "text": "월요일 오전 10시인데 벌써 퇴근하고 싶어, 나만 그래?\n\n메일 열어보니 주말 사이 12통 와 있고\n커피는 첫 모금부터 식어버렸고\n\n그래도 오늘만 버티면 화요일이니까 하는 중이야\n\n다들 월요일 오전엔 뭐부터 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-26T11:00:00+09:00"
+}

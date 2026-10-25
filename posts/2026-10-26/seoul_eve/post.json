@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-26",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 월요일 퇴근 후 집 vs 약속",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "threads": {
+    "text": "퇴근 후 바로 집 vs 저녁 약속, 너는 어느 쪽이야?\n\n월요일은 약속 있으면 더 피곤해서\n나는 웬만하면 바로 집에 가는 편이야\n\n근데 집에 가면 또 누워서 폰만 보다 끝나고\n이게 맞는 건지 모르겠어, 쉽지않아",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-26T18:00:00+09:00"
+}

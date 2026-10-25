@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-26",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "목요일 비 예보 → 실내 빨래건조대",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "threads": {
+    "text": "목요일에 비 온대, 빨래 어디 널지\n\n지난번 비 왔을 땐 수건 하나 마르는 데 이틀 걸렸어\n퇴근하고 오면 방에 눅눅한 냄새부터 나고\n\n그래서 실내 빨래건조대 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 비 오는 날 빨래 어떻게 해?",
+    "comment": "비 오는 날 빨래 널 데 없는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4s2YGvtY\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-26T21:30:00+09:00"
+}

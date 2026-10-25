@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-26",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "월요일 알람 3번 → 수요일 아침 급강하 → 미니 전기포트",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "threads": {
+    "text": "월요일 알람 3번 끄고 일어났어, 나만 그래?\n\n수요일부터 아침이 확 추워진대\n따뜻한 물 한 잔 마실 시간도 없는데\n\n그래서 1인용 미니 전기포트 리뷰 많은 걸로 찾아봤어\n\n너는 아침에 뭐부터 마셔?",
+    "comment": "아침에 따뜻한 물 마시고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4BINIOwS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-26T07:30:00+09:00"
+}

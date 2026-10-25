@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-26",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "DAY 29 체중 기록 → 스마트 체중계 (불만 포인트)",
+  "sources": [
+    "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
+    "https://wikitree.co.kr/articles/1168635"
+  ],
+  "threads": {
+    "text": "체중계에 올라간 지 8일째야 (DAY 29)\n\n목요일 비 오고 수요일부터 추워진대서\n아침 걷기는 또 접힐 거 같다는 생각이 먼저 들더라\n\n찾아보니까 체지방은 추정치라는 얘기가 있더라\n그래서 매일 같은 시간 기록하는 용도로 리뷰 보고 담아둠\n\n너는 체중 매일 재? 가끔 재?",
+    "comment": "체중 기록 꾸준히 하고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI5buPonoi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-26T21:00:00+09:00"
+}
