@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 달 편의점 야식비 7만 원 → 곤약젤리",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -13,6 +13,10 @@
     "comment": "야식 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0Td5xBW8\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-25T13:30:00+09:00"
+  "result": {
+    "threads": "18140074102616997",
+    "threads_comment": "18138322504729390"
+  },
+  "publish_at": "2026-10-25T13:30:00+09:00",
+  "posted_at": "2026-10-25T13:30:39.505712+09:00"
 }
