@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래? 일요일 아침 햇빛에 7시 기상 → 수면안대",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -12,6 +12,10 @@
     "text": "일요일 7시에 햇빛 때문에 깼어, 나만 그래?\n\n커튼 사이로 들어온 빛 한 줄에\n모처럼의 늦잠이 날아갔어\n\n그래서 수면안대 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 주말에 몇 시까지 자?",
     "comment": "일요일 늦잠 자고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1ha0DoUm\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-25T09:00:00+09:00"
+  "result": {
+    "threads": "17869573962662475",
+    "threads_comment": "18337400596278960"
+  },
+  "publish_at": "2026-10-25T09:00:00+09:00",
+  "posted_at": "2026-10-25T09:00:51.554362+09:00"
 }
