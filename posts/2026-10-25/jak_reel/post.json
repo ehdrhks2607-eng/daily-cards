@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 달 야식비 7만 원 → 곤약젤리 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-10-25T20:30:00+09:00"
+  "result": {
+    "reel": "18029665553859912"
+  },
+  "publish_at": "2026-10-25T20:30:00+09:00",
+  "posted_at": "2026-10-25T20:30:40.385128+09:00"
 }
