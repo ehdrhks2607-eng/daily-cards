@@ -3,7 +3,7 @@
   "date": "2026-10-26",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "수요일 아침 급강하 예보 → 충전식 손난로 (불만 포인트)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
@@ -13,6 +13,10 @@
     "text": "수요일부터 아침이 확 추워진대, 나만 아직 가을옷이야?\n\n지금도 출근길 손끝이 시리긴 한데\n\n찾아보니까 손난로는 꺼지는 시간이 제각각이라는 얘기가 있더라\n그래서 지속 시간 적힌 걸로 리뷰 보고 담아둠\n\n너는 장갑 언제 꺼내?",
     "comment": "출근길 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-26T08:00:00+09:00"
+  "result": {
+    "threads": "18156834827005783",
+    "threads_comment": "18074644013751911"
+  },
+  "publish_at": "2026-10-26T08:00:00+09:00",
+  "posted_at": "2026-10-26T08:00:44.638616+09:00"
 }
