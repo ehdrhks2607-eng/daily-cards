@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 + DAY 28 연재(체중계 7일째) → 폼롤러(불만: 딱딱함)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -12,6 +12,10 @@
     "text": "체중계에 올라간 지 7일째야 (DAY 28)\n\n3일 넘기고 일주일을 채웠어\n주말 내내 앉아만 있었더니 종아리가 뭉치더라\n\n찾아보니까 초보한테는 너무 딱딱하다는 얘기가 있더라\n그래서 부드러운 걸로 리뷰 보고 담아둠\n\n너는 일요일 밤에 스트레칭 해?",
     "comment": "앉아만 있다 뭉친 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI5goL5TNs\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-25T22:00:00+09:00"
+  "result": {
+    "threads": "18171811888463787",
+    "threads_comment": "18080209991393113"
+  },
+  "publish_at": "2026-10-25T22:00:00+09:00",
+  "posted_at": "2026-10-25T22:00:47.721844+09:00"
 }
