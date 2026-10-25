@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B 월요일 옷 미리 vs 아침에",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
@@ -12,6 +12,9 @@
     "text": "월요일 옷 미리 vs 아침에, 어느 쪽이야?\n\n일요일 저녁 7시에 꺼내놓으면 마음이 편한데\n아침에 보면 또 마음이 바뀌어\n\n난 오늘 양말까지만 꺼내놓는 중이야\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-25T19:00:00+09:00"
+  "result": {
+    "threads": "18083251151687481"
+  },
+  "publish_at": "2026-10-25T19:00:00+09:00",
+  "posted_at": "2026-10-25T19:00:45.414020+09:00"
 }
