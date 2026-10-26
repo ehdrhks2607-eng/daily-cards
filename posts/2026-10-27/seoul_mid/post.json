@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-27",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 지하철 음악 vs 멍때리기",
+  "sources": [
+    "https://www.mt.co.kr/society/2026/10/26/2026102617251538460",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008815712"
+  ],
+  "threads": {
+    "text": "지하철에서 음악 듣기 vs 멍때리기, 너는 어느 쪽이야?\n\n나는 이어폰 빼면 불안해서 꼭 끼는 편이야\n근데 어제 한 번 빼고 멍때려봤더니 7정거장이 생각보다 빨랐고\n\n그래도 습관이라 내일은 또 끼고 있을 듯\n\n너는 출근길에 뭐 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-27T11:00:00+09:00"
+}

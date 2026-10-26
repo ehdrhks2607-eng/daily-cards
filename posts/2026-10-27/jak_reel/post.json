@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-27",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 달 배달비 14만 원 → 밀프렙 도시락 용기 (jak_lunch)",
+  "sources": [
+    "https://www.mt.co.kr/society/2026/10/26/2026102617251538460",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008815712"
+  ],
+  "reel": {
+    "hook": "이번 달\n*배달비* 얼마?",
+    "count": {
+      "to": 140000,
+      "suffix": "원",
+      "label": "이번 달 배달 11번"
+    },
+    "pain": "추우니까 또\n앱부터 열었음",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "도시락 3일만",
+      "배달앱 닫기",
+      "결제내역 확인"
+    ],
+    "item": "도시락통",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *도시락통*은\n프로필 링크에",
+    "caption": "이번 달 배달비는 얼마나 나왔어요?\n저는 11번 시켰더니 14만 원이 나왔어요.\n이번 주는 3일만 도시락을 싸보려고 해요.\n\n골라둔 도시락통은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #배달비 #도시락 #습관 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-27T19:30:00+09:00"
+}

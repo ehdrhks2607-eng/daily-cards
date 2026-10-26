@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-27",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 이번 주 점심 4만 2천 원 → 즉석밥",
+  "sources": [
+    "https://www.mt.co.kr/society/2026/10/26/2026102617251538460",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008815712"
+  ],
+  "threads": {
+    "text": "이번 주 점심에만 4만 2천 원 썼어\n\n편의점에서 4번, 한 번에 1만 원 조금 넘더라\n오늘 찬바람 분다니까 밖에 나가기도 귀찮고\n\n그래서 즉석밥 리뷰 많은 걸로 장바구니에 넣어놨어\n집에 있는 반찬이랑 먹어보려고\n\n너는 이번 주 점심값 얼마야?",
+    "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1bZgLA5Y\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-27T13:00:00+09:00"
+}
