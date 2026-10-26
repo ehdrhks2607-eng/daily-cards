@@ -3,7 +3,7 @@
   "date": "2026-10-26",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 달 점심값 15만 원 → 닭가슴살 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-10-26T19:30:00+09:00"
+  "result": {
+    "reel": "17906655021375929"
+  },
+  "publish_at": "2026-10-26T19:30:00+09:00",
+  "posted_at": "2026-10-26T19:30:38.000232+09:00"
 }
