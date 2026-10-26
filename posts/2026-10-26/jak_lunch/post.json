@@ -3,7 +3,7 @@
   "date": "2026-10-26",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 달 점심값 15만 원 → 닭가슴살",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
@@ -14,6 +14,10 @@
     "comment": "점심값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-26T12:30:00+09:00"
+  "result": {
+    "threads": "18113739239605661",
+    "threads_comment": "18438936328195796"
+  },
+  "publish_at": "2026-10-26T12:30:00+09:00",
+  "posted_at": "2026-10-26T12:30:37.381174+09:00"
 }
