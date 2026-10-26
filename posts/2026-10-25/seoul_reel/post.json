@@ -3,7 +3,7 @@
   "date": "2026-10-25",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "expired",
   "issue": "주말 카페값 1만 8천 원 → 텀블러 (seoul_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109"
