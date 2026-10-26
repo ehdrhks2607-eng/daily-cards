@@ -3,7 +3,7 @@
   "date": "2026-10-26",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래? 월요일 퇴근길",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
@@ -13,6 +13,9 @@
     "text": "월요일 퇴근길에 벌써 금요일 세고 있어, 나만 그래?\n\n아직 5일 중 1일 지났는데\n지하철에서 달력 앱만 두 번 열어봤어\n\n그래도 오늘은 정시에 나온 걸로 만족하는 중이야\n\n너는 월요일 퇴근길에 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-26T18:30:00+09:00"
+  "result": {
+    "threads": "17907779316581096"
+  },
+  "publish_at": "2026-10-26T18:30:00+09:00",
+  "posted_at": "2026-10-26T18:30:42.247221+09:00"
 }
