@@ -3,7 +3,7 @@
   "date": "2026-10-26",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 출근 직후 커피 vs 물",
   "sources": [
     "https://www.weather.go.kr/w/forecast/overall/mid-term.do?stnId1=109",
@@ -13,6 +13,9 @@
     "text": "출근하자마자 커피 vs 물, 너는 어느 쪽이야?\n\n나는 커피부터 마시고 오전 내내 속이 쓰려\n그러다 11시쯤 물 한 컵 마시면 좀 나아지고\n\n내일부터 3일만 물 먼저 마셔보는 중이야",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-26T10:30:00+09:00"
+  "result": {
+    "threads": "18103975430560323"
+  },
+  "publish_at": "2026-10-26T10:30:00+09:00",
+  "posted_at": "2026-10-26T10:30:36.663822+09:00"
 }
