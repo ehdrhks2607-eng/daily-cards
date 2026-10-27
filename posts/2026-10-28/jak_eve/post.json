@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-28",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 6시 되면 갑자기 배고픔",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "threads": {
+    "text": "6시 되면 갑자기 배고파지는 거 나만 그래?\n\n점심 먹은 지 5시간 지나긴 했는데\n서랍 열어봤다가 아무것도 없어서 닫았고\n\n그래도 집 가서 먹자 하고 참는 중이야\n\n너는 퇴근 전에 배고프면 어떻게 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-28T18:30:00+09:00"
+}

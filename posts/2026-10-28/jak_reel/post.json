@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-10-28",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 달 편의점 간식비 8만 원 → 곤약젤리 (jak_lunch)",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "reel": {
+    "hook": "이번 달\n*간식비* 얼마?",
+    "count": {
+      "to": 80000,
+      "suffix": "원",
+      "label": "편의점 간식 23번"
+    },
+    "pain": "추우니까 또\n하나씩 집었음",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "간식 3일만 참기",
+      "서랍 비우기",
+      "결제내역 확인"
+    ],
+    "item": "곤약젤리",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *곤약젤리*는\n프로필 링크에",
+    "caption": "이번 달 편의점 간식비는 얼마나 나왔어요?\n저는 23번 결제했더니 8만 원이 나왔어요.\n이번 주는 3일만 간식을 바꿔보려고 해요.\n\n골라둔 곤약젤리는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #간식비 #다이어트 #습관 #절약",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-28T19:30:00+09:00"
+}

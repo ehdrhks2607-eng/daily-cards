@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-28",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 이번 주 카페값 2만 원 → 텀블러",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "threads": {
+    "text": "이번 주 카페에만 2만 원 썼어\n\n4번 갔더라, 한 번에 5천 원씩\n추워서 따뜻한 거 사 마시다 보니 이렇게 됐고\n\n그래서 텀블러 리뷰 많은 걸로 장바구니에 넣어놨어\n집에서 한 잔씩 담아가볼까 하는 중이야\n\n너는 이번 주 카페값 얼마야?",
+    "comment": "카페값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-28T13:00:00+09:00"
+}

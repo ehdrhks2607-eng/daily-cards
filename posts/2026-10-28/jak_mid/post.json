@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-10-28",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 알람 한 번에 vs 5분씩 미루기",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "threads": {
+    "text": "알람 한 번에 일어나기 vs 5분씩 미루기, 너는 어느 쪽이야?\n\n나는 오늘도 알람 3번 끄고 일어났어\n미루면 10분 더 자는 거 같은데 막상 더 피곤하고\n\n그래도 내일은 한 번에 일어나보는 중이야, 쉽지않아\n\n너는 알람 몇 번 끄고 일어나?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-28T10:30:00+09:00"
+}

@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-10-28",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 점심 먹고 산책 10분 vs 앉아서 쉬기",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "threads": {
+    "text": "점심 먹고 산책 10분 vs 앉아서 쉬기, 너는 어느 쪽이야?\n\n오늘은 바람 세다고 해서 그냥 앉아 있었어\n근데 오후 3시쯤 되니까 졸린 게 더 심하더라\n\n내일은 5분이라도 나가볼까 고민 중이야\n\n너는 점심 먹고 뭐 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-28T11:00:00+09:00"
+}

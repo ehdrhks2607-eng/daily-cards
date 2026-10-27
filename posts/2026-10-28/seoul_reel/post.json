@@ -1,0 +1,35 @@
+{
+  "account": "seoul",
+  "date": "2026-10-28",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 카페값 2만 원 → 텀블러 (seoul_lunch)",
+  "sources": [
+    "https://www.hankookilbo.com/news/article/A2026102713110002855",
+    "https://www.news1.kr/society/weather-disaster/6332664"
+  ],
+  "reel": {
+    "hook": "이번 주\n*카페값* 얼마?",
+    "count": {
+      "to": 20000,
+      "suffix": "원",
+      "label": "카페 4번"
+    },
+    "pain": "추우니까 또\n따뜻한 거 샀음",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "텀블러에 담기",
+      "커피 주 2번만",
+      "지출 적어보기"
+    ],
+    "item": "텀블러",
+    "item_sub": "장바구니에 담아둠",
+    "cta": "골라둔 *텀블러*는\n프로필 링크에",
+    "caption": "이번 주 카페값은 얼마나 나왔어요?\n4번 갔더니 2만 원이 나왔어요.\n쌀쌀한 날은 따뜻한 한 잔이 자꾸 생각나더라고요.\n\n골라둔 텀블러는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #카페값 #자취 #절약 #직장인",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-28T20:00:00+09:00"
+}
