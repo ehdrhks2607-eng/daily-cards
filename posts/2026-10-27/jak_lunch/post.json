@@ -3,7 +3,7 @@
   "date": "2026-10-27",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 달 배달비 14만 원 → 밀프렙 도시락 용기 (불만 포인트)",
   "sources": [
     "https://www.mt.co.kr/society/2026/10/26/2026102617251538460",
@@ -14,6 +14,10 @@
     "comment": "배달비 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-27T12:30:00+09:00"
+  "result": {
+    "threads": "18178081273443462",
+    "threads_comment": "18120292123756771"
+  },
+  "publish_at": "2026-10-27T12:30:00+09:00",
+  "posted_at": "2026-10-27T12:30:40.649668+09:00"
 }
