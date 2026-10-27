@@ -3,7 +3,7 @@
   "date": "2026-10-28",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백+나만 그래?: 출근길 배터리 38% 소모 → 보조배터리",
   "sources": [
     "https://www.hankookilbo.com/news/article/A2026102713110002855",
@@ -13,6 +13,10 @@
     "text": "출근길에 배터리 38% 닳았어, 나만 그래?\n\n아침 2도라 그런가 싶은데\n퇴근 전에 꺼질까 봐 계속 신경 쓰이고\n\n그래서 보조배터리 리뷰 많은 걸로 찾아봤어\n\n너는 폰 배터리 몇 % 남기고 퇴근해?",
     "comment": "퇴근 전에 폰 꺼질까 불안한 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-28T08:00:00+09:00"
+  "result": {
+    "threads": "18116714675038162",
+    "threads_comment": "18092333636203808"
+  },
+  "publish_at": "2026-10-28T08:00:00+09:00",
+  "posted_at": "2026-10-28T08:00:48.469708+09:00"
 }
