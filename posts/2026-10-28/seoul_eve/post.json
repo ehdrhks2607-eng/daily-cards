@@ -3,7 +3,7 @@
   "date": "2026-10-28",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?: 집 도착하면 겉옷도 안 벗고 눕기",
   "sources": [
     "https://www.hankookilbo.com/news/article/A2026102713110002855",
@@ -13,6 +13,9 @@
     "text": "집 도착하면 겉옷도 안 벗고 눕는 거 나만 그래?\n\n오늘 퇴근길 바람이 진짜 세서\n현관 들어오자마자 그대로 침대에 쓰러졌어\n\n10분 누워 있다가 겨우 씻으러 일어나는 중이야\n\n너는 집 오면 제일 먼저 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-28T18:00:00+09:00"
+  "result": {
+    "threads": "17992008542863023"
+  },
+  "publish_at": "2026-10-28T18:00:00+09:00",
+  "posted_at": "2026-10-28T18:00:48.024262+09:00"
 }
