@@ -3,7 +3,7 @@
   "date": "2026-10-28",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백: 우산 올해 3개째 분실, 내일 수도권 비 → 우산",
   "sources": [
     "https://www.hankookilbo.com/news/article/A2026102713110002855",
@@ -13,6 +13,10 @@
     "text": "우산 올해만 3개째 잃어버렸어\n\n내일 수도권에 비 온대\n지하철에 두고 내린 게 두 번이라 또 그럴까 봐 걱정이고\n\n편의점에서 또 사기엔 아깝고\n그래서 튼튼한 우산 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 우산 어디다 두고 와?",
     "comment": "비 오는 날 우산 자꾸 잃어버리는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLSpmcsM0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-28T21:30:00+09:00"
+  "result": {
+    "threads": "18010214507995456",
+    "threads_comment": "17988180237087980"
+  },
+  "publish_at": "2026-10-28T21:30:00+09:00",
+  "posted_at": "2026-10-28T21:30:39.902763+09:00"
 }
