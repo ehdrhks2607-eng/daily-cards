@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-29",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 비 시작 전 퇴근길 걸음 빨라짐",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "비 시작 전에 집 가려고 걸음 빨라지는 거 나만 그래?\n\n오늘 퇴근길 하늘 보고 지하철역까지 거의 뛰었어\n정작 집 앞에 도착하니까 비는 안 오더라\n\n괜히 숨만 찼고\n\n너는 이럴 때 그냥 걸어, 뛰어?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-29T18:00:00+09:00"
+}

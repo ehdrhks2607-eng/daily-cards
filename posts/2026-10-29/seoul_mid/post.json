@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-29",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 사무실 히터 켜기 vs 껴입고 버티기",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "사무실 히터 켜기 vs 껴입고 버티기, 너는 어느 쪽이야?\n\n나는 아침에 5도였다고 히터 틀자니까\n옆자리는 덥다고 해서 결국 카디건만 입고 있어\n\n오후 되면 또 바뀔 거 같긴 한데\n\n너네 자리는 어때?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-29T11:00:00+09:00"
+}

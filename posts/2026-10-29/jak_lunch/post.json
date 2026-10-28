@@ -1,0 +1,20 @@
+{
+  "account": "jak",
+  "date": "2026-10-29",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 이번 주 점심값 6만 원 → 닭가슴살",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "이번 주 점심값만 6만 원 나왔어\n\n결제내역 보니까 5번이더라\n오후에 비 온다니까 오늘도 나가서 사먹을 거 같고\n\n그래서 닭가슴살 리뷰 많은 걸로 담아둠\n이번 주는 3일만 하루 한 끼는 싸가보려고\n\n너는 이번 주 점심값 얼마야?",
+    "comment": "점심값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0U84Yxlk\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-29T12:30:00+09:00"
+}

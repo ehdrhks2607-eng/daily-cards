@@ -1,0 +1,36 @@
+{
+  "account": "seoul",
+  "date": "2026-10-29",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "점심시간 다이소 6천 원 → 미니 USB 가습기 (seoul_lunch)",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "reel": {
+    "hook": "점심에 *다이소*\n또 갔다 왔어?",
+    "count": {
+      "to": 6000,
+      "suffix": "원",
+      "label": "다이소에서 또 씀"
+    },
+    "pain": "가습기만 품절\n다른 것만 삼",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "비슷한 거 찾기",
+      "리뷰 많은 순",
+      "장바구니 담기"
+    ],
+    "item": "미니 가습기",
+    "item_sub": "장바구니에 담아둠",
+    "cta": "골라둔 *가습기*는\n프로필 링크에",
+    "caption": "다이소 가면 사려던 것만 사 오시나요?\n저는 가습기 하나 사려다 6천 원을 쓰고 나왔어요.\n그래서 비슷한 걸 찾아서 장바구니에 담아뒀어요.\n\n골라둔 가습기는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #직장인 #자취 #가습기 #생활꿀팁",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-29T20:00:00+09:00"
+}

@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-29",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 퇴근하고 운동 가려다 소파 40분",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "퇴근하고 운동 가려다 소파에 앉은 지 40분째야\n\n일단 5분만 앉는다던 게 이렇게 됐고\n비 오기 전에 나가야 하는데 자꾸 폰만 보게 되네\n\n그래서 오늘은 스트레칭 5분만 하기로 정해봄\n\n너는 퇴근하고 바로 움직이는 편이야, 눕는 편이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-29T18:30:00+09:00"
+}

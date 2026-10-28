@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-29",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 점심 메뉴 미리 정하기 vs 가서 정하기",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "점심 메뉴 미리 정해놓기 vs 가서 정하기, 너는 어느 쪽이야?\n\n나는 10시 반부터 슬슬 고민하다가\n결국 12시에 엘리베이터 앞에서 정하는 편이야\n\n오늘은 비 온다니까 더 멀리 못 갈 거 같고\n미리 정해두면 덜 피곤할 거 같긴 한데\n\n너는 몇 시쯤 정해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-29T10:30:00+09:00"
+}

@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-29",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "숫자 고백(다이소 패턴): 점심시간 다이소 6천 원 → 미니 USB 가습기",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "threads": {
+    "text": "점심시간에 다이소 갔다가 6천 원 씀\n\n사무실 건조해서 가습기 하나 사려던 건데\n그것만 품절이고 다른 것만 사서 나옴\n다시 가기엔 퇴근 후엔 너무 멀고\n\n그래서 쿠팡에서 비슷한 거 찾아봤어\n장바구니에 넣어놨고\n\n너는 다이소 가면 사려던 것만 사와?",
+    "comment": "사무실 건조해서 입술 갈라지는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4mNXey8i\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-29T13:00:00+09:00"
+}

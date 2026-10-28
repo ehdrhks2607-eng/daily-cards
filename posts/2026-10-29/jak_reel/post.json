@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-29",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "이번 주 점심값 6만 원 → 닭가슴살 (jak_lunch)",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335333",
+    "https://www.newspim.com/news/view/20261028001446",
+    "https://www.ajunews.com/view/20261028180139540"
+  ],
+  "reel": {
+    "hook": "이번 주\n*점심값* 얼마?",
+    "count": {
+      "to": 60000,
+      "suffix": "원",
+      "label": "점심 사먹은 5번"
+    },
+    "pain": "비 온다니까\n또 사먹을 듯",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "하루 한 끼 싸기",
+      "결제내역 확인",
+      "3일만 해보기"
+    ],
+    "item": "닭가슴살",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *닭가슴살*은\n프로필 링크에",
+    "caption": "이번 주 점심값은 얼마나 나왔어요?\n저는 5번 결제했더니 6만 원이 나왔어요.\n이번 주는 3일만 하루 한 끼는 싸가보려고 해요.\n\n골라둔 닭가슴살은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #점심값 #식단 #습관 #절약",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-29T19:30:00+09:00"
+}
