@@ -3,7 +3,7 @@
   "date": "2026-10-29",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?: 서울 5도 출근길 손 시림 → 충전식 손난로",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335333",
@@ -14,6 +14,10 @@
     "text": "출근길 5도에 폰 떨어뜨릴 뻔했어, 나만 그래?\n\n손이 시려서 지하철 손잡이도 겨우 잡았고\n낮엔 19도까지 오른다니까 두껍게 입기도 애매하고\n\n그래서 충전식 손난로 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 장갑 꺼냈어?",
     "comment": "아침 출근길 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-29T08:00:00+09:00"
+  "result": {
+    "threads": "18118764446079222",
+    "threads_comment": "18122280820746740"
+  },
+  "publish_at": "2026-10-29T08:00:00+09:00",
+  "posted_at": "2026-10-29T08:00:45.339684+09:00"
 }
