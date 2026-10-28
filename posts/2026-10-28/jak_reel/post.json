@@ -3,7 +3,7 @@
   "date": "2026-10-28",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 달 편의점 간식비 8만 원 → 곤약젤리 (jak_lunch)",
   "sources": [
     "https://www.hankookilbo.com/news/article/A2026102713110002855",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-10-28T19:30:00+09:00"
+  "result": {
+    "reel": "17890140864477478"
+  },
+  "publish_at": "2026-10-28T19:30:00+09:00",
+  "posted_at": "2026-10-28T19:30:38.301871+09:00"
 }
