@@ -3,7 +3,7 @@
   "date": "2026-10-29",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백(다이소 패턴): 점심시간 다이소 6천 원 → 미니 USB 가습기",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335333",
@@ -15,6 +15,10 @@
     "comment": "사무실 건조해서 입술 갈라지는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4mNXey8i\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-29T13:00:00+09:00"
+  "result": {
+    "threads": "18108633932345084",
+    "threads_comment": "17952171612056796"
+  },
+  "publish_at": "2026-10-29T13:00:00+09:00",
+  "posted_at": "2026-10-29T13:00:43.741040+09:00"
 }
