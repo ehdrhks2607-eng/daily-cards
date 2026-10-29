@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?: 아침 8도 이불 밖 → 루프밴드",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -14,6 +14,10 @@
     "text": "이불 밖에 손 내밀었다 뺀 거 나만 그래?\n\n서울 아침 8도라 아침 스트레칭 3일째 패스했고\n낮엔 21도까지 오른다니까 괜히 억울함\n\n그래서 좁은 방에서 하는 루프밴드 리뷰 많은 걸로 담아둠\n\n너는 아침에 몇 분 만에 일어나?",
     "comment": "추운 아침에 실내 운동 시작하고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4Sx0aV9E\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-10-30T07:30:00+09:00"
+  "result": {
+    "threads": "18087523073704799",
+    "threads_comment": "18132740065774628"
+  },
+  "publish_at": "2026-10-30T07:30:00+09:00",
+  "posted_at": "2026-10-30T07:30:43.349869+09:00"
 }
