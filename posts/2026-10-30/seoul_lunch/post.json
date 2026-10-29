@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-30",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 점심 사먹기 vs 도시락 (주 4만 5천 원) → 보온 도시락 (불만 포인트)",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335758",
+    "https://www.segye.com/newsView/20261029520442",
+    "https://www.hankyung.com/article/202610292996i"
+  ],
+  "threads": {
+    "text": "점심 사먹기 vs 도시락, 너는 어느 쪽이야?\n\n나는 이번 주 4번 사먹었고 오늘이 5번째야\n하루 9천 원씩 4만 5천 원이더라\n\n찾아보니까 뜨거운 밥 바로 담으면 뚜껑이 안 열린다는 얘기가 있더라\n그래서 보온 도시락 부품 적은 걸로 리뷰 보고 담아둠\n\n너는 이번 주 몇 번 사먹었어?",
+    "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4xtBjfLU\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-30T13:00:00+09:00"
+}

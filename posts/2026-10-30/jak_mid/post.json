@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-30",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 주말 늦잠 vs 일찍 움직이기",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335758",
+    "https://www.segye.com/newsView/20261029520442",
+    "https://www.hankyung.com/article/202610292996i"
+  ],
+  "threads": {
+    "text": "주말 늦잠 vs 일찍 움직이기, 어느 쪽이야?\n\n나는 토요일마다 10시에 눈 떠놓고\n11시까지 폰만 보다가 후회하는 편이야\n\n내일은 맑다니까 더 아까울 거 같긴 한데\n막상 알람 맞추면 또 끄겠지\n\n너는 몇 시에 일어나?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-30T10:30:00+09:00"
+}

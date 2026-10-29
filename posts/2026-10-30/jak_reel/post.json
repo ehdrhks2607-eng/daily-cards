@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-30",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "헬스장 3개월권 18만 원, 간 날 4번 → 요가매트 (jak_lunch)",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335758",
+    "https://www.segye.com/newsView/20261029520442",
+    "https://www.hankyung.com/article/202610292996i"
+  ],
+  "reel": {
+    "hook": "이번 달\n*헬스장* 몇 번?",
+    "count": {
+      "to": 180000,
+      "suffix": "원",
+      "label": "3개월권, 간 날 4번"
+    },
+    "pain": "결제만 해놓고\n거의 안 갔어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "집에서 시작",
+      "맨몸 운동만",
+      "3일만 해보기"
+    ],
+    "item": "요가매트",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *요가매트*는\n프로필 링크에",
+    "caption": "헬스장 결제해놓고 안 간 적 있으세요?\n저는 3개월권 18만 원에 간 날이 4번이었어요.\n이번엔 집에서 3일만 해보려고 해요.\n\n골라둔 요가매트는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #헬스장 #습관 #월말",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-30T19:30:00+09:00"
+}

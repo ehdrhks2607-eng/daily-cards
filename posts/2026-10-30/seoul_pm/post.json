@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-30",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 새벽 4시 발 시려 깸, 일요일 밤 비 → 1인용 전기요",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335758",
+    "https://www.segye.com/newsView/20261029520442",
+    "https://www.hankyung.com/article/202610292996i"
+  ],
+  "threads": {
+    "text": "새벽 4시에 발 시려서 깼어\n\n일요일 밤부터 비 온다는데\n지난주에도 보일러 켤까 3분 고민하다 양말만 신고 버텼거든\n\n가스비 생각나서 1인용 전기요 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 보일러 언제부터 틀어?",
+    "comment": "자취방에서 새벽에 추워서 깨는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4oVL8aib\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-30T21:30:00+09:00"
+}

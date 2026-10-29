@@ -1,0 +1,19 @@
+{
+  "account": "seoul",
+  "date": "2026-10-30",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 아침 8도 차가운 바닥 → 수면양말",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6335758",
+    "https://www.segye.com/newsView/20261029520442",
+    "https://www.hankyung.com/article/202610292996i"
+  ],
+  "threads": {
+    "text": "맨발로 바닥 밟고 움찔한 거 나만 그래?\n\n서울 아침 8도라 자취방 바닥이 얼음 같았고\n양말 찾느라 5분 더 썼어\n\n그래서 수면양말 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 집에서 양말 신는 편이야?",
+    "comment": "자취방 바닥이 차가워서 아침마다 움찔하는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq1avWGA8W\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-10-30T08:00:00+09:00"
+}
