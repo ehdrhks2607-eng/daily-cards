@@ -3,7 +3,7 @@
   "date": "2026-10-29",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "이번 주 점심값 6만 원 → 닭가슴살 (jak_lunch)",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335333",
@@ -31,6 +31,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-10-29T19:30:00+09:00"
+  "result": {
+    "reel": "18096141179176155"
+  },
+  "publish_at": "2026-10-29T19:30:00+09:00",
+  "posted_at": "2026-10-29T19:30:39.630358+09:00"
 }
