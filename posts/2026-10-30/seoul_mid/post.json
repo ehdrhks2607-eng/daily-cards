@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백: 오전 커피 두 잔",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -14,6 +14,9 @@
     "text": "오전에 커피 벌써 두 잔째야\n\n10시 반인데 컵이 두 개 쌓였고\n오후엔 또 마실 거 같은 느낌이야\n\n줄여야지 하면서도 손이 먼저 가네\n\n너는 하루에 몇 잔 마셔?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-30T11:00:00+09:00"
+  "result": {
+    "threads": "18116381165031163"
+  },
+  "publish_at": "2026-10-30T11:00:00+09:00",
+  "posted_at": "2026-10-30T11:00:45.090831+09:00"
 }
