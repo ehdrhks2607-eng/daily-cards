@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-10-31",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "배달앱 14번 21만 원 → 밀프렙 도시락 용기 (jak_lunch)",
+  "sources": [
+    "https://www.fnnews.com/news/202610301740386048",
+    "https://www.segye.com/newsView/20261030513107",
+    "https://mediahub.seoul.go.kr/archives/2019819"
+  ],
+  "reel": {
+    "hook": "이번 달\n*배달* 몇 번?",
+    "count": {
+      "to": 210000,
+      "suffix": "원",
+      "label": "배달앱 14번 합계"
+    },
+    "pain": "시켜 먹는 게 편한데\n카드값이 무서워",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "일요일 밀프렙",
+      "3일치만 담기",
+      "배달앱 3일 끊기"
+    ],
+    "item": "도시락 용기",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *도시락 용기*는\n프로필 링크에",
+    "caption": "이번 달 배달앱 몇 번 쓰셨어요?\n저는 14번에 21만 원이었어요.\n이번엔 일요일에 3일치만 미리 담아보려고 해요.\n\n골라둔 도시락 용기는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #밀프렙 #배달비 #습관 #월말",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-10-31T20:30:00+09:00"
+}

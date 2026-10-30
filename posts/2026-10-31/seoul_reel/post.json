@@ -1,0 +1,36 @@
+{
+  "account": "seoul",
+  "date": "2026-10-31",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "카페 23번 10만 3천 원 → 텀블러 (seoul_lunch)",
+  "sources": [
+    "https://www.fnnews.com/news/202610301740386048",
+    "https://www.segye.com/newsView/20261030513107",
+    "https://mediahub.seoul.go.kr/archives/2019819"
+  ],
+  "reel": {
+    "hook": "이번 달\n*카페* 몇 번?",
+    "count": {
+      "to": 103000,
+      "suffix": "원",
+      "label": "카페 23번 합계"
+    },
+    "pain": "한 잔씩 사다 보니\n카드값이 쌓여",
+    "tips_title": "그래서 이렇게 버티는 중",
+    "tips": [
+      "텀블러 챙기기",
+      "하루 한 잔만",
+      "결제 내역 보기"
+    ],
+    "item": "텀블러",
+    "item_sub": "리뷰 보고 담아둠",
+    "cta": "골라둔 *텀블러*는\n프로필 링크에",
+    "caption": "이번 달 카페 몇 번 가셨어요?\n저는 23번에 10만 3천 원이더라고요.\n그래서 텀블러를 찾아서 장바구니에 담아뒀어요.\n\n골라둔 텀블러는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#서울적응기 #직장인 #카페값 #텀블러 #절약",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-10-31T21:00:00+09:00"
+}

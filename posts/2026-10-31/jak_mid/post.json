@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-10-31",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 핼러윈 토요일 나가기 vs 집에서 쉬기",
+  "sources": [
+    "https://www.fnnews.com/news/202610301740386048",
+    "https://www.segye.com/newsView/20261030513107",
+    "https://mediahub.seoul.go.kr/archives/2019819"
+  ],
+  "threads": {
+    "text": "핼러윈 토요일, 나가기 vs 집에서 쉬기?\n\n나는 작년에도 약속 잡았다가\n당일 저녁에 이불 속으로 들어갔어\n\n올해도 11시에 눈은 떴는데\n몸이 아직 이불 쪽에 붙어 있는 느낌이야\n\n너는 오늘 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-10-31T11:30:00+09:00"
+}

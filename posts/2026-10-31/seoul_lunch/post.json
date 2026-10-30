@@ -1,0 +1,20 @@
+{
+  "account": "seoul",
+  "date": "2026-10-31",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 이번 달 카페 23번 10만 3천 원 → 텀블러",
+  "sources": [
+    "https://www.fnnews.com/news/202610301740386048",
+    "https://www.segye.com/newsView/20261030513107",
+    "https://mediahub.seoul.go.kr/archives/2019819"
+  ],
+  "threads": {
+    "text": "이번 달 카페 결제 23번, 10만 원 넘었어\n\n월말이라 카드 내역 보다가 알았는데\n한 번에 4천 5백 원씩이면 10만 3천 원이더라\n\n그래서 텀블러 챙겨 다니면 좀 줄어들까 싶어서\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 한 달에 카페 몇 번 가?",
+    "comment": "카페값 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq07ARlEBM\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-10-31T14:00:00+09:00"
+}
