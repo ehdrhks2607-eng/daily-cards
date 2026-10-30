@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 월말 결제내역 헬스장 3개월권 18만 원, 4번 → 요가매트 (불만 포인트)",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -15,6 +15,10 @@
     "comment": "집에서 운동 시작해보고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-10-30T12:30:00+09:00"
+  "result": {
+    "threads": "18107262920624316",
+    "threads_comment": "18137080510644421"
+  },
+  "publish_at": "2026-10-30T12:30:00+09:00",
+  "posted_at": "2026-10-30T12:30:38.305768+09:00"
 }
