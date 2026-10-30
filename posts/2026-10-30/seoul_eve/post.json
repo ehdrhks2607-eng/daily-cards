@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 달 택시비 5만 원",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -14,6 +14,9 @@
     "text": "이번 달 택시비가 5만 원 넘었어\n\n금요일 퇴근길 지하철이 너무 꽉 차서\n결국 앱을 켜버렸고\n\n월말이라 결제 알림이 더 무섭네\n\n너는 퇴근길에 가끔 택시 타?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-30T18:00:00+09:00"
+  "result": {
+    "threads": "17890245012685415"
+  },
+  "publish_at": "2026-10-30T18:00:00+09:00",
+  "posted_at": "2026-10-30T18:00:46.071598+09:00"
 }
