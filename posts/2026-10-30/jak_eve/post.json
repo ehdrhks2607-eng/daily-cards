@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "실패 고백: 이번 주 운동 계획 5번 중 2번",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -14,6 +14,9 @@
     "text": "이번 주 운동 계획 5번 중 2번 지켰어\n\n금요일 퇴근하고 집에 오니까\n소파가 제일 먼저 보이더라\n\n그래도 2번이면 0번보단 나은 거 같애\n주말에 한 번만 더 채워보려고\n\n너는 이번 주 계획 몇 번 지켰어?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-30T18:30:00+09:00"
+  "result": {
+    "threads": "18042377432834388"
+  },
+  "publish_at": "2026-10-30T18:30:00+09:00",
+  "posted_at": "2026-10-30T18:30:36.889785+09:00"
 }
