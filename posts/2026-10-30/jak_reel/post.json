@@ -3,7 +3,7 @@
   "date": "2026-10-30",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "헬스장 3개월권 18만 원, 간 날 4번 → 요가매트 (jak_lunch)",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6335758",
@@ -31,6 +31,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-10-30T19:30:00+09:00"
+  "result": {
+    "reel": "18018551057747368"
+  },
+  "publish_at": "2026-10-30T19:30:00+09:00",
+  "posted_at": "2026-10-30T19:30:39.547498+09:00"
 }
