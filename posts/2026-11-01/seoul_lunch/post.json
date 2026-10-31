@@ -1,0 +1,18 @@
+{
+  "account": "seoul",
+  "date": "2026-11-01",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 작년 12월 가스비 7만 원, 문풍지 (불만 포인트)",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
+  ],
+  "threads": {
+    "text": "작년 12월 가스비가 7만 원 나왔어\n\n원룸에서 보일러 조금 틀었는데도 그 정도더라\n창문 쪽에서 바람 들어오는 게 제일 컸던 거 같애\n\n리뷰 보니까 먼지 안 닦고 붙이면 하루 만에 떨어진다는 얘기가 많더라\n그래서 그거 보고 문풍지 담아둠\n\n너희 집은 어디서 바람 들어와?",
+    "comment": "창틈 바람 때문에 가스비 걱정인 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq04b1mouG\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../seoul_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-11-01T14:00:00+09:00"
+}

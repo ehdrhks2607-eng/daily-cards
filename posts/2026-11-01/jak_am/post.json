@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-11-01",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 일요일 아침 쌀쌀함 → 따뜻한 물 → 미니 전기포트",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
+  ],
+  "threads": {
+    "text": "일요일 아침에 따뜻한 물부터 찾는 거 나만 그래?\n\n오늘 아침 공기가 갑자기 차갑더라\n차가운 물 한 컵 마시려다 포기한 게 이번 주만 3번이야\n\n그래서 1인용 전기포트 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 아침에 뭐부터 마셔?",
+    "comment": "아침에 따뜻한 물 마시고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4BINIOwS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-11-01T08:30:00+09:00"
+}

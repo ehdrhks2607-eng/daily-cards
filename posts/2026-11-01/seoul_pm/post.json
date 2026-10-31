@@ -1,0 +1,17 @@
+{
+  "account": "seoul",
+  "date": "2026-11-01",
+  "slot": "pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 폰 12% 출근, 일요일 밤 다음 주 준비 → 보조배터리",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
+  ],
+  "threads": {
+    "text": "월요일 출근길에 폰이 12%였던 적이 3번 있어\n\n자기 전에 충전한다고 해놓고 또 깜빡하는 거지\n지하철에서 지도 켜면 쭉쭉 닳더라\n\n그래서 보조배터리 리뷰 많은 걸로 장바구니에 넣어놨어\n오늘은 충전기부터 꽂고 자려고\n\n너는 폰 몇 퍼센트로 출근해?",
+    "comment": "출근길에 폰 배터리 불안한 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnMbVrsbaC\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
+  },
+  "result": {},
+  "publish_at": "2026-11-01T22:30:00+09:00"
+}

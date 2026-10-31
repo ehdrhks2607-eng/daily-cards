@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-01",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 10월 편의점 간식 22번 7만 4천 원 → 곤약젤리",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
+  ],
+  "threads": {
+    "text": "10월 편의점 간식 결제가 22번, 7만 4천 원이야\n\n11월 첫날이라 내역 훑다가 알았어\n한 번에 3천 3백 원씩 쓴 셈이더라\n\n비 오는 일요일 오후면 또 손이 갈 거 같애\n그래서 곤약젤리 리뷰 많은 걸로 골라봤어\n\n너는 간식에 한 달 얼마 써?",
+    "comment": "간식 줄이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0Td5xBW8\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-11-01T13:30:00+09:00"
+}
