@@ -3,7 +3,7 @@
   "date": "2026-10-31",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 청소 몰아서 vs 매일 조금씩",
   "sources": [
     "https://www.fnnews.com/news/202610301740386048",
@@ -14,6 +14,9 @@
     "text": "청소 몰아서 vs 매일 조금씩, 어느 쪽이야?\n\n나는 평일엔 바닥에 머리카락 보여도 모른 척하다가\n토요일에 1시간 몰아서 하는 편이야\n\n오늘도 10시에 일어났는데 아직 시작도 못 했네\n\n너는 청소 언제 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-10-31T12:00:00+09:00"
+  "result": {
+    "threads": "18131456698838846"
+  },
+  "publish_at": "2026-10-31T12:00:00+09:00",
+  "posted_at": "2026-10-31T12:00:51.053458+09:00"
 }
