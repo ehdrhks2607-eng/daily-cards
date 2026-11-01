@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "10월 편의점 간식 22번 7만 4천 원 → 곤약젤리 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-01T20:30:00+09:00"
+  "result": {
+    "reel": "18169840210468255"
+  },
+  "publish_at": "2026-11-01T20:30:00+09:00",
+  "posted_at": "2026-11-01T20:30:37.152914+09:00"
 }
