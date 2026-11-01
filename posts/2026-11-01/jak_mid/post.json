@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "실패 고백: 일요일 오전 11시 아직 잠옷",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
@@ -12,6 +12,9 @@
     "text": "일요일 오전 11시인데 아직 잠옷이야\n\n어제 밤엔 아침에 20분 걷고 오자고 했는데\n눈 떠보니 침대 위였어\n오후부터 비 온다니까 지금 아니면 못 나가긴 해\n\n일단 양말부터 신어보는 중이야\n\n너는 오늘 밖에 나가?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-01T11:30:00+09:00"
+  "result": {
+    "threads": "17980258497130534"
+  },
+  "publish_at": "2026-11-01T11:30:00+09:00",
+  "posted_at": "2026-11-01T11:30:39.780793+09:00"
 }
