@@ -1,0 +1,17 @@
+{
+  "account": "seoul",
+  "date": "2026-11-02",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 월요일 오전 커피 한 잔 더 vs 물",
+  "sources": [
+    "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
+  ],
+  "threads": {
+    "text": "월요일 오전, 커피 한 잔 더 vs 물로 버티기?\n\n나는 10시 되면 두 번째 잔을 찾게 되더라\n속이 쓰린데도 손이 가고\n\n물 마시는 날은 좀 덜 피곤한 거 같긴 해\n\n너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-02T11:00:00+09:00"
+}

@@ -1,0 +1,17 @@
+{
+  "account": "seoul",
+  "date": "2026-11-02",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 월요일부터 금요일 세기",
+  "sources": [
+    "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
+  ],
+  "threads": {
+    "text": "월요일부터 금요일 세는 거 나만 그래?\n\n오늘 겨우 하루 했는데 4일 남았다고 계산하는 중\n근데 계산해봤자 달라지는 건 없더라\n\n그냥 집 가서 씻고 누우면 월요일 끝이니까\n그것만 생각하는 중이야\n\n너는 퇴근길에 뭐 생각해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-02T18:00:00+09:00"
+}
