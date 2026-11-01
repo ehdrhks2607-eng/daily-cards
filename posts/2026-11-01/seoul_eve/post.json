@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?: 일요일 저녁 7시부터 월요일 걱정",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
@@ -12,6 +12,9 @@
     "text": "일요일 저녁 7시부터 마음이 급해지는 거 나만 그래?\n\n아직 안 먹었는데 벌써 내일 아침 알람이 생각나\n그래서 이번엔 저녁 먹고 바로 씻어버리려고\n\n그러면 내일이 조금 덜 무거운 거 같애\n\n다들 일요일 저녁에 뭐 해?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-01T19:00:00+09:00"
+  "result": {
+    "threads": "18106417811568247"
+  },
+  "publish_at": "2026-11-01T19:00:00+09:00",
+  "posted_at": "2026-11-01T19:00:44.019155+09:00"
 }
