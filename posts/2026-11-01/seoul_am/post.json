@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백: 보일러 틀까 말까 20분 → 극세사 담요",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
@@ -12,6 +12,10 @@
     "text": "아침에 보일러 틀까 말까 20분 고민했어\n\n11월 첫날인데 이불 밖이 확 차갑더라\n결국 안 틀고 버티는 중이야\n\n그래서 극세사 담요 리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 보일러 언제부터 틀어?",
     "comment": "보일러 틀기 아까운 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq09cWx29A\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-11-01T09:00:00+09:00"
+  "result": {
+    "threads": "18133362973741979",
+    "threads_comment": "17955211707292894"
+  },
+  "publish_at": "2026-11-01T09:00:00+09:00",
+  "posted_at": "2026-11-01T09:00:43.658538+09:00"
 }
