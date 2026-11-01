@@ -3,7 +3,7 @@
   "date": "2026-11-01",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 일요일 밤 월요일 준비 미리 vs 아침에",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202610271800_108.pdf"
@@ -12,6 +12,9 @@
     "text": "월요일 준비, 일요일 저녁에 미리 vs 월요일 아침에?\n\n나는 늘 아침에 하자는 쪽인데\n막상 아침엔 양말 한 짝 찾다가 10분이 날아가더라\n\n오늘은 가방만 싸놓고 자보려고 해\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-01T19:30:00+09:00"
+  "result": {
+    "threads": "18076363853476982"
+  },
+  "publish_at": "2026-11-01T19:30:00+09:00",
+  "posted_at": "2026-11-01T19:30:40.747895+09:00"
 }
