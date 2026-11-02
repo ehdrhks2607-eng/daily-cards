@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 11월 목표 크게 vs 작게",
   "sources": [
     "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
@@ -12,6 +12,9 @@
     "text": "11월 목표, 크게 잡기 vs 작게 잡기?\n\n나는 매번 크게 잡았다가 3일 만에 접었어\n이번엔 하루 5분이라고 적어놨는데 너무 작은가 싶기도 하고\n\n그래도 접는 것보다는 낫겠지\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-02T10:30:00+09:00"
+  "result": {
+    "threads": "18130670680699667"
+  },
+  "publish_at": "2026-11-02T10:30:00+09:00",
+  "posted_at": "2026-11-02T10:30:42.813973+09:00"
 }
