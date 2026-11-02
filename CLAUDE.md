@@ -26,7 +26,7 @@
    - 필드: account, date, slot("reel"), approved(true), status("pending"), issue, sources, reel{...}, result{} (threads·cards·instagram 필드 없음)
    - **스레드에도 같은 영상을 올린다**: 두 계정 lunch 글 post.json의 `threads`에 `"video": "../<계정>_reel/reel.mp4"`를 추가한다(publish.py가 스레드 VIDEO 글로 올림). 이를 위해 릴스 주제·상품은 **그 계정 lunch 글**과 같게 한다(숫자도 동일).
    - `python scripts/schedule.py posts/<오늘>/*_reel/post.json` → publish_at 채우기
-   - `python scripts/render_reel.py posts/<오늘>/jak_reel/post.json posts/<오늘>/seoul_reel/post.json` (2편에 약 2분, ffmpeg 필요: 없으면 `apt-get install -y ffmpeg`). 템플릿은 계정별 `config.json` `reel_templates`로 자동 선택(seoul은 classic·diary — 어두운 테마에서 stack은 글자가 안 보이므로 쓰지 않는다).
+   - `python scripts/render_reel.py posts/<오늘>/jak_reel/post.json posts/<오늘>/seoul_reel/post.json` (2편에 약 2분, ffmpeg 필요: 없으면 `apt-get install -y ffmpeg`). 템플릿은 계정별 `config.json` `reel_templates`로 자동 선택(seoul은 사주 전용 `saju` 템플릿 — 밤하늘·금테·도아 도령 캐릭터가 들어감).
    - 생성된 `reel_sheet.png`(핵심 장면 5컷)를 직접 열어 **한글 깨짐·잘림·글자 겹침**을 확인한다. 문제가 있으면 문구를 줄여 다시 렌더링한다. `reel.mp4`가 실제로 생겼는지, 15초인지 `ffprobe`로 확인한다.
 8. `git add posts link_requests.md && git commit -m "daily posts <오늘>" && git push` 로 main에 올린다. push 충돌 시 `git pull --rebase` 후 다시 push.
 9. 마지막에 오늘 10개 글의 주제·화제성 점수·첫 줄(훅)·게시 시간·링크 유무를 표로 요약하고, 릴스 2개(계정·훅·상품·게시 시간)를 아래에 한 줄씩 덧붙인다.
@@ -244,6 +244,7 @@
   - `tips`: 정확히 3개, 각 9자 이내, `"소띠 · 결실"` 형식
   - `item_lead`: `"더 자세한 건"` / `item`: `"신년운"`·`"연애운"`·`"재물운"` 중 하나 / `item_sub`: `"수십 쪽 리포트로 정리"`
   - `cta`: `"내 *띠* 운세는\n프로필 링크에"`
+  - `character`(선택): `default`·`love`·`career`·`reunion` 중 하나. 빼면 item·hook 단어(연애·재회·재물 등)로 자동 선택. 캐릭터 이미지는 `scripts/reel_assets/`.
   - `disclosure`: **반드시** `"참고·재미로 보는 콘텐츠예요"` (넣지 않으면 쿠팡 문구가 들어가므로 필수)
   - `caption`: 높임말 3~5줄(첫 줄은 훅과 다른 질문) + 빈 줄 + "내 띠 신년운은 프로필 링크에서 받아보실 수 있어요." + "참고와 재미로 보는 콘텐츠이며 미래를 보장하지 않아요." + 해시태그 5개 이내(#신년운세 #2027운세 #띠별운세 #사주 #오늘의운세 등). 쿠팡 대가성 문구는 넣지 않는다.
 - 렌더 후 `reel_sheet.png`에서 어두운 배경 위 글자가 잘 보이는지 확인한다.

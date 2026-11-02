@@ -67,8 +67,7 @@
         "reel_enabled": true
       },
       "reel_templates": [
-        "classic",
-        "diary"
+        "saju"
       ],
       "order_link": ""
     }

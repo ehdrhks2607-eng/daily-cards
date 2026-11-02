@@ -64,8 +64,14 @@ def build_html(post, template):
               for k, v in CFG["accounts"].items()}
     data = dict(post["reel"], account=post["account"])
     html = template_path(template).read_text(encoding="utf-8")
-    return (html.replace("/*__REEL_DATA__*/", json.dumps(data, ensure_ascii=False))
-                    .replace("/*__THEMES__*/", json.dumps(themes, ensure_ascii=False)))
+    html = (html.replace("/*__REEL_DATA__*/", json.dumps(data, ensure_ascii=False))
+                .replace("/*__THEMES__*/", json.dumps(themes, ensure_ascii=False)))
+    if "/*__ASSETS__*/" in html:  # templates that use images get scripts/reel_assets/* as data URIs
+        import base64
+        assets = {f.stem: "data:image/jpeg;base64," + base64.b64encode(f.read_bytes()).decode()
+                  for f in sorted((ROOT / "scripts" / "reel_assets").glob("*.jpg"))}
+        html = html.replace("/*__ASSETS__*/", json.dumps(assets))
+    return html
 
 
 def contact_sheet(page, out):
