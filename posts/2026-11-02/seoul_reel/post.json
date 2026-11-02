@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "skipped",
   "issue": "돈 고백: 10월 점심값 21만 원 → 보온 도시락 (불만 포인트) (seoul_lunch)",
   "sources": [
     "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
@@ -30,5 +30,6 @@
     "template": "stack"
   },
   "result": {},
-  "publish_at": "2026-11-02T20:00:00+09:00"
+  "publish_at": "2026-11-02T20:00:00+09:00",
+  "last_error": "skipped: 계정이 도아도령(사주)로 전환되어 서울적응기 글 게시 중지"
 }

@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "slot": "eve",
   "approved": true,
-  "status": "pending",
+  "status": "skipped",
   "issue": "나만 그래?: 월요일부터 금요일 세기",
   "sources": [
     "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
@@ -13,5 +13,6 @@
     "comment": ""
   },
   "result": {},
-  "publish_at": "2026-11-02T18:00:00+09:00"
+  "publish_at": "2026-11-02T18:00:00+09:00",
+  "last_error": "skipped: 계정이 도아도령(사주)로 전환되어 서울적응기 글 게시 중지"
 }

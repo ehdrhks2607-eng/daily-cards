@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "skipped",
   "issue": "실패 고백: 내일 입을 옷 안 정하고 눕기 → 충전식 손난로",
   "sources": [
     "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
@@ -13,5 +13,6 @@
     "comment": "출근길에 손 시린 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4vk2XO8a\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
   "result": {},
-  "publish_at": "2026-11-02T21:30:00+09:00"
+  "publish_at": "2026-11-02T21:30:00+09:00",
+  "last_error": "skipped: 계정이 도아도령(사주)로 전환되어 서울적응기 글 게시 중지"
 }
