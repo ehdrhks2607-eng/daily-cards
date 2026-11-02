@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-11-03",
+  "slot": "mid",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 점심 먹고 산책 vs 책상에서 쉬기",
+  "sources": [
+    "https://www.weather.go.kr"
+  ],
+  "threads": {
+    "text": "점심 먹고 산책 vs 책상에서 눈 감기\n\n나는 오늘 15분 걷다 올까 하다가\n의자에 앉은 채로 3분째 고민 중이야\n\n걸으면 오후가 덜 졸린 거 같기도 한데\n날이 쌀쌀해서 쉽지않아\n\n너는 어느 쪽이야?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-03T10:30:00+09:00"
+}

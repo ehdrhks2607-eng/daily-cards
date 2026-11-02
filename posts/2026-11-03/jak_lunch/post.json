@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-03",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 10월 커피 22잔 9만 9천 원 → 대용량 물병",
+  "sources": [
+    "https://www.weather.go.kr"
+  ],
+  "threads": {
+    "text": "10월에 커피만 22잔 마셨어\n\n한 잔에 4천 5백 원이라 쳐도\n합치니까 9만 9천 원이더라\n\n사실 목말라서 마신 날도 많았던 거 같애\n그래서 시간 표시 있는 대용량 물병\n리뷰 많은 걸로 골라봤어\n\n너는 커피 한 달에 얼마 써?",
+    "comment": "커피값 줄이고 물부터 챙기고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "result": {},
+  "publish_at": "2026-11-03T12:30:00+09:00"
+}

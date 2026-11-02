@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-11-03",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 퇴근길 숏폼 40분",
+  "sources": [
+    "https://www.weather.go.kr"
+  ],
+  "threads": {
+    "text": "퇴근하면 스트레칭 한다더니\n지하철에서 숏폼만 40분 봤어\n\n내리고 나서야 알았네\n오늘도 계획은 머릿속에서만 했다는 걸\n\n그래도 집 가서 10분은 해볼까 하는 중이야\n\n너는 퇴근길에 뭐 해?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-03T18:30:00+09:00"
+}
