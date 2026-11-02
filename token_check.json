@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-02T19:09:07.643001+09:00",
+  "results": {
+    "JAK": {
+      "threads": {
+        "ok": false,
+        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'A_ynoZW4gzYO6hkgvHCuyMX'}"
+      },
+      "instagram": {
+        "ok": false,
+        "error": "{'message': 'Error validating access token: The user has not authorized application 2160922401300032.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'Awbz_L_e80wiSbbI4eHiLqX'}"
+      }
+    },
+    "SEOUL": {
+      "threads": {
+        "ok": false,
+        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AS1guPOsF9vsS5JLa3l1sLf'}"
+      },
+      "instagram": {
+        "ok": false,
+        "error": "{'message': 'Invalid OAuth access token - Cannot parse access token', 'type': 'OAuthException', 'code': 190, 'fbtrace_id': 'AONJoY8vq0UYYABluIR0qzH'}"
+      }
+    }
+  }
+}
