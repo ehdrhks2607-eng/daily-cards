@@ -3,7 +3,7 @@
   "date": "2026-11-02",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 10월 10시 간식빵 11번 3만 8천 5백 원 → 단백질 쉐이크",
   "sources": [
     "https://tilnote.io/pages/6ae12105e402ea9db2a68782"
@@ -13,6 +13,10 @@
     "comment": "아침 거르고 간식빵 사 먹는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLlM3xnRQ\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-02T12:30:00+09:00"
+  "result": {
+    "threads": "18120371159280688",
+    "threads_comment": "18603146986064605"
+  },
+  "publish_at": "2026-11-02T12:30:00+09:00",
+  "posted_at": "2026-11-02T12:30:39.447016+09:00"
 }
