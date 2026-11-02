@@ -20,7 +20,8 @@ post.json "reel" schema (text: \n = line break, *word* = accent color in hook/pa
   "video":    "reel.mp4"                       filled in by this script
 }
 Templates: scripts/reel_template.html ("classic") and scripts/reel_templates/<name>.html.
-Rotation: config.json "reel_templates" list, shifted by date and account so the two accounts differ.
+Rotation: config.json accounts.<acc>.reel_templates if set, else top-level "reel_templates";
+shifted by date and account so the two accounts differ.
 Writes reel.mp4 and reel_sheet.png (6 key frames) next to post.json.
 """
 import argparse
@@ -48,7 +49,8 @@ def pick_template(post, override=None):
     """CLI override > reel.template > rotation over config.json reel_templates."""
     name = override or post["reel"].get("template")
     if not name:
-        names = CFG.get("reel_templates") or ["classic"]
+        names = (CFG["accounts"].get(post["account"], {}).get("reel_templates")
+                 or CFG.get("reel_templates") or ["classic"])
         day = date.fromisoformat(post["date"]).toordinal()
         acc = sorted(CFG["accounts"]).index(post["account"])
         name = names[(day + acc) % len(names)]

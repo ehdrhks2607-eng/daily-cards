@@ -38,13 +38,13 @@
       "handle": "3_day_hump"
     },
     "seoul": {
-      "label": "서울적응기",
+      "label": "도아도령",
       "theme": {
-        "bg": "#FFFFFF",
-        "fg": "#141B2D",
-        "accent": "#23407A",
-        "muted": "#7C8496",
-        "card": "#EEF2F8"
+        "bg": "#0E1330",
+        "fg": "#F3E6C4",
+        "accent": "#E8B54F",
+        "muted": "#9AA0B8",
+        "card": "rgba(255,255,255,.08)"
       },
       "publish_time_kst": {
         "weekday": {
@@ -66,7 +66,11 @@
         "instagram_slot": null,
         "reel_enabled": true
       },
-      "handle": "survive.seoul"
+      "reel_templates": [
+        "classic",
+        "diary"
+      ],
+      "order_link": ""
     }
   }
 }
