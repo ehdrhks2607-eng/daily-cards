@@ -77,7 +77,7 @@ def year_detail_pages(ys, daeun_of, name="고객님", mbti=None, prefix="PART 6"
         html = ""
         for y in ys[i:i + 2]:
             g1, g2 = ft.GOD[y["stem_god"]], ft.GOD[y["branch_god"]]
-            rel = "".join(f"<br>· {x['with']}와 <b>{x['rel']}</b> — {x['text']}" for x in y["relations"]) \
+            rel = "".join(f"<br>· {x['with']}와 <b>{x['rel']}</b> — {x['text']}" for x in y["relations"][:3]) \
                 or "<br>· 원국과 크게 부딪히거나 묶이는 글자가 없어 <b>흐름이 비교적 고른 해</b>예요."
             mline = f'<br><span style="color:#2b3466">🧠 <b>{mbti}</b> 방식으로 풀면: {_strip(y.get("mbti"), mbti)}</span>' if mbti else ""
             ex = f'<br>{extra[y["year"]]}' if y["year"] in extra else ""
@@ -92,7 +92,7 @@ def year_detail_pages(ys, daeun_of, name="고객님", mbti=None, prefix="PART 6"
                     mb = f'<br><span style="color:#2b3466;font-size:8pt">🧠 {_strip(d.get("mbti"), mbti)}</span>' if mbti else ""
                     tr += (f'<tr style="background:{col}"><td style="width:15%"><b>{kind}</b><br>{d["month"]} <span class="serif">{d["pillar"]}</span><br>'
                            f'<span class="small">{_md(a)}~{_md(z)}</span></td>'
-                           f'<td class="l" style="font-size:7.9pt">{"<br>".join("· " + w for w in d["why"])}</td>'
+                           f'<td class="l" style="font-size:7.9pt">{"<br>".join("· " + w for w in d["why"][:4])}</td>'
                            f'<td class="l" style="width:30%">{d["tip"]}{mb}</td></tr>')
             head = f"이렇게 풀어 보세요 (사주 → {mbti})" if mbti else "이렇게 해 보세요"
             html += (f'<table class="yt" style="font-size:8.5pt;margin:0 0 2mm"><tr><th>달</th><th class="l">왜 그런가요 (근거)</th><th class="l">{head}</th></tr>{tr}</table>')
