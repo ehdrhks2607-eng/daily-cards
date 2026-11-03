@@ -46,8 +46,39 @@ for acc in ("JAK", "SEOUL"):
                             "ig_id_present": bool(x.get("instagram_business_account"))} for x in b.get("data", [])]
         else:
             fb["pages_error"] = str(b.get("error", b))[:300]
+        code, b = get("https://graph.facebook.com/v21.0/me/permissions", access_token=ig)
+        fb["permissions"] = [x.get("permission") for x in b.get("data", []) if x.get("status") == "granted"] if code == 200 \
+            else str(b.get("error", b))[:200]
+        code, b = get("https://graph.facebook.com/v21.0/me/businesses",
+                      fields="name,instagram_accounts{id,username},owned_instagram_accounts{id,username}", access_token=ig)
+        if code == 200:
+            fb["businesses"] = [{"name": x.get("name"),
+                                 "instagram_accounts": [a.get("username") for a in (x.get("instagram_accounts") or {}).get("data", [])],
+                                 "owned_instagram_accounts": [a.get("username") for a in (x.get("owned_instagram_accounts") or {}).get("data", [])]}
+                                for x in b.get("data", [])]
+        else:
+            fb["businesses_error"] = str(b.get("error", b))[:300]
+        # IG user ids found via pages/businesses: test that the publishing edge is reachable
+        ids = []
+        code, b = get("https://graph.facebook.com/v21.0/me/accounts", fields="instagram_business_account", access_token=ig)
+        if code == 200:
+            ids += [x["instagram_business_account"]["id"] for x in b.get("data", []) if x.get("instagram_business_account")]
+        code, b = get("https://graph.facebook.com/v21.0/me/businesses", fields="instagram_accounts{id},owned_instagram_accounts{id}", access_token=ig)
+        if code == 200:
+            for x in b.get("data", []):
+                for k in ("instagram_accounts", "owned_instagram_accounts"):
+                    ids += [a["id"] for a in (x.get(k) or {}).get("data", [])]
+        probes = []
+        for i in dict.fromkeys(ids):
+            c1, b1 = get(f"https://graph.facebook.com/v21.0/{i}", fields="username", access_token=ig)
+            c2, b2 = get(f"https://graph.facebook.com/v21.0/{i}/content_publishing_limit", fields="quota_usage", access_token=ig)
+            probes.append({"username": b1.get("username") if c1 == 200 else None,
+                           "profile_error": None if c1 == 200 else str(b1.get("error", b1))[:200],
+                           "publish_edge_ok": c2 == 200,
+                           "publish_error": None if c2 == 200 else str(b2.get("error", b2))[:200]})
+        fb["ig_user_probes"] = probes
         res["instagram_via_facebook"] = fb
-    if ig:
+    if ig and not ig.startswith("EAA"):
         code, b = get("https://graph.instagram.com/v21.0/me", fields="user_id,username,account_type", access_token=ig)
         if code == 200:
             info = {"ok": True, "username": b.get("username"), "account_type": b.get("account_type")}
@@ -59,6 +90,11 @@ for acc in ("JAK", "SEOUL"):
             res["instagram"] = info
         else:
             res["instagram"] = {"ok": False, "error": str(b.get("error", b))[:300]}
+    elif ig:
+        probes = res["instagram_via_facebook"].get("ig_user_probes", [])
+        ok = [x for x in probes if x.get("publish_edge_ok")]
+        res["instagram"] = {"ok": bool(ok), "username": ok[0]["username"] if ok else None, "via": "graph.facebook.com",
+                            "publish_permission": bool(ok)}
     else:
         res["instagram"] = {"ok": False, "error": "secret missing"}
     out["results"][acc] = res
