@@ -27,6 +27,7 @@ jobs:
           JAK_IG_TOKEN: ${{ secrets.JAK_IG_TOKEN }}
           SEOUL_THREADS_TOKEN: ${{ secrets.SEOUL_THREADS_TOKEN }}
           SEOUL_IG_TOKEN: ${{ secrets.SEOUL_IG_TOKEN }}
+          SEOUL_YT_WEBHOOK: ${{ secrets.SEOUL_YT_WEBHOOK }}
         run: python scripts/publish.py
       - name: Save results
         run: |

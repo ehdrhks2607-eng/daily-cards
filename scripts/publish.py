@@ -7,7 +7,9 @@ approved (or approval not required) and whose publish_at has passed, it posts:
   - Instagram Reels: reel.mp4 (rendered by render_reel.py) with reel.caption
 Results are written back into post.json so a platform is never posted twice.
 
-Secrets (env): <ACCOUNT>_THREADS_TOKEN, <ACCOUNT>_IG_TOKEN  e.g. JAK_THREADS_TOKEN
+  - YouTube Shorts: the same reel.mp4 is handed to a Make.com scenario (env <ACCOUNT>_YT_WEBHOOK),
+    which uploads it to YouTube through Make's verified YouTube app
+Secrets (env): <ACCOUNT>_THREADS_TOKEN, <ACCOUNT>_IG_TOKEN, <ACCOUNT>_YT_WEBHOOK  e.g. JAK_THREADS_TOKEN
 """
 import json
 import os
@@ -248,7 +250,30 @@ def process(post_file, cfg, now):
         except Exception as e:
             errors.append(f"reel: {e}")
 
-    need = [k for k, tok in (("threads", th_token), ("instagram", ig_token), ("reel", reel_token)) if tok]
+    yt_hook = (os.environ.get(f"{acc}_YT_WEBHOOK") or "").strip() if has_reel else ""
+    if yt_hook and not res.get("youtube"):
+        try:
+            rel = f"{post_file.parent.relative_to(ROOT).as_posix()}/{post['reel']['video']}"
+            r = post["reel"]
+            title = (r.get("yt_title") or r.get("hook", "").replace("*", "").replace("\n", " ")).strip()[:90]
+            if "#shorts" not in title.lower():
+                title = (title[:88] + " #Shorts").strip()
+            payload = {"video_url": raw_url(rel), "title": title,
+                       "description": r.get("yt_description") or r.get("caption", ""),
+                       "tags": r.get("yt_tags") or ["사주", "띠별운세", "오늘의운세", "Shorts"]}
+            if DRY_RUN:
+                log("DRY", "POST", "<youtube webhook>", payload)
+            else:
+                w = requests.post(yt_hook, json=payload, timeout=60)
+                if w.status_code >= 400:
+                    raise RuntimeError(f"webhook {w.status_code}: {w.text[:200]}")
+            res["youtube"] = "sent"
+            log(acc, "youtube shorts handed to Make")
+            changed = True
+        except Exception as e:
+            errors.append(f"youtube: {e}")
+
+    need = [k for k, tok in (("threads", th_token), ("instagram", ig_token), ("reel", reel_token), ("youtube", yt_hook)) if tok]
     if th_token and comment:
         need.append("threads_comment")  # waits until the coupang link is filled in
     if need and all(res.get(k) for k in need):
