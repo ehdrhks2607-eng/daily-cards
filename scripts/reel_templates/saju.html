@@ -3,7 +3,8 @@
 <!--
   "saju" — 15s vertical reel for the 도아도령 (사주) account.
   Night sky + gold frame + crescent moon + rotating 12지 wheel + drifting clouds,
-  with the 도아 character in a gold medallion that moves between scenes.
+  Opens (0~3s) with the 도아 character full-frame (push-in, light sweep, petals or gold dust) under the hook,
+  then the character shrinks into a gold medallion badge for the rest. Optional "date_label" text above the hook.
   Same data schema as the other templates (hook / pain / tips_title / tips / item_lead / item / item_sub / cta / disclosure).
   Optional "character": default | love | career | reunion (else picked from the item/hook text).
   Deterministic: render_reel.py calls window.__setTime(t) per frame.
@@ -61,6 +62,11 @@ body{font-family:'Noto Serif CJK KR','Noto Sans CJK KR','Noto Sans KR',serif;col
   padding:26px 50px;border-radius:60px;box-shadow:0 0 40px rgba(232,181,79,.5)}
 .pill svg{width:44px;height:44px}
 .foot{left:0;right:0;top:1500px;text-align:center;font-size:30px;color:var(--mu)}
+#hero{inset:0;overflow:hidden}
+#heroimg{left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 38%;will-change:transform}
+#herosweep,#herofx{left:0;top:0}#herosweep{mix-blend-mode:screen}
+#heroshade{inset:0;background:linear-gradient(to bottom,rgba(3,4,9,.85) 0%,rgba(3,4,9,0) 20%,rgba(3,4,9,0) 48%,rgba(3,4,9,.8) 66%,rgba(3,4,9,.97) 82%)}
+#herodate{left:0;right:0;top:1105px;text-align:center;font-size:56px;font-weight:600;color:var(--ac);letter-spacing:4px;text-shadow:0 4px 20px rgba(0,0,0,.8)}
 </style></head><body>
 <div id="stars" class="abs"></div>
 <div class="abs" style="inset:0;background:radial-gradient(ellipse 85% 75% at 50% 45%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%)"></div>
@@ -74,6 +80,8 @@ body{font-family:'Noto Serif CJK KR','Noto Sans CJK KR','Noto Sans KR',serif;col
 <svg class="cloud abs" id="cl2" style="right:-80px;bottom:300px;transform:scaleX(-1)" viewBox="0 0 520 200"><g fill="none" stroke="#E8B54F" stroke-width="4" stroke-linecap="round">
   <path d="M20 170 H470 M60 170 C40 120 110 90 150 120 C150 70 230 50 260 100 C280 60 360 60 370 120 C410 100 460 130 440 170"/>
   <path d="M260 100 C285 95 300 120 285 135 C273 146 255 138 262 125"/></g></svg>
+<div id="hero" class="abs"><div id="heroimg" class="abs"></div><canvas id="herosweep" class="abs" width="1080" height="1920"></canvas>
+  <div id="heroshade" class="abs"></div><canvas id="herofx" class="abs" width="1080" height="1920"></canvas><div id="herodate" class="abs"></div></div>
 <div id="frame" class="abs"></div><div id="frame2" class="abs"></div>
 <div id="corners"></div>
 <div id="rays" class="abs"></div>
@@ -150,13 +158,49 @@ function pickChar(){
   return ASSETS.doa_default||'';
 }
 document.getElementById('ph').style.backgroundImage=`url(${pickChar()})`;
+// ---- hero (full-frame character for the opening) ----
+function charKind(){
+  if(DATA.character) return DATA.character;
+  const txt=[DATA.item,DATA.hook,DATA.tips_title].join(' ');
+  if(/재회|이별|다시/.test(txt)) return 'reunion';
+  if(/연애|인연|사랑|궁합|짝/.test(txt)) return 'love';
+  if(/직장|재물|돈|이직|승진|금전/.test(txt)) return 'career';
+  return 'default';
+}
+const KIND=charKind();
+const heroSrc=ASSETS['doa_full_'+KIND]||ASSETS.doa_full_default||'';
+const hero=document.getElementById('hero'), heroimg=document.getElementById('heroimg');
+if(heroSrc) heroimg.style.backgroundImage=`url(${heroSrc})`; else hero.style.display='none';
+document.getElementById('herodate').textContent=DATA.date_label||'';
+const hsw=document.getElementById('herosweep').getContext('2d'), hfx=document.getElementById('herofx').getContext('2d');
+const PETAL={love:['#ffe3ea','#f3a6bb'],reunion:['#ffe6cf','#f0a27a']}[KIND];
+let hs=91;const hr=()=>{hs=(hs*16807)%2147483647;return hs/2147483647};
+const PET=Array.from({length:24},()=>({x:hr()*1080,y:hr()*1920,s:14+hr()*16,v:70+hr()*70,w:1+hr()*2,ph:hr()*6.28,r:hr()*360}));
+const DUST=Array.from({length:110},()=>({x:hr()*1080,y:700+hr()*1300,s:1.5+hr()*3,v:30+hr()*60,ph:hr()*6.28}));
+function petal(x,y,sz,r,a){hfx.save();hfx.translate(x,y);hfx.rotate(r);hfx.globalAlpha=a;const g=hfx.createRadialGradient(0,0,1,0,0,sz);
+  g.addColorStop(0,PETAL[0]);g.addColorStop(1,PETAL[1]);hfx.fillStyle=g;hfx.beginPath();hfx.moveTo(0,-sz);
+  hfx.bezierCurveTo(sz*.9,-sz*.6,sz*.7,sz*.6,0,sz);hfx.bezierCurveTo(-sz*.7,sz*.6,-sz*.9,-sz*.6,0,-sz);hfx.fill();hfx.restore()}
+function renderHero(t){
+  const out=ioCubic(p(t,2.75,3.3));hero.style.opacity=1-out;hero.style.visibility=out>=1?'hidden':'visible';
+  if(out>=1) return;
+  const k=1.03+0.06*ioCubic(p(t,0,3.3)), br=1+0.004*Math.sin(t*2.2);
+  heroimg.style.transform=`translateY(${-14*p(t,0,3.3)}px) scale(${k*br})`;
+  hsw.clearRect(0,0,1080,1920);const sx=-500+1900*ioCubic(p(t,.3,2.6));
+  const g=hsw.createLinearGradient(sx-200,0,sx+200,400);g.addColorStop(0,'rgba(255,220,160,0)');g.addColorStop(.5,'rgba(255,225,170,.22)');g.addColorStop(1,'rgba(255,220,160,0)');
+  hsw.fillStyle=g;hsw.save();hsw.translate(0,560);hsw.rotate(-.25);hsw.fillRect(-400,0,2000,700);hsw.restore();
+  hfx.clearRect(0,0,1080,1920);
+  if(PETAL) PET.forEach(q=>{const y=((q.y+q.v*t)%2000)-40,x=q.x+Math.sin(t*q.w+q.ph)*40;petal(x,y,q.s,(q.r+t*60*q.w)*Math.PI/180,.8*p(t,.1,.8))});
+  DUST.forEach(q=>{hfx.globalAlpha=(.35+.35*Math.sin(t*3+q.ph))*p(t,.2,1);hfx.fillStyle='#ffd98a';hfx.beginPath();hfx.arc(q.x+Math.sin(t+q.ph)*10,q.y-q.v*t,q.s,0,6.28);hfx.fill()});
+  hfx.globalAlpha=1;
+  const hd=document.getElementById('herodate');hd.style.opacity=oExpo(p(t,.35,1.1));
+}
 const med=document.getElementById('med'), medring=document.getElementById('medring'), medglow=document.getElementById('medglow');
 
 // ---- scenes ----
 document.getElementById('label').textContent='@'+(th.handle||th.label);
 const prog=document.getElementById('prog');prog.innerHTML=Object.keys(T).map(()=>'<i><b></b></i>').join('');
 const bars=Array.from(prog.querySelectorAll('b'));
-const s1=document.getElementById('s1');s1.style.top='860px';
+const s1=document.getElementById('s1');s1.style.top=heroSrc?'1190px':'860px';
 s1.innerHTML=(DATA.series?`<div class="tag sans" id="tag">${esc(DATA.series)}</div>`:'')+`<div class="hook">${kinetic(DATA.hook)}</div>`;
 const s1c=chars(s1),tag=document.getElementById('tag');
 const s2=document.getElementById('s2');s2.style.top='0';s2.style.bottom='0';s2.style.justifyContent='center';s2.style.paddingBottom='120px';
@@ -174,10 +218,13 @@ const s5c=chars(s5),pill=document.getElementById('pill');
 const foot=document.getElementById('foot');foot.textContent=DATA.disclosure||'참고·재미로 보는 콘텐츠예요';
 
 // medallion keyframes: t, centerX, centerY, scale(of 460px), opacity
-const MK=[[0,540,560,0,1],[0.6,540,560,1,1],[2.75,540,560,1.02,1],
+const MK=heroSrc?[[0,190,340,0,1],[2.9,190,340,0,1],
+          [3.3,190,340,.24,1],[12.9,190,340,.24,1],
+          [13.35,540,500,.8,1],[15,540,500,.82,1]]:[[0,540,560,0,1],[0.6,540,560,1,1],[2.75,540,560,1.02,1],
           [3.25,190,340,.24,1],[12.9,190,340,.24,1],
           [13.35,540,500,.8,1],[15,540,500,.82,1]];
 function render(t){
+  renderHero(t);
   Object.values(T).forEach(([a,b],i)=>{bars[i].style.transform=`scaleX(${p(t,a,b)})`});
   STARS.forEach(([s,base,ph,sp])=>{s.style.opacity=clamp(base+Math.sin(t*sp+ph)*.35,.08,1)});
   wheel.style.transform=`rotate(${t*4}deg)`;wheel.style.opacity=.10+.04*Math.sin(t*.8);
