@@ -22,7 +22,8 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 KST = timezone(timedelta(hours=9))
 THREADS = "https://graph.threads.net/v1.0"
-IG = "https://graph.instagram.com/v21.0"
+IG = "https://graph.instagram.com/v21.0"   # Instagram Login tokens (IGAA...)
+FB = "https://graph.facebook.com/v21.0"    # Facebook Login for Business tokens (EAA...)
 PLACEHOLDER = "[쿠팡링크"
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 
@@ -86,9 +87,14 @@ def threads_post(token, text, reply_to=None, video_urls=None):
 
 
 # ---------------- Instagram ----------------
+def ig_api(token):
+    """EAA tokens come from Facebook Login for Business and use graph.facebook.com."""
+    return FB if token.startswith("EAA") else IG
+
+
 def ig_wait(token, container_id, tries=30):
     for _ in range(tries):
-        s = call("GET", f"{IG}/{container_id}", fields="status_code", access_token=token)
+        s = call("GET", f"{ig_api(token)}/{container_id}", fields="status_code", access_token=token)
         if s.get("status_code") == "FINISHED":
             return
         if s.get("status_code") == "ERROR":
@@ -97,42 +103,49 @@ def ig_wait(token, container_id, tries=30):
     raise RuntimeError(f"IG container {container_id} timeout")
 
 
-def ig_uid(token):
+def ig_uid(token, account=None):
+    if token.startswith("EAA"):
+        # Facebook-login tokens can't resolve the IG account via /me; it is stored in config.json
+        cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
+        uid = str(cfg["accounts"].get(account or "", {}).get("ig_user_id") or "")
+        if not uid:
+            raise RuntimeError(f"config.json accounts.{account}.ig_user_id is empty (needed for EAA token)")
+        return uid
     r = call("GET", f"{IG}/me", fields="user_id", access_token=token)
     return r.get("user_id") or r["id"]
 
 
-def ig_carousel(token, image_urls, caption):
-    uid = ig_uid(token)
+def ig_carousel(token, image_urls, caption, account=None):
+    uid, API = ig_uid(token, account), ig_api(token)
     children = []
     for url in image_urls:
-        c = call("POST", f"{IG}/{uid}/media", image_url=url, is_carousel_item="true", access_token=token)
+        c = call("POST", f"{API}/{uid}/media", image_url=url, is_carousel_item="true", access_token=token)
         ig_wait(token, c["id"])
         children.append(c["id"])
-    parent = call("POST", f"{IG}/{uid}/media", media_type="CAROUSEL",
+    parent = call("POST", f"{API}/{uid}/media", media_type="CAROUSEL",
                   children=",".join(children), caption=caption, access_token=token)
     ig_wait(token, parent["id"])
-    p = call("POST", f"{IG}/{uid}/media_publish", creation_id=parent["id"], access_token=token)
+    p = call("POST", f"{API}/{uid}/media_publish", creation_id=parent["id"], access_token=token)
     return p["id"]
 
 
-def ig_reel(token, video_urls, local_file, caption):
+def ig_reel(token, video_urls, local_file, caption, account=None):
     """Publish a Reel. Tries public video URLs first (jsDelivr serves video/mp4),
     then falls back to a resumable upload of the local file."""
-    uid = ig_uid(token)
+    uid, API = ig_uid(token, account), ig_api(token)
     errs = []
     for url in video_urls:
         try:
-            c = call("POST", f"{IG}/{uid}/media", media_type="REELS", video_url=url,
+            c = call("POST", f"{API}/{uid}/media", media_type="REELS", video_url=url,
                      caption=caption, share_to_feed="true", access_token=token)
             ig_wait(token, c["id"], tries=60)
-            p = call("POST", f"{IG}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+            p = call("POST", f"{API}/{uid}/media_publish", creation_id=c["id"], access_token=token)
             return p["id"]
         except Exception as e:
             errs.append(f"{url.split('/')[2]}: {e}")
             log("reel via url failed, trying next:", str(e)[:200])
     try:
-        c = call("POST", f"{IG}/{uid}/media", media_type="REELS", upload_type="resumable",
+        c = call("POST", f"{API}/{uid}/media", media_type="REELS", upload_type="resumable",
                  caption=caption, share_to_feed="true", access_token=token)
         if not DRY_RUN:
             data = Path(local_file).read_bytes()
@@ -142,7 +155,7 @@ def ig_reel(token, video_urls, local_file, caption):
             if r.status_code >= 400:
                 raise RuntimeError(f"rupload {r.status_code}: {r.text[:300]}")
         ig_wait(token, c["id"], tries=60)
-        p = call("POST", f"{IG}/{uid}/media_publish", creation_id=c["id"], access_token=token)
+        p = call("POST", f"{API}/{uid}/media_publish", creation_id=c["id"], access_token=token)
         return p["id"]
     except Exception as e:
         errs.append(f"resumable: {e}")
@@ -188,7 +201,7 @@ def process(post_file, cfg, now):
 
     has_threads = bool(post.get("threads", {}).get("text"))
     has_ig = bool(post.get("instagram", {}).get("images"))
-    th_token = os.environ.get(f"{acc}_THREADS_TOKEN") if has_threads else None
+    th_token = (os.environ.get(f"{acc}_THREADS_TOKEN") or "").strip() or None if has_threads else None
     if th_token and not res.get("threads"):
         try:
             video = post["threads"].get("video")  # path relative to this post folder, e.g. ../jak_reel/reel.mp4
@@ -212,24 +225,24 @@ def process(post_file, cfg, now):
             except Exception as e:
                 errors.append(f"threads comment: {e}")
 
-    ig_token = os.environ.get(f"{acc}_IG_TOKEN") if has_ig else None
+    ig_token = (os.environ.get(f"{acc}_IG_TOKEN") or "").strip() or None if has_ig else None
     if ig_token and not res.get("instagram"):
         try:
             rel_dir = post_file.parent.relative_to(ROOT).as_posix()
             urls = [raw_url(f"{rel_dir}/{img}") for img in post["instagram"]["images"]]
-            res["instagram"] = ig_carousel(ig_token, urls, post["instagram"]["caption"])
+            res["instagram"] = ig_carousel(ig_token, urls, post["instagram"]["caption"], post["account"])
             log(acc, "instagram posted", res["instagram"])
             changed = True
         except Exception as e:
             errors.append(f"instagram: {e}")
 
     has_reel = bool(post.get("reel", {}).get("video"))
-    reel_token = os.environ.get(f"{acc}_IG_TOKEN") if has_reel else None
+    reel_token = (os.environ.get(f"{acc}_IG_TOKEN") or "").strip() or None if has_reel else None
     if reel_token and not res.get("reel"):
         try:
             rel = f"{post_file.parent.relative_to(ROOT).as_posix()}/{post['reel']['video']}"
             res["reel"] = ig_reel(reel_token, [cdn_url(rel), raw_url(rel)], ROOT / rel,
-                                  post["reel"].get("caption", ""))
+                                  post["reel"].get("caption", ""), post["account"])
             log(acc, "reel posted", res["reel"])
             changed = True
         except Exception as e:

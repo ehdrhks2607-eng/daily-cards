@@ -81,6 +81,11 @@ for acc in ("JAK", "SEOUL"):
                     ids += g.get("target_ids") or []
         else:
             fb["debug_error"] = str(b.get("error", b))[:300]
+        cfg = json.load(open("config.json", encoding="utf-8"))
+        cid = str(cfg["accounts"].get(acc.lower(), {}).get("ig_user_id") or "")
+        fb["config_ig_user_id_set"] = bool(cid)
+        if cid:
+            ids.insert(0, cid)
         probes = []
         for i in dict.fromkeys(ids):
             c1, b1 = get(f"https://graph.facebook.com/v21.0/{i}", fields="username", access_token=ig)
