@@ -92,7 +92,7 @@ def year_detail_pages(ys, daeun_of, name="고객님", mbti=None, prefix="PART 6"
                     mb = f'<br><span style="color:#2b3466;font-size:8pt">🧠 {_strip(d.get("mbti"), mbti)}</span>' if mbti else ""
                     tr += (f'<tr style="background:{col}"><td style="width:15%"><b>{kind}</b><br>{d["month"]} <span class="serif">{d["pillar"]}</span><br>'
                            f'<span class="small">{_md(a)}~{_md(z)}</span></td>'
-                           f'<td class="l" style="font-size:7.9pt">{"<br>".join("· " + w for w in d["why"][:4])}</td>'
+                           f'<td class="l" style="font-size:7.9pt">{"<br>".join("· " + w for w in d["why"][:3])}</td>'
                            f'<td class="l" style="width:30%">{d["tip"]}{mb}</td></tr>')
             head = f"이렇게 풀어 보세요 (사주 → {mbti})" if mbti else "이렇게 해 보세요"
             html += (f'<table class="yt" style="font-size:8.5pt;margin:0 0 2mm"><tr><th>달</th><th class="l">왜 그런가요 (근거)</th><th class="l">{head}</th></tr>{tr}</table>')
