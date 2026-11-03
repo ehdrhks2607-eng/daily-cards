@@ -1,17 +1,19 @@
 {
-  "checked_at": "2026-11-03T11:31:23.394500+09:00",
+  "checked_at": "2026-11-03T12:30:02.811511+09:00",
   "results": {
     "JAK": {
       "threads": {
-        "ok": false,
-        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AqM31GLnESlHbtpI0csghSe'}"
+        "ok": true,
+        "username": "3_day_hump"
       },
       "instagram_token_type": "instagram_login(IGAA)",
-      "instagram_token_length": 179,
+      "instagram_token_length": 181,
       "instagram_token_has_whitespace": false,
       "instagram": {
-        "ok": false,
-        "error": "{'message': 'Error validating access token: The user has not authorized application 2160922401300032.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'ALWpDS3pRS6Wrb_7eNTqRbW'}"
+        "ok": true,
+        "username": "3_day_hump",
+        "account_type": "MEDIA_CREATOR",
+        "publish_permission": true
       }
     },
     "SEOUL": {
@@ -37,8 +39,8 @@
           "instagram_manage_messages",
           "public_profile"
         ],
-        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'Amx5wyU_LsYgITiiUNbZATB'}",
-        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AS1Z0DavlekfsP60lbPI-Dh'}",
+        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AcCn6ckI-KuTbJdukg-CQXI'}",
+        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AAk79TrFtPBnaK9FSuM4Xse'}",
         "config_ig_user_id_set": true,
         "ig_user_probes": [
           {
