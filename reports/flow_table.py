@@ -98,6 +98,29 @@ def score(stem_god, br_rels):
     return s
 
 
+BR_MAIN = {"子": "癸", "丑": "己", "寅": "甲", "卯": "乙", "辰": "戊", "巳": "丙", "午": "丁", "未": "己", "申": "庚", "酉": "辛", "戌": "戊", "亥": "壬"}
+REL_TIP = {"충": "큰 결정·이사·계약은 한 달 미루고 일정에 여유를 두세요",
+           "형": "서류·계약·약속을 한 번 더 확인하세요",
+           "육해": "서운한 말은 쌓지 말고 그날 부드럽게 풀어 주세요"}
+
+
+def month_reason(m, good):
+    """달 하나를 왜 힘 받는/쉬어갈 달로 골랐는지 근거와 팁."""
+    p = m["month_pillar"]
+    why = [f"천간 {p[0]} = {m['stem_god']}({GOD[m['stem_god']][0]})", f"지지 {p[1]} = {m['branch_god']}({GOD[m['branch_god']][0]})"]
+    pos = [x for x in m["relations"] if x["rel"] == "육합"]
+    neg = [x for x in m["relations"] if x["rel"] != "육합"]
+    first, second, pre = (pos, neg, "다만 ") if good else (neg, pos, "그래도 ")
+    why += [f"{x['with']}와 {x['rel']} — {x['text']}" for x in first]
+    why += [f"{pre}{x['with']}와 {x['rel']} — {x['text']}" for x in second]
+    if good:
+        tip = GOD[m["stem_god"]][1]
+    else:
+        bad = [x for x in m["relations"] if x["rel"] in REL_TIP]
+        tip = REL_TIP[bad[0]["rel"]] if bad else GOD[m["stem_god"]][1]
+    return {"month": f"{int(m['start'][5:7])}월", "pillar": p, "range": m["range"], "why": why, "tip": tip}
+
+
 def years(start, n, day, natal):
     ds = day[0]
     out = []
@@ -111,7 +134,9 @@ def years(start, n, day, natal):
         care = [mrows[i] for _, i in sorted(sc, key=lambda x: (x[0], x[1]))[:2]]
         cal = lambda m: f"{int(m['start'][5:7])}월({m['month_pillar']})"
         g_stem = ten_god(ds, yp[0])
-        out.append({"year": y, "pillar": yp, "stem_god": g_stem, "relations": r,
+        g_br = ten_god(ds, BR_MAIN[yp[1]])
+        out.append({"year": y, "pillar": yp, "stem_god": g_stem, "branch_god": g_br, "relations": r,
+                    "best_detail": [month_reason(m, True) for m in best], "care_detail": [month_reason(m, False) for m in care],
                     "best_months": [cal(m) for m in best], "care_months": [cal(m) for m in care],
                     "draft": f"{GOD[g_stem][0]}이 중심이 되는 해" + "".join(f" · {x['with']}와 {x['rel']}: {x['text']}" for x in r)
                              + f" / 힘 받는 달 {', '.join(cal(m) for m in best)} · 쉬어갈 달 {', '.join(cal(m) for m in care)}"})

@@ -109,7 +109,8 @@ def build_html(s):
         items = "".join(f'<li><span><b>{i:02d}</b>{p["title"]}</span><span>{i + 2}</span></li>' for i, p in enumerate(s["pages"], 1))
         items += f'<li><span><b>{n:02d}</b>마무리 메시지</span><span>{n + 2}</span></li>'
         pages[1] = (f'<section class="page inner"><div class="runhead"><span>{run}</span><span>{name}</span></div>'
-                    f'<div class="num">CONTENTS</div><h2>목차</h2><div class="rule"></div><ul class="toc{" tight" if n > 12 else ""}">{items}</ul></section>')
+                    f'<div class="num">CONTENTS</div><h2>목차</h2><div class="rule"></div><ul class="toc{" tight" if n > 12 else ""}"'
+                    f'{" style=\"columns:2;column-gap:8mm;font-size:8.6pt\"" if n > 22 else ""}>{items}</ul></section>')
     out = []
     for i, p in enumerate(pages, 1):
         if i > 1:
