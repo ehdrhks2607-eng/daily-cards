@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?: 아침 8도 찬물 못 마심 → 미니 전기포트",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6341912",
@@ -13,6 +13,10 @@
     "text": "아침에 찬물 마시기 싫은 거 나만 그래?\n\n오늘 아침 8도에 낮엔 18도래\n일어나자마자 손이 시려서 컵 들기도 싫었어\n\n그래서 1인용 미니 전기포트\n리뷰 많은 걸로 장바구니에 넣어놨어\n\n너는 아침에 뭐 마셔?",
     "comment": "아침에 따뜻한 물 마시고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4BINIOwS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-11-04T07:30:00+09:00"
+  "result": {
+    "threads": "18031789097883085",
+    "threads_comment": "18113127818225998"
+  },
+  "publish_at": "2026-11-04T07:30:00+09:00",
+  "posted_at": "2026-11-04T07:31:33.130571+09:00"
 }
