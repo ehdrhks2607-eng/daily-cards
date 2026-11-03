@@ -86,6 +86,11 @@ def months(year, day, natal):
     return rows
 
 
+def calendar_months(year, day, natal):
+    """양력 1월~12월 기준 12달: 1월은 전년(사주상) 丑월, 2~12월은 그해 寅~子월."""
+    return months(year - 1, day, natal)[-1:] + months(year, day, natal)[:11]
+
+
 def score(stem_god, br_rels):
     s = {"식신": 2, "정재": 2, "정관": 1, "정인": 1, "편재": 1, "상관": 0, "편인": 0, "비견": 0, "겁재": -1, "편관": -1}[stem_god]
     for x in br_rels:
@@ -118,12 +123,13 @@ def main():
     ap.add_argument("--day", required=True, help="일주, 예: 辛巳")
     ap.add_argument("--natal", required=True, help="년,월,일,시 주 (시 모르면 -) 예: 壬申,壬子,辛巳,戊戌")
     ap.add_argument("--months", type=int)
+    ap.add_argument("--calendar", action="store_true", help="--months를 양력 1~12월 기준으로 (리포트는 이걸 쓴다)")
     ap.add_argument("--years", type=int, nargs=2, metavar=("START", "N"))
     ap.add_argument("--json", action="store_true")
     a = ap.parse_args()
     natal = [None if x in ("-", "") else x for x in a.natal.split(",")]
     if a.months:
-        rows = months(a.months, a.day, natal)
+        rows = (calendar_months if a.calendar else months)(a.months, a.day, natal)
         if a.json:
             print(json.dumps(rows, ensure_ascii=False, indent=1))
         else:
