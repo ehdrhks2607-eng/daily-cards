@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "💕 오늘의 연애운 (신사일)",
   "sources": [
     "scripts/ganji.py"
@@ -13,6 +13,10 @@
     "comment": "연애운이 궁금한 분은 프로필 링크로 오세요\nhttps://pf.kakao.com/_MrAxeX/chat\n\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-03T13:00:00+09:00"
+  "result": {
+    "threads": "18120481028069062",
+    "threads_comment": "18115247395868985"
+  },
+  "publish_at": "2026-11-03T13:00:00+09:00",
+  "posted_at": "2026-11-03T13:00:45.593701+09:00"
 }
