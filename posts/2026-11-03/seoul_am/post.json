@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "💰 오늘의 금전운 (신사일)",
   "sources": [
     "scripts/ganji.py"
@@ -12,7 +12,11 @@
     "text": "11월 3일 화요일, 신사일(辛巳)\n오늘의 금전운 💰\n\n🥇 원숭이띠 — 손발이 잘 맞는 날(육합)\n미뤄둔 정산·환급을 챙겨보세요\n🥈 뱀띠 — 돈의 흐름이 눈에 들어오는 날\n작은 지출 기록부터 해두면 좋아요\n🥉 말띠 — 재물 감각이 살아나는 흐름\n제안이 오면 하루만 두고 보세요\n\n★★★★ 닭띠·소띠\n★★★ 양띠·개띠·쥐띠·토끼띠·용띠\n★★ 범띠 — 작은 오해 조심, 말은 부드럽게\n★ 돼지띠 — 큰 지출은 하루 미뤄보세요\n\n여러분 띠는 오늘 어떠셨어요?",
     "comment": "내 띠 2027 신년운이 궁금한 분은 프로필 링크로 오세요\n\n수십 쪽 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요"
   },
-  "result": {},
+  "result": {
+    "threads": "17908717650597890",
+    "threads_comment": "17959420089252002"
+  },
   "publish_at": "2026-11-03T08:00:00+09:00",
-  "last_error": "threads: 400 https://graph.threads.net/v1.0/me: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ATr7z5JN3OqKo8SkhFuDOUN\"}}"
+  "last_error": "threads: 400 https://graph.threads.net/v1.0/me: {\"error\":{\"message\":\"Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ATr7z5JN3OqKo8SkhFuDOUN\"}}",
+  "posted_at": "2026-11-03T11:45:32.893410+09:00"
 }
