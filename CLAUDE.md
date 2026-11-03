@@ -265,6 +265,7 @@ https://pf.kakao.com/_MrAxeX/chat
 사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요
 ```
 - am·lunch 글과 릴스에는 넣지 않는다. 사용자가 "마감됐어"라고 하면 남은 날짜의 이 블록을 뺀다.
+- 이 블록의 "선착순"·"무료"는 사용자가 정한 이벤트 문구라 S-5의 "선착순 금지" 예외로 그대로 쓴다.
 
 ### S-5. 주문 안내 댓글 (am·lunch·pm의 `threads.comment`)
 `config.json`의 `accounts.seoul.order_link`(카톡 채널 대화 링크)가 있으면 아래 형식으로 쓴다.
