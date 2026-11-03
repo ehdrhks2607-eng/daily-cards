@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-03T12:30:02.811511+09:00",
+  "checked_at": "2026-11-03T13:19:28.730320+09:00",
   "results": {
     "JAK": {
       "threads": {
@@ -39,8 +39,8 @@
           "instagram_manage_messages",
           "public_profile"
         ],
-        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AcCn6ckI-KuTbJdukg-CQXI'}",
-        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AAk79TrFtPBnaK9FSuM4Xse'}",
+        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'A9iJAGw34RrAvieZX45oxXZ'}",
+        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'Avb_nVBIAa_RN1VZWQbKuI9'}",
         "config_ig_user_id_set": true,
         "ig_user_probes": [
           {
