@@ -68,6 +68,19 @@ for acc in ("JAK", "SEOUL"):
             for x in b.get("data", []):
                 for k in ("instagram_accounts", "owned_instagram_accounts"):
                     ids += [a["id"] for a in (x.get(k) or {}).get("data", [])]
+        # a user token can debug itself: granular_scopes lists the Instagram account ids it was granted
+        code, b = get("https://graph.facebook.com/v21.0/debug_token", input_token=ig, access_token=ig)
+        if code == 200:
+            d = b.get("data", {})
+            fb["debug"] = {"type": d.get("type"), "is_valid": d.get("is_valid"), "expires_at": d.get("expires_at"),
+                           "data_access_expires_at": d.get("data_access_expires_at"),
+                           "granular_scopes": [{"scope": g.get("scope"), "targets": len(g.get("target_ids") or [])}
+                                               for g in d.get("granular_scopes", [])]}
+            for g in d.get("granular_scopes", []):
+                if g.get("scope") in ("instagram_basic", "instagram_content_publish"):
+                    ids += g.get("target_ids") or []
+        else:
+            fb["debug_error"] = str(b.get("error", b))[:300]
         probes = []
         for i in dict.fromkeys(ids):
             c1, b1 = get(f"https://graph.facebook.com/v21.0/{i}", fields="username", access_token=ig)
