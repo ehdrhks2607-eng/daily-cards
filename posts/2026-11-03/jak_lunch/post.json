@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 10월 커피 22잔 9만 9천 원 → 대용량 물병",
   "sources": [
     "https://www.weather.go.kr"
@@ -13,6 +13,10 @@
     "comment": "커피값 줄이고 물부터 챙기고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLochUvXo\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-03T12:30:00+09:00"
+  "result": {
+    "threads": "17916866481470420",
+    "threads_comment": "18171221275492226"
+  },
+  "publish_at": "2026-11-03T12:30:00+09:00",
+  "posted_at": "2026-11-03T12:30:40.309412+09:00"
 }
