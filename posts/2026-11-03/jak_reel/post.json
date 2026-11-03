@@ -3,7 +3,7 @@
   "date": "2026-11-03",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 10월 커피 22잔 9만 9천 원 → 대용량 물병 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-03T19:30:00+09:00"
+  "result": {
+    "reel": "18118805336112912"
+  },
+  "publish_at": "2026-11-03T19:30:00+09:00",
+  "posted_at": "2026-11-03T19:30:38.273434+09:00"
 }
