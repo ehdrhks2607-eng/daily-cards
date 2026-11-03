@@ -53,7 +53,9 @@
           "lunch": "13:00",
           "eve": "18:00",
           "pm": "21:30",
-          "reel": "20:00"
+          "reel": "11:30",
+          "reel_am": "08:00",
+          "reel_pm": "21:30"
         },
         "weekend": {
           "am": "09:00",
@@ -61,13 +63,15 @@
           "lunch": "14:00",
           "eve": "19:00",
           "pm": "22:30",
-          "reel": "21:00"
+          "reel": "12:00",
+          "reel_am": "09:00",
+          "reel_pm": "22:30"
         },
         "instagram_slot": null,
         "reel_enabled": true
       },
       "reel_templates": [
-        "saju"
+        "saju2"
       ],
       "order_link": "https://pf.kakao.com/_MrAxeX/chat",
       "handle": "doa.doryeong",

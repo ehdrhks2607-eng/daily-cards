@@ -12,6 +12,8 @@ usage: python scripts/ganji.py               # 오늘(KST)
     금전운: 띠 오행이 오늘 천간 오행을 극하면(재성) +1
     연애운: 띠 오행이 오늘 천간 오행을 생하면(식상·표현과 매력) +1, 오늘 일지가 그 띠의 도화면 +1
     재회운: 오늘 천간 오행이 띠 오행을 생하면(인성·돌아오는 기운) +1, 육합이면 +1
+    연애·재회운: 연애운·재회운 가점(식상·도화·인성·육합) 중 하나라도 있으면 +1
+    종합운(내일의 운세용): 재성·식상·인성 중 하나라도 있으면 +1
     (최대 5, 최소 1)
 """
 import json
@@ -64,7 +66,7 @@ def relation(day_b, b):
 def fortunes(d):
     dp = day_pillar(d)
     day_el = STEM_EL[dp["stem"]]
-    out = {"금전운": [], "연애운": [], "재회운": []}
+    out = {"금전운": [], "연애운": [], "재회운": [], "연애·재회운": [], "종합운": []}
     for b in range(12):
         base, why = relation(dp["branch"], b)
         for kind in out:
@@ -79,6 +81,16 @@ def fortunes(d):
                 s += 1; notes.append("인성(돌아오는 기운)")
             if kind == "재회운" and why == "육합":
                 s += 1; notes.append("합(다시 묶이는 기운)")
+            if kind == "연애·재회운":
+                if GENERATES[BRANCH_EL[b]] == day_el: notes.append("식상(표현·매력)")
+                if DOHWA[b] == dp["branch"]: notes.append("도화")
+                if GENERATES[day_el] == BRANCH_EL[b]: notes.append("인성(돌아오는 기운)")
+                if len(notes) > 1 or why == "육합": s += 1
+            if kind == "종합운":
+                if CONTROLS[BRANCH_EL[b]] == day_el: notes.append("재성")
+                if GENERATES[BRANCH_EL[b]] == day_el: notes.append("식상")
+                if GENERATES[day_el] == BRANCH_EL[b]: notes.append("인성")
+                if len(notes) > 1: s += 1
             out[kind].append(dict(animal=ANIMALS[b] + "띠", score=max(1, min(5, s)), basis=" + ".join(notes), order=b))
     for kind in out:  # 같은 점수면 일지와의 거리 순 → 매일 순서가 달라짐
         out[kind].sort(key=lambda x: (-x["score"], (x["order"] - dp["branch"]) % 12))

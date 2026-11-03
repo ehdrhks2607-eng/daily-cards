@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<!--
+  "saju2" — curiosity-driven 15s reel for 도아도령: hook with an open loop ("1위는 마지막에"),
+  "내 띠 있을까?" scan, countdown 3위 → 2위, blurred 1위 reveal, comment CTA.
+  Data: hook, date_label, tease?, selfcheck?, tips[1위,2위,3위], reveal_label?, reveal_note?, cta, cta_pill?, disclosure, character.
+  (Based on "saju".)
+  Night sky + gold frame + crescent moon + rotating 12지 wheel + drifting clouds,
+  Opens (0~3s) with the 도아 character full-frame (push-in, light sweep, petals or gold dust) under the hook,
+  then the character shrinks into a gold medallion badge for the rest. Optional "date_label" text above the hook.
+  Same data schema as the other templates (hook / pain / tips_title / tips / item_lead / item / item_sub / cta / disclosure).
+  Optional "character": default | love | career | reunion (else picked from the item/hook text).
+  Deterministic: render_reel.py calls window.__setTime(t) per frame.
+  Safe area: text inside x 110..900, y 260..1480.
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden}
+body{font-family:'Noto Serif CJK KR','Noto Sans CJK KR','Noto Sans KR',serif;color:var(--fg);word-break:keep-all;position:relative;
+  background:radial-gradient(ellipse 100% 55% at 50% 34%, #0b0f26 0%, #070916 42%, #030409 72%, #010102 100%);-webkit-font-smoothing:antialiased}
+.abs{position:absolute}
+.sans{font-family:'Noto Sans CJK KR','Noto Sans KR',sans-serif}
+#stars{inset:0}
+#stars i{position:absolute;border-radius:50%;background:#fff6d8}
+#wheel{left:540px;top:1180px;width:0;height:0}
+#wheel span{position:absolute;left:-40px;top:-40px;width:80px;height:80px;display:flex;align-items:center;justify-content:center;
+  font-size:58px;color:var(--ac);font-weight:700}
+#wheelring{left:-470px;top:-470px;width:940px;height:940px;border-radius:50%;border:2px solid var(--ac)}
+#wheelring2{left:-380px;top:-380px;width:760px;height:760px;border-radius:50%;border:1px dashed var(--ac)}
+#moon{right:130px;top:84px;width:120px;height:120px;filter:drop-shadow(0 0 30px rgba(232,181,79,.55))}
+.cloud{bottom:120px;width:520px;height:200px;opacity:.5}
+#frame{inset:38px;border:3px solid var(--ac);opacity:.75}
+#frame2{inset:56px;border:1px solid var(--ac);opacity:.35}
+.corner{width:120px;height:120px}
+#med{left:0;top:0;width:460px;height:460px;will-change:transform}
+#med .ph{position:absolute;inset:14px;border-radius:50%;background-size:cover;background-position:50% 30%}
+#med svg{position:absolute;inset:0;overflow:visible}
+#medglow{position:absolute;inset:-60px;border-radius:50%;background:radial-gradient(circle, rgba(232,181,79,.45) 0%, rgba(232,181,79,0) 62%)}
+.head{top:236px;left:110px;right:110px;display:flex;justify-content:space-between;align-items:center;font-size:34px;font-weight:700;color:var(--mu)}
+.prog{display:flex;gap:10px}
+.prog i{display:block;width:44px;height:6px;border-radius:3px;background:var(--mu);opacity:.3;overflow:hidden;position:relative}
+.prog i b{position:absolute;inset:0;background:var(--ac);transform-origin:left;transform:scaleX(0)}
+.scene{left:110px;right:110px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.line{display:block;overflow:hidden;padding:.08em 0;white-space:nowrap}
+.ch{display:inline-block;white-space:pre;will-change:transform}
+.ac{color:var(--ac)}
+.tag{font-size:36px;font-weight:900;color:var(--bg);background:var(--ac);padding:10px 28px;border-radius:40px;margin-bottom:30px}
+.hook{font-size:118px;font-weight:900;line-height:1.2;letter-spacing:-3px;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.pain{font-size:86px;font-weight:900;line-height:1.38;letter-spacing:-2px;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.tips-h{font-size:48px;font-weight:700;color:var(--ac);margin-bottom:44px;letter-spacing:1px}
+.tips-h:before,.tips-h:after{content:'✦';margin:0 18px;font-size:34px;vertical-align:middle;opacity:.8}
+.tip{position:relative;display:flex;align-items:center;gap:30px;width:820px;padding:30px 40px;margin-bottom:28px;
+  border:2px solid rgba(232,181,79,.65);border-radius:18px;background:linear-gradient(90deg,rgba(232,181,79,.16),rgba(232,181,79,.04))}
+.tip .n{flex:none;width:86px;height:86px;border-radius:50%;border:3px solid var(--ac);color:var(--ac);font-size:48px;font-weight:900;
+  display:flex;align-items:center;justify-content:center}
+.tip .t{flex:1;text-align:left;white-space:nowrap;overflow:hidden;font-size:62px;font-weight:900;letter-spacing:-1px}
+#rays{left:540px;top:820px;width:0;height:0}
+#rays i{position:absolute;left:-9px;top:-700px;width:18px;height:700px;transform-origin:50% 100%;
+  background:linear-gradient(to top, rgba(232,181,79,.0), rgba(232,181,79,.28) 40%, rgba(232,181,79,0))}
+.sm{font-size:50px;font-weight:700;color:var(--mu);margin-bottom:20px}
+.item{font-size:200px;font-weight:900;letter-spacing:-6px;line-height:1.1;color:var(--ac);text-shadow:0 0 50px rgba(232,181,79,.55)}
+.isub{margin-top:36px;font-size:54px;font-weight:700}
+.cta{font-size:100px;font-weight:900;line-height:1.24;letter-spacing:-3px;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.pill{margin-top:56px;display:flex;align-items:center;gap:18px;font-size:48px;font-weight:900;background:var(--ac);color:#0b1030;
+  padding:26px 50px;border-radius:60px;box-shadow:0 0 40px rgba(232,181,79,.5)}
+.pill svg{width:44px;height:44px}
+.foot{left:0;right:0;top:1500px;text-align:center;font-size:30px;color:var(--mu)}
+.tease{margin-top:30px;display:inline-flex;align-items:center;gap:14px;font-size:40px;font-weight:700;color:#0b1030;background:var(--ac);padding:12px 30px;border-radius:40px}
+.q2{font-size:92px;font-weight:900;line-height:1.3;letter-spacing:-2px;text-shadow:0 6px 30px rgba(0,0,0,.6)}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px;width:860px}
+.chips span{font-family:'Noto Sans CJK KR','Noto Sans KR',sans-serif;font-size:40px;font-weight:700;padding:16px 0;border-radius:16px;border:2px solid rgba(232,181,79,.35);color:var(--mu)}
+.rk{position:relative;display:flex;align-items:center;gap:34px;width:860px;padding:36px 44px;margin-bottom:34px;border:2px solid rgba(232,181,79,.65);border-radius:22px;
+  background:linear-gradient(90deg,rgba(232,181,79,.16),rgba(232,181,79,.04))}
+.rk .n{flex:none;font-size:52px;font-weight:900;color:var(--ac);width:120px;text-align:left}
+.rk .t{flex:1;text-align:left;white-space:nowrap;overflow:hidden;font-size:72px;font-weight:900}
+.wait{font-size:64px;font-weight:700;color:var(--ac);margin-bottom:46px}
+.top{position:relative;width:900px;padding:56px 40px;border:4px solid var(--ac);border-radius:30px;background:radial-gradient(ellipse at 50% 0%,rgba(232,181,79,.3),rgba(232,181,79,.05));box-shadow:0 0 60px rgba(232,181,79,.35)}
+.top .lab{font-size:46px;font-weight:700;color:var(--ac);margin-bottom:10px}
+.top .big{font-size:150px;font-weight:900;line-height:1.1;letter-spacing:-4px}
+.top .note{margin-top:20px;font-size:48px;font-weight:700;color:var(--fg)}
+#hero{inset:0;overflow:hidden}
+#heroimg{left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 38%;will-change:transform}
+#herosweep,#herofx{left:0;top:0}#herosweep{mix-blend-mode:screen}
+#heroshade{inset:0;background:linear-gradient(to bottom,rgba(3,4,9,.85) 0%,rgba(3,4,9,0) 20%,rgba(3,4,9,0) 48%,rgba(3,4,9,.8) 66%,rgba(3,4,9,.97) 82%)}
+#herodate{left:0;right:0;top:1105px;text-align:center;font-size:56px;font-weight:600;color:var(--ac);letter-spacing:4px;text-shadow:0 4px 20px rgba(0,0,0,.8)}
+</style></head><body>
+<div id="stars" class="abs"></div>
+<div class="abs" style="inset:0;background:radial-gradient(ellipse 85% 75% at 50% 45%, rgba(0,0,0,0) 50%, rgba(0,0,0,.75) 100%)"></div>
+<svg class="abs" style="left:150px;top:150px;width:780px;height:1500px;opacity:.28" viewBox="0 0 780 1500"><path d="M10 1500 V390 A380 380 0 0 1 770 390 V1500" fill="none" stroke="#E8B54F" stroke-width="3"/><path d="M34 1500 V396 A356 356 0 0 1 746 396 V1500" fill="none" stroke="#E8B54F" stroke-width="1"/></svg>
+<div id="wheel" class="abs"><div id="wheelring" class="abs"></div><div id="wheelring2" class="abs"></div></div>
+<svg id="moon" class="abs" viewBox="0 0 100 100"><defs><mask id="mm"><rect width="100" height="100" fill="#fff"/><circle cx="66" cy="38" r="40" fill="#000"/></mask></defs>
+  <circle cx="50" cy="50" r="44" fill="#E8B54F" mask="url(#mm)"/></svg>
+<svg class="cloud abs" id="cl1" style="left:-60px" viewBox="0 0 520 200"><g fill="none" stroke="#E8B54F" stroke-width="4" stroke-linecap="round">
+  <path d="M20 170 H470 M60 170 C40 120 110 90 150 120 C150 70 230 50 260 100 C280 60 360 60 370 120 C410 100 460 130 440 170"/>
+  <path d="M150 120 C170 110 190 125 180 140 C172 152 155 148 158 136"/><path d="M260 100 C285 95 300 120 285 135 C273 146 255 138 262 125"/></g></svg>
+<svg class="cloud abs" id="cl2" style="right:-80px;bottom:300px;transform:scaleX(-1)" viewBox="0 0 520 200"><g fill="none" stroke="#E8B54F" stroke-width="4" stroke-linecap="round">
+  <path d="M20 170 H470 M60 170 C40 120 110 90 150 120 C150 70 230 50 260 100 C280 60 360 60 370 120 C410 100 460 130 440 170"/>
+  <path d="M260 100 C285 95 300 120 285 135 C273 146 255 138 262 125"/></g></svg>
+<div id="hero" class="abs"><div id="heroimg" class="abs"></div><canvas id="herosweep" class="abs" width="1080" height="1920"></canvas>
+  <div id="heroshade" class="abs"></div><canvas id="herofx" class="abs" width="1080" height="1920"></canvas><div id="herodate" class="abs"></div></div>
+<div id="frame" class="abs"></div><div id="frame2" class="abs"></div>
+<div id="corners"></div>
+<div id="rays" class="abs"></div>
+
+<div id="med" class="abs"><div id="medglow"></div><div class="ph" id="ph"></div>
+  <svg viewBox="0 0 460 460"><circle cx="230" cy="230" r="222" fill="none" stroke="#E8B54F" stroke-width="8" pathLength="1" stroke-dasharray="1" id="medring"/>
+  <circle cx="230" cy="230" r="208" fill="none" stroke="#E8B54F" stroke-width="2" opacity=".6"/></svg></div>
+
+<div class="head abs sans"><span id="label"></span><span class="prog" id="prog"></span></div>
+<div id="s1" class="scene abs"></div>
+<div id="s2" class="scene abs"></div>
+<div id="s3" class="scene abs"></div>
+<div id="s4" class="scene abs"></div>
+<div id="s5" class="scene abs"></div>
+<div id="foot" class="foot abs sans"></div>
+
+<script>
+const DATA = /*__REEL_DATA__*/;
+const THEMES = /*__THEMES__*/;
+const ASSETS = /*__ASSETS__*/;
+const th = THEMES[DATA.account];
+const root = document.documentElement.style;
+root.setProperty('--bg', th.bg); root.setProperty('--fg', th.fg); root.setProperty('--ac', th.accent); root.setProperty('--mu', th.muted);
+
+const T = {s1:[0,3.0], s2:[3.0,5.0], s3:[5.0,8.6], s4:[8.6,12.2], s5:[12.2,15.0]};
+const D = DATA.duration || 15;
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>clamp((t-a)/(b-a));
+const oExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
+const oCubic=x=>1-Math.pow(1-x,3);
+const ioCubic=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const oBack=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function kinetic(text){
+  return String(text||'').split('\n').map(line=>{let acc=false,out='';
+    for(const c of Array.from(line)){if(c==='*'){acc=!acc;continue} out+=`<span class="ch${acc?' ac':''}">${esc(c)}</span>`;}
+    return `<span class="line">${out||'&nbsp;'}</span>`;}).join('');
+}
+const chars=el=>Array.from(el.querySelectorAll('.ch'));
+function animChars(list,t,start,stagger=.03,dur=.6){
+  list.forEach((c,i)=>{const x=oExpo(p(t,start+i*stagger,start+i*stagger+dur));
+    c.style.transform=`translateY(${(1-x)*105}%)`;c.style.opacity=x>0?1:0;});
+}
+function exitBlock(el,t,start,dur=.4){const x=ioCubic(p(t,start,start+dur));el.style.opacity=1-x;el.style.transform=`translateY(${-x*80}px)`;}
+const show=(el,t,[a,b])=>{el.style.visibility=(t>=a-0.001&&t<b+0.5)?'visible':'hidden'};
+
+// ---- background: deterministic stars ----
+let seed=20271;const rnd=()=>{seed|=0;seed=seed+0x6D2B79F5|0;let r=Math.imul(seed^seed>>>15,1|seed);r=r+Math.imul(r^r>>>7,61|r)^r;return((r^r>>>14)>>>0)/4294967296};
+const starsEl=document.getElementById('stars'); const STARS=[];
+for(let i=0;i<140;i++){const s=document.createElement('i');const z=rnd();const r=z<.85?2+rnd()*2.5:4+rnd()*3;
+  s.style.left=(rnd()*1080)+'px';s.style.top=(rnd()*1920)+'px';s.style.width=s.style.height=r+'px';
+  if(r>5) s.style.boxShadow='0 0 12px 3px rgba(255,230,160,.6)';
+  starsEl.appendChild(s);STARS.push([s,.25+rnd()*.6,rnd()*6.28,1+rnd()*2.5]);}
+// 12지 wheel
+const wheel=document.getElementById('wheel');
+'子丑寅卯辰巳午未申酉戌亥'.split('').forEach((c,i)=>{const a=i/12*Math.PI*2, r=420;const s=document.createElement('span');
+  s.textContent=c;s.style.transform=`translate(${Math.sin(a)*r}px,${-Math.cos(a)*r}px) rotate(${a}rad)`;wheel.appendChild(s);});
+// corner ornaments (fret pattern)
+const CORNER=`<svg viewBox="0 0 120 120"><g fill="none" stroke="#E8B54F" stroke-width="3"><path d="M4 70 V4 H70"/><path d="M18 52 V18 H52"/><path d="M18 34 H34 V18"/><rect x="26" y="26" width="10" height="10" fill="#E8B54F"/></g></svg>`;
+const corners=document.getElementById('corners');
+[[26,26,0],[1080-146,26,90],[1080-146,1920-146,180],[26,1920-146,270]].forEach(([x,y,r])=>{const d=document.createElement('div');
+  d.className='corner abs';d.style.left=x+'px';d.style.top=y+'px';d.style.transform=`rotate(${r}deg)`;d.innerHTML=CORNER;corners.appendChild(d);});
+// rays for the item scene
+const rays=document.getElementById('rays');for(let i=0;i<16;i++){const r=document.createElement('i');r.style.transform=`rotate(${i*22.5}deg)`;rays.appendChild(r);}
+
+// ---- character ----
+function pickChar(){
+  if(DATA.character&&ASSETS['doa_'+DATA.character]) return ASSETS['doa_'+DATA.character];
+  const txt=[DATA.item,DATA.hook,DATA.tips_title].join(' ');
+  if(/재회|이별|다시/.test(txt)&&ASSETS.doa_reunion) return ASSETS.doa_reunion;
+  if(/연애|인연|사랑|궁합|짝/.test(txt)&&ASSETS.doa_love) return ASSETS.doa_love;
+  if(/직장|재물|돈|이직|승진|일/.test(txt)&&ASSETS.doa_career) return ASSETS.doa_career;
+  return ASSETS.doa_default||'';
+}
+document.getElementById('ph').style.backgroundImage=`url(${pickChar()})`;
+// ---- hero (full-frame character for the opening) ----
+function charKind(){
+  if(DATA.character) return DATA.character;
+  const txt=[DATA.item,DATA.hook,DATA.tips_title].join(' ');
+  if(/재회|이별|다시/.test(txt)) return 'reunion';
+  if(/연애|인연|사랑|궁합|짝/.test(txt)) return 'love';
+  if(/직장|재물|돈|이직|승진|금전/.test(txt)) return 'career';
+  return 'default';
+}
+const KIND=charKind();
+const heroSrc=ASSETS['doa_full_'+KIND]||ASSETS.doa_full_default||'';
+const hero=document.getElementById('hero'), heroimg=document.getElementById('heroimg');
+if(heroSrc) heroimg.style.backgroundImage=`url(${heroSrc})`; else hero.style.display='none';
+document.getElementById('herodate').textContent=DATA.date_label||'';
+const hsw=document.getElementById('herosweep').getContext('2d'), hfx=document.getElementById('herofx').getContext('2d');
+const PETAL={love:['#ffe3ea','#f3a6bb'],reunion:['#ffe6cf','#f0a27a']}[KIND];
+let hs=91;const hr=()=>{hs=(hs*16807)%2147483647;return hs/2147483647};
+const PET=Array.from({length:24},()=>({x:hr()*1080,y:hr()*1920,s:14+hr()*16,v:70+hr()*70,w:1+hr()*2,ph:hr()*6.28,r:hr()*360}));
+const DUST=Array.from({length:110},()=>({x:hr()*1080,y:700+hr()*1300,s:1.5+hr()*3,v:30+hr()*60,ph:hr()*6.28}));
+function petal(x,y,sz,r,a){hfx.save();hfx.translate(x,y);hfx.rotate(r);hfx.globalAlpha=a;const g=hfx.createRadialGradient(0,0,1,0,0,sz);
+  g.addColorStop(0,PETAL[0]);g.addColorStop(1,PETAL[1]);hfx.fillStyle=g;hfx.beginPath();hfx.moveTo(0,-sz);
+  hfx.bezierCurveTo(sz*.9,-sz*.6,sz*.7,sz*.6,0,sz);hfx.bezierCurveTo(-sz*.7,sz*.6,-sz*.9,-sz*.6,0,-sz);hfx.fill();hfx.restore()}
+function renderHero(t){
+  const out=ioCubic(p(t,2.75,3.3));hero.style.opacity=1-out;hero.style.visibility=out>=1?'hidden':'visible';
+  if(out>=1) return;
+  const k=1.03+0.06*ioCubic(p(t,0,3.3)), br=1+0.004*Math.sin(t*2.2);
+  heroimg.style.transform=`translateY(${-14*p(t,0,3.3)}px) scale(${k*br})`;
+  hsw.clearRect(0,0,1080,1920);const sx=-500+1900*ioCubic(p(t,.3,2.6));
+  const g=hsw.createLinearGradient(sx-200,0,sx+200,400);g.addColorStop(0,'rgba(255,220,160,0)');g.addColorStop(.5,'rgba(255,225,170,.22)');g.addColorStop(1,'rgba(255,220,160,0)');
+  hsw.fillStyle=g;hsw.save();hsw.translate(0,560);hsw.rotate(-.25);hsw.fillRect(-400,0,2000,700);hsw.restore();
+  hfx.clearRect(0,0,1080,1920);
+  if(PETAL) PET.forEach(q=>{const y=((q.y+q.v*t)%2000)-40,x=q.x+Math.sin(t*q.w+q.ph)*40;petal(x,y,q.s,(q.r+t*60*q.w)*Math.PI/180,.8*p(t,.1,.8))});
+  DUST.forEach(q=>{hfx.globalAlpha=(.35+.35*Math.sin(t*3+q.ph))*p(t,.2,1);hfx.fillStyle='#ffd98a';hfx.beginPath();hfx.arc(q.x+Math.sin(t+q.ph)*10,q.y-q.v*t,q.s,0,6.28);hfx.fill()});
+  hfx.globalAlpha=1;
+  const hd=document.getElementById('herodate');hd.style.opacity=oExpo(p(t,.35,1.1));
+}
+const med=document.getElementById('med'), medring=document.getElementById('medring'), medglow=document.getElementById('medglow');
+
+// ---- scenes ----
+document.getElementById('label').textContent='@'+(th.handle||th.label);
+const prog=document.getElementById('prog');prog.innerHTML=Object.keys(T).map(()=>'<i><b></b></i>').join('');
+const bars=Array.from(prog.querySelectorAll('b'));
+const s1=document.getElementById('s1');s1.style.top=heroSrc?'1150px':'820px';
+s1.innerHTML=`<div class="hook">${kinetic(DATA.hook)}</div><div class="tease sans" id="tease">🔒 ${esc(DATA.tease||'1위는 마지막에 공개')}</div>`;
+const s1c=chars(s1),tease=document.getElementById('tease');
+const s2=document.getElementById('s2');s2.style.top='0';s2.style.bottom='0';s2.style.justifyContent='center';s2.style.paddingBottom='120px';
+const ZOD=['쥐','소','범','토끼','용','뱀','말','양','원숭이','닭','개','돼지'];
+s2.innerHTML=`<div class="q2">${kinetic(DATA.selfcheck||'내 띠, 있을까요?')}</div><div class="chips">${ZOD.map(z=>`<span>${z}띠</span>`).join('')}</div>`;
+const s2c=chars(s2),chips=Array.from(s2.querySelectorAll('.chips span'));
+const TP=(DATA.tips||[]).slice(0,3);
+const s3=document.getElementById('s3');s3.style.top='0';s3.style.bottom='0';s3.style.justifyContent='center';s3.style.paddingBottom='120px';
+s3.innerHTML=`<div class="tips-h">${esc(DATA.tips_title||'오늘의 TOP 3')}</div>`+
+  `<div class="rk" id="rk3"><div class="n">3위</div><div class="t">${esc(TP[2]||'')}</div></div><div class="rk" id="rk2"><div class="n">2위</div><div class="t">${esc(TP[1]||'')}</div></div>`;
+const tipsh=s3.querySelector('.tips-h'),rk3=document.getElementById('rk3'),rk2=document.getElementById('rk2');
+const s4=document.getElementById('s4');s4.style.top='0';s4.style.bottom='0';s4.style.justifyContent='center';s4.style.paddingBottom='160px';
+const DAYW=/내일/.test([DATA.tips_title,DATA.hook].join(' '))?'내일':'오늘';
+s4.innerHTML=`<div class="wait" id="wait">그리고 ${DAYW}의 1위는<span id="dots"></span></div><div class="top" id="topc"><div class="lab">${esc(DATA.reveal_label||'🥇 '+DAYW+'의 1위')}</div><div class="big" id="topbig">${esc(TP[0]||'')}</div><div class="note" id="topnote">${esc(DATA.reveal_note||'')}</div></div>`;
+const wait=document.getElementById('wait'),dots=document.getElementById('dots'),topc=document.getElementById('topc'),topbig=document.getElementById('topbig'),topnote=document.getElementById('topnote');
+const s5=document.getElementById('s5');s5.style.top='790px';
+s5.innerHTML=`<div class="cta">${kinetic(DATA.cta||'내 띠가 없다면?\n댓글에 *띠*를')}</div><div class="pill sans" id="pill">${esc(DATA.cta_pill||'12띠 전체 순위는 스레드에')} <svg viewBox="0 0 44 44"><path d="M12 32 L32 12 M16 12 H32 V28" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+const s5c=chars(s5),pill=document.getElementById('pill');
+const foot=document.getElementById('foot');foot.textContent=DATA.disclosure||'참고·재미로 보는 콘텐츠예요';
+
+// medallion keyframes: t, centerX, centerY, scale(of 460px), opacity
+const MK=heroSrc?[[0,190,340,0,1],[2.9,190,340,0,1],[3.3,190,340,.24,1],[12.0,190,340,.24,1],[12.5,540,520,.8,1],[15,540,520,.82,1]]
+                :[[0,540,560,0,1],[0.6,540,560,1,1],[2.75,540,560,1.02,1],[3.25,190,340,.24,1],[12.0,190,340,.24,1],[12.5,540,520,.8,1],[15,540,520,.82,1]];
+function render(t){
+  renderHero(t);
+  Object.values(T).forEach(([a,b],i)=>{bars[i].style.transform=`scaleX(${p(t,a,b)})`});
+  STARS.forEach(([s,base,ph,sp])=>{s.style.opacity=clamp(base+Math.sin(t*sp+ph)*.35,.08,1)});
+  wheel.style.transform=`rotate(${t*4}deg)`;wheel.style.opacity=.10+.04*Math.sin(t*.8);
+  document.getElementById('moon').style.transform=`translateY(${Math.sin(t*1.2)*10}px)`;
+  document.getElementById('cl1').style.transform=`translateX(${Math.sin(t*.5)*30}px)`;
+  document.getElementById('cl2').style.transform=`scaleX(-1) translateX(${Math.sin(t*.45+1)*30}px)`;
+  // medallion
+  let k=MK.length-2;for(let i=0;i<MK.length-1;i++){if(t<MK[i+1][0]){k=i;break}}
+  const A=MK[k],B=MK[k+1],x=(k===0)?oBack(p(t,A[0],B[0])):ioCubic(p(t,A[0],B[0]));
+  const sc=lerp(A[3],B[3],x),cx=lerp(A[1],B[1],x),cy=lerp(A[2],B[2],x);
+  med.style.transform=`translate(${cx-230}px,${cy-230}px) scale(${Math.max(sc,0)})`;
+  medring.style.strokeDashoffset=1-oCubic(p(t,.2,1.2));
+  medglow.style.opacity=.6+.4*Math.sin(t*2.2);
+  // S1 hook + open loop
+  show(s1,t,T.s1);
+  animChars(s1c,t,.55,.04,.7);
+  const tq=oBack(p(t,1.4,1.8));tease.style.transform=`scale(${tq})`;tease.style.opacity=tq>0?1:0;
+  exitBlock(s1,t,T.s1[1]-.35);
+  // S2 self-check scan
+  show(s2,t,T.s2);s2.style.opacity=1;s2.style.transform='';animChars(s2c,t,3.15,.03,.55);
+  chips.forEach((c,i)=>{const st=3.5+i*.09,q=oExpo(p(t,st,st+.35));c.style.opacity=q;c.style.transform=`translateY(${(1-q)*24}px)`;
+    const hot=Math.floor((t-3.6)/0.11)%12===i&&t>3.6&&t<4.9;c.style.borderColor=hot?'#E8B54F':'rgba(232,181,79,.35)';c.style.color=hot?'#F3E6C4':'';c.style.background=hot?'rgba(232,181,79,.22)':'';});
+  if(t>=T.s2[0])exitBlock(s2,t,T.s2[1]-.3,.3);
+  // S3 countdown 3위 → 2위
+  show(s3,t,T.s3);s3.style.opacity=1;s3.style.transform='';
+  tipsh.style.opacity=oCubic(p(t,5.05,5.4));
+  [[rk3,5.3],[rk2,6.8]].forEach(([el,st])=>{const q=oExpo(p(t,st,st+.55));el.style.opacity=q;el.style.transform=`translateX(${(1-q)*-640}px)`;
+    el.style.boxShadow=`0 0 ${36*Math.max(0,1-p(t,st+.3,st+1.2))}px rgba(232,181,79,.7)`;});
+  if(t>=T.s3[0])exitBlock(s3,t,T.s3[1]-.3,.3);
+  // S4 suspense → 1위 reveal (peak)
+  show(s4,t,T.s4);s4.style.opacity=1;s4.style.transform='';
+  wait.style.opacity=oCubic(p(t,8.65,9.0));dots.textContent='.'.repeat(1+Math.floor(clamp((t-8.8)/0.25,0,2)));
+  const rv=oExpo(p(t,9.7,10.3));
+  topc.style.opacity=oCubic(p(t,8.9,9.3));
+  topbig.style.filter=`blur(${(1-rv)*26}px)`;topnote.style.filter=`blur(${(1-rv)*16}px)`;
+  topc.style.transform=`scale(${.94+.06*oBack(p(t,9.7,10.2))})`;
+  const rIn=oCubic(p(t,9.7,10.2)),rOut=ioCubic(p(t,11.8,12.2));
+  rays.style.opacity=rIn*(1-rOut);rays.style.transform=`rotate(${t*14}deg) scale(${.6+rIn*.7})`;
+  if(t>=T.s4[0])exitBlock(s4,t,T.s4[1]-.25,.25);
+  // S5 CTA (small commitment: comment your 띠)
+  show(s5,t,T.s5);s5.style.opacity=1;s5.style.transform='';animChars(s5c,t,12.2,.03,.55);
+  const px=oBack(p(t,13.2,13.65));pill.style.transform=`scale(${px*(1+Math.sin(Math.max(0,t-13.65)*7)*.025)})`;pill.style.opacity=px>0?1:0;
+  foot.style.opacity=t>12.8?oCubic(p(t,12.8,13.2))*.9:0;
+}
+window.__setTime=t=>{render(Math.min(t,D-1e-3));return true};
+window.__duration=D;
+render(0);
+function fit(el,min){if(!el)return;const W=el.closest('.scene').clientWidth;
+  const over=()=>Array.from(el.querySelectorAll('.line')).some(l=>l.scrollWidth>W+1);
+  let fs=parseFloat(getComputedStyle(el).fontSize),n=0;while(over()&&fs>min&&n++<40){fs*=.95;el.style.fontSize=fs+'px';}}
+function fitAll(){[s1,s2,s3,s4,s5].forEach(s=>s.style.visibility='visible');
+  ['.hook','.q2','.cta'].forEach(q=>document.querySelectorAll(q).forEach(e=>fit(e,44)));
+  document.querySelectorAll('.rk .t,.top .big').forEach(e=>{let fs=parseFloat(getComputedStyle(e).fontSize),n=0;while(e.scrollWidth>e.clientWidth+1&&fs>40&&n++<40){fs*=.95;e.style.fontSize=fs+'px'}});
+  render(0);}
+const imgs=Object.values(ASSETS).map(src=>new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=src;}));
+Promise.all([document.fonts.ready,...imgs]).then(()=>{fitAll();window.__ready=true});
+</script>
+</body></html>
