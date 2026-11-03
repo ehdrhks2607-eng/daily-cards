@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-11-04",
+  "slot": "eve",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 11시 전에 자겠다더니 새벽 1시",
+  "sources": [
+    "https://www.news1.kr/society/weather-disaster/6341912"
+  ],
+  "threads": {
+    "text": "어제 11시 전에 자겠다고 해놓고\n새벽 1시에 잤어\n\n폰 내려놓으려고 했는데\n영상 하나만 더 보다가 그렇게 됐네\n\n오늘은 진짜 침대에 폰 안 들고 가보려고\n\n너는 보통 몇 시에 자?",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-04T18:30:00+09:00"
+}
