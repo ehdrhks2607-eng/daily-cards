@@ -1,23 +1,23 @@
 {
-  "checked_at": "2026-11-03T10:47:59.150283+09:00",
+  "checked_at": "2026-11-03T11:03:21.657175+09:00",
   "results": {
     "JAK": {
       "threads": {
         "ok": false,
-        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'A1UVM7IzlwwmFGvIOjXjqPf'}"
+        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AfpEe8BOSrZVQRPyTktAkse'}"
       },
       "instagram_token_type": "instagram_login(IGAA)",
       "instagram_token_length": 179,
       "instagram_token_has_whitespace": false,
       "instagram": {
         "ok": false,
-        "error": "{'message': 'Error validating access token: The user has not authorized application 2160922401300032.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'Aqa-p56bCcEa9AbjhZm94n9'}"
+        "error": "{'message': 'Error validating access token: The user has not authorized application 2160922401300032.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AXbqU1IxDasl9fZHGTklHLm'}"
       }
     },
     "SEOUL": {
       "threads": {
         "ok": false,
-        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AWxupLahmN-lYVncCZgyHCy'}"
+        "error": "{'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'A6BUIhliJ1XHVG_BwU9CW-J'}"
       },
       "instagram_token_type": "facebook_login(EAA)",
       "instagram_token_length": 259,
@@ -37,15 +37,23 @@
           "instagram_manage_messages",
           "public_profile"
         ],
-        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'ANyxZ-Fzn6QHrvW_txyIoTL'}",
-        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'Adp13Yv3YCL6KhfT-u0kPXB'}",
-        "ig_user_probes": []
+        "businesses_error": "{'message': '(#100) Missing Permission', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AoLIXXBrFueZgTM6C7vH4LT'}",
+        "debug_error": "{'message': '(#100) You must provide an app access token, or a user access token that is an owner or developer of the app', 'type': 'OAuthException', 'code': 100, 'fbtrace_id': 'AaajFapWOrjaYPI76ZSo4Sq'}",
+        "config_ig_user_id_set": true,
+        "ig_user_probes": [
+          {
+            "username": "doa.doryeong",
+            "profile_error": null,
+            "publish_edge_ok": true,
+            "publish_error": null
+          }
+        ]
       },
       "instagram": {
-        "ok": false,
-        "username": null,
+        "ok": true,
+        "username": "doa.doryeong",
         "via": "graph.facebook.com",
-        "publish_permission": false
+        "publish_permission": true
       }
     }
   }
