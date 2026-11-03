@@ -123,7 +123,7 @@ const root = document.documentElement.style;
 root.setProperty('--bg', th.bg); root.setProperty('--fg', th.fg); root.setProperty('--ac', th.accent); root.setProperty('--mu', th.muted);
 
 const T = {s1:[0,3.0], s2:[3.0,5.0], s3:[5.0,8.6], s4:[8.6,12.2], s5:[12.2,15.0]};
-const D = DATA.duration || 15;
+const D = DATA.duration || 20;
 const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
 const p=(t,a,b)=>clamp((t-a)/(b-a));
 const oExpo=x=>x>=1?1:1-Math.pow(2,-10*x);
@@ -286,7 +286,9 @@ function render(t){
   const px=oBack(p(t,13.2,13.65));pill.style.transform=`scale(${px*(1+Math.sin(Math.max(0,t-13.65)*7)*.025)})`;pill.style.opacity=px>0?1:0;
   foot.style.opacity=t>12.8?oCubic(p(t,12.8,13.2))*.9:0;
 }
-window.__setTime=t=>{render(Math.min(t,D-1e-3));return true};
+// slower pacing: the 15s timeline is stretched to D seconds (default 20)
+const K=15/D;
+window.__setTime=t=>{render(Math.min(t*K,15-1e-3));return true};
 window.__duration=D;
 render(0);
 function fit(el,min){if(!el)return;const W=el.closest('.scene').clientWidth;

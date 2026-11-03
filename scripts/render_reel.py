@@ -75,12 +75,14 @@ def build_html(post, template):
 
 
 def contact_sheet(page, out):
-    """Small 5-up strip of key frames to eyeball text clipping / broken glyphs."""
+    """Small 5-up strip of key frames to eyeball text clipping / broken glyphs.
+    Times are scaled to the template's duration (they are defined for a 15s reel)."""
     from PIL import Image
     import io
     shots = []
+    scale = (page.evaluate("window.__duration") or 15) / 15
     for t in SHEET_TIMES:
-        page.evaluate(f"window.__setTime({t})")
+        page.evaluate(f"window.__setTime({t * scale})")
         shots.append(Image.open(io.BytesIO(page.screenshot(type="png"))).resize((W // 3, H // 3)))
     sheet = Image.new("RGB", (len(shots) * W // 3 + (len(shots) - 1) * 12, H // 3), "white")
     for i, im in enumerate(shots):
