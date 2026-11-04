@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 주 점심값 4만 2천 원 → 밀프렙 도시락 용기",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6341912"
@@ -13,6 +13,10 @@
     "comment": "점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-04T12:30:00+09:00"
+  "result": {
+    "threads": "17954353047341400",
+    "threads_comment": "18291450535289642"
+  },
+  "publish_at": "2026-11-04T12:30:00+09:00",
+  "posted_at": "2026-11-04T12:30:42.326667+09:00"
 }
