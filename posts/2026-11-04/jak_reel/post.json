@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 이번 주 점심값 4만 2천 원 → 밀프렙 도시락 용기 (jak_lunch)",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6341912"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-04T19:30:00+09:00"
+  "result": {
+    "reel": "18025206386712832"
+  },
+  "publish_at": "2026-11-04T19:30:00+09:00",
+  "posted_at": "2026-11-04T19:45:30.831679+09:00"
 }
