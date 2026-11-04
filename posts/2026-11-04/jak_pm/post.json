@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 + DAY 38 연재(스트레칭 10분) → 요가매트",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6341912",
@@ -13,6 +13,10 @@
     "text": "스트레칭 10분 중 멈춘 건 두 번 (DAY 38)\n\n어제는 한 번도 안 멈췄는데 오늘은 다시 두 번\n내일 전국에 비 온다니까 집에서 해야 하는데\n맨바닥은 무릎이 아프더라\n\n그래서 요가매트\n리뷰 많은 걸로 담아둠\n\n너는 비 오는 날 운동 어떻게 해?",
     "comment": "비 오는 날 집에서 스트레칭하고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-11-04T21:00:00+09:00"
+  "result": {
+    "threads": "17918241381532761",
+    "threads_comment": "18012202043991339"
+  },
+  "publish_at": "2026-11-04T21:00:00+09:00",
+  "posted_at": "2026-11-04T21:00:47.604356+09:00"
 }
