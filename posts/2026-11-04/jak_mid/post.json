@@ -3,7 +3,7 @@
   "date": "2026-11-04",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 10시 반 졸음 커피 vs 버티기",
   "sources": [
     "https://www.news1.kr/society/weather-disaster/6341912"
@@ -12,6 +12,9 @@
     "text": "10시 반에 졸릴 때 커피 한 잔 vs 그냥 버티기\n\n나는 오늘 안개 낀 출근길 때문인지\n벌써 눈이 반쯤 감겨 있어\n\n커피 마시면 오후에 더 졸린 거 같기도 하고\n안 마시면 지금 일이 안 되고\n\n너는 어느 쪽이야?",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-04T10:30:00+09:00"
+  "result": {
+    "threads": "17967471326979624"
+  },
+  "publish_at": "2026-11-04T10:30:00+09:00",
+  "posted_at": "2026-11-04T10:30:40.536637+09:00"
 }
