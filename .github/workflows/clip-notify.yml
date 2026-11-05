@@ -1,0 +1,30 @@
+name: clip-notify
+
+# 도아도령 네이버 클립 업로드 알림 (ntfy). 시간 판단은 scripts/clip_notify.py가 config.json으로 한다.
+# KST 07:30·09:00·12:30·13:00·21:00·21:30 무렵 = UTC 22:30·00:00·03:30·04:00·12:00·12:30
+on:
+  schedule:
+    - cron: "30 22 * * *"
+    - cron: "0 0 * * *"
+    - cron: "30 3 * * *"
+    - cron: "0 4 * * *"
+    - cron: "0 12 * * *"
+    - cron: "30 12 * * *"
+  push:
+    paths:
+      - ".github/clip_notify_test"
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          FORCE: ${{ github.event_name != 'schedule' && '1' || '' }}
+        run: python scripts/clip_notify.py

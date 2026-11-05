@@ -32,7 +32,7 @@ ol{margin:6px 0 0 18px;font-size:13px;line-height:1.7;color:var(--mu)}
 <div class="card"><b>업로드 순서 (1편에 1분)</b>
 <ol><li>아래 <b>영상 저장</b>을 눌러 영상을 열고, 공유 → 동영상 저장</li>
 <li>네이버 <b>블로그 앱</b> → 하단 <b>+</b> → <b>클립 만들기</b> → 저장한 영상 선택</li>
-<li><b>제목 복사 · 설명 복사</b>를 눌러 차례로 붙여넣기 (태그는 설명 끝에 들어 있어요)</li>
+<li><b>제목 복사 · 설명 복사</b>를 눌러 차례로 붙여넣기 (태그는 설명 끝에 들어 있어요)</li><li>올린 뒤 <b>댓글 복사</b> → 내 클립에 첫 댓글로 달고 <b>고정</b> (카톡 링크가 들어 있어요)</li>
 <li>올리는 시간은 인스타와 비슷하게: 금전운 아침 · 연애운 점심 · 내일의 운세 밤</li></ol></div>
 </div><div class="toast" id="toast">복사됐어요</div>
 <script>
@@ -49,6 +49,14 @@ function clipText(r){
   const tagset=(tags+' #네이버클립 #도아도령').trim();
   return {title, desc: body+'\n\n'+tagset};
 }
+const KAKAO='https://pf.kakao.com/_MrAxeX/chat';
+function cmt(dir,date){
+  const free = date <= '2026-11-08' ? "🎁 11/8(일)까지 선착순 무료 리포트 — 카톡에 \"무료 신청\"\n" : "";
+  const line = {seoul_reel_am:"내 사주로 보는 2027 재물 흐름이 궁금하다면 👉 카톡에 \"신년운\"",
+                seoul_reel:"띠 말고 '내 사주 × MBTI'로 연애 흐름을 보고 싶다면 👉 카톡에 \"주제 리포트\"",
+                seoul_reel_pm:"2027년 12달을 날짜별로 미리 보고 싶다면 👉 카톡에 \"신년운\""}[dir];
+  return `${free}${line}\n${KAKAO}\n\n12띠 전체 순위는 스레드 @doa.doryeong 에 있어요\n참고와 재미로 보는 콘텐츠예요`;
+}
 async function load(date){
   $('#list').innerHTML='<p class="empty">불러오는 중…</p>';
   const out=[];
@@ -58,14 +66,16 @@ async function load(date){
       if(!res.ok)throw 0; const p=await res.json(); const r=p.reel||{};
       const {title,desc}=clipText(r); const vurl=RAW+`posts/${date}/${dir}/reel.mp4`;
       const t=(p.publish_at||'').slice(11,16);
-      out.push(`<div class="card"><span class="tag">${name}</span><span class="time">인스타 ${t}</span>
+      out.push(`<div class="card" id="${dir}"><span class="tag">${name}</span><span class="time">인스타 ${t}</span>
         <video src="${vurl}" controls playsinline preload="metadata"></video>
         <a class="btn" href="${vurl}" target="_blank" rel="noopener">⬇ 영상 저장</a>
         <div class="lab">제목</div><div class="box">${title.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(title)}">제목 복사</button>
-        <div class="lab">설명 + 태그</div><div class="box">${desc.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(desc)}">설명 복사</button></div>`);
+        <div class="lab">설명 + 태그</div><div class="box">${desc.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(desc)}">설명 복사</button>
+        <div class="lab">첫 댓글 (올린 뒤 내 댓글로 달고 고정)</div><div class="box">${cmt(dir,date).replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(cmt(dir,date))}">댓글 복사</button></div>`);
     }catch(e){out.push(`<div class="card"><span class="tag">${name}</span><p class="empty">아직 영상이 없어요 (새벽 5시쯤 만들어져요)</p></div>`)}
   }
   $('#list').innerHTML=out.join('');
+  if(location.hash){const el=document.querySelector(location.hash);if(el)el.scrollIntoView({behavior:'smooth'});}
   document.querySelectorAll('button[data-c]').forEach(b=>b.onclick=()=>copy(decodeURIComponent(b.dataset.c)));
 }
 $('#d').value=kst();$('#d').onchange=e=>load(e.target.value);$('#today').onclick=()=>{$('#d').value=kst();load(kst())};
