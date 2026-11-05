@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>도아도령 클립 업로드</title>
+<style>
+:root{--bg:#0E1330;--card:#171d42;--fg:#F3E6C4;--ac:#E8B54F;--mu:#9AA0B8;--line:rgba(232,181,79,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--fg);font-family:-apple-system,'Noto Sans KR',sans-serif;word-break:keep-all;min-height:100vh}
+.wrap{max-width:520px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:22px;font-weight:800}
+.sub{color:var(--mu);font-size:13px;margin-top:6px;line-height:1.5}
+.row{display:flex;gap:8px;margin:16px 0}
+input[type=date]{flex:1;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:10px;font-size:15px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:16px}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--bg);background:var(--ac);border-radius:20px;padding:3px 10px}
+.time{font-size:12px;color:var(--mu);margin-left:6px}
+video{width:100%;max-height:420px;border-radius:12px;margin:12px 0;background:#000}
+.lab{font-size:12px;color:var(--mu);margin:10px 0 4px}
+.box{background:rgba(0,0,0,.25);border-radius:10px;padding:10px;font-size:14px;line-height:1.55;white-space:pre-wrap}
+button,.btn{display:inline-block;margin-top:8px;border:0;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;background:var(--ac);color:var(--bg);text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.empty{color:var(--mu);font-size:14px;padding:12px 0}
+ol{margin:6px 0 0 18px;font-size:13px;line-height:1.7;color:var(--mu)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ac);color:var(--bg);font-weight:700;padding:10px 16px;border-radius:20px;opacity:0;transition:.2s}
+.toast.on{opacity:1}
+</style></head><body><div class="wrap">
+<h1>🌙 도아도령 · 네이버 클립 업로드</h1>
+<p class="sub">오늘 인스타에 올라간(올라갈) 영상 3개예요. 영상 저장 → 네이버 블로그 앱에서 클립 만들기 → 제목·설명·태그 붙여넣기.</p>
+<div class="row"><input type="date" id="d"><button id="today">오늘</button></div>
+<div id="list"></div>
+<div class="card"><b>업로드 순서 (1편에 1분)</b>
+<ol><li>아래 <b>영상 저장</b>을 눌러 영상을 열고, 공유 → 동영상 저장</li>
+<li>네이버 <b>블로그 앱</b> → 하단 <b>+</b> → <b>클립 만들기</b> → 저장한 영상 선택</li>
+<li><b>제목 복사 · 설명 복사</b>를 눌러 차례로 붙여넣기 (태그는 설명 끝에 들어 있어요)</li>
+<li>올리는 시간은 인스타와 비슷하게: 금전운 아침 · 연애운 점심 · 내일의 운세 밤</li></ol></div>
+</div><div class="toast" id="toast">복사됐어요</div>
+<script>
+const RAW='https://raw.githubusercontent.com/ehdrhks2607-eng/daily-cards/main/';
+const SLOTS=[['seoul_reel_am','💰 오늘의 금전운'],['seoul_reel','💕 오늘의 연애·재회운'],['seoul_reel_pm','🔮 내일의 운세']];
+const kst=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+const $=s=>document.querySelector(s);
+function toast(){const t=$('#toast');t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1200)}
+function copy(txt){(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(toast).catch(()=>{const a=document.createElement('textarea');a.value=txt;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();toast()})}
+function clipText(r){
+  const title=(r.yt_title||r.caption.split('\n')[0]).replace(/\s*#Shorts\s*$/i,'').trim();
+  let cap=(r.caption||'').replace(/프로필 링크\(카톡\)로 물어보세요\./g,"카톡에서 '도아도령'을 검색해 물어보세요.").replace(/프로필 링크[^\n]*/g,"카톡에서 '도아도령'을 검색해 물어보세요.");
+  const lines=cap.split('\n');const tags=lines.filter(l=>l.trim().startsWith('#')).join(' ');const body=lines.filter(l=>!l.trim().startsWith('#')).join('\n').trim();
+  const tagset=(tags+' #네이버클립 #도아도령').trim();
+  return {title, desc: body+'\n\n'+tagset};
+}
+async function load(date){
+  $('#list').innerHTML='<p class="empty">불러오는 중…</p>';
+  const out=[];
+  for(const [dir,name] of SLOTS){
+    try{
+      const res=await fetch(RAW+`posts/${date}/${dir}/post.json?t=`+Date.now());
+      if(!res.ok)throw 0; const p=await res.json(); const r=p.reel||{};
+      const {title,desc}=clipText(r); const vurl=RAW+`posts/${date}/${dir}/reel.mp4`;
+      const t=(p.publish_at||'').slice(11,16);
+      out.push(`<div class="card"><span class="tag">${name}</span><span class="time">인스타 ${t}</span>
+        <video src="${vurl}" controls playsinline preload="metadata"></video>
+        <a class="btn" href="${vurl}" target="_blank" rel="noopener">⬇ 영상 저장</a>
+        <div class="lab">제목</div><div class="box">${title.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(title)}">제목 복사</button>
+        <div class="lab">설명 + 태그</div><div class="box">${desc.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(desc)}">설명 복사</button></div>`);
+    }catch(e){out.push(`<div class="card"><span class="tag">${name}</span><p class="empty">아직 영상이 없어요 (새벽 5시쯤 만들어져요)</p></div>`)}
+  }
+  $('#list').innerHTML=out.join('');
+  document.querySelectorAll('button[data-c]').forEach(b=>b.onclick=()=>copy(decodeURIComponent(b.dataset.c)));
+}
+$('#d').value=kst();$('#d').onchange=e=>load(e.target.value);$('#today').onclick=()=>{$('#d').value=kst();load(kst())};
+load(kst());
+</script></body></html>
