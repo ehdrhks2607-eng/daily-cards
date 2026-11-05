@@ -3,13 +3,16 @@
   "date": "2026-11-05",
   "slot": "mid",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B: 목요일 오전 간식 vs 참기",
   "sources": [],
   "threads": {
     "text": "10시 반에 출출할 때 간식 먹기 vs 점심까지 참기\n\n나는 지금 서랍 열었다 닫았다 두 번째야\n먹으면 점심이 덜 맛있고\n참으면 오전 일이 손에 안 잡히고\n\n너는 어느 쪽이야? A(먹기) B(참기) 한 글자만",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-05T10:30:00+09:00"
+  "result": {
+    "threads": "18181947772449503"
+  },
+  "publish_at": "2026-11-05T10:30:00+09:00",
+  "posted_at": "2026-11-05T10:30:39.492040+09:00"
 }
