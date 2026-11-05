@@ -48,7 +48,7 @@ function clipText(r){
   const title=(r.yt_title||r.caption.split('\n')[0]).replace(/\s*#Shorts\s*$/i,'').trim();
   let cap=(r.caption||'').replace(/프로필 링크\(카톡\)로 물어보세요\./g,"카톡에서 '도아도령'을 검색해 물어보세요.").replace(/프로필 링크[^\n]*/g,"카톡에서 '도아도령'을 검색해 물어보세요.");
   const lines=cap.split('\n');const tags=lines.filter(l=>l.trim().startsWith('#')).join(' ');const body=lines.filter(l=>!l.trim().startsWith('#')).join('\n').trim();
-  const tagset=(tags+' #네이버클립 #도아도령').trim();
+  const tl=[...new Set(tags.split(/\s+/).filter(x=>x.startsWith('#')&&x!=='#도아도령'))].slice(0,4); const tagset=[...tl,'#도아도령'].join(' ');  // 해시태그는 5개만
   return {title, desc: body+'\n\n'+tagset};
 }
 const KAKAO='https://pf.kakao.com/_MrAxeX/chat';
