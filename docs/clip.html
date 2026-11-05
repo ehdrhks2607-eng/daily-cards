@@ -2,7 +2,7 @@
 <html lang="ko"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<title>도아도령 클립 업로드</title>
+<title>도아도령 클립·당근 업로드</title>
 <style>
 :root{--bg:#0E1330;--card:#171d42;--fg:#F3E6C4;--ac:#E8B54F;--mu:#9AA0B8;--line:rgba(232,181,79,.25)}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -20,12 +20,13 @@ video{width:100%;max-height:420px;border-radius:12px;margin:12px 0;background:#0
 .box{background:rgba(0,0,0,.25);border-radius:10px;padding:10px;font-size:14px;line-height:1.55;white-space:pre-wrap}
 button,.btn{display:inline-block;margin-top:8px;border:0;border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;background:var(--ac);color:var(--bg);text-decoration:none;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.sep{margin:18px 0 4px;padding-top:12px;border-top:1px dashed var(--line);font-weight:800;color:var(--ac)}
 .empty{color:var(--mu);font-size:14px;padding:12px 0}
 ol{margin:6px 0 0 18px;font-size:13px;line-height:1.7;color:var(--mu)}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ac);color:var(--bg);font-weight:700;padding:10px 16px;border-radius:20px;opacity:0;transition:.2s}
 .toast.on{opacity:1}
 </style></head><body><div class="wrap">
-<h1>🌙 도아도령 · 네이버 클립 업로드</h1>
+<h1>🌙 도아도령 · 클립 · 당근 업로드</h1>
 <p class="sub">오늘 인스타에 올라간(올라갈) 영상 3개예요. 영상 저장 → 네이버 블로그 앱에서 클립 만들기 → 제목·설명·태그 붙여넣기.</p>
 <div class="row"><input type="date" id="d"><button id="today">오늘</button></div>
 <div id="list"></div>
@@ -33,6 +34,7 @@ ol{margin:6px 0 0 18px;font-size:13px;line-height:1.7;color:var(--mu)}
 <ol><li>아래 <b>영상 저장</b>을 눌러 영상을 열고, 공유 → 동영상 저장</li>
 <li>네이버 <b>블로그 앱</b> → 하단 <b>+</b> → <b>클립 만들기</b> → 저장한 영상 선택</li>
 <li><b>제목 복사 · 설명 복사</b>를 눌러 차례로 붙여넣기 (태그는 설명 끝에 들어 있어요)</li><li>올린 뒤 <b>댓글 복사</b> → 내 클립에 첫 댓글로 달고 <b>고정</b> (카톡 링크가 들어 있어요)</li>
+<li>🥕 당근: 비즈프로필 → <b>스토리 올리기</b> → 같은 영상 선택 → <b>당근 문구 복사</b> 붙여넣기 → 올린 뒤 <b>당근 댓글 복사</b>로 첫 댓글 달기 (당근은 외부 링크 대신 '채팅하기'로 연결 — 당근 AI가 카톡 링크를 보내요)</li>
 <li>올리는 시간은 인스타와 비슷하게: 금전운 아침 · 연애운 점심 · 내일의 운세 밤</li></ol></div>
 </div><div class="toast" id="toast">복사됐어요</div>
 <script>
@@ -57,6 +59,14 @@ function cmt(dir,date){
                 seoul_reel_pm:"2027년 12달을 날짜별로 미리 보고 싶다면 👉 카톡에 \"신년운\""}[dir];
   return `${free}${line}\n${KAKAO}\n\n12띠 전체 순위는 스레드 @doa.doryeong 에 있어요\n참고와 재미로 보는 콘텐츠예요`;
 }
+function dang(dir,date,r){
+  const q=(r.caption||'').split('\n')[0].trim();
+  const kind={seoul_reel_am:'오늘의 금전운',seoul_reel:'오늘의 연애·재회운',seoul_reel_pm:'내일의 운세'}[dir];
+  const cap=`${q}\n이웃님들 띠도 있는지 끝까지 봐 주세요 🌙\n\n매일 ${kind}${(kind.charCodeAt(kind.length-1)-0xAC00)%28?'을':'를'} 띠별로 정리하고 있어요.\n댓글에 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n※ 참고와 재미로 보는 콘텐츠예요.`;
+  const free = date <= '2026-11-08' ? "🎁 이번 주 일요일(11/8)까지 이웃 선착순 무료 리포트 진행 중이에요.\n" : "";
+  const c=`${free}내 생년월일로 보는 사주 × MBTI 리포트가 궁금하시면\n프로필의 '채팅하기'로 편하게 물어보세요 🙏\n(안내 링크를 바로 보내 드려요)`;
+  return {cap, cmt:c};
+}
 async function load(date){
   $('#list').innerHTML='<p class="empty">불러오는 중…</p>';
   const out=[];
@@ -64,14 +74,17 @@ async function load(date){
     try{
       const res=await fetch(RAW+`posts/${date}/${dir}/post.json?t=`+Date.now());
       if(!res.ok)throw 0; const p=await res.json(); const r=p.reel||{};
-      const {title,desc}=clipText(r); const vurl=RAW+`posts/${date}/${dir}/reel.mp4`;
+      const {title,desc}=clipText(r); const dg=dang(dir,date,r); const vurl=RAW+`posts/${date}/${dir}/reel.mp4`;
       const t=(p.publish_at||'').slice(11,16);
       out.push(`<div class="card" id="${dir}"><span class="tag">${name}</span><span class="time">인스타 ${t}</span>
         <video src="${vurl}" controls playsinline preload="metadata"></video>
         <a class="btn" href="${vurl}" target="_blank" rel="noopener">⬇ 영상 저장</a>
         <div class="lab">제목</div><div class="box">${title.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(title)}">제목 복사</button>
         <div class="lab">설명 + 태그</div><div class="box">${desc.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(desc)}">설명 복사</button>
-        <div class="lab">첫 댓글 (올린 뒤 내 댓글로 달고 고정)</div><div class="box">${cmt(dir,date).replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(cmt(dir,date))}">댓글 복사</button></div>`);
+        <div class="lab">첫 댓글 (올린 뒤 내 댓글로 달고 고정)</div><div class="box">${cmt(dir,date).replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(cmt(dir,date))}">댓글 복사</button>
+        <div class="sep">🥕 당근 비즈프로필 스토리</div>
+        <div class="lab">스토리 문구</div><div class="box">${dg.cap.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(dg.cap)}">당근 문구 복사</button>
+        <div class="lab">당근 첫 댓글</div><div class="box">${dg.cmt.replace(/</g,'&lt;')}</div><button data-c="${encodeURIComponent(dg.cmt)}">당근 댓글 복사</button></div>`);
     }catch(e){out.push(`<div class="card"><span class="tag">${name}</span><p class="empty">아직 영상이 없어요 (새벽 5시쯤 만들어져요)</p></div>`)}
   }
   $('#list').innerHTML=out.join('');

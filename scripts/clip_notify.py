@@ -39,8 +39,8 @@ if not slot:
 
 name, folder = NAMES[slot]
 date = now.strftime("%Y-%m-%d")
-title = f"{name} 클립 올릴 시간이에요 🌙"
-msg = f"{date} {name} 영상이 인스타에 올라갔어요.\n눌러서 영상 저장 → 네이버 블로그 앱 클립 만들기 → 제목·설명·댓글 붙여넣기"
+title = f"{name} 클립·당근 스토리 올릴 시간이에요 🌙"
+msg = f"{date} {name} 영상이 인스타에 올라갔어요.\n눌러서 영상 저장 → 네이버 클립 · 당근 스토리에 문구·댓글 붙여넣기"
 if os.environ.get("FORCE") == "1":
     title = "🔔 테스트 알림 — 도아도령 클립"
 r = requests.post(f"https://ntfy.sh/{topic}", data=msg.encode("utf-8"), timeout=20,
