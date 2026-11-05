@@ -3,13 +3,17 @@
   "date": "2026-11-05",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백 + DAY 39 연재(스트레칭 10분) → 폼롤러",
   "sources": [],
   "threads": {
     "text": "[DAY 39] 스트레칭 10분 중 멈춘 건 한 번\n\n어제는 두 번 멈췄는데 오늘은 한 번으로 줄었어\n종아리가 제일 뭉쳐 있더라\n\n그래서 폼롤러\n비교하다가 두 개로 줄였어\n\n너는 오늘 스트레칭 했어? 했으면 '함' 한 마디만",
     "comment": "종아리 뭉쳐서 풀어주고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLjBPQZoW\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
   },
-  "result": {},
-  "publish_at": "2026-11-05T21:00:00+09:00"
+  "result": {
+    "threads": "17887986195628182",
+    "threads_comment": "18107163311343975"
+  },
+  "publish_at": "2026-11-05T21:00:00+09:00",
+  "posted_at": "2026-11-05T21:00:46.371280+09:00"
 }
