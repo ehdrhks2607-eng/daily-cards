@@ -3,7 +3,7 @@
   "date": "2026-11-06",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 올해 다이어리 3권 → 2027 다이어리 (jak_lunch)",
   "sources": [],
   "reel": {
@@ -27,6 +27,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-06T19:30:00+09:00"
+  "result": {
+    "reel": "18126588907906982"
+  },
+  "publish_at": "2026-11-06T19:30:00+09:00",
+  "posted_at": "2026-11-06T19:30:40.020025+09:00"
 }
