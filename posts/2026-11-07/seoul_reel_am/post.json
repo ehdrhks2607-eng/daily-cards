@@ -1,0 +1,41 @@
+{
+  "account": "seoul",
+  "date": "2026-11-07",
+  "slot": "reel_am",
+  "approved": true,
+  "status": "pending",
+  "issue": "💰 오늘의 금전운 릴스",
+  "sources": [
+    "scripts/ganji.py"
+  ],
+  "reel": {
+    "date_label": "11월 7일 토요일 · 을유일",
+    "hook": "오늘 *돈길*이\n열리는 띠",
+    "tease": "1위는 마지막에 공개",
+    "selfcheck": "내 띠, 있을까요?",
+    "tips_title": "오늘 금전운 TOP 3",
+    "tips": [
+      "용띠",
+      "닭띠",
+      "소띠"
+    ],
+    "reveal_note": "손발이 잘 맞는 날 · 오늘과 육합",
+    "cta": "내 띠가 없다면?\n댓글에 *띠*를",
+    "cta_pill": "12띠 전체 순위는 스레드에",
+    "character": "career",
+    "disclosure": "참고·재미로 보는 콘텐츠예요",
+    "caption": "오늘 지출이 정리되는 띠, 내 띠도 있을까요?\n📌 저장해두고 저녁에 다시 확인해 보세요.\n\n12띠 전체 순위와 한 줄 팁은 스레드에 있어요.\n내 사주 × MBTI 리포트는 프로필 링크(카톡)로 물어보세요.\n참고와 재미로 보는 콘텐츠이며 미래를 보장하지 않아요.\n\n#오늘의운세 #띠별운세 #사주 #2027운세 #금전운",
+    "yt_title": "오늘 지출이 정리되는 띠, 내 띠도 있을까? #Shorts",
+    "yt_description": "오늘 지출이 정리되는 띠, 내 띠도 있을까?\n12띠 전체 순위는 스레드 @doa.doryeong 에 있어요.\n내 사주 × MBTI 리포트: 카톡에서 '도아도령' 검색\n참고와 재미로 보는 콘텐츠예요.\n#Shorts #오늘의운세 #띠별운세",
+    "yt_tags": [
+      "사주",
+      "띠별운세",
+      "금전운",
+      "오늘의운세"
+    ],
+    "video": "reel.mp4",
+    "template": "saju2"
+  },
+  "result": {},
+  "publish_at": "2026-11-07T09:00:00+09:00"
+}
