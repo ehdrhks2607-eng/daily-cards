@@ -3,7 +3,7 @@
   "date": "2026-11-07",
   "slot": "reel_pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세 릴스",
   "sources": [
     "scripts/ganji.py"
@@ -36,6 +36,10 @@
     "video": "reel.mp4",
     "template": "saju2"
   },
-  "result": {},
-  "publish_at": "2026-11-07T21:30:00+09:00"
+  "result": {
+    "reel": "18116101865111747",
+    "youtube": "sent"
+  },
+  "publish_at": "2026-11-07T21:30:00+09:00",
+  "posted_at": "2026-11-07T21:30:49.800857+09:00"
 }
