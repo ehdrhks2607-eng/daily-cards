@@ -3,7 +3,7 @@
   "date": "2026-11-07",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 일주일 배달비 5만 6천 원 → 도시락 용기 (jak_lunch)",
   "sources": [],
   "reel": {
@@ -27,6 +27,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-07T20:30:00+09:00"
+  "result": {
+    "reel": "18003724899041447"
+  },
+  "publish_at": "2026-11-07T20:30:00+09:00",
+  "posted_at": "2026-11-07T20:30:43.659153+09:00"
 }
