@@ -53,7 +53,7 @@ function clipText(r){
 }
 const KAKAO='https://pf.kakao.com/_MrAxeX/chat';
 function cmt(dir,date){
-  const free = date <= '2026-11-08' ? "🎁 11/8(일)까지 선착순 무료 리포트 — 카톡에 \"무료 신청\"\n" : "";
+  const free = date <= '2026-11-15' ? "🎁 11/15(일)까지 선착순 무료 리포트 — 카톡에 \"무료 신청\"\n" : "";
   const line = {seoul_reel_am:"내 사주로 보는 2027 재물 흐름이 궁금하다면 👉 카톡에 \"신년운\"",
                 seoul_reel:"띠 말고 '내 사주 × MBTI'로 연애 흐름을 보고 싶다면 👉 카톡에 \"주제 리포트\"",
                 seoul_reel_pm:"2027년 12달을 날짜별로 미리 보고 싶다면 👉 카톡에 \"신년운\""}[dir];
@@ -63,7 +63,7 @@ function dang(dir,date,r){
   const q=(r.caption||'').split('\n')[0].trim();
   const kind={seoul_reel_am:'오늘의 금전운',seoul_reel:'오늘의 연애·재회운',seoul_reel_pm:'내일의 운세'}[dir];
   const cap=`${q}\n이웃님들 띠도 있는지 끝까지 봐 주세요 🌙\n\n매일 ${kind}${(kind.charCodeAt(kind.length-1)-0xAC00)%28?'을':'를'} 띠별로 정리하고 있어요.\n댓글에 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n※ 참고와 재미로 보는 콘텐츠예요.`;
-  const free = date <= '2026-11-08' ? "🎁 이번 주 일요일(11/8)까지 이웃 선착순 무료 리포트 진행 중이에요.\n" : "";
+  const free = date <= '2026-11-15' ? "🎁 11/15(일)까지 이웃 선착순 무료 리포트 진행 중이에요.\n" : "";
   const c=`${free}내 생년월일로 보는 사주 × MBTI 리포트가 궁금하시면\n프로필의 '채팅하기'로 편하게 물어보세요 🙏\n(안내 링크를 바로 보내 드려요)`;
   return {cap, cmt:c};
 }
