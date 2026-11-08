@@ -3,7 +3,7 @@
 <!--
   "saju2" — curiosity-driven 15s reel for 도아도령: hook with an open loop ("1위는 마지막에"),
   "내 띠 있을까?" scan, countdown 3위 → 2위, blurred 1위 reveal, comment CTA.
-  Data: hook, date_label, tease?, selfcheck?, tips[1위,2위,3위], reveal_label?, reveal_note?, cta, cta_pill?, disclosure, character.
+  Data: keyword? ("오늘의\n정산운" — 첫 프레임 큰 글씨), hook, date_label, tease?, selfcheck?, tips[1위,2위,3위], reveal_label?, reveal_note?, cta, cta_pill?, disclosure, character.
   (Based on "saju".)
   Night sky + gold frame + crescent moon + rotating 12지 wheel + drifting clouds,
   Opens (0~3s) with the 도아 character full-frame (push-in, light sweep, petals or gold dust) under the hook,
@@ -82,6 +82,9 @@ body{font-family:'Noto Serif CJK KR','Noto Sans CJK KR','Noto Sans KR',serif;col
 #heroimg{left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 38%;will-change:transform}
 #herosweep,#herofx{left:0;top:0}#herosweep{mix-blend-mode:screen}
 #heroshade{inset:0;background:linear-gradient(to bottom,rgba(3,4,9,.85) 0%,rgba(3,4,9,0) 20%,rgba(3,4,9,0) 48%,rgba(3,4,9,.8) 66%,rgba(3,4,9,.97) 82%)}
+#herokw{left:0;right:0;top:820px;text-align:center}
+#herokw .k1{font-size:46px;font-weight:700;color:var(--fg);letter-spacing:6px;text-shadow:0 4px 18px rgba(0,0,0,.9)}
+#herokw .k2{font-size:170px;font-weight:900;line-height:1.05;letter-spacing:-4px;color:var(--ac);text-shadow:0 0 40px rgba(232,181,79,.55),0 8px 30px rgba(0,0,0,.9);-webkit-text-stroke:2px rgba(0,0,0,.35)}
 #herodate{left:0;right:0;top:1105px;text-align:center;font-size:56px;font-weight:600;color:var(--ac);letter-spacing:4px;text-shadow:0 4px 20px rgba(0,0,0,.8)}
 </style></head><body>
 <div id="stars" class="abs"></div>
@@ -97,7 +100,7 @@ body{font-family:'Noto Serif CJK KR','Noto Sans CJK KR','Noto Sans KR',serif;col
   <path d="M20 170 H470 M60 170 C40 120 110 90 150 120 C150 70 230 50 260 100 C280 60 360 60 370 120 C410 100 460 130 440 170"/>
   <path d="M260 100 C285 95 300 120 285 135 C273 146 255 138 262 125"/></g></svg>
 <div id="hero" class="abs"><div id="heroimg" class="abs"></div><canvas id="herosweep" class="abs" width="1080" height="1920"></canvas>
-  <div id="heroshade" class="abs"></div><canvas id="herofx" class="abs" width="1080" height="1920"></canvas><div id="herodate" class="abs"></div></div>
+  <div id="heroshade" class="abs"></div><canvas id="herofx" class="abs" width="1080" height="1920"></canvas><div id="herokw" class="abs"></div><div id="herodate" class="abs"></div></div>
 <div id="frame" class="abs"></div><div id="frame2" class="abs"></div>
 <div id="corners"></div>
 <div id="rays" class="abs"></div>
@@ -188,6 +191,7 @@ const heroSrc=ASSETS['doa_full_'+KIND]||ASSETS.doa_full_default||'';
 const hero=document.getElementById('hero'), heroimg=document.getElementById('heroimg');
 if(heroSrc) heroimg.style.backgroundImage=`url(${heroSrc})`; else hero.style.display='none';
 document.getElementById('herodate').textContent=DATA.date_label||'';
+if(DATA.keyword){const kw=String(DATA.keyword).split('\n');document.getElementById('herokw').innerHTML=(kw.length>1?`<div class="k1">${esc(kw[0])}</div><div class="k2">${esc(kw[1])}</div>`:`<div class="k2">${esc(kw[0])}</div>`);}
 const hsw=document.getElementById('herosweep').getContext('2d'), hfx=document.getElementById('herofx').getContext('2d');
 const PETAL={love:['#ffe3ea','#f3a6bb'],reunion:['#ffe6cf','#f0a27a']}[KIND];
 let hs=91;const hr=()=>{hs=(hs*16807)%2147483647;return hs/2147483647};
@@ -257,7 +261,7 @@ function render(t){
   medglow.style.opacity=.6+.4*Math.sin(t*2.2);
   // S1 hook + open loop
   show(s1,t,T.s1);
-  animChars(s1c,t,.55,.04,.7);
+  animChars(s1c,t,-1,0,.01); // 첫 프레임부터 훅이 보이게(썸네일·첫 1초)
   const tq=oBack(p(t,1.4,1.8));tease.style.transform=`scale(${tq})`;tease.style.opacity=tq>0?1:0;
   exitBlock(s1,t,T.s1[1]-.35);
   // S2 self-check scan

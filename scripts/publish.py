@@ -119,6 +119,10 @@ def ig_uid(token, account=None):
 
 def ig_carousel(token, image_urls, caption, account=None):
     uid, API = ig_uid(token, account), ig_api(token)
+    if len(image_urls) == 1:  # single image post (도아도령 오늘의 행운 카드)
+        c = call("POST", f"{API}/{uid}/media", image_url=image_urls[0], caption=caption, access_token=token)
+        ig_wait(token, c["id"])
+        return call("POST", f"{API}/{uid}/media_publish", creation_id=c["id"], access_token=token)["id"]
     children = []
     for url in image_urls:
         c = call("POST", f"{API}/{uid}/media", image_url=url, is_carousel_item="true", access_token=token)
@@ -139,7 +143,7 @@ def ig_reel(token, video_urls, local_file, caption, account=None):
     for url in video_urls:
         try:
             c = call("POST", f"{API}/{uid}/media", media_type="REELS", video_url=url,
-                     caption=caption, share_to_feed="true", access_token=token)
+                     caption=caption, share_to_feed="true", thumb_offset="300", access_token=token)
             ig_wait(token, c["id"], tries=60)
             p = call("POST", f"{API}/{uid}/media_publish", creation_id=c["id"], access_token=token)
             return p["id"]
@@ -148,7 +152,7 @@ def ig_reel(token, video_urls, local_file, caption, account=None):
             log("reel via url failed, trying next:", str(e)[:200])
     try:
         c = call("POST", f"{API}/{uid}/media", media_type="REELS", upload_type="resumable",
-                 caption=caption, share_to_feed="true", access_token=token)
+                 caption=caption, share_to_feed="true", thumb_offset="300", access_token=token)
         if not DRY_RUN:
             data = Path(local_file).read_bytes()
             r = requests.post(c.get("uri") or f"https://rupload.facebook.com/ig-api-upload/v21.0/{c['id']}",

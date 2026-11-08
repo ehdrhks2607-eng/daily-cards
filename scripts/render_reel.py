@@ -115,9 +115,12 @@ def render(post_path, fps=30, sheet_only=False, template=None, out_dir=None):
             ff = subprocess.Popen(
                 ["ffmpeg", "-y", "-loglevel", "error", "-f", "image2pipe", "-framerate", str(fps),
                  "-c:v", "mjpeg", "-i", "-",
-                 # silent stereo track: some Reels pipelines reject video without audio
-                 "-f", "lavfi", "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
-                 "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
+                 # soft generated ambient pad (original audio, no copyright): reels with sound
+                 # tend to hold viewers longer than silent ones. Volume kept low.
+                 "-f", "lavfi", "-i", ("aevalsrc='0.08*(sin(2*PI*220*t)+0.8*sin(2*PI*277.18*t)+0.7*sin(2*PI*329.63*t)"
+                                      "+0.35*sin(2*PI*440*t))*(0.65+0.35*sin(2*PI*0.2*t))':s=44100:d=" + f"{dur:.2f}"),
+                 "-af", f"afade=t=in:d=1.2,afade=t=out:st={max(dur - 1.8, 0):.2f}:d=1.8",
+                 "-ac", "2", "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "20",
                  "-pix_fmt", "yuv420p", "-profile:v", "high", "-r", str(fps), "-g", str(fps * 2),
                  "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(out_mp4)],
                 stdin=subprocess.PIPE)
