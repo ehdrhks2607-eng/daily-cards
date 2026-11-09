@@ -164,6 +164,12 @@ body.edit-on #hint { display:block; }
 ul.ojt { font-size:27px; line-height:1.45; }
 ul.ojt li { padding-bottom:12px; }
 ul.ojt li .b { width:62px; height:44px; font-size:20px; color:var(--ink); background:var(--soft); }
+.talk { flex:1; min-height:0; display:grid; grid-template-columns:1fr 1fr; grid-auto-rows:1fr; gap:12px; margin-bottom:14px; }
+.tcard { background:var(--soft); border:3px solid var(--ink); border-radius:18px; padding:10px 12px; display:flex; flex-direction:column; gap:6px; min-height:0; }
+.tcard .when { align-self:flex-start; font-size:17px; font-weight:700; color:#fff; background:var(--accent2); border:2.5px solid var(--ink); border-radius:999px; padding:0 13px; }
+.tcard .say { background:var(--panel); border:2px solid var(--line); border-radius:10px; padding:4px 10px; font-size:15px; line-height:1.35; white-space:pre-line; word-break:keep-all; }
+.ment .tip { font-size:21px; padding-top:12px; }
+.ment .head { margin-bottom:18px; }
 </style>
 </head>
 <body>
@@ -185,13 +191,13 @@ const DEFAULT = {
   theme: "beige",
   store: {
     hello: "우리 매장 처음이지?\n반가워요 :)",
-    name: "메종 드 아이디헤어 반포자이점",
+    name: "메종드 아이디헤어 반포자이점",
     title: "매장\n사용 설명서",
     open: "SINCE 2017",
     addr: "서울 서초구 잠원로 24\n반포자이플라자 1층",
     tel: "02-593-7111",
-    owner: "보배 원장",
-    hours: "매일 10:00 ~ 20:00\n(승철·지유 ~21:00)",
+    owner: "보배 원장님",
+    hours: "매일 10:00 ~ 20:00",
     off: "연중무휴 (디자이너별 OFF)",
     wifi: "ID  idhair\nPW  ID0123456789"
   },
@@ -213,10 +219,10 @@ const DEFAULT = {
     { photo:"", name:"NEW!", note:"오늘 합류 🎉" }
   ],
   firstday: {
-    time: "오전 9시 40분까지\n(오픈 20분 전)",
+    time: "오전 9시 30분까지\n(오픈 30분 전)",
     dress: "깨끗한 유니폼 (츄리닝 X)\n드라이 필수 · 고무줄 X",
     bring: "메모 노트 · 필기구",
-    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 · 라운딩", "12:00  샴푸 · 서브 보조", "M · 휴게  선배 파트너께 말하고 가기", "18:30  마감 준비 시작"]
+    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 · 라운딩", "10:00~  샴푸 · 서브 보조", "M · 휴게  선배 파트너께 말하고 가기", "18:30  마감 준비 시작"]
   },
   todo: [
     "설명서 읽기 · SNS 개설 · 위생·청소\n🎯 인상 깊은 것, SNS에 사진 3장",
@@ -235,21 +241,27 @@ const DEFAULT = {
     "서브 중 거울 보기 · 잡담 X",
     "선 멘트 후 행동, 감사 인사"
   ],
-  ments: [
-    { title:"고객님께 멘트하기 ①", when:"입점 · 맞이할 때", lines:["환영합니다~\n예약 해주셨을까요?", "OOO 고객님, 오늘 OO 선생님께\nOO 예약 주셨죠~?\n소지품 보관 먼저 해드리겠습니다"], tip:"솔톤 목소리 · 메아리 멘트 · 선 멘트 후 행동!" },
-    { title:"고객님께 멘트하기 ②", when:"샴푸 · 시술 중", lines:["물 온도, 압 세기 괜찮으세요?\n불편하신 곳 있으면 말씀해 주세요", "열처리 진행할 건데\n뜨겁거나 불편하시면\n바로 말씀해 주세요"], tip:"페이스 커버 꼭! 중요 멘트는 크게, 대답 확인" },
-    { title:"고객님께 멘트하기 ③", when:"퇴점 · 배웅할 때", lines:["고생하셨습니다~\n데스크로 안내해 드리겠습니다", "감사합니다. 조심히 들어가세요\n다음에 또 뵙겠습니다 🤎"], tip:"겉옷 먼저 입혀드리고, 입구 한 발 나가서 인사" }
-  ]
+  talk: {
+    title: "고객님께 멘트하기",
+    tip: "솔톤 목소리 · 메아리 멘트 · 선 멘트 후 행동!",
+    parts: [
+      { when:"입점 · 맞이할 때", lines:["환영합니다~\n예약 해주셨을까요?", "OOO 고객님, 오늘 OO 선생님께\nOO 예약 주셨죠~?", "소지품 보관 먼저 해드리겠습니다"] },
+      { when:"음료 준비", lines:["기다리시는 동안\n음료 한 잔 준비해 드릴까요?", "OO 준비해 드리겠습니다~\n잠시만 기다려 주세요", "뜨거우니 조심하세요~"] },
+      { when:"시술 준비", lines:["커트 준비해 드리겠습니다", "염색·클리닉 준비해 드리겠습니다", "약제 도포해 드리겠습니다\n살짝 차가우세요~"] },
+      { when:"샴푸 · 시술 중", lines:["물 온도, 압 세기 괜찮으세요?", "열처리 진행할 건데 뜨겁거나\n불편하시면 바로 말씀해 주세요", "살짝 당기실 수 있는데\n아프시면 말씀해 주세요"] },
+      { when:"퇴점 · 배웅할 때", lines:["고생하셨습니다~\n데스크로 안내해 드리겠습니다", "혹시 차량 가져오셨을까요?", "감사합니다. 조심히 들어가세요\n다음에 또 뵙겠습니다 🤎"] },
+      { when:"전화 응대", lines:["행복을 드리는 아이디헤어입니다\n무엇을 도와드릴까요?", "원하시는 날짜와 시간대가\n어떻게 되실까요?", "O월 O일 O시 OO 선생님께\nOO 예약해 드리겠습니다"] }
+    ]
+  }
 };
 
-const KEY = "salon-welcome-board-v2";
+const KEY = "salon-welcome-board-v3";
 let data = fillMbti(load());
 let editing = false;
 
 function load(){
   let d = structuredClone(DEFAULT);
   try { const s = localStorage.getItem(KEY); if (s) d = Object.assign(d, JSON.parse(s)); } catch(e){}
-  d.ments.forEach((m,i) => { if (m.tip === undefined) m.tip = DEFAULT.ments[i]?.tip ?? ""; });
   return d;
 }
 function fillMbti(d){
@@ -356,13 +368,17 @@ function render(){
 
   P.push(page(6, "TO DO", `${head("두근두근 1주일 OJT")}${ed("todoNote", data.todoNote, "ojtnote")}${list("todo", "check ojt", i=>(i+1)+"일")}`));
 
-  data.ments.forEach((m,i) => P.push(page(7+i, "TALK", `
-    <div class="head">${ed(`ments.${i}.title`, m.title, "", "h2")}</div>
-    ${ed(`ments.${i}.when`, m.when, "when")}
-    <div class="bubbles">${m.lines.map((l,j)=>ed(`ments.${i}.lines.${j}`, l, "bubble"+(j%2?" alt":""))).join("")}</div>
-    <div class="tip"><b>TIP</b>${ed(`ments.${i}.tip`, m.tip)}</div>`, "ment")));
+  P.push(page(7, "TALK", `
+    ${head(esc(data.talk.title))}
+    <div class="talk">${data.talk.parts.map((t,i)=>`
+      <div class="tcard">
+        ${ed(`talk.parts.${i}.when`, t.when, "when")}
+        ${t.lines.map((l,j)=>ed(`talk.parts.${i}.lines.${j}`, l, "say")).join("")}
+      </div>`).join("")}
+    </div>
+    <div class="tip"><b>TIP</b>${ed("talk.tip", data.talk.tip)}</div>`, "ment"));
 
-  P.push(page(7 + data.ments.length, "ETIQUETTE", `${head("기본 에티켓 지켜요!")}${list("etiquette", "", i=>i+1)}`));
+  P.push(page(8, "ETIQUETTE", `${head("기본 에티켓 지켜요!")}${list("etiquette", "", i=>i+1)}`));
 
   const total = P.length;
   document.getElementById("pages").innerHTML = P.join("").replaceAll("/ 10</span>", `/ ${total}</span>`);

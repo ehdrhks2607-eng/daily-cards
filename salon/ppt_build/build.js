@@ -57,7 +57,7 @@ function page(label, title, fill) {
 {
   const s = page("WELCOME", null, K.accent);
   T(s, data.store.hello, { x: CX, y: PY + 0.75, w: CW, h: 1.0, fontSize: 20, bold: true, color: K.white, lineSpacingMultiple: 1.2 });
-  T(s, data.store.name, { x: CX, y: PY + 3.0, w: CW, h: 1.9, fontSize: 40, bold: true, color: K.white, valign: "bottom", lineSpacingMultiple: 1.05 });
+  T(s, data.store.name.replace(/ (?=[^ ]*$)/, "\n"), { x: CX, y: PY + 3.0, w: CW, h: 1.9, fontSize: 40, bold: true, color: K.white, valign: "bottom", lineSpacingMultiple: 1.05 });
   T(s, data.store.title, { x: CX, y: PY + 5.05, w: CW, h: 2.9, fontSize: 70, bold: true, color: K.white,
                            outline: { size: 1.5, color: K.ink }, lineSpacingMultiple: 0.95 });
   T(s, "✂   ♥", { x: CX, y: PY + PH - 1.6, w: 4, h: 1.0, fontSize: 52, color: K.white, valign: "bottom" });
@@ -155,29 +155,32 @@ function page(label, title, fill) {
   });
 }
 
-/* 7~9. 멘트 */
-data.ments.forEach((mt) => {
-  const s = page("TALK", mt.title);
-  const ww = Math.min(CW, 0.6 + mt.when.length * 0.2);
-  RR(s, { x: CX, y: CTOP, w: ww, h: 0.48, rectRadius: 0.24, fill: { color: K.accent2 }, line: { color: K.ink, width: 1.75 } });
-  T(s, mt.when, { x: CX, y: CTOP, w: ww, h: 0.48, fontSize: 16, bold: true, color: K.white, align: "center", valign: "middle" });
-  const bw = 5.2, hs = mt.lines.map(l => l.split("\n").length * 0.48 + 0.55), gap = 0.55;
-  const total = hs.reduce((a, b) => a + b, 0) + gap * (hs.length - 1);
-  let y = CTOP + 0.8 + (CBOT - 1.0 - (CTOP + 0.8) - total) / 2;
-  mt.lines.forEach((l, j) => {
-    const x = j % 2 ? CX + CW - bw : CX, h = hs[j];
-    RR(s, { x: x + 0.08, y: y + 0.08, w: bw, h, rectRadius: 0.25, fill: { color: K.shadow }, line: { color: K.shadow } });
-    RR(s, { x, y, w: bw, h, rectRadius: 0.25, fill: { color: j % 2 ? K.tag : K.soft }, line: { color: K.ink, width: 1.75 } });
-    T(s, l, { x: x + 0.3, y, w: bw - 0.6, h, fontSize: 21, valign: "middle", lineSpacingMultiple: 1.2 });
-    y += h + gap;
+/* 7. 고객님께 멘트하기 (한 장) */
+{
+  const tk = data.talk, s = page("TALK", tk.title);
+  const cols = 2, gap = 0.2, cw = (CW - gap) / cols, bottom = CBOT - 0.85;
+  const rows = Math.ceil(tk.parts.length / cols), ch = (bottom - CTOP - gap * (rows - 1)) / rows;
+  tk.parts.forEach((pt, i) => {
+    const x = CX + (i % cols) * (cw + gap), y = CTOP + Math.floor(i / cols) * (ch + gap);
+    RR(s, { x, y, w: cw, h: ch, rectRadius: 0.16, fill: { color: K.soft }, line: { color: K.ink, width: 1.75 }, objectName: "talk " + pt.when });
+    const pw = Math.min(cw - 0.3, 0.45 + pt.when.length * 0.15);
+    RR(s, { x: x + 0.15, y: y + 0.14, w: pw, h: 0.34, rectRadius: 0.17, fill: { color: K.accent2 }, line: { color: K.ink, width: 1.25 } });
+    T(s, pt.when, { x: x + 0.15, y: y + 0.14, w: pw, h: 0.34, fontSize: 12, bold: true, color: K.white, align: "center", valign: "middle" });
+    let by = y + 0.6;
+    pt.lines.forEach((l) => {
+      const n = l.split("\n").length, bh = 0.12 + n * 0.21;
+      RR(s, { x: x + 0.15, y: by, w: cw - 0.3, h: bh, rectRadius: 0.08, fill: { color: K.panel }, line: { color: K.line, width: 1 } });
+      T(s, l, { x: x + 0.24, y: by, w: cw - 0.46, h: bh, fontSize: 11.5, valign: "middle", lineSpacingMultiple: 1.1 });
+      by += bh + 0.08;
+    });
   });
-  dash(s, CX, CBOT - 0.75, CW);
-  RR(s, { x: CX, y: CBOT - 0.5, w: 0.6, h: 0.34, rectRadius: 0.08, fill: { color: K.accent }, line: { color: K.accent } });
-  T(s, "TIP", { x: CX, y: CBOT - 0.5, w: 0.6, h: 0.34, fontSize: 11, bold: true, color: K.white, align: "center", valign: "middle" });
-  T(s, mt.tip || "", { x: CX + 0.8, y: CBOT - 0.55, w: CW - 0.8, h: 0.44, fontSize: 14, color: K.sub, valign: "middle" });
-});
+  dash(s, CX, CBOT - 0.68, CW);
+  RR(s, { x: CX, y: CBOT - 0.48, w: 0.6, h: 0.34, rectRadius: 0.08, fill: { color: K.accent }, line: { color: K.accent } });
+  T(s, "TIP", { x: CX, y: CBOT - 0.48, w: 0.6, h: 0.34, fontSize: 11, bold: true, color: K.white, align: "center", valign: "middle" });
+  T(s, tk.tip, { x: CX + 0.8, y: CBOT - 0.53, w: CW - 0.8, h: 0.44, fontSize: 14, color: K.sub, valign: "middle" });
+}
 
-/* 10. 에티켓 */
+/* 8. 에티켓 */
 {
   const s = page("ETIQUETTE", "기본 에티켓 지켜요!");
   const top = CTOP + 0.2, step = (CBOT - top) / data.etiquette.length;
