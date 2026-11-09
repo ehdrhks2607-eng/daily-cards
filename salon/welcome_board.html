@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매장 사용 설명서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ───────── 테마 (편집 모드에서 선택) ───────── */
+:root, [data-theme="lavender"] {
+  --bg:#e9e4f7; --paper:#f7f4ff; --panel:#ffffff; --ink:#3a2f5c; --sub:#7a6f9a;
+  --accent:#8f6cf0; --accent2:#ff8fbf; --soft:#efe8ff; --line:#cfc3f5; --tag:#ffe3f0; --tagInk:#c2477e;
+  --shadow:#b9a9ec;
+}
+[data-theme="beige"] {
+  --bg:#efe6da; --paper:#f8f2ea; --panel:#fffdf9; --ink:#4a3a2c; --sub:#8c7a68;
+  --accent:#c4835a; --accent2:#8aa37b; --soft:#f3e7da; --line:#e2cfbb; --tag:#e8efe2; --tagInk:#5f7a51;
+  --shadow:#d8c2aa;
+}
+[data-theme="mono"] {
+  --bg:#1c1c1e; --paper:#26262a; --panel:#2f2f34; --ink:#f3efe6; --sub:#b3ab9b;
+  --accent:#d8b46a; --accent2:#e9d9b4; --soft:#3a3a40; --line:#4a4a52; --tag:#3f3a2e; --tagInk:#e6c987;
+  --shadow:#000000;
+}
+[data-theme="peach"] {
+  --bg:#ffe9e2; --paper:#fff6f2; --panel:#ffffff; --ink:#5a3236; --sub:#a07075;
+  --accent:#ff7f6e; --accent2:#5fb8a8; --soft:#ffeee8; --line:#f7c9bd; --tag:#dff3ee; --tagInk:#2f8a79;
+  --shadow:#f2b5a6;
+}
+
+* { box-sizing:border-box; margin:0; padding:0; }
+html, body { width:100%; height:100%; overflow:hidden; background:var(--bg); }
+body { font-family:"Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; color:var(--ink); }
+.jua { font-family:"Jua", "Noto Sans KR", sans-serif; font-weight:400; }
+
+/* 1920x1080 고정 화면을 TV 크기에 맞춰 확대·축소 */
+#stage {
+  position:absolute; left:50%; top:50%; width:1920px; height:1080px;
+  transform-origin:center center; background:var(--paper);
+  background-image:radial-gradient(var(--line) 1.2px, transparent 1.3px);
+  background-size:22px 22px;
+  padding:26px; display:grid; grid-template-rows:560px 1fr; gap:18px;
+}
+.row { display:grid; gap:18px; min-height:0; }
+.top { grid-template-columns:290px 330px 1.15fr 0.85fr; }
+.bottom { grid-template-columns:330px 300px 1fr 1fr 1fr 310px; }
+
+.panel {
+  background:var(--panel); border:2.5px solid var(--ink); border-radius:18px;
+  box-shadow:6px 6px 0 var(--shadow); padding:18px 18px 16px; min-height:0;
+  display:flex; flex-direction:column; position:relative; overflow:hidden;
+}
+.head {
+  display:flex; align-items:center; gap:8px; margin-bottom:12px; flex:none;
+}
+.head h2 { font-family:"Jua",sans-serif; font-weight:400; font-size:30px; letter-spacing:-0.5px; }
+.head .dot { width:12px; height:12px; border-radius:50%; background:var(--accent2); border:2px solid var(--ink); }
+.head small { font-size:15px; color:var(--sub); margin-left:auto; }
+.winbar {
+  position:absolute; left:0; right:0; top:0; height:30px; background:var(--soft);
+  border-bottom:2.5px solid var(--ink); display:flex; align-items:center; justify-content:flex-end; gap:6px; padding:0 10px;
+}
+.winbar i { width:14px; height:14px; border:2px solid var(--ink); border-radius:4px; background:var(--panel); }
+.panel.win { padding-top:44px; }
+
+/* 타이틀 */
+.title { background:var(--accent); color:#fff; justify-content:space-between; }
+[data-theme="mono"] .title { color:#1c1c1e; }
+.title .hello { font-size:19px; font-weight:700; opacity:.92; white-space:pre-line; }
+.title .store { font-family:"Jua",sans-serif; font-size:44px; line-height:1.1; margin-top:18px; word-break:keep-all; }
+.title .big { font-family:"Jua",sans-serif; font-size:66px; line-height:1.02; margin-top:6px;
+  -webkit-text-stroke:2px var(--ink); color:var(--panel); text-shadow:4px 4px 0 var(--ink); word-break:keep-all; white-space:pre-line; }
+.title .deco { display:flex; gap:10px; align-items:flex-end; }
+.title .deco svg { width:76px; height:76px; }
+.title .hearts { font-size:30px; }
+
+/* 매장 정보 */
+.info dl { display:grid; grid-template-columns:86px 1fr; row-gap:13px; column-gap:10px; font-size:19px; }
+.info dt { font-weight:700; color:var(--sub); font-size:16px; padding-top:3px; }
+.info dd { font-weight:500; white-space:pre-line; word-break:keep-all; }
+.opendate { display:inline-block; font-family:"Jua",sans-serif; font-size:30px; background:var(--soft);
+  border:2px solid var(--ink); border-radius:12px; padding:2px 14px; margin-bottom:16px; align-self:flex-start; }
+
+/* 프로필 카드 */
+.grid { flex:1; min-height:0; display:grid; gap:12px; grid-auto-rows:1fr; }
+.card { min-height:0; display:flex; flex-direction:column; background:var(--soft); border:2px solid var(--ink);
+  border-radius:14px; padding:8px; position:relative; }
+.ph { flex:1; min-height:0; border-radius:10px; border:2px solid var(--ink); background:var(--panel);
+  background-size:cover; background-position:center 25%; position:relative; overflow:hidden; }
+.ph.empty { display:flex; align-items:center; justify-content:center; }
+.ph.empty svg { width:55%; height:70%; opacity:.35; }
+.role { position:absolute; left:6px; top:6px; background:var(--accent2); color:#fff; font-size:13px; font-weight:700;
+  border:2px solid var(--ink); border-radius:999px; padding:1px 9px; }
+[data-theme="mono"] .role { color:#1c1c1e; }
+.card .nm { font-weight:900; font-size:19px; margin-top:7px; text-align:center; }
+.card .intro { font-size:13.5px; color:var(--sub); text-align:center; line-height:1.3; margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card .tags { align-self:center; margin-top:5px; font-size:12.5px; font-weight:700; background:var(--tag); color:var(--tagInk);
+  border-radius:999px; padding:2px 10px; }
+.card .insta { font-size:12.5px; text-align:center; color:var(--accent); font-weight:700; margin-top:3px; }
+.card.small .nm { font-size:17px; margin-top:5px; }
+
+/* 리스트 */
+ul.list { list-style:none; display:flex; flex-direction:column; gap:9px; font-size:17px; line-height:1.4; }
+ul.list li { display:flex; gap:9px; align-items:flex-start; position:relative; }
+ul.list li .b { flex:none; width:24px; height:24px; border-radius:7px; border:2px solid var(--ink); background:var(--soft);
+  font-size:13px; font-weight:900; display:flex; align-items:center; justify-content:center; margin-top:1px; }
+ul.check li .b { background:var(--panel); }
+ul.list li .t { flex:1; word-break:keep-all; white-space:pre-line; }
+
+.firstday .kv { display:grid; grid-template-columns:70px 1fr; gap:9px 10px; font-size:17px; margin-bottom:14px; }
+.firstday .kv b { background:var(--accent); color:#fff; border-radius:8px; text-align:center; font-size:14px; padding:3px 0; height:max-content; }
+[data-theme="mono"] .firstday .kv b { color:#1c1c1e; }
+.firstday .kv span { white-space:pre-line; word-break:keep-all; line-height:1.4; }
+.timeline { border-left:3px dashed var(--line); margin-left:6px; padding-left:14px; display:flex; flex-direction:column; gap:7px; font-size:16px; }
+.timeline div { position:relative; white-space:pre-line; }
+.timeline div::before { content:""; position:absolute; left:-21px; top:6px; width:11px; height:11px; border-radius:50%;
+  background:var(--accent2); border:2px solid var(--ink); }
+
+.ment .bubble { background:var(--soft); border:2px solid var(--ink); border-radius:14px 14px 14px 4px; padding:12px 15px;
+  font-size:19px; line-height:1.5; white-space:pre-line; word-break:keep-all; position:relative; }
+.ment .bubble + .bubble { margin-top:14px; }
+.ment .bubble.alt { background:var(--tag); border-radius:14px 14px 4px 14px; }
+.ment .when { font-size:15px; color:var(--sub); font-weight:700; margin-bottom:8px; }
+
+/* ───────── 편집 모드 ───────── */
+.editing [data-path] { outline:2px dashed var(--accent); outline-offset:2px; border-radius:4px; cursor:text; min-width:20px; }
+.editing [data-path]:focus { outline-style:solid; background:rgba(255,255,255,.4); }
+.editing .ph { cursor:pointer; outline:3px dashed var(--accent2); outline-offset:-6px; }
+.editing .ph::after { content:"📷 사진 바꾸기"; position:absolute; left:50%; bottom:6px; transform:translateX(-50%);
+  background:rgba(0,0,0,.6); color:#fff; font-size:12px; padding:2px 8px; border-radius:999px; white-space:nowrap; }
+.del, .add, .mv { display:none; }
+.editing .del { display:flex; position:absolute; right:-6px; top:-6px; width:24px; height:24px; border-radius:50%;
+  border:2px solid var(--ink); background:#ff6b6b; color:#fff; font-weight:900; align-items:center; justify-content:center;
+  cursor:pointer; z-index:3; font-size:14px; }
+.editing .mv { display:flex; position:absolute; left:-6px; top:-6px; width:24px; height:24px; border-radius:50%;
+  border:2px solid var(--ink); background:var(--panel); color:var(--ink); font-weight:900; align-items:center; justify-content:center;
+  cursor:pointer; z-index:3; font-size:13px; }
+.editing li .del { right:0; top:0; width:20px; height:20px; font-size:12px; }
+.editing .add { display:block; margin-top:8px; align-self:flex-start; border:2px dashed var(--accent); background:transparent;
+  color:var(--accent); font:700 14px "Noto Sans KR",sans-serif; border-radius:8px; padding:3px 10px; cursor:pointer; }
+
+#bar {
+  position:fixed; right:14px; bottom:14px; z-index:50; display:flex; gap:6px; align-items:center;
+  background:rgba(20,20,30,.82); color:#fff; padding:8px 10px; border-radius:12px; font:500 13px "Noto Sans KR",sans-serif;
+  opacity:0; transition:opacity .3s;
+}
+#bar.show, body.edit-on #bar { opacity:1; }
+#bar button, #bar select { font:inherit; border:0; border-radius:7px; padding:5px 10px; cursor:pointer; background:#fff; color:#222; }
+#bar .on { background:#ffd34d; }
+#bar .only-edit { display:none; }
+body.edit-on #bar .only-edit { display:inline-block; }
+#hint { position:fixed; left:50%; top:14px; transform:translateX(-50%); z-index:50; display:none;
+  background:#ffd34d; color:#222; padding:6px 14px; border-radius:999px; font:700 14px "Noto Sans KR",sans-serif; }
+body.edit-on #hint { display:block; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div id="hint">편집 중 · 글자를 눌러 고치고, 사진 칸을 눌러 사진을 넣으세요 (자동 저장)</div>
+<div id="bar">
+  <button id="btnEdit">✏️ 편집</button>
+  <select id="selTheme" class="only-edit" title="매장 분위기 테마">
+    <option value="lavender">라벤더 (귀여운)</option>
+    <option value="beige">베이지 우드 (내추럴)</option>
+    <option value="peach">피치 민트 (밝은)</option>
+    <option value="mono">블랙 골드 (고급)</option>
+  </select>
+  <button id="btnExport" class="only-edit">백업 저장</button>
+  <button id="btnImport" class="only-edit">백업 불러오기</button>
+  <button id="btnReset" class="only-edit">처음으로</button>
+  <button id="btnFull">⛶ 전체화면</button>
+</div>
+<input type="file" id="filePhoto" accept="image/*" hidden>
+<input type="file" id="fileJson" accept="application/json" hidden>
+
+<script>
+/* ═══════════════════════════════════════════════
+   기본 내용 — 여기 글자를 고쳐도 되고, 화면에서 [✏️ 편집]으로 고쳐도 됩니다.
+   (화면에서 고친 내용은 이 브라우저에 자동 저장됩니다)
+   ═══════════════════════════════════════════════ */
+const DEFAULT = {
+  theme: "lavender",
+  store: {
+    hello: "우리 매장 처음이지?\n반가워요 :)",
+    name: "○○헤어",
+    title: "매장\n사용 설명서",
+    open: "2026.11.09~",
+    addr: "주소를 입력하세요",
+    tel: "02-000-0000",
+    owner: "대표 원장 ○○○",
+    hours: "오전 10시 ~ 오후 8시\n(마지막 예약 7시)",
+    off: "매주 화요일",
+    wifi: "와이파이 이름 / 비밀번호"
+  },
+  designers: [
+    { photo:"", role:"대표 원장", name:"○○○", intro:"손상 없는 컬러 10년 차", tags:"컬러 · 커트", insta:"@instagram" },
+    { photo:"", role:"실장", name:"○○○", intro:"얼굴형 맞춤 펌 장인", tags:"펌 · 매직", insta:"@instagram" },
+    { photo:"", role:"디자이너", name:"○○○", intro:"남자 커트 깔끔하게", tags:"맨즈 커트", insta:"@instagram" },
+    { photo:"", role:"디자이너", name:"○○○", intro:"트렌디한 레이어드", tags:"레이어드 · 클리닉", insta:"@instagram" }
+  ],
+  partners: [
+    { photo:"", name:"○○○", note:"2025.03 합류" },
+    { photo:"", name:"○○○", note:"2025.08 합류" },
+    { photo:"", name:"○○○", note:"2026.01 합류" },
+    { photo:"", name:"○○○", note:"2026.05 합류" },
+    { photo:"", name:"○○○", note:"2026.09 합류" },
+    { photo:"", name:"NEW!", note:"오늘 합류 🎉" }
+  ],
+  firstday: {
+    time: "오전 9시 40분까지\n(오픈 20분 전)",
+    dress: "블랙 상·하의\n편한 운동화",
+    bring: "앞치마 · 개인 텀블러\n필기구",
+    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 같이 하기", "12:00  샴푸 · 드라이 보조", "14:00  점심 (교대로)", "19:30  마감 청소 · 오늘 질문 정리"]
+  },
+  todo: [
+    "디자이너 선생님들께 인사하기",
+    "재료실 · 타월 위치 외우기",
+    "예약 프로그램 보는 법 배우기",
+    "샴푸대 물 온도 맞춰보기",
+    "마감 청소 순서 따라 해보기",
+    "궁금한 건 바로 물어보기!"
+  ],
+  etiquette: [
+    "출근하면 먼저 밝게 인사해요",
+    "고객님 앞에서는 휴대폰 NO",
+    "서로 존댓말, 호칭은 ○○쌤",
+    "시술 중 사적인 대화는 쉿",
+    "쓴 자리는 바로 정리해요",
+    "모르면 혼자 하지 말고 꼭 물어보기"
+  ],
+  ments: [
+    { title:"고객님께 멘트하기 ①", when:"맞이할 때", lines:["안녕하세요! ○시 예약하신 ○○○님 맞으세요?", "겉옷이랑 짐 먼저 받아드릴게요 :)"] },
+    { title:"고객님께 멘트하기 ②", when:"샴푸 · 시술 중", lines:["물 온도 괜찮으세요?\n뜨겁거나 차가우면 말씀해 주세요", "목 불편하신 곳은 없으세요?"] },
+    { title:"고객님께 멘트하기 ③", when:"배웅할 때", lines:["오늘 스타일 마음에 드셨으면 좋겠어요", "조심히 들어가세요! 또 뵐게요 💜"] }
+  ]
+};
+
+const KEY = "salon-welcome-board-v1";
+let data = load();
+let editing = false;
+
+function load(){
+  try { const s = localStorage.getItem(KEY); if (s) return Object.assign(structuredClone(DEFAULT), JSON.parse(s)); } catch(e){}
+  return structuredClone(DEFAULT);
+}
+function save(){
+  try { localStorage.setItem(KEY, JSON.stringify(data)); }
+  catch(e){ alert("저장 공간이 부족해요. 사진 수를 줄이거나 [백업 저장]을 해 두세요."); }
+}
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const ed = (path, val, cls="", tag="div") => `<${tag} class="${cls}" data-path="${path}">${esc(val)}</${tag}>`;
+function getP(path){ return path.split(".").reduce((o,k)=>o?.[k], data); }
+function setP(path, v){ const ks = path.split("."); const last = ks.pop(); ks.reduce((o,k)=>o[k], data)[last] = v; }
+
+const SILHOUETTE = `<svg viewBox="0 0 100 120"><circle cx="50" cy="40" r="24" fill="currentColor"/><path d="M8 120c4-30 22-44 42-44s38 14 42 44z" fill="currentColor"/></svg>`;
+const SCISSORS = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="16" cy="46" r="9"/><circle cx="16" cy="18" r="9"/><path d="M23 41 56 12M23 23l33 29"/></svg>`;
+const COMB = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><rect x="6" y="20" width="52" height="12" rx="4"/><path d="M12 32v18M20 32v18M28 32v18M36 32v18M44 32v18M52 32v18"/></svg>`;
+
+function photo(path){
+  const src = getP(path);
+  return src ? `<div class="ph" data-photo="${path}" style="background-image:url('${src}')"></div>`
+             : `<div class="ph empty" data-photo="${path}" style="color:var(--ink)">${SILHOUETTE}</div>`;
+}
+function list(key, cls, bullet){
+  return `<ul class="list ${cls}">${data[key].map((t,i)=>`<li><span class="b">${bullet(i)}</span>${ed(key+"."+i, t, "t")}<button class="del" data-del="${key}.${i}">×</button></li>`).join("")}</ul>
+    <button class="add" data-add="${key}">+ 줄 추가</button>`;
+}
+
+function render(){
+  document.documentElement.dataset.theme = data.theme;
+  const s = data.store;
+  const dn = data.designers.length, pn = data.partners.length;
+  const dCols = dn <= 4 ? Math.max(dn,1) : Math.ceil(dn/2);
+  const pCols = pn <= 3 ? Math.max(pn,1) : pn <= 6 ? 3 : 4;
+
+  document.getElementById("stage").innerHTML = `
+  <section class="row top">
+    <div class="panel title">
+      ${ed("store.hello", s.hello, "hello")}
+      <div>
+        ${ed("store.name", s.name, "store")}
+        ${ed("store.title", s.title, "big")}
+      </div>
+      <div class="deco" style="color:${data.theme==="mono"?"#1c1c1e":"#fff"}">${SCISSORS}${COMB}<span class="hearts">♥</span></div>
+    </div>
+
+    <div class="panel win info">
+      <div class="winbar"><i></i><i></i><i></i></div>
+      ${ed("store.open", s.open, "opendate")}
+      <dl>
+        <dt>주소</dt>${ed("store.addr", s.addr, "", "dd")}
+        <dt>매장 번호</dt>${ed("store.tel", s.tel, "", "dd")}
+        <dt>대표</dt>${ed("store.owner", s.owner, "", "dd")}
+        <dt>영업시간</dt>${ed("store.hours", s.hours, "", "dd")}
+        <dt>휴무</dt>${ed("store.off", s.off, "", "dd")}
+        <dt>와이파이</dt>${ed("store.wifi", s.wifi, "", "dd")}
+      </dl>
+    </div>
+
+    <div class="panel">
+      <div class="head"><span class="dot"></span><h2>디자이너 가족들</h2><small>Designer</small></div>
+      <div class="grid" style="grid-template-columns:repeat(${dCols},1fr)">
+        ${data.designers.map((d,i)=>`
+          <div class="card">
+            ${photo(`designers.${i}.photo`)}
+            ${ed(`designers.${i}.role`, d.role, "role", "span")}
+            ${ed(`designers.${i}.name`, d.name, "nm")}
+            ${ed(`designers.${i}.intro`, d.intro, "intro")}
+            ${ed(`designers.${i}.tags`, d.tags, "tags")}
+            ${ed(`designers.${i}.insta`, d.insta, "insta")}
+            <button class="mv" data-mv="designers.${i}" title="앞으로">◀</button>
+            <button class="del" data-del="designers.${i}">×</button>
+          </div>`).join("")}
+      </div>
+      <button class="add" data-add="designers">+ 디자이너 추가</button>
+    </div>
+
+    <div class="panel">
+      <div class="head"><span class="dot"></span><h2>파트너 가족들</h2><small>Partner</small></div>
+      <div class="grid" style="grid-template-columns:repeat(${pCols},1fr)">
+        ${data.partners.map((p,i)=>`
+          <div class="card small">
+            ${photo(`partners.${i}.photo`)}
+            ${ed(`partners.${i}.name`, p.name, "nm")}
+            ${ed(`partners.${i}.note`, p.note, "intro")}
+            <button class="mv" data-mv="partners.${i}" title="앞으로">◀</button>
+            <button class="del" data-del="partners.${i}">×</button>
+          </div>`).join("")}
+      </div>
+      <button class="add" data-add="partners">+ 파트너 추가</button>
+    </div>
+  </section>
+
+  <section class="row bottom">
+    <div class="panel firstday">
+      <div class="head"><span class="dot"></span><h2>파트너 첫날 안내</h2></div>
+      <div class="kv">
+        <b>출근</b>${ed("firstday.time", data.firstday.time, "", "span")}
+        <b>복장</b>${ed("firstday.dress", data.firstday.dress, "", "span")}
+        <b>준비물</b>${ed("firstday.bring", data.firstday.bring, "", "span")}
+      </div>
+      <div class="timeline">
+        ${data.firstday.flow.map((t,i)=>ed(`firstday.flow.${i}`, t)).join("")}
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="head"><span class="dot"></span><h2>두근두근 첫날 할 일</h2></div>
+      ${list("todo", "check", ()=> "✓")}
+    </div>
+
+    ${data.ments.map((m,i)=>`
+    <div class="panel win ment">
+      <div class="winbar"><i></i><i></i><i></i></div>
+      <div class="head" style="margin-bottom:6px">${ed(`ments.${i}.title`, m.title, "", "h2")}</div>
+      ${ed(`ments.${i}.when`, m.when, "when")}
+      ${m.lines.map((l,j)=>ed(`ments.${i}.lines.${j}`, l, "bubble"+(j%2?" alt":""))).join("")}
+    </div>`).join("")}
+
+    <div class="panel">
+      <div class="head"><span class="dot"></span><h2>기본 에티켓 지켜요!</h2></div>
+      ${list("etiquette", "", i => i+1)}
+    </div>
+  </section>`;
+
+  applyEdit();
+  fit();
+}
+
+function applyEdit(){
+  document.body.classList.toggle("edit-on", editing);
+  const st = document.getElementById("stage");
+  st.classList.toggle("editing", editing);
+  st.querySelectorAll("[data-path]").forEach(el => el.contentEditable = editing ? "plaintext-only" : "false");
+  document.getElementById("btnEdit").textContent = editing ? "✅ 편집 끝" : "✏️ 편집";
+  document.getElementById("btnEdit").classList.toggle("on", editing);
+  document.getElementById("selTheme").value = data.theme;
+}
+
+function fit(){
+  const st = document.getElementById("stage");
+  const k = Math.min(innerWidth/1920, innerHeight/1080);
+  st.style.transform = `translate(-50%,-50%) scale(${k})`;
+}
+addEventListener("resize", fit);
+
+/* 글자 편집 → 자동 저장 */
+document.getElementById("stage").addEventListener("input", e => {
+  const el = e.target.closest("[data-path]"); if (!el) return;
+  setP(el.dataset.path, el.innerText.replace(/\n+$/,"")); save();
+});
+
+/* 사진 · 추가 · 삭제 · 순서 */
+let photoTarget = null;
+document.getElementById("stage").addEventListener("click", e => {
+  if (!editing) return;
+  const ph = e.target.closest("[data-photo]");
+  const del = e.target.closest("[data-del]");
+  const add = e.target.closest("[data-add]");
+  const mv = e.target.closest("[data-mv]");
+  if (del){
+    const [key, idx] = splitLast(del.dataset.del);
+    if (!confirm("이 항목을 지울까요?")) return;
+    getP(key).splice(+idx, 1); save(); render();
+  } else if (add){
+    const key = add.dataset.add;
+    const blank = key==="designers" ? { photo:"", role:"디자이너", name:"이름", intro:"한 줄 소개", tags:"전문 분야", insta:"@instagram" }
+                : key==="partners" ? { photo:"", name:"이름", note:"합류 날짜" } : "새 줄";
+    getP(key).push(blank); save(); render();
+  } else if (mv){
+    const [key, idx] = splitLast(mv.dataset.mv); const a = getP(key), i = +idx;
+    if (i>0){ [a[i-1], a[i]] = [a[i], a[i-1]]; save(); render(); }
+  } else if (ph){
+    photoTarget = ph.dataset.photo; document.getElementById("filePhoto").click();
+  }
+});
+function splitLast(p){ const i = p.lastIndexOf("."); return [p.slice(0,i), p.slice(i+1)]; }
+
+/* 사진은 작게 줄여서 저장 (브라우저 저장 공간 절약) */
+document.getElementById("filePhoto").addEventListener("change", e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f || !photoTarget) return;
+  const img = new Image();
+  img.onload = () => {
+    const max = 520, r = Math.min(1, max/Math.max(img.width, img.height));
+    const c = document.createElement("canvas"); c.width = Math.round(img.width*r); c.height = Math.round(img.height*r);
+    c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+    setP(photoTarget, c.toDataURL("image/jpeg", 0.85)); save(); render(); URL.revokeObjectURL(img.src);
+  };
+  img.src = URL.createObjectURL(f);
+});
+
+/* 도구 막대 */
+document.getElementById("btnEdit").onclick = () => { editing = !editing; applyEdit(); };
+document.getElementById("selTheme").onchange = e => { data.theme = e.target.value; save(); render(); };
+document.getElementById("btnFull").onclick = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+document.getElementById("btnReset").onclick = () => {
+  if (confirm("사진과 고친 내용을 모두 지우고 처음 상태로 돌릴까요? (먼저 [백업 저장]을 권해요)")){
+    data = structuredClone(DEFAULT); save(); render();
+  }
+};
+document.getElementById("btnExport").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], { type:"application/json" }));
+  a.download = "매장안내판_백업.json"; a.click();
+};
+document.getElementById("btnImport").onclick = () => document.getElementById("fileJson").click();
+document.getElementById("fileJson").addEventListener("change", async e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+  try { data = Object.assign(structuredClone(DEFAULT), JSON.parse(await f.text())); save(); render(); }
+  catch(err){ alert("백업 파일을 읽지 못했어요."); }
+});
+
+/* 마우스를 움직이면 도구 막대가 잠깐 보이고, TV로 띄워두면 숨어요. 단축키: E 편집, F 전체화면 */
+let hideT;
+addEventListener("mousemove", () => { const b = document.getElementById("bar"); b.classList.add("show"); clearTimeout(hideT); hideT = setTimeout(()=>b.classList.remove("show"), 2500); });
+addEventListener("keydown", e => {
+  if (e.target.isContentEditable) return;
+  if (e.key==="e"||e.key==="E"){ editing = !editing; applyEdit(); }
+  if (e.key==="f"||e.key==="F") document.getElementById("btnFull").click();
+});
+
+render();
+</script>
+</body>
+</html>
