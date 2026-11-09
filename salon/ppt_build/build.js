@@ -92,7 +92,7 @@ function page(label, title, fill) {
     const rowW = inRow * cardW + (inRow - 1) * gap;
     const x = CX + (CW - rowW) / 2 + c * (cardW + gap), y = CTOP + r * (cardH + rowGap);
     RR(s, { x, y, w: cardW, h: cardH, rectRadius: 0.14, fill: { color: K.soft }, line: { color: K.ink, width: 1.75 }, objectName: "card " + d.name });
-    s.addImage({ path: path.join(SP, `d${i + 1}.jpg`), x: x + 0.1, y: y + 0.1, w: ph, h: ph, altText: `${d.name} ${d.role}` });
+    s.addImage({ path: path.join(SP, `d${({보배:1,청림:2,최고:3,승철:4,선우:5,지유:6,이윤:7})[d.name] || i + 1}.jpg`), x: x + 0.1, y: y + 0.1, w: ph, h: ph, altText: `${d.name} ${d.role}` });
     s.addShape(pres.shapes.RECTANGLE, { x: x + 0.1, y: y + 0.1, w: ph, h: ph, fill: { type: "none" }, line: { color: K.ink, width: 1.25 } });
     T(s, [{ text: d.name, options: { fontSize: 18, bold: true } }, { text: "  " + d.role, options: { fontSize: 10.5, bold: true, color: K.sub } }],
       { x, y: y + 0.1 + ph + 0.08, w: cardW, h: 0.42, align: "center", valign: "middle" });
