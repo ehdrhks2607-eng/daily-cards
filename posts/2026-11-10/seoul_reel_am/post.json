@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "slot": "reel_am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "💰 오늘의 금전운 릴스",
   "sources": [
     "scripts/ganji.py"
@@ -36,6 +36,10 @@
     "video": "reel.mp4",
     "template": "saju2"
   },
-  "result": {},
-  "publish_at": "2026-11-10T07:30:00+09:00"
+  "result": {
+    "reel": "18165320155493569",
+    "youtube": "sent"
+  },
+  "publish_at": "2026-11-10T07:30:00+09:00",
+  "posted_at": "2026-11-10T07:30:51.190262+09:00"
 }
