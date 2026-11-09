@@ -1,0 +1,26 @@
+{
+  "account": "seoul",
+  "date": "2026-11-10",
+  "slot": "card",
+  "approved": true,
+  "status": "pending",
+  "issue": "🍀 오늘의 행운 카드 — 여유운 (무자일)",
+  "sources": [
+    "scripts/ganji.py"
+  ],
+  "luck_card": {
+    "date_label": "11월 10일 화요일 · 무자일(戊子)",
+    "keyword": "여유운",
+    "line1": "서두르지 않아도 괜찮은 날,",
+    "line2": "내 속도가 편안해져요",
+    "character": "default"
+  },
+  "instagram": {
+    "caption": "오늘 나에게 필요한 운, 뭐였을까요?\n'여유운'은 서두르지 않고 내 속도로 하루를 보내기 좋다는 뜻이에요.\n📌 저장해 두고 필요할 때 꺼내 보세요.\n이 카드가 필요한 친구에게 보내 주세요.\n댓글에 '받을게요'와 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n참고와 재미로 보는 콘텐츠예요.\n\n#오늘의운세 #행운카드 #띠별운세 #사주 #도아도령",
+    "images": [
+      "card_1.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-10T18:30:00+09:00"
+}

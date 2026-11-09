@@ -1,0 +1,15 @@
+{
+  "account": "jak",
+  "date": "2026-11-10",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 출근길 이어폰 vs 멍때리기",
+  "sources": [],
+  "threads": {
+    "text": "출근길 이어폰 vs 멍때리기, 어느 쪽이야?\n\n난 오늘 이어폰 꺼냈다가 충전 0%라서\n20분을 멍하니 서서 갔어\n\n근데 생각보다 머리가 덜 시끄럽더라\n내일도 한 번 더 해볼까 고민 중이야\n\n너는 이어폰이야 멍이야? 한 글자만 알려줘",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-10T07:30:00+09:00"
+}
