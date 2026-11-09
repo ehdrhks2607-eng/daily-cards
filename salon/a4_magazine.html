@@ -54,14 +54,14 @@ body { background:#BDBAB6; color:var(--ink); font-family:var(--body); padding:30
 .cover .cl { display:grid; grid-template-columns:52px 1fr; gap:10px; align-items:center; margin-top:8px; }
 .cover .cl .n { font-family:var(--display); font-size:42px; line-height:.95; color:var(--mauve); }
 .cover .cl .t { font-size:14.5px; font-weight:800; line-height:1.3; white-space:pre-line; }
-.cast { flex:1; min-height:0; display:grid; grid-template-columns:repeat(7,1fr); gap:3px; position:relative; }
-.cast .s { position:relative; min-width:0; }
-.cast .ph { position:absolute; inset:0; background-size:auto 100%; background-position:50% 0; }
-.cast .ph.zoom { background-size:auto 100%; background-position:50% 0; }
-.cast .tag { position:absolute; left:0; right:0; bottom:0; padding:40px 6px 12px; text-align:center; color:#fff;
+.cast { flex:1; min-height:0; display:flex; flex-wrap:wrap; justify-content:center; align-content:center; gap:10px; padding:0 40px; position:relative; }
+.cast .s { position:relative; flex:0 0 calc((100% - 30px) / 4); aspect-ratio:3 / 4; border-radius:3px; overflow:hidden; }
+.cast .ph { position:absolute; inset:0; background-size:cover; background-position:50% 0; }
+
+.cast .tag { position:absolute; left:0; right:0; bottom:0; padding:34px 6px 10px; text-align:center; color:#fff;
   background:linear-gradient(to top, rgba(20,18,17,.82), transparent); }
-.cast .tag b { display:block; font-size:16px; font-weight:800; }
-.cast .tag span { display:block; font-family:var(--mono); font-size:9.5px; letter-spacing:1px; opacity:.85; margin-top:2px; }
+.cast .tag b { display:block; font-size:18px; font-weight:800; }
+.cast .tag span { display:block; font-family:var(--mono); font-size:10.5px; letter-spacing:1px; opacity:.85; margin-top:2px; }
 .cover .badge { position:absolute; right:26px; top:300px; width:112px; height:112px; border-radius:50%; background:var(--mauve); color:#fff; z-index:3;
   display:flex; align-items:center; justify-content:center; text-align:center; font-family:var(--title); font-size:19px; line-height:1.15;
   white-space:pre-line; transform:rotate(8deg); box-shadow:0 4px 12px rgba(0,0,0,.18); }
