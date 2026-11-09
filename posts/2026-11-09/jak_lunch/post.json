@@ -3,7 +3,7 @@
   "date": "2026-11-09",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "나만 그래?+A vs B: 퇴근 후 폰 2시간 → 큐브 타이머 (3일 리스트)",
   "sources": [],
   "threads": {
@@ -11,6 +11,10 @@
     "comment": "퇴근하고 30분 앉아 있기가 자꾸 안 되는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4Qfv37FA\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
     "video": "../jak_reel/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-09T12:30:00+09:00"
+  "result": {
+    "threads": "18079593293441839",
+    "threads_comment": "17931665523177096"
+  },
+  "publish_at": "2026-11-09T12:30:00+09:00",
+  "posted_at": "2026-11-09T12:30:48.946386+09:00"
 }
