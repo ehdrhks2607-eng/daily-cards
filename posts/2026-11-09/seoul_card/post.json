@@ -3,7 +3,7 @@
   "date": "2026-11-09",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 점검운 (정해일)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-09T18:30:00+09:00"
+  "result": {
+    "instagram": "18128263633927456"
+  },
+  "publish_at": "2026-11-09T18:30:00+09:00",
+  "posted_at": "2026-11-09T18:31:26.184566+09:00"
 }
