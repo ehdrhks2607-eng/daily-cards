@@ -170,6 +170,17 @@ ul.ojt li .b { width:62px; height:44px; font-size:20px; color:var(--ink); backgr
 .tcard .say { background:var(--panel); border:2px solid var(--line); border-radius:10px; padding:4px 10px; font-size:15px; line-height:1.35; white-space:pre-line; word-break:keep-all; }
 .ment .tip { font-size:21px; padding-top:12px; }
 .ment .head { margin-bottom:18px; }
+.gl-sub { font-family:"Jua",sans-serif; font-size:30px; color:var(--accent); margin:4px 0 14px; }
+.sig { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+.sig div { background:var(--soft); border:3px solid var(--ink); border-radius:18px; text-align:center; padding:12px 4px 10px; box-shadow:5px 5px 0 var(--shadow); }
+.sig b { display:block; font-family:"Jua",sans-serif; font-weight:400; font-size:46px; line-height:1.1; color:var(--accent); }
+.sig span { font-size:22px; font-weight:700; }
+.signote { font-size:18px; color:var(--sub); margin:14px 0 26px; }
+.terms { flex:1; display:flex; flex-direction:column; justify-content:space-evenly; }
+.terms div { display:grid; grid-template-columns:175px 1fr; gap:16px; align-items:center; padding-bottom:9px; border-bottom:2px dashed var(--line); }
+.terms div:last-child { border-bottom:0; padding-bottom:0; }
+.terms b { background:var(--accent2); color:#fff; border:2.5px solid var(--ink); border-radius:999px; text-align:center; font-size:18px; padding:3px 6px; }
+.terms span { font-size:19px; line-height:1.35; word-break:keep-all; }
 </style>
 </head>
 <body>
@@ -241,6 +252,21 @@ const DEFAULT = {
     "서브 중 거울 보기 · 잡담 X",
     "선 멘트 후 행동, 감사 인사"
   ],
+  glossary: {
+    signals: [["1번", "빠르게"], ["2번", "느리게"], ["M", "밥"], ["T", "화장실"], ["H", "휴게"]],
+    signalNote: "M · H 갈 때는 그날 연차 높은 파트너께 말하고, 단톡방에 남기기",
+    terms: [
+      ["서브", "선생님 시술을 옆에서 돕기 (다음 시술 미리 체크)"],
+      ["라운딩", "틈날 때 홀·샴푸실 돌며 정리하기"],
+      ["선 멘트 후 행동", "고객님께 먼저 말하고, 그다음 움직이기"],
+      ["메아리 멘트", "오더를 한 번 더 따라 말해서 확인하기"],
+      ["쿠션 멘트", "부탁 앞에 붙이는 부드러운 말 (죄송하지만~)"],
+      ["핸드 · 예약판C", "예약 프로그램 · 그 안의 예약 화면"],
+      ["보", "시술할 때 둘러드리는 가운 (커트·드라이·파마)"],
+      ["페이스 커버", "샴푸할 때 얼굴에 덮어드리는 커버"],
+      ["차감", "회원권(정액권)에서 시술 금액 빼기"]
+    ]
+  },
   talk: {
     title: "고객님께 멘트하기",
     tip: "솔톤 목소리 · 메아리 멘트 · 선 멘트 후 행동!",
@@ -368,7 +394,15 @@ function render(){
 
   P.push(page(6, "TO DO", `${head("두근두근 1주일 OJT")}${ed("todoNote", data.todoNote, "ojtnote")}${list("todo", "check ojt", i=>(i+1)+"일")}`));
 
-  P.push(page(7, "TALK", `
+    P.push(page(7, "WORDS", `
+    ${head("우리 매장 말 사전")}
+    <div class="gl-sub">매장 신호</div>
+    <div class="sig">${data.glossary.signals.map((g,i)=>`<div>${ed(`glossary.signals.${i}.0`, g[0], "", "b")}${ed(`glossary.signals.${i}.1`, g[1], "", "span")}</div>`).join("")}</div>
+    ${ed("glossary.signalNote", data.glossary.signalNote, "signote")}
+    <div class="gl-sub">자주 쓰는 말</div>
+    <div class="terms">${data.glossary.terms.map((g,i)=>`<div>${ed(`glossary.terms.${i}.0`, g[0], "", "b")}${ed(`glossary.terms.${i}.1`, g[1], "", "span")}</div>`).join("")}</div>`));
+
+  P.push(page(8, "TALK", `
     ${head(esc(data.talk.title))}
     <div class="talk">${data.talk.parts.map((t,i)=>`
       <div class="tcard">
@@ -378,7 +412,7 @@ function render(){
     </div>
     <div class="tip"><b>TIP</b>${ed("talk.tip", data.talk.tip)}</div>`, "ment"));
 
-  P.push(page(8, "ETIQUETTE", `${head("기본 에티켓 지켜요!")}${list("etiquette", "", i=>i+1)}`));
+  P.push(page(9, "ETIQUETTE", `${head("기본 에티켓 지켜요!")}${list("etiquette", "", i=>i+1)}`));
 
   const total = P.length;
   document.getElementById("pages").innerHTML = P.join("").replaceAll("/ 10</span>", `/ ${total}</span>`);

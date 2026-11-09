@@ -155,7 +155,32 @@ function page(label, title, fill) {
   });
 }
 
-/* 7. 고객님께 멘트하기 (한 장) */
+/* 7. 우리 매장 말 사전 */
+{
+  const g = data.glossary, s = page("WORDS", "우리 매장 말 사전");
+  T(s, "매장 신호", { x: CX, y: CTOP - 0.05, w: 3, h: 0.4, fontSize: 17, bold: true, color: K.accent, valign: "middle" });
+  const n = g.signals.length, gap = 0.18, bw = (CW - gap * (n - 1)) / n, by = CTOP + 0.45, bh = 1.15;
+  g.signals.forEach(([code, mean], i) => {
+    const x = CX + i * (bw + gap);
+    RR(s, { x: x + 0.06, y: by + 0.06, w: bw, h: bh, rectRadius: 0.16, fill: { color: K.shadow }, line: { color: K.shadow } });
+    RR(s, { x, y: by, w: bw, h: bh, rectRadius: 0.16, fill: { color: K.soft }, line: { color: K.ink, width: 1.75 }, objectName: "signal " + code });
+    T(s, code, { x, y: by + 0.08, w: bw, h: 0.6, fontSize: 28, bold: true, color: K.accent, align: "center", valign: "middle" });
+    T(s, mean, { x, y: by + 0.68, w: bw, h: 0.36, fontSize: 14, bold: true, align: "center", valign: "middle" });
+  });
+  T(s, g.signalNote, { x: CX, y: by + bh + 0.2, w: CW, h: 0.35, fontSize: 12, color: K.sub, valign: "middle" });
+  const ty = by + bh + 0.85;
+  T(s, "자주 쓰는 말", { x: CX, y: ty, w: 3, h: 0.4, fontSize: 17, bold: true, color: K.accent, valign: "middle" });
+  const top = ty + 0.55, step = (CBOT - top) / g.terms.length, pw = 1.55;
+  g.terms.forEach(([term, desc], i) => {
+    const y = top + i * step;
+    RR(s, { x: CX, y: y + (step - 0.4) / 2 - 0.06, w: pw, h: 0.4, rectRadius: 0.2, fill: { color: K.accent2 }, line: { color: K.ink, width: 1.25 } });
+    T(s, term, { x: CX, y: y + (step - 0.4) / 2 - 0.06, w: pw, h: 0.4, fontSize: 12.5, bold: true, color: K.white, align: "center", valign: "middle" });
+    T(s, desc, { x: CX + pw + 0.25, y: y - 0.06, w: CW - pw - 0.25, h: step, fontSize: 13, valign: "middle" });
+    if (i < g.terms.length - 1) dash(s, CX, y + step - 0.08, CW);
+  });
+}
+
+/* 8. 고객님께 멘트하기 (한 장) */
 {
   const tk = data.talk, s = page("TALK", tk.title);
   const cols = 2, gap = 0.2, cw = (CW - gap) / cols, bottom = CBOT - 0.85;
@@ -180,7 +205,7 @@ function page(label, title, fill) {
   T(s, tk.tip, { x: CX + 0.8, y: CBOT - 0.53, w: CW - 0.8, h: 0.44, fontSize: 14, color: K.sub, valign: "middle" });
 }
 
-/* 8. 에티켓 */
+/* 9. 에티켓 */
 {
   const s = page("ETIQUETTE", "기본 에티켓 지켜요!");
   const top = CTOP + 0.2, step = (CBOT - top) / data.etiquette.length;
