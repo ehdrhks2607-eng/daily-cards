@@ -310,9 +310,6 @@ function render(){
             ${photo(`designers.${i}.photo`)}
             ${ed(`designers.${i}.role`, d.role, "role", "span")}
             ${ed(`designers.${i}.name`, d.name, "nm")}
-            ${ed(`designers.${i}.intro`, d.intro, "intro")}
-            ${ed(`designers.${i}.tags`, d.tags, "tags")}
-            ${ed(`designers.${i}.insta`, d.insta, "insta")}
             <button class="mv" data-mv="designers.${i}" title="앞으로">◀</button>
             <button class="del" data-del="designers.${i}">×</button>
           </div>`).join("")}
