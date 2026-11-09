@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매장 사용 설명서 A4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* 베이지 우드 테마 */
+:root {
+  --bg:#d9cdbf; --paper:#f8f2ea; --panel:#fffdf9; --ink:#4a3a2c; --sub:#8c7a68;
+  --accent:#c4835a; --accent2:#8aa37b; --soft:#f3e7da; --line:#e2cfbb; --tag:#e8efe2; --tagInk:#5f7a51;
+  --shadow:#d8c2aa;
+}
+@page { size:A4 portrait; margin:0; }
+* { box-sizing:border-box; margin:0; padding:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body { background:var(--bg); color:var(--ink); font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif; padding:30px 0 90px; }
+.jua, h1, h2, h3 { font-family:"Jua","Noto Sans KR",sans-serif; font-weight:400; }
+
+/* A4 한 장 */
+.page {
+  width:210mm; height:297mm; margin:0 auto 30px; background:var(--paper); position:relative; overflow:hidden;
+  background-image:radial-gradient(var(--line) 1.4px, transparent 1.5px); background-size:24px 24px;
+  padding:16mm 14mm 20mm; display:flex; flex-direction:column; box-shadow:0 6px 24px rgba(60,40,20,.25);
+}
+.panel {
+  flex:1; min-height:0; background:var(--panel); border:3px solid var(--ink); border-radius:26px;
+  box-shadow:9px 9px 0 var(--shadow); position:relative; overflow:hidden; display:flex; flex-direction:column;
+  padding:74px 44px 40px;
+}
+.winbar { position:absolute; left:0; right:0; top:0; height:44px; background:var(--soft); border-bottom:3px solid var(--ink);
+  display:flex; align-items:center; justify-content:flex-end; gap:9px; padding:0 18px; }
+.winbar i { width:20px; height:20px; border:2.5px solid var(--ink); border-radius:6px; background:var(--panel); }
+.winbar .lbl { margin-right:auto; font-weight:700; font-size:15px; color:var(--sub); letter-spacing:1px; }
+.head { display:flex; align-items:center; gap:14px; margin-bottom:30px; flex:none; }
+.head .dot { width:20px; height:20px; border-radius:50%; background:var(--accent2); border:3px solid var(--ink); flex:none; }
+.head h2 { font-size:54px; line-height:1.15; letter-spacing:-1px; word-break:keep-all; }
+.footer { position:absolute; left:14mm; right:14mm; bottom:7mm; display:flex; justify-content:space-between;
+  font-size:13px; color:var(--sub); font-weight:700; }
+
+/* 1. 표지 */
+.cover .panel { background:var(--accent); color:#fff; justify-content:space-between; padding:90px 56px 56px; }
+.cover .winbar { background:#b5744c; }
+.cover .hello { font-size:34px; font-weight:700; line-height:1.4; white-space:pre-line; }
+.cover .store { font-family:"Jua",sans-serif; font-size:84px; line-height:1.1; word-break:keep-all; }
+.cover .big { font-family:"Jua",sans-serif; font-size:132px; line-height:1.02; margin-top:10px; color:var(--panel);
+  -webkit-text-stroke:3px var(--ink); text-shadow:8px 8px 0 var(--ink); white-space:pre-line; word-break:keep-all; }
+.cover .deco { display:flex; gap:22px; align-items:flex-end; color:#fff; }
+.cover .deco svg { width:130px; height:130px; }
+.cover .deco span { font-size:56px; }
+
+/* 2. 매장 정보 */
+.opendate { align-self:flex-start; font-family:"Jua",sans-serif; font-size:58px; background:var(--soft);
+  border:3px solid var(--ink); border-radius:18px; padding:4px 26px; margin-bottom:40px; }
+.info dl { display:grid; grid-template-columns:170px 1fr; row-gap:0; flex:1; align-content:space-evenly; }
+.info dt { font-weight:700; color:#fff; background:var(--accent); border-radius:12px; font-size:24px; text-align:center;
+  padding:6px 0; align-self:start; margin-top:4px; }
+.info dd { font-size:34px; font-weight:500; padding-left:26px; white-space:pre-line; word-break:keep-all; line-height:1.4;
+  padding-bottom:22px; border-bottom:2px dashed var(--line); margin-bottom:22px; }
+.info dt:nth-last-of-type(1), .info dd:last-child { margin-bottom:0; }
+
+/* 3·4. 프로필 */
+.grid { flex:1; min-height:0; display:grid; gap:22px; grid-auto-rows:1fr; }
+.card { min-height:0; display:flex; flex-direction:column; background:var(--soft); border:3px solid var(--ink);
+  border-radius:20px; padding:12px 12px 14px; position:relative; }
+.ph { flex:1; min-height:0; border-radius:14px; border:3px solid var(--ink); background:var(--panel);
+  background-size:cover; background-position:center 25%; position:relative; overflow:hidden; }
+.ph.empty { display:flex; align-items:center; justify-content:center; color:var(--ink); }
+.ph.empty svg { width:50%; height:65%; opacity:.3; }
+.role { position:absolute; left:10px; top:10px; background:var(--accent2); color:#fff; font-size:20px; font-weight:700;
+  border:2.5px solid var(--ink); border-radius:999px; padding:2px 14px; }
+.card .nm { font-weight:900; font-size:32px; margin-top:10px; text-align:center; }
+.card .intro { font-size:20px; color:var(--sub); text-align:center; line-height:1.35; margin-top:2px; word-break:keep-all; }
+.card .tags { align-self:center; margin-top:8px; font-size:19px; font-weight:700; background:var(--tag); color:var(--tagInk);
+  border-radius:999px; padding:3px 16px; }
+.card .insta { font-size:19px; text-align:center; color:var(--accent); font-weight:700; margin-top:5px; }
+.card.small .nm { font-size:26px; margin-top:8px; }
+.card.small .intro { font-size:17px; }
+
+/* 5. 첫날 안내 */
+.kv { display:grid; grid-template-columns:120px 1fr; gap:22px 20px; font-size:30px; margin-bottom:40px; }
+.kv b { background:var(--accent); color:#fff; border-radius:12px; text-align:center; font-size:24px; padding:6px 0; height:max-content; margin-top:3px; }
+.kv span { white-space:pre-line; word-break:keep-all; line-height:1.4; }
+.subhead { font-family:"Jua",sans-serif; font-size:34px; margin-bottom:18px; color:var(--accent); }
+.timeline { flex:1; border-left:4px dashed var(--line); margin-left:10px; padding-left:28px; display:flex; flex-direction:column;
+  justify-content:space-evenly; font-size:28px; }
+.timeline div { position:relative; white-space:pre-line; }
+.timeline div::before { content:""; position:absolute; left:-41px; top:9px; width:18px; height:18px; border-radius:50%;
+  background:var(--accent2); border:3px solid var(--ink); }
+
+/* 6·10. 리스트 */
+ul.list { list-style:none; flex:1; display:flex; flex-direction:column; justify-content:space-evenly; font-size:34px; line-height:1.4; }
+ul.list li { display:flex; gap:20px; align-items:flex-start; position:relative; padding-bottom:18px; border-bottom:2px dashed var(--line); }
+ul.list li:last-child { border-bottom:0; padding-bottom:0; }
+ul.list li .b { flex:none; width:50px; height:50px; border-radius:14px; border:3px solid var(--ink); background:var(--soft);
+  font-size:26px; font-weight:900; display:flex; align-items:center; justify-content:center; }
+ul.check li .b { background:var(--panel); color:var(--accent2); }
+ul.list li .t { flex:1; word-break:keep-all; white-space:pre-line; padding-top:1px; }
+
+/* 7~9. 멘트 */
+.ment .when { align-self:flex-start; font-size:30px; font-weight:700; color:#fff; background:var(--accent2);
+  border:3px solid var(--ink); border-radius:999px; padding:4px 24px; margin-bottom:10px; }
+.ment .bubbles { flex:1; display:flex; flex-direction:column; justify-content:center; gap:40px; }
+.ment .bubble { background:var(--soft); border:3px solid var(--ink); border-radius:30px 30px 30px 8px; padding:30px 34px;
+  font-size:40px; line-height:1.5; white-space:pre-line; word-break:keep-all; max-width:92%; box-shadow:6px 6px 0 var(--shadow); }
+.ment .bubble.alt { background:var(--tag); border-radius:30px 30px 8px 30px; align-self:flex-end; }
+.ment .tip { display:flex; gap:14px; align-items:center; font-size:26px; color:var(--sub); font-weight:500;
+  border-top:2px dashed var(--line); padding-top:22px; }
+.ment .tip b { flex:none; background:var(--accent); color:#fff; border-radius:10px; padding:2px 14px; font-size:22px; }
+.ment .tip div { flex:1; min-height:1.4em; }
+
+/* 편집 모드 */
+.editing [data-path] { outline:2px dashed var(--accent); outline-offset:3px; border-radius:4px; cursor:text; min-width:30px; min-height:1em; }
+.editing [data-path]:focus { outline-style:solid; background:rgba(255,255,255,.5); }
+.editing .ph { cursor:pointer; outline:3px dashed var(--accent2); outline-offset:-8px; }
+.editing .ph::after { content:"📷 사진 바꾸기"; position:absolute; left:50%; bottom:8px; transform:translateX(-50%);
+  background:rgba(0,0,0,.6); color:#fff; font-size:15px; padding:3px 12px; border-radius:999px; white-space:nowrap; }
+.del, .add, .mv { display:none; }
+.editing .del, .editing .mv { display:flex; position:absolute; top:-8px; width:30px; height:30px; border-radius:50%;
+  border:2px solid var(--ink); font-weight:900; align-items:center; justify-content:center; cursor:pointer; z-index:3; font-size:16px; }
+.editing .del { right:-8px; background:#ff6b6b; color:#fff; }
+.editing .mv { left:-8px; background:var(--panel); color:var(--ink); }
+.editing li .del { right:0; top:0; }
+.editing .add { display:block; margin-top:14px; align-self:flex-start; border:2px dashed var(--accent); background:transparent;
+  color:var(--accent); font:700 18px "Noto Sans KR",sans-serif; border-radius:10px; padding:4px 14px; cursor:pointer; }
+
+#bar { position:fixed; left:50%; bottom:16px; transform:translateX(-50%); z-index:50; display:flex; gap:6px; align-items:center;
+  background:rgba(40,30,20,.88); padding:9px 11px; border-radius:14px; font:500 14px "Noto Sans KR",sans-serif; }
+#bar button { font:inherit; border:0; border-radius:8px; padding:6px 12px; cursor:pointer; background:#fff; color:#222; }
+#bar .on { background:#ffd34d; }
+#hint { position:fixed; left:50%; top:10px; transform:translateX(-50%); z-index:50; display:none; background:#ffd34d; color:#222;
+  padding:7px 16px; border-radius:999px; font:700 14px "Noto Sans KR",sans-serif; }
+body.edit-on #hint { display:block; }
+
+@media print {
+  body { background:none; padding:0; }
+  .page { margin:0; box-shadow:none; page-break-after:always; break-after:page; }
+  #bar, #hint, .add, .del, .mv { display:none !important; }
+  .editing [data-path], .editing .ph { outline:none !important; }
+  .editing .ph::after { display:none; }
+}
+</style>
+</head>
+<body>
+<div id="hint">편집 중 · 글자를 눌러 고치고, 사진 칸을 눌러 사진을 넣으세요 (자동 저장)</div>
+<div id="pages"></div>
+<div id="bar">
+  <button id="btnEdit">✏️ 편집</button>
+  <button id="btnPrint">🖨️ 인쇄 · PDF 저장</button>
+  <button id="btnExport">백업 저장</button>
+  <button id="btnImport">백업 불러오기</button>
+  <button id="btnReset">처음으로</button>
+</div>
+<input type="file" id="filePhoto" accept="image/*" hidden>
+<input type="file" id="fileJson" accept="application/json" hidden>
+
+<script>
+/* 기본 내용 — TV 안내판(welcome_board.html)과 같은 저장 공간을 써서, 한쪽에서 넣은 사진·문구가 다른 쪽에도 나와요 */
+const DEFAULT = {
+  theme: "beige",
+  store: {
+    hello: "우리 매장 처음이지?\n반가워요 :)",
+    name: "○○헤어",
+    title: "매장\n사용 설명서",
+    open: "2026.11.09~",
+    addr: "주소를 입력하세요",
+    tel: "02-000-0000",
+    owner: "대표 원장 ○○○",
+    hours: "오전 10시 ~ 오후 8시\n(마지막 예약 7시)",
+    off: "매주 화요일",
+    wifi: "와이파이 이름 / 비밀번호"
+  },
+  designers: [
+    { photo:"", role:"대표 원장", name:"○○○", intro:"손상 없는 컬러 10년 차", tags:"컬러 · 커트", insta:"@instagram" },
+    { photo:"", role:"실장", name:"○○○", intro:"얼굴형 맞춤 펌 장인", tags:"펌 · 매직", insta:"@instagram" },
+    { photo:"", role:"디자이너", name:"○○○", intro:"남자 커트 깔끔하게", tags:"맨즈 커트", insta:"@instagram" },
+    { photo:"", role:"디자이너", name:"○○○", intro:"트렌디한 레이어드", tags:"레이어드 · 클리닉", insta:"@instagram" }
+  ],
+  partners: [
+    { photo:"", name:"○○○", note:"2025.03 합류" },
+    { photo:"", name:"○○○", note:"2025.08 합류" },
+    { photo:"", name:"○○○", note:"2026.01 합류" },
+    { photo:"", name:"○○○", note:"2026.05 합류" },
+    { photo:"", name:"○○○", note:"2026.09 합류" },
+    { photo:"", name:"NEW!", note:"오늘 합류 🎉" }
+  ],
+  firstday: {
+    time: "오전 9시 40분까지\n(오픈 20분 전)",
+    dress: "블랙 상·하의\n편한 운동화",
+    bring: "앞치마 · 개인 텀블러\n필기구",
+    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 같이 하기", "12:00  샴푸 · 드라이 보조", "14:00  점심 (교대로)", "19:30  마감 청소 · 오늘 질문 정리"]
+  },
+  todo: [
+    "디자이너 선생님들께 인사하기",
+    "재료실 · 타월 위치 외우기",
+    "예약 프로그램 보는 법 배우기",
+    "샴푸대 물 온도 맞춰보기",
+    "마감 청소 순서 따라 해보기",
+    "궁금한 건 바로 물어보기!"
+  ],
+  etiquette: [
+    "출근하면 먼저 밝게 인사해요",
+    "고객님 앞에서는 휴대폰 NO",
+    "서로 존댓말, 호칭은 ○○쌤",
+    "시술 중 사적인 대화는 쉿",
+    "쓴 자리는 바로 정리해요",
+    "모르면 혼자 하지 말고 꼭 물어보기"
+  ],
+  ments: [
+    { title:"고객님께 멘트하기 ①", when:"맞이할 때", lines:["안녕하세요! ○시 예약하신\n○○○님 맞으세요?", "겉옷이랑 짐 먼저\n받아드릴게요 :)"], tip:"눈 맞추고, 문 열리면 먼저 인사!" },
+    { title:"고객님께 멘트하기 ②", when:"샴푸 · 시술 중", lines:["물 온도 괜찮으세요?\n뜨겁거나 차가우면 말씀해 주세요", "목 불편하신 곳은\n없으세요?"], tip:"말 걸기 전에 고객님 표정 먼저 보기" },
+    { title:"고객님께 멘트하기 ③", when:"배웅할 때", lines:["오늘 스타일\n마음에 드셨으면 좋겠어요", "조심히 들어가세요!\n또 뵐게요 🤎"], tip:"문 앞까지 배웅하고 짐 챙겨드리기" }
+  ]
+};
+
+const KEY = "salon-welcome-board-v1";
+let data = load();
+let editing = false;
+
+function load(){
+  let d = structuredClone(DEFAULT);
+  try { const s = localStorage.getItem(KEY); if (s) d = Object.assign(d, JSON.parse(s)); } catch(e){}
+  d.ments.forEach((m,i) => { if (m.tip === undefined) m.tip = DEFAULT.ments[i]?.tip ?? ""; });
+  return d;
+}
+function save(){
+  try { localStorage.setItem(KEY, JSON.stringify(data)); }
+  catch(e){ alert("저장 공간이 부족해요. 사진 수를 줄이거나 [백업 저장]을 해 두세요."); }
+}
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+const ed = (path, val, cls="", tag="div") => `<${tag} class="${cls}" data-path="${path}">${esc(val)}</${tag}>`;
+function getP(path){ return path.split(".").reduce((o,k)=>o?.[k], data); }
+function setP(path, v){ const ks = path.split("."); const last = ks.pop(); ks.reduce((o,k)=>o[k], data)[last] = v; }
+
+const SILHOUETTE = `<svg viewBox="0 0 100 120"><circle cx="50" cy="40" r="24" fill="currentColor"/><path d="M8 120c4-30 22-44 42-44s38 14 42 44z" fill="currentColor"/></svg>`;
+const SCISSORS = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="16" cy="46" r="9"/><circle cx="16" cy="18" r="9"/><path d="M23 41 56 12M23 23l33 29"/></svg>`;
+const COMB = `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><rect x="6" y="20" width="52" height="12" rx="4"/><path d="M12 32v18M20 32v18M28 32v18M36 32v18M44 32v18M52 32v18"/></svg>`;
+
+function photo(path){
+  const src = getP(path);
+  return src ? `<div class="ph" data-photo="${path}" style="background-image:url('${src}')"></div>`
+             : `<div class="ph empty" data-photo="${path}">${SILHOUETTE}</div>`;
+}
+function list(key, cls, bullet){
+  return `<ul class="list ${cls}">${data[key].map((t,i)=>`<li><span class="b">${bullet(i)}</span>${ed(key+"."+i, t, "t")}<button class="del" data-del="${key}.${i}">×</button></li>`).join("")}</ul>
+    <button class="add" data-add="${key}">+ 줄 추가</button>`;
+}
+const head = t => `<div class="head"><span class="dot"></span><h2>${t}</h2></div>`;
+
+function page(n, label, inner, cls=""){
+  return `<section class="page ${cls}">
+    <div class="panel">
+      <div class="winbar"><span class="lbl">${label}</span><i></i><i></i><i></i></div>
+      ${inner}
+    </div>
+    <div class="footer"><span data-store-name>${esc(data.store.name)} · 매장 사용 설명서</span><span>${String(n).padStart(2,"0")} / 10</span></div>
+  </section>`;
+}
+
+function render(){
+  const s = data.store;
+  const dn = data.designers.length, pn = data.partners.length;
+  const dCols = dn <= 1 ? 1 : dn <= 6 ? 2 : 3;
+  const pCols = pn <= 2 ? pn || 1 : pn <= 4 ? 2 : 3;
+  const P = [];
+
+  P.push(page(1, "WELCOME", `
+    ${ed("store.hello", s.hello, "hello")}
+    <div>${ed("store.name", s.name, "store")}${ed("store.title", s.title, "big")}</div>
+    <div class="deco">${SCISSORS}${COMB}<span>♥</span></div>`, "cover"));
+
+  P.push(page(2, "STORE INFO", `
+    ${head("우리 매장 정보")}
+    ${ed("store.open", s.open, "opendate")}
+    <div class="info" style="flex:1;display:flex;flex-direction:column"><dl>
+      <dt>주소</dt>${ed("store.addr", s.addr, "", "dd")}
+      <dt>매장 번호</dt>${ed("store.tel", s.tel, "", "dd")}
+      <dt>대표</dt>${ed("store.owner", s.owner, "", "dd")}
+      <dt>영업시간</dt>${ed("store.hours", s.hours, "", "dd")}
+      <dt>휴무</dt>${ed("store.off", s.off, "", "dd")}
+      <dt>와이파이</dt>${ed("store.wifi", s.wifi, "", "dd")}
+    </dl></div>`));
+
+  P.push(page(3, "DESIGNER", `
+    ${head("디자이너 가족들")}
+    <div class="grid" style="grid-template-columns:repeat(${dCols},1fr)">
+      ${data.designers.map((d,i)=>`
+        <div class="card">
+          ${photo(`designers.${i}.photo`)}
+          ${ed(`designers.${i}.role`, d.role, "role", "span")}
+          ${ed(`designers.${i}.name`, d.name, "nm")}
+          ${ed(`designers.${i}.intro`, d.intro, "intro")}
+          ${ed(`designers.${i}.tags`, d.tags, "tags")}
+          ${ed(`designers.${i}.insta`, d.insta, "insta")}
+          <button class="mv" data-mv="designers.${i}" title="앞으로">◀</button>
+          <button class="del" data-del="designers.${i}">×</button>
+        </div>`).join("")}
+    </div>
+    <button class="add" data-add="designers">+ 디자이너 추가</button>`));
+
+  P.push(page(4, "PARTNER", `
+    ${head("파트너 가족들")}
+    <div class="grid" style="grid-template-columns:repeat(${pCols},1fr)">
+      ${data.partners.map((p,i)=>`
+        <div class="card small">
+          ${photo(`partners.${i}.photo`)}
+          ${ed(`partners.${i}.name`, p.name, "nm")}
+          ${ed(`partners.${i}.note`, p.note, "intro")}
+          <button class="mv" data-mv="partners.${i}" title="앞으로">◀</button>
+          <button class="del" data-del="partners.${i}">×</button>
+        </div>`).join("")}
+    </div>
+    <button class="add" data-add="partners">+ 파트너 추가</button>`));
+
+  P.push(page(5, "FIRST DAY", `
+    ${head("파트너 첫날 안내")}
+    <div class="kv">
+      <b>출근</b>${ed("firstday.time", data.firstday.time, "", "span")}
+      <b>복장</b>${ed("firstday.dress", data.firstday.dress, "", "span")}
+      <b>준비물</b>${ed("firstday.bring", data.firstday.bring, "", "span")}
+    </div>
+    <div class="subhead">첫날 하루 흐름</div>
+    <div class="timeline">${data.firstday.flow.map((t,i)=>ed(`firstday.flow.${i}`, t)).join("")}</div>`));
+
+  P.push(page(6, "TO DO", `${head("두근두근 첫날 할 일")}${list("todo", "check", ()=>"✓")}`));
+
+  data.ments.forEach((m,i) => P.push(page(7+i, "TALK", `
+    <div class="head">${ed(`ments.${i}.title`, m.title, "", "h2")}</div>
+    ${ed(`ments.${i}.when`, m.when, "when")}
+    <div class="bubbles">${m.lines.map((l,j)=>ed(`ments.${i}.lines.${j}`, l, "bubble"+(j%2?" alt":""))).join("")}</div>
+    <div class="tip"><b>TIP</b>${ed(`ments.${i}.tip`, m.tip)}</div>`, "ment")));
+
+  P.push(page(7 + data.ments.length, "ETIQUETTE", `${head("기본 에티켓 지켜요!")}${list("etiquette", "", i=>i+1)}`));
+
+  const total = P.length;
+  document.getElementById("pages").innerHTML = P.join("").replaceAll("/ 10</span>", `/ ${total}</span>`);
+  applyEdit();
+}
+
+function applyEdit(){
+  document.body.classList.toggle("edit-on", editing);
+  const root = document.getElementById("pages");
+  root.classList.toggle("editing", editing);
+  root.querySelectorAll("[data-path]").forEach(el => el.contentEditable = editing ? "plaintext-only" : "false");
+  const b = document.getElementById("btnEdit");
+  b.textContent = editing ? "✅ 편집 끝" : "✏️ 편집"; b.classList.toggle("on", editing);
+}
+
+const root = document.getElementById("pages");
+root.addEventListener("input", e => {
+  const el = e.target.closest("[data-path]"); if (!el) return;
+  setP(el.dataset.path, el.innerText.replace(/\n+$/,"")); save();
+  if (el.dataset.path === "store.name") document.querySelectorAll("[data-store-name]").forEach(f => f.textContent = data.store.name + " · 매장 사용 설명서");
+});
+
+let photoTarget = null;
+root.addEventListener("click", e => {
+  if (!editing) return;
+  const ph = e.target.closest("[data-photo]"), del = e.target.closest("[data-del]"),
+        add = e.target.closest("[data-add]"), mv = e.target.closest("[data-mv]");
+  if (del){
+    const [key, idx] = splitLast(del.dataset.del);
+    if (!confirm("이 항목을 지울까요?")) return;
+    getP(key).splice(+idx, 1); save(); render();
+  } else if (add){
+    const key = add.dataset.add;
+    const blank = key==="designers" ? { photo:"", role:"디자이너", name:"이름", intro:"한 줄 소개", tags:"전문 분야", insta:"@instagram" }
+                : key==="partners" ? { photo:"", name:"이름", note:"합류 날짜" } : "새 줄";
+    getP(key).push(blank); save(); render();
+  } else if (mv){
+    const [key, idx] = splitLast(mv.dataset.mv); const a = getP(key), i = +idx;
+    if (i>0){ [a[i-1], a[i]] = [a[i], a[i-1]]; save(); render(); }
+  } else if (ph){
+    photoTarget = ph.dataset.photo; document.getElementById("filePhoto").click();
+  }
+});
+function splitLast(p){ const i = p.lastIndexOf("."); return [p.slice(0,i), p.slice(i+1)]; }
+
+/* A4 인쇄용이라 사진은 조금 더 크게(긴 변 900px) 저장 */
+document.getElementById("filePhoto").addEventListener("change", e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f || !photoTarget) return;
+  const img = new Image();
+  img.onload = () => {
+    const max = 900, r = Math.min(1, max/Math.max(img.width, img.height));
+    const c = document.createElement("canvas"); c.width = Math.round(img.width*r); c.height = Math.round(img.height*r);
+    c.getContext("2d").drawImage(img, 0, 0, c.width, c.height);
+    setP(photoTarget, c.toDataURL("image/jpeg", 0.85)); save(); render(); URL.revokeObjectURL(img.src);
+  };
+  img.src = URL.createObjectURL(f);
+});
+
+document.getElementById("btnEdit").onclick = () => { editing = !editing; applyEdit(); };
+document.getElementById("btnPrint").onclick = () => { editing = false; applyEdit(); setTimeout(() => print(), 50); };
+document.getElementById("btnReset").onclick = () => {
+  if (confirm("사진과 고친 내용을 모두 지우고 처음 상태로 돌릴까요? (먼저 [백업 저장]을 권해요)")){
+    data = structuredClone(DEFAULT); save(); render();
+  }
+};
+document.getElementById("btnExport").onclick = () => {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], { type:"application/json" }));
+  a.download = "매장안내판_백업.json"; a.click();
+};
+document.getElementById("btnImport").onclick = () => document.getElementById("fileJson").click();
+document.getElementById("fileJson").addEventListener("change", async e => {
+  const f = e.target.files[0]; e.target.value = ""; if (!f) return;
+  try { data = Object.assign(structuredClone(DEFAULT), JSON.parse(await f.text())); save(); render(); }
+  catch(err){ alert("백업 파일을 읽지 못했어요."); }
+});
+
+render();
+</script>
+</body>
+</html>
