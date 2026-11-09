@@ -157,6 +157,9 @@ body.edit-on #hint { display:block; }
 }
 #stage:not(.editing) .card .insta:empty, #pages:not(.editing) .card .insta:empty { display:none; }
 .dcard .mbti.long { font-size:13px; letter-spacing:0; padding:1px 8px; }
+.nmrow { display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline; column-gap:7px; margin-top:7px; line-height:1.2; }
+.nmrow .nm { margin-top:0 !important; }
+.nmrow .role2 { font-weight:700; color:var(--sub); font-size:17px; }
 </style>
 </head>
 <body>
@@ -180,7 +183,7 @@ const DEFAULT = {
     hello: "우리 매장 처음이지?\n반가워요 :)",
     name: "메종 드 아이디헤어 반포자이점",
     title: "매장\n사용 설명서",
-    open: "SINCE 20○○",
+    open: "SINCE 2017",
     addr: "서울 서초구 잠원로 24\n반포자이플라자 1층",
     tel: "02-593-7111",
     owner: "보배 원장",
@@ -207,30 +210,30 @@ const DEFAULT = {
   ],
   firstday: {
     time: "오전 9시 40분까지\n(오픈 20분 전)",
-    dress: "블랙 상·하의\n편한 운동화",
-    bring: "앞치마 · 개인 텀블러\n필기구",
-    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 같이 하기", "12:00  샴푸 · 드라이 보조", "14:00  점심 (교대로)", "19:30  마감 청소 · 오늘 질문 정리"]
+    dress: "깨끗한 유니폼 (츄리닝 X)\n드라이 필수 · 고무줄 X",
+    bring: "메모 노트 · 필기구",
+    flow: ["09:40  출근 · 인사 · 매장 투어", "10:00  오픈 준비 · 라운딩", "12:00  샴푸 · 서브 보조", "M · 휴게  선배 파트너께 말하고 가기", "18:30  마감 준비 시작"]
   },
   todo: [
-    "디자이너 선생님들께 인사하기",
-    "재료실 · 타월 위치 외우기",
-    "예약 프로그램 보는 법 배우기",
-    "샴푸대 물 온도 맞춰보기",
-    "마감 청소 순서 따라 해보기",
-    "궁금한 건 바로 물어보기!"
+    "선생님 · 파트너들께 인사하기",
+    "매장 제품 위치 · 종류 파악하기",
+    "핸드 예약 잡는 법 배우기",
+    "페이스 커버 · 불편 체크 연습",
+    "신호 외우기: 1번 빠르게 · 2번 천천히\nM 밥 · T 화장실",
+    "전화 첫마디: \"행복을 드리는 아이디헤어입니다\""
   ],
   etiquette: [
-    "출근하면 먼저 밝게 인사해요",
-    "고객님 앞에서는 휴대폰 NO",
-    "서로 존댓말, 호칭은 ○○쌤",
-    "시술 중 사적인 대화는 쉿",
-    "쓴 자리는 바로 정리해요",
-    "모르면 혼자 하지 말고 꼭 물어보기"
+    "바른 자세 (짝다리·뒷짐 X)",
+    "표정 관리, 웃는 얼굴 필수",
+    "핸드폰은 직원실에서만",
+    "파트너끼리 반말·막말 X",
+    "서브 중 거울 보기 · 잡담 X",
+    "선 멘트 후 행동, 감사 인사"
   ],
   ments: [
-    { title:"고객님께 멘트하기 ①", when:"맞이할 때", lines:["안녕하세요! ○시 예약하신\n○○○님 맞으세요?", "겉옷이랑 짐 먼저\n받아드릴게요 :)"], tip:"눈 맞추고, 문 열리면 먼저 인사!" },
-    { title:"고객님께 멘트하기 ②", when:"샴푸 · 시술 중", lines:["물 온도 괜찮으세요?\n뜨겁거나 차가우면 말씀해 주세요", "목 불편하신 곳은\n없으세요?"], tip:"말 걸기 전에 고객님 표정 먼저 보기" },
-    { title:"고객님께 멘트하기 ③", when:"배웅할 때", lines:["오늘 스타일\n마음에 드셨으면 좋겠어요", "조심히 들어가세요!\n또 뵐게요 🤎"], tip:"문 앞까지 배웅하고 짐 챙겨드리기" }
+    { title:"고객님께 멘트하기 ①", when:"입점 · 맞이할 때", lines:["환영합니다~\n예약 해주셨을까요?", "OOO 고객님, 오늘 OO 선생님께\nOO 예약 주셨죠~?\n소지품 보관 먼저 해드리겠습니다"], tip:"솔톤 목소리 · 메아리 멘트 · 선 멘트 후 행동!" },
+    { title:"고객님께 멘트하기 ②", when:"샴푸 · 시술 중", lines:["물 온도, 압 세기 괜찮으세요?\n불편하신 곳 있으면 말씀해 주세요", "열처리 진행할 건데\n뜨겁거나 불편하시면\n바로 말씀해 주세요"], tip:"페이스 커버 꼭! 중요 멘트는 크게, 대답 확인" },
+    { title:"고객님께 멘트하기 ③", when:"퇴점 · 배웅할 때", lines:["고생하셨습니다~\n데스크로 안내해 드리겠습니다", "감사합니다. 조심히 들어가세요\n다음에 또 뵙겠습니다 🤎"], tip:"겉옷 먼저 입혀드리고, 입구 한 발 나가서 인사" }
   ]
 };
 
@@ -314,8 +317,7 @@ function render(){
       ${data.designers.map((d,i)=>`
         <div class="card dcard" style="width:calc((100% - ${dCols-1}*18px)/${dCols})">
           ${photo(`designers.${i}.photo`)}
-          ${ed(`designers.${i}.role`, d.role, "role", "span")}
-          ${ed(`designers.${i}.name`, d.name, "nm")}
+          <div class="nmrow">${ed(`designers.${i}.name`, d.name, "nm", "span")}${ed(`designers.${i}.role`, d.role, "role2", "span")}</div>
           ${ed(`designers.${i}.mbti`, d.mbti ?? "MBTI", "mbti" + ((d.mbti||"").length > 11 ? " long" : ""))}
           <button class="mv" data-mv="designers.${i}" title="앞으로">◀</button>
           <button class="del" data-del="designers.${i}">×</button>
