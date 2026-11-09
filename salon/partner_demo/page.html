@@ -13,14 +13,14 @@ body { background:#bdbab6; font-family:var(--body); color:var(--ink); }
 .run .sec { font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:3px; color:var(--mauve); }
 
 /* 모브 면 + 큰 이름 + 스티커 인물 */
-.block { position:absolute; left:46px; right:46px; top:96px; height:590px; background:var(--mauve); overflow:visible; }
+.block { position:absolute; left:46px; right:46px; top:96px; height:530px; background:var(--mauve); overflow:visible; }
 .block .kick { position:absolute; left:22px; top:18px; font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:3px; color:#fff; }
 .block .no { position:absolute; right:22px; top:14px; font-family:var(--display); font-size:44px; color:#fff; line-height:1; }
-.name { position:absolute; left:22px; top:58px; font-family:var(--title); font-size:250px; line-height:.98;
+.name { position:absolute; left:22px; top:58px; font-family:var(--title); font-size:220px; line-height:.98;
   color:#F4EEF2; white-space:pre-line; }
-.sticker { position:absolute; right:-18px; bottom:-34px; height:590px; transform:rotate(-2deg);
+.sticker { position:absolute; right:-18px; bottom:-30px; height:540px; transform:rotate(-2deg);
   filter:drop-shadow(0 10px 18px rgba(0,0,0,.28)); }
-.snap { position:absolute; left:250px; bottom:-60px; width:168px; background:#fff; padding:9px 9px 34px; transform:rotate(-6deg);
+.snap { position:absolute; left:236px; bottom:-56px; width:150px; background:#fff; padding:9px 9px 34px; transform:rotate(-6deg);
   box-shadow:0 8px 18px rgba(0,0,0,.25); z-index:3; }
 .snap img { display:block; width:100%; }
 .snap span { position:absolute; left:0; right:0; bottom:9px; text-align:center; font-family:var(--mono); font-size:10.5px; font-weight:600; letter-spacing:2px; color:var(--graphite); }
@@ -30,17 +30,27 @@ body { background:#bdbab6; font-family:var(--body); color:var(--ink); }
 .badge b { font-family:var(--display); font-size:30px; line-height:1; } .badge span { font-family:var(--mono); font-size:10px; letter-spacing:2px; margin-top:4px; }
 
 /* 아래 인터뷰 */
-.lower { position:absolute; left:46px; right:46px; top:736px; bottom:58px; display:flex; flex-direction:column; }
+.lower { position:absolute; left:46px; right:46px; top:668px; bottom:62px; display:flex; flex-direction:column; }
 .meta { display:flex; justify-content:space-between; align-items:baseline; border-bottom:3px solid var(--ink); padding-bottom:12px; }
 .meta .who { font-family:var(--title); font-size:34px; } .meta .who small { font-family:var(--mono); font-size:12px; color:var(--mauve); letter-spacing:2px; margin-left:10px; }
 .meta .join { font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:2px; color:var(--graphite); }
-.qa { flex:1; display:grid; grid-template-columns:1.25fr 1fr 1fr; gap:0 22px; padding-top:16px; }
-.qa div + div { border-left:1px solid var(--hair); padding-left:22px; }
 .qa .q { font-family:var(--mono); font-size:11px; font-weight:600; color:var(--mauve); letter-spacing:.5px; line-height:1.5; }
 .qa .a { font-size:17px; font-weight:800; line-height:1.45; margin-top:8px; color:#b9b5b1; }
 .qa .big .a { font-family:var(--title); font-weight:400; font-size:34px; line-height:1.15; color:#b9b5b1; }
 .folio { position:absolute; left:46px; right:46px; bottom:0; display:flex; justify-content:space-between; padding:12px 0 22px; border-top:1px solid var(--hair);
   font-family:var(--mono); font-size:10.5px; font-weight:600; letter-spacing:2px; color:var(--graphite); }
+.quote { padding:16px 0 12px; border-bottom:1px solid var(--hair); display:flex; align-items:baseline; gap:20px; }
+.quote .q, .qa .q { font-family:var(--mono); font-size:11px; font-weight:600; color:var(--mauve); letter-spacing:.5px; }
+.quote .big { font-family:var(--title); font-size:42px; line-height:1.1; }
+.qa { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:0 26px; padding-top:14px; }
+.qa > div + div { border-left:1px solid var(--hair); padding-left:26px; }
+.qa .q i { font-style:normal; font-family:var(--body); font-weight:900; color:var(--ink); margin-right:4px; }
+.qa .a { font-size:17px; font-weight:800; line-height:1.45; margin-top:6px; color:var(--ink); }
+.cheer { display:flex; align-items:center; justify-content:space-between; background:var(--ink); color:#fff; padding:10px 20px; }
+.cheer span { font-family:var(--mono); font-size:11px; letter-spacing:2px; }
+.cheer b { font-family:var(--title); font-weight:400; font-size:30px; color:#E7D3E2; }
+.quote .big em { font-style:normal; color:var(--mauve); }
+.qa { padding-bottom:14px; }
 </style></head><body>
 <section class="page">
   <div class="run"><span class="m">MAISON<small>de idHAIR</small></span><span class="sec">NEW FACES</span></div>
@@ -55,12 +65,17 @@ body { background:#bdbab6; font-family:var(--body); color:var(--ink); }
   </div>
   <div class="lower">
     <div class="meta"><span class="who">민주<small>PARTNER</small></span><span class="join">JOINED 20○○.○○</span></div>
-    <div class="qa">
-      <div class="big"><div class="q">나를 한마디로 표현하면?</div><div class="a">“답변이 오면<br>여기에 크게”</div></div>
-      <div><div class="q">이건 나한테 물어봐!</div><div class="a">답변 대기 중</div>
-           <div class="q" style="margin-top:22px">요즘 연습 중인 것 · 목표</div><div class="a">답변 대기 중</div></div>
-      <div><div class="q">신입 파트너에게 한마디</div><div class="a">답변 대기 중</div></div>
+    <div class="quote">
+      <div class="q">나를 한마디로 표현하면?</div>
+      <div class="big"><em>“</em>생각보다 정부자<em>”</em></div>
     </div>
+    <div class="qa">
+      <div><div class="q"><i>○</i> 일할 때 이렇게 해 주면 좋아요</div><div class="a">알잘딱깔센</div>
+           <div class="q" style="margin-top:16px"><i>✕</i> 일할 때 이렇게 하면 싫어요</div><div class="a">똑같은 질문 여러 번 해서<br>똑같은 대답 계속하게 만들기</div></div>
+      <div><div class="q">Q. 피드백은 이렇게</div><div class="a">둘이서만 있을 때 해 주세요</div>
+           <div class="q" style="margin-top:16px">Q. 좋아하는 칭찬 스타일</div><div class="a">어느 부분에서 어떤 게 괜찮았는지<br>세세한 칭찬이 좋아요</div></div>
+    </div>
+    <div class="cheer"><span>신입 파트너에게 한마디</span><b>화이팅!</b></div>
   </div>
   <div class="folio"><span>MAISON · VOL.01 · NEW PARTNER ISSUE</span><b>NEW FACES · 민주</b></div>
 </section>
