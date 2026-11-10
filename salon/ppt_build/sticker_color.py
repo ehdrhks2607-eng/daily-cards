@@ -26,7 +26,7 @@ ys = np.where(ma.max(1) > 0.5)[0]; top = ys.min() + int((ys.max() - ys.min()) * 
 sel = ma > 0.6; sel[top:] = False
 mean = ca[sel].mean(0); lum = mean.mean()
 wb = 1 + (mean.mean() / mean - 1) * 0.5
-ca = ca * wb * (135 / lum) ** 0.8
+ca = ca * wb * min(1.12, max(0.9, (112 / lum) ** 0.6))
 person = Image.fromarray(np.clip(ca, 0, 255).astype(np.uint8))
 person = ImageEnhance.Color(person).enhance(0.9)
 person = ImageEnhance.Contrast(person).enhance(1.05)
