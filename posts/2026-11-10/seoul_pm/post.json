@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세",
   "sources": [
     "scripts/ganji.py"
@@ -13,6 +13,10 @@
     "comment": "무료 리포트 신청하신 분은 카톡으로 정보를 보내주세요 👇\nhttps://pf.kakao.com/_MrAxeX/chat\n\n\"무료 신청\"이라고 보내주시면 양식이 도착해요.\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel_pm/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-10T22:30:00+09:00"
+  "result": {
+    "threads": "18289661572293548",
+    "threads_comment": "18111057917252544"
+  },
+  "publish_at": "2026-11-10T22:30:00+09:00",
+  "posted_at": "2026-11-10T22:30:44.112961+09:00"
 }
