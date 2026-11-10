@@ -2,7 +2,7 @@
   "account": "seoul",
   "date": "2026-11-11",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "slot": "reel_am",
   "issue": "💰 오늘의 금전운 릴스",
   "sources": [
@@ -37,6 +37,10 @@
     "video": "reel.mp4",
     "template": "saju2"
   },
-  "result": {},
-  "publish_at": "2026-11-11T07:30:00+09:00"
+  "result": {
+    "reel": "18119162813045884",
+    "youtube": "sent"
+  },
+  "publish_at": "2026-11-11T07:30:00+09:00",
+  "posted_at": "2026-11-11T07:30:46.601697+09:00"
 }
