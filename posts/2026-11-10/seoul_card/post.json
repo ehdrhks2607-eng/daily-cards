@@ -3,7 +3,7 @@
   "date": "2026-11-10",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 여유운 (무자일)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-10T18:30:00+09:00"
+  "result": {
+    "instagram": "18049864895819527"
+  },
+  "publish_at": "2026-11-10T18:30:00+09:00",
+  "posted_at": "2026-11-10T18:30:48.530773+09:00"
 }
