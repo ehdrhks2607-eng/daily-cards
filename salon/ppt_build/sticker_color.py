@@ -20,7 +20,15 @@ g = g.point(lambda v: int(255 * ((v / 255) ** 0.85)))
 g = g.filter(ImageFilter.UnsharpMask(radius=2, percent=60, threshold=2))
 arr = np.asarray(g).astype(np.float32) + np.random.default_rng(5).normal(0, 6, g.size[::-1])
 person = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).convert("RGB")
-person = ImageEnhance.Color(src).enhance(0.92)
+# 톤 맞추기: 얼굴·머리(인물 위쪽 45%)의 밝기를 같은 값으로, 화이트밸런스는 절반만 중립화
+ca = np.asarray(src).astype(np.float32); ma = np.asarray(m).astype(np.float32) / 255
+ys = np.where(ma.max(1) > 0.5)[0]; top = ys.min() + int((ys.max() - ys.min()) * 0.45)
+sel = ma > 0.6; sel[top:] = False
+mean = ca[sel].mean(0); lum = mean.mean()
+wb = 1 + (mean.mean() / mean - 1) * 0.5
+ca = ca * wb * (135 / lum) ** 0.8
+person = Image.fromarray(np.clip(ca, 0, 255).astype(np.uint8))
+person = ImageEnhance.Color(person).enhance(0.9)
 person = ImageEnhance.Contrast(person).enhance(1.05)
 
 pad = 40
