@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-12",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 아침 5도·일교차 15도 출근길 옷차림",
+  "sources": [
+    "https://www.dailian.co.kr/news/view/1713864/%EB%82%B4%EC%9D%BC%EB%82%A0%EC%94%A8-%EA%B0%80%EC%9D%84-%EC%B6%9C%EA%B7%BC%EA%B8%B8-%EC%98%81%ED%95%98-2%EB%8F%84-%EB%9A%9D%EB%AF%B8-2026",
+    "https://www.etoday.co.kr/news/view/2647052"
+  ],
+  "threads": {
+    "text": "두껍게 vs 얇게, 오늘 아침 뭐 입었어?\n\n나오자마자 입김이 나오더라\n아침 5도인데 낮이랑 15도 가까이 차이 난대\n\n패딩은 아직 이른 거 같고 얇게 입자니 춥고\n결국 니트에 얇은 겉옷 하나 걸쳤어\n\n너는 오늘 두껍게야 얇게야? 한 글자로 ㄷ 아니면 ㅇ",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-12T07:30:00+09:00"
+}

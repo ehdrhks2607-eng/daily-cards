@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-12",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 헬스장 한 달 9만 원 → 루프밴드 (jak_lunch)",
+  "sources": [
+    "https://www.dailian.co.kr/news/view/1713864/%EB%82%B4%EC%9D%BC%EB%82%A0%EC%94%A8-%EA%B0%80%EC%9D%84-%EC%B6%9C%EA%B7%BC%EA%B8%B8-%EC%98%81%ED%95%98-2%EB%8F%84-%EB%9A%9D%EB%AF%B8-2026",
+    "https://www.etoday.co.kr/news/view/2647052"
+  ],
+  "reel": {
+    "hook": "헬스장 한 달\n*얼마*야?",
+    "count": {
+      "to": 90000,
+      "suffix": "원",
+      "label": "헬스장 한 달 가격"
+    },
+    "pain": "미세먼지 나쁨이라\n걷기도 쉬었어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "스쿼트 20개",
+      "계단 한 층 걷기",
+      "미세먼지 확인"
+    ],
+    "item": "루프밴드",
+    "item_sub": "두 개까지 줄여둠",
+    "cta": "골라둔 *루프밴드*는\n프로필 링크에",
+    "caption": "날씨 때문에 운동을 미루게 되는 날, 있으시죠?\n📌 저장해두고 3일만 해보세요.\n\n골라둔 루프밴드는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #미세먼지 #루프밴드 #11월",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-11-12T19:30:00+09:00"
+}

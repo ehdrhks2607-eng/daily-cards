@@ -1,0 +1,42 @@
+{
+  "account": "seoul",
+  "date": "2026-11-12",
+  "slot": "reel_pm",
+  "approved": true,
+  "status": "pending",
+  "issue": "🔮 내일의 운세 릴스",
+  "sources": [
+    "scripts/ganji.py"
+  ],
+  "reel": {
+    "date_label": "11월 13일 금요일 · 신묘일",
+    "keyword": "내일의\n대화운",
+    "hook": "*내일* 말이\n잘 통할 띠는?",
+    "tease": "1위는 마지막에 공개",
+    "selfcheck": "내 띠, 있을까요?",
+    "tips_title": "내일의 운세 TOP 3",
+    "tips": [
+      "양띠",
+      "개띠",
+      "돼지띠"
+    ],
+    "reveal_note": "주변이 힘을 보태요 · 삼합",
+    "cta": "내 띠가 없다면?\n댓글에 *띠*를",
+    "cta_pill": "12띠 전체 순위는 스레드에",
+    "character": "default",
+    "disclosure": "참고·재미로 보는 콘텐츠예요",
+    "caption": "내일 말이 잘 통하는 띠, 내 띠도 있을까요?\n📌 저장해두고 내일 아침에 다시 확인해 보세요.\n\n12띠 전체 순위와 한 줄 팁은 스레드에 있어요.\n내 사주 × MBTI 리포트는 프로필 링크(카톡)로 물어보세요.\n참고와 재미로 보는 콘텐츠이며 미래를 보장하지 않아요.\n\n#오늘의운세 #띠별운세 #사주 #내일운세 #2027운세",
+    "yt_title": "내일 말이 잘 통하는 띠, 내 띠도 있을까? #Shorts",
+    "yt_description": "내일 말이 잘 통하는 띠, 내 띠도 있을까요?\n12띠 전체 순위는 스레드 @doa.doryeong 에 있어요.\n내 사주 × MBTI 리포트: 카톡에서 '도아도령' 검색\n참고와 재미로 보는 콘텐츠예요.\n#Shorts #오늘의운세 #띠별운세",
+    "yt_tags": [
+      "사주",
+      "띠별운세",
+      "오늘의운세",
+      "내일운세"
+    ],
+    "video": "reel.mp4",
+    "template": "saju2"
+  },
+  "result": {},
+  "publish_at": "2026-11-12T21:00:00+09:00"
+}
