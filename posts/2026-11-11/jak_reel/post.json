@@ -2,7 +2,7 @@
   "account": "jak",
   "date": "2026-11-11",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "slot": "reel",
   "issue": "돈 고백: 가래떡데이 점심 분식 1만 1천 원 → 닭가슴살 (jak_lunch)",
   "sources": [
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-11T19:30:00+09:00"
+  "result": {
+    "reel": "18128936695911299"
+  },
+  "publish_at": "2026-11-11T19:30:00+09:00",
+  "posted_at": "2026-11-11T19:30:48.674146+09:00"
 }
