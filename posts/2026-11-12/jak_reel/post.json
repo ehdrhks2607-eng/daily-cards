@@ -3,7 +3,7 @@
   "date": "2026-11-12",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 헬스장 한 달 9만 원 → 루프밴드 (jak_lunch)",
   "sources": [
     "https://www.dailian.co.kr/news/view/1713864/%EB%82%B4%EC%9D%BC%EB%82%A0%EC%94%A8-%EA%B0%80%EC%9D%84-%EC%B6%9C%EA%B7%BC%EA%B8%B8-%EC%98%81%ED%95%98-2%EB%8F%84-%EB%9A%9D%EB%AF%B8-2026",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-12T19:30:00+09:00"
+  "result": {
+    "reel": "18192579775409019"
+  },
+  "publish_at": "2026-11-12T19:30:00+09:00",
+  "posted_at": "2026-11-12T19:31:00.028227+09:00"
 }
