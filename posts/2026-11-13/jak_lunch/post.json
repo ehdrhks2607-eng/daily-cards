@@ -1,0 +1,66 @@
+{
+  "account": "jak",
+  "date": "2026-11-13",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백+A vs B: 주말 비 소식 → 카페 대신 집콕 스트레칭 → 요가매트",
+  "sources": [
+    "https://biz.sbs.co.kr/article/20000346082",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16275154"
+  ],
+  "threads": {
+    "text": "비 오는 주말이면 카페값만 2만 원 나와\n\n내일부터 전국에 비 온대서\n이번 주말은 집에 있어보기로 했어\n\n근데 거실에서 스트레칭 하려니 바닥이 너무 딱딱하더라\n그래서 요가매트 찾아보는 중\n리뷰 보니까 얇으면 소음은 거의 못 막는다는 얘기가 있더라\n두께 위주로 사기 전에 리뷰부터 봐두는 중이야\n\n3일만 해볼 것\n- 아침에 커튼 열고 스트레칭 10분\n- 카페 대신 집에서 커피 한 잔\n- 비 그치면 동네 한 바퀴\n\n비 오는 주말, 카페 vs 집콕? 한 글자로 ㅋ 아니면 ㅈ",
+    "comment": "비 오는 주말 집에서 몸 좀 풀고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "내일부터 비,\n주말 어떡하지",
+      "sub": "카페 가면 또 2만 원"
+    },
+    {
+      "type": "tip",
+      "label": "비 오는 주말 카페값",
+      "title": "주말 카페값\n2만 원",
+      "body": "비만 오면 카페로 도망감\n그래서 이번엔 집콕"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "커튼 열고\n스트레칭 10분",
+      "body": "일어나자마자\n불 켜기 전에 10분"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "카페 대신\n집에서 커피",
+      "body": "좋아하는 컵에 내려서\n창가에서 한 잔"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "비 그치면\n동네 한 바퀴",
+      "body": "우산 접히는 순간\n20분만 걷기"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 요가매트는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "비 오는 주말엔 보통 어디서 시간을 보내세요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #집콕 #주말비 #요가매트 #스트레칭",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-13T12:30:00+09:00"
+}

@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-13",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 비 오는 주말 카페값 2만 원 → 요가매트 (jak_lunch)",
+  "sources": [
+    "https://biz.sbs.co.kr/article/20000346082",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16275154"
+  ],
+  "reel": {
+    "hook": "비 오는 주말\n*어디* 있어?",
+    "count": {
+      "to": 20000,
+      "suffix": "원",
+      "label": "비 오는 주말 카페값"
+    },
+    "pain": "내일부터 비 소식\n이번 주말은 집콕",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "스트레칭 10분",
+      "집에서 커피",
+      "동네 한 바퀴"
+    ],
+    "item": "요가매트",
+    "item_sub": "리뷰부터 봐두는 중",
+    "cta": "골라둔 *요가매트*는\n프로필 링크에",
+    "caption": "주말에 비 소식이 있으면 계획부터 바뀌시나요?\n같이 할 친구를 태그해 주세요.\n\n골라둔 요가매트는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #집콕 #주말비 #요가매트 #홈트",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-13T19:30:00+09:00"
+}
