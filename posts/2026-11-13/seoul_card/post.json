@@ -3,7 +3,7 @@
   "date": "2026-11-13",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 정돈운 (신묘일)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-13T18:30:00+09:00"
+  "result": {
+    "instagram": "18642659107019681"
+  },
+  "publish_at": "2026-11-13T18:30:00+09:00",
+  "posted_at": "2026-11-13T18:30:53.465980+09:00"
 }
