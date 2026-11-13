@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-14",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 비 예보 토요일 아침 이불 vs 씻기",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf",
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202611110500_108.pdf"
+  ],
+  "threads": {
+    "text": "주말 아침 이불 속 vs 바로 씻기, 너는?\n\n오후부터 비 온다더니\n아침부터 하늘이 회색이더라\n\n이런 날은 이불 밖이 더 멀게 느껴져\n그래서 창문만 30초 열고 찬 공기 한 번 마셨어\n그거 하나로 눈은 좀 떠지는 거 같애\n\n이불파면 ㅇ, 샤워파면 ㅅ 한 글자만",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-14T08:30:00+09:00"
+}

@@ -1,0 +1,66 @@
+{
+  "account": "jak",
+  "date": "2026-11-14",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백+A vs B: 비 오는 토요일 배달팁 4천 원 → 주말 밀프렙 → 밀프렙 도시락 용기",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf",
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_day_202611110500_108.pdf"
+  ],
+  "threads": {
+    "text": "비 온다고 배달팁만 4천 원 붙었어\n\n점심 한 끼에 2만 원 넘게 찍히는 거 보고\n주문 버튼 누르다가 멈췄어\n\n그래서 비 오는 김에\n다음 주 점심 3번 치만 만들어두기로 함\n밀프렙 용기 찾아보는데\n플라스틱은 김치 국물 냄새가 밴다는 얘기가 있더라\n재질 보면서 비교하다가 두 개로 줄였어\n\n3일만 해볼 것\n- 주말에 점심 3번 치만 만들기\n- 반찬은 2가지로 끝내기\n- 배달앱은 폴더 안으로 숨기기\n\n비 오는 주말, 배달 vs 해먹기? ㅂ 아니면 ㅎ",
+    "comment": "주말에 한 번 만들어두고 평일 점심값 아끼고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "비 오는 토요일,\n배달팁 4천 원",
+      "sub": "그래서 오늘은 해먹기로"
+    },
+    {
+      "type": "tip",
+      "label": "비 오는 날 배달 한 끼",
+      "title": "점심 한 끼\n2만 원",
+      "body": "배달팁만 4천 원\n주문 직전에 멈춤"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "점심 3번 치만\n만들어두기",
+      "body": "일주일 다 말고\n딱 3번 치만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "반찬은\n2가지로 끝",
+      "body": "메인 하나, 채소 하나\n그 이상은 욕심"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "배달앱은\n폴더 안으로",
+      "body": "첫 화면에서 치우기만 해도\n한 번은 참아짐"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 밀프렙 용기는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "비 오는 날엔 배달 앱부터 열게 되시나요?\n같이 할 친구를 태그해 주세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #밀프렙 #주말요리 #도시락 #배달끊기",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-14T13:30:00+09:00"
+}
