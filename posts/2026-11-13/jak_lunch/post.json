@@ -3,7 +3,7 @@
   "date": "2026-11-13",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백+A vs B: 주말 비 소식 → 카페 대신 집콕 스트레칭 → 요가매트",
   "sources": [
     "https://biz.sbs.co.kr/article/20000346082",
@@ -61,6 +61,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-13T12:30:00+09:00"
+  "result": {
+    "threads": "18043545428642444",
+    "threads_comment": "18655240030007068",
+    "instagram": "18115060826188738"
+  },
+  "publish_at": "2026-11-13T12:30:00+09:00",
+  "posted_at": "2026-11-13T12:31:00.840804+09:00"
 }
