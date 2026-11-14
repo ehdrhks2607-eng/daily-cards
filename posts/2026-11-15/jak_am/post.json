@@ -1,0 +1,17 @@
+{
+  "account": "jak",
+  "date": "2026-11-15",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "나만 그래?: 일요일 아침 일요병",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf"
+  ],
+  "threads": {
+    "text": "일요일 아침부터 월요일 생각나는 거 나만 그래?\n\n눈 뜨자마자\n내일 할 일이 줄줄이 떠오르더라\n\n그래서 일부러 이불부터 개고\n창문 열고 숨 크게 세 번 쉬었어\n오늘은 오늘만 생각하기로 함\n\n일요병 있으면 '나도' 한 마디만",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-15T08:30:00+09:00"
+}
