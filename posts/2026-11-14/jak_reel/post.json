@@ -3,7 +3,7 @@
   "date": "2026-11-14",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 비 오는 날 배달팁 4천 원 → 밀프렙 용기 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-14T20:30:00+09:00"
+  "result": {
+    "reel": "18112268612221141"
+  },
+  "publish_at": "2026-11-14T20:30:00+09:00",
+  "posted_at": "2026-11-14T20:30:58.364501+09:00"
 }
