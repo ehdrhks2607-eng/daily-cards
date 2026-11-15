@@ -3,7 +3,7 @@
   "date": "2026-11-15",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 편의점 유자차 5번 9천 원 → 미니 전기포트 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-15T20:30:00+09:00"
+  "result": {
+    "reel": "18473318488137080"
+  },
+  "publish_at": "2026-11-15T20:30:00+09:00",
+  "posted_at": "2026-11-15T20:30:57.966749+09:00"
 }
