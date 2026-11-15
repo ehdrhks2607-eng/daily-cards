@@ -3,7 +3,7 @@
   "date": "2026-11-15",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백+A vs B: 비 오는 쌀쌀한 일요일 편의점 유자차 5번 9천 원 → 1인용 미니 전기포트",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611101800_108.pdf"
@@ -60,6 +60,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-15T13:30:00+09:00"
+  "result": {
+    "threads": "18117080258030223",
+    "threads_comment": "17905177053377966",
+    "instagram": "18189073372420920"
+  },
+  "publish_at": "2026-11-15T13:30:00+09:00",
+  "posted_at": "2026-11-15T13:31:01.544834+09:00"
 }
