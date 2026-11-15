@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-16",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "실패 고백: 이번 주 기온 뚝, 월요일 알람 3번",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611120600_108.pdf",
+    "https://www.wikitree.co.kr/articles/1173230"
+  ],
+  "threads": {
+    "text": "월요일 알람 3번 끄고 겨우 일어났어\n\n이번 주부터 확 추워진다더니\n이불 밖 공기부터 다르더라\n\n그래서 잠옷 위에 바로 후드 걸치고\n일단 부엌까지만 가는 걸로 버팀\n\n오늘 알람 몇 번 껐어? 숫자만 남겨줘",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-16T07:30:00+09:00"
+}

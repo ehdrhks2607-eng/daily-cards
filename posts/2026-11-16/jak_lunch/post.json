@@ -1,0 +1,66 @@
+{
+  "account": "jak",
+  "date": "2026-11-16",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백+A vs B: 추워져서 움츠린 어깨, 마사지 한 번 6만 원 → 마사지건",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611120600_108.pdf",
+    "https://www.wikitree.co.kr/articles/1173230"
+  ],
+  "threads": {
+    "text": "어깨 마사지 한 번에 6만 원 나왔어\n\n날 추워지니까 하루 종일 어깨 움츠리고 다녀서\n퇴근하면 목까지 뻣뻣하더라\n\n한 달에 두 번만 가도 12만 원이라\n집에서 푸는 쪽으로 찾아봤어\n사기 전에 리뷰부터 봐두는 중\n\n3일만 해볼 것\n- 걸을 때 어깨 한 번씩 내리기\n- 자기 전 목 천천히 돌리기 10번\n- 샤워할 때 따뜻한 물 5분 더\n\n뭉친 어깨, 받으러 가기 vs 집에서 풀기? ㅂ 아니면 ㅈ",
+    "comment": "추워서 어깨가 자꾸 뭉치는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0Q966zO8\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "추워서 움츠린 어깨,\n마사지 6만 원",
+      "sub": "그래서 이번엔 집에서"
+    },
+    {
+      "type": "tip",
+      "label": "어깨 마사지 한 번",
+      "title": "6만 원",
+      "body": "한 달에 두 번이면\n12만 원"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "걸을 때\n어깨 한 번 내리기",
+      "body": "신호등 기다릴 때마다\n한 번씩"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "자기 전\n목 돌리기 10번",
+      "body": "천천히,\n아프지 않을 만큼만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "따뜻한 물\n5분 더",
+      "body": "샤워 끝나기 전\n어깨에만 대고 있기"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 마사지건은\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "요즘 퇴근하면 목이랑 어깨부터 뻣뻣하지 않으세요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #어깨뭉침 #홈케어 #겨울루틴 #절약습관",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-16T12:30:00+09:00"
+}

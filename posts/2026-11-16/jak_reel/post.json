@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-16",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 마사지 한 번 6만 원 → 마사지건 (jak_lunch)",
+  "sources": [
+    "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611120600_108.pdf",
+    "https://www.wikitree.co.kr/articles/1173230"
+  ],
+  "reel": {
+    "hook": "어깨 마사지\n*얼마* 나왔어?",
+    "count": {
+      "to": 60000,
+      "suffix": "원",
+      "label": "어깨 마사지 한 번"
+    },
+    "pain": "추워서 움츠리고\n목까지 뻣뻣함",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "어깨 한 번 내리기",
+      "목 천천히 10번",
+      "샤워 5분 더"
+    ],
+    "item": "마사지건",
+    "item_sub": "리뷰부터 봐두는 중",
+    "cta": "골라둔 *마사지건*은\n프로필 링크에",
+    "caption": "날이 추워지니 어깨부터 움츠러들지 않으세요?\n📌 저장해두고 3일만 해보세요.\n\n골라둔 마사지건은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #어깨뭉침 #홈케어 #겨울루틴 #절약습관",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-11-16T19:30:00+09:00"
+}
