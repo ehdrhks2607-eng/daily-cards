@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 집중운 (갑오일, 수능 주간)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-16T18:30:00+09:00"
+  "result": {
+    "instagram": "18071455052786833"
+  },
+  "publish_at": "2026-11-16T18:30:00+09:00",
+  "posted_at": "2026-11-16T18:31:13.447788+09:00"
 }
