@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세",
   "sources": [
     "scripts/ganji.py"
@@ -13,6 +13,10 @@
     "comment": "2027년 12달 흐름을 날짜별로 먼저 보고 싶다면\n카톡에 \"신년운\"이라고 보내 보세요 👇\nhttps://pf.kakao.com/_MrAxeX/chat\n\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel_pm/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-16T22:30:00+09:00"
+  "result": {
+    "threads": "17974770450188143",
+    "threads_comment": "18099848495445492"
+  },
+  "publish_at": "2026-11-16T22:30:00+09:00",
+  "posted_at": "2026-11-16T22:31:24.248038+09:00"
 }
