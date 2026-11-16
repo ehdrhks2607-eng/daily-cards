@@ -1,0 +1,67 @@
+{
+  "account": "jak",
+  "date": "2026-11-17",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백+A vs B: 오후 비 → 퇴근 걷기 빠지고 야식 2만 3천 원 → 집에서 덤벨",
+  "sources": [
+    "https://www.seoul.co.kr/news/society/2026/11/17/20261117010007",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=94329",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16278085"
+  ],
+  "threads": {
+    "text": "비 온 날 저녁, 야식으로만 2만 3천 원 썼어\n\n퇴근하고 20분 걷는 게 요즘 루틴인데\n비 오면 그게 통째로 빠지더라\n이번 달만 비 때문에 4번 쉬었어\n\n안 걸은 날엔 이상하게 더 먹게 돼서\n집에서 할 만한 걸로 가벼운 덤벨 찾아봤어\n1kg이랑 2kg 중에 아직 고르는 중\n\n3일만 해볼 것\n- 비 오는 날은 TV 보면서 제자리 걷기 10분\n- 야식 생각나면 물 한 컵 먼저\n- 물병 2개 들고 팔 올리기 10번\n\n비 오는 날 운동, 쉬기 vs 집에서 10분? ㅅ 아니면 ㅈ",
+    "comment": "비 오는 날 집에서라도 움직이고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hq0M71ItY4\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "비 오는 날,\n걷기 대신 야식",
+      "sub": "그래서 이번엔 집에서 10분"
+    },
+    {
+      "type": "tip",
+      "label": "비 온 날 저녁 야식",
+      "title": "2만 3천 원",
+      "body": "이번 달 비 때문에\n걷기 빠진 날 4번"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "TV 보면서\n제자리 걷기 10분",
+      "body": "드라마 한 편\n앞부분만 걸어도 OK"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "야식 생각나면\n물 한 컵 먼저",
+      "body": "배달 앱 열기 전에\n딱 한 컵만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "물병 2개로\n팔 올리기 10번",
+      "body": "덤벨 없어도\n오늘 바로 할 수 있게"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 미니 덤벨은\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "비 오는 날엔 운동 대신 야식부터 생각나지 않으세요?\n같이 할 친구를 태그해 주세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #비오는날 #야식끊기 #겨울루틴",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-17T12:30:00+09:00"
+}

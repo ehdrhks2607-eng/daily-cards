@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-11-17",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 비 온 날 야식 2만 3천 원 → 미니 덤벨 (jak_lunch)",
+  "sources": [
+    "https://www.seoul.co.kr/news/society/2026/11/17/20261117010007",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=94329",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16278085"
+  ],
+  "reel": {
+    "hook": "비 오면\n*운동* 쉬어?",
+    "count": {
+      "to": 23000,
+      "suffix": "원",
+      "label": "비 온 날 저녁 야식"
+    },
+    "pain": "퇴근 걷기 빠지고\n이번 달만 4번 쉼",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "제자리 걷기 10분",
+      "야식 전 물 한 컵",
+      "물병 팔 올리기"
+    ],
+    "item": "미니 덤벨",
+    "item_sub": "1kg·2kg 아직 고르는 중",
+    "cta": "골라둔 *미니 덤벨*은\n프로필 링크에",
+    "caption": "비 오는 날 퇴근길, 걷기 대신 배달 앱부터 열게 되지 않으세요?\n📌 저장해두고 3일만 해보세요.\n\n골라둔 미니 덤벨은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #비오는날 #야식끊기 #겨울루틴",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-17T19:30:00+09:00"
+}
