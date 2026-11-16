@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백+A vs B: 추워져서 움츠린 어깨, 마사지 한 번 6만 원 → 마사지건",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611120600_108.pdf",
@@ -61,6 +61,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-16T12:30:00+09:00"
+  "result": {
+    "threads": "18067327034628615",
+    "threads_comment": "18198271465397800",
+    "instagram": "18122430265971430"
+  },
+  "publish_at": "2026-11-16T12:30:00+09:00",
+  "posted_at": "2026-11-16T12:31:10.980684+09:00"
 }

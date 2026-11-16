@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "💕 오늘의 연애·재회운 릴스",
   "sources": [
     "scripts/ganji.py"
@@ -37,6 +37,10 @@
     "video": "reel.mp4",
     "template": "saju2"
   },
-  "result": {},
-  "publish_at": "2026-11-16T12:30:00+09:00"
+  "result": {
+    "reel": "17978626856935653",
+    "youtube": "sent"
+  },
+  "publish_at": "2026-11-16T12:30:00+09:00",
+  "posted_at": "2026-11-16T12:31:10.980684+09:00"
 }
