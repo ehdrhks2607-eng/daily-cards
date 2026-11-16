@@ -3,7 +3,7 @@
   "date": "2026-11-16",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 마사지 한 번 6만 원 → 마사지건 (jak_lunch)",
   "sources": [
     "https://www.weather.go.kr/w/repositary/xml/fct/rpt_wid_week_202611120600_108.pdf",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-16T19:30:00+09:00"
+  "result": {
+    "reel": "17956213806294064"
+  },
+  "publish_at": "2026-11-16T19:30:00+09:00",
+  "posted_at": "2026-11-16T19:31:00.998148+09:00"
 }
