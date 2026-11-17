@@ -3,7 +3,7 @@
   "date": "2026-11-17",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백+A vs B: 오후 비 → 퇴근 걷기 빠지고 야식 2만 3천 원 → 집에서 덤벨",
   "sources": [
     "https://www.seoul.co.kr/news/society/2026/11/17/20261117010007",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-17T12:30:00+09:00"
+  "result": {
+    "threads": "18132597532832371",
+    "threads_comment": "18067249994795398",
+    "instagram": "18134175328814081"
+  },
+  "publish_at": "2026-11-17T12:30:00+09:00",
+  "posted_at": "2026-11-17T12:31:03.020964+09:00"
 }
