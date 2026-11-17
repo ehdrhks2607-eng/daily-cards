@@ -3,7 +3,7 @@
   "date": "2026-11-17",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세 (11/18 병신일, 수능 하루 전)",
   "sources": [
     "scripts/ganji.py",
@@ -14,6 +14,10 @@
     "comment": "내년 열두 달 중 '내 달'이 언제인지 궁금하다면\n카톡에 \"신년운\"이라고 보내 보세요 👇\nhttps://pf.kakao.com/_MrAxeX/chat\n\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel_pm/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-17T22:30:00+09:00"
+  "result": {
+    "threads": "18112648748187026",
+    "threads_comment": "17980201311158445"
+  },
+  "publish_at": "2026-11-17T22:30:00+09:00",
+  "posted_at": "2026-11-17T22:31:15.770177+09:00"
 }
