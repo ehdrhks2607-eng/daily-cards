@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-11-18",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "숫자 고백: 비 온 이틀 걸음수 3천 보 → 만보기 밴드 (jak_lunch)",
+  "sources": [
+    "https://supple.kr/news/cmwfr0iqt1kt9al9pg6lxq4sx",
+    "https://huffingtonpost.kr/article/262041",
+    "https://kbmaeil.com/article/20261115500095"
+  ],
+  "reel": {
+    "hook": "추워지면\n*걸음수* 몇 보?",
+    "count": {
+      "to": 3000,
+      "suffix": "보",
+      "label": "비 온 날 하루 걸음수"
+    },
+    "pain": "평소 7천 보에서\n반 넘게 줄었어",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "계단 3층만",
+      "서서 통화하기",
+      "밤에 걸음수 확인"
+    ],
+    "item": "만보기 밴드",
+    "item_sub": "두 개로 줄이고 고르는 중",
+    "cta": "골라둔 *만보기 밴드*는\n프로필 링크에",
+    "caption": "비 그치고 영하라는데, 오늘 몇 보 걸으셨어요?\n이 영상 보고 같이 걸을 친구를 태그해 주세요.\n\n골라둔 만보기 밴드는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #만보기 #걷기운동 #겨울루틴 #수능한파",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-11-18T19:30:00+09:00"
+}
