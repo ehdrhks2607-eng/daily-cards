@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세 (11/19 정유일, 수능 특집)",
   "sources": [
     "scripts/ganji.py"
@@ -13,6 +13,10 @@
     "comment": "새해 열두 달을 내 생년월일로 미리 짚어 보고 싶다면\n카톡에 \"신년운\"이라고 보내 보세요 👇\nhttps://pf.kakao.com/_MrAxeX/chat\n\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel_pm/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-18T22:30:00+09:00"
+  "result": {
+    "threads": "18141984100725000",
+    "threads_comment": "18117761048165988"
+  },
+  "publish_at": "2026-11-18T22:30:00+09:00",
+  "posted_at": "2026-11-18T22:31:25.978283+09:00"
 }
