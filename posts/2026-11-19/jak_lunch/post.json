@@ -1,0 +1,67 @@
+{
+  "account": "jak",
+  "date": "2026-11-19",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(수능·연말 시즌): 수험생 1년 끝나는 날, 내 다이어리는 3월에 멈춤 → 2027 다이어리",
+  "sources": [
+    "https://huffingtonpost.kr/article/262041",
+    "https://biz.sbs.co.kr/amp/article/20000341054",
+    "https://supple.kr/news/cmwimyoar3er410egmfa6zgqw"
+  ],
+  "threads": {
+    "text": "다이어리값만 5년에 7만 원 썼어\n\n매년 1만 4천 원쯤 하는 거 사서\n써진 건 늘 3월까지\n\n오늘 수험생들 1년 끝내는 날이라\n올해 거 펴봤는데 3월 12일에서 멈춰 있더라\n\n그래서 내년 건 후기 제일 많은 거 하나만 남겨둠\n아직 결제는 안 했고 리뷰만 보는 중\n\n3일만 해볼 것\n- 오늘 날짜랑 한 줄만 쓰기\n- 펜은 다이어리 사이에 끼워두기\n- 못 쓴 날은 다음 날 1줄로 퉁치기\n\n너 올해 다이어리 몇 월까지 썼어? 숫자만",
+    "comment": "올해 다이어리도 3월에 멈춘 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI44OpwuI0\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "다이어리\n또 3월에 멈춤",
+      "sub": "그래서 이번엔 3일만 한 줄 쓰기"
+    },
+    {
+      "type": "tip",
+      "label": "5년간 다이어리값",
+      "title": "7만 원",
+      "body": "써진 건\n늘 3월까지였어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "날짜랑\n한 줄만",
+      "body": "길게 쓰려다\n멈추니까 딱 한 줄"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "펜은\n사이에 끼워두기",
+      "body": "펜 찾다가\n안 쓰는 날이 많았어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "못 쓴 날은\n1줄로 퉁치기",
+      "body": "빈칸 보면\n그냥 덮게 되니까"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 2027 다이어리는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "올해 다이어리, 마지막으로 쓴 날이 언제였나요?\n같이 할 친구를 태그해 주세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #2027다이어리 #다이어리 #연말정리 #습관만들기",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-19T12:30:00+09:00"
+}
