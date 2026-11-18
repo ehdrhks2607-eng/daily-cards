@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백: 비 온 이틀 걸음수 3천 보 → 만보기 밴드 (jak_lunch)",
   "sources": [
     "https://supple.kr/news/cmwfr0iqt1kt9al9pg6lxq4sx",
@@ -31,6 +31,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-18T19:30:00+09:00"
+  "result": {
+    "reel": "17889869337622578"
+  },
+  "publish_at": "2026-11-18T19:30:00+09:00",
+  "posted_at": "2026-11-18T19:31:14.810706+09:00"
 }
