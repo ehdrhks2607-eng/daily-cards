@@ -3,6 +3,7 @@
 릴스 게시 시간(config.json seoul reel_am/reel/reel_pm, 평일·주말)에 맞춰
 "클립 올릴 시간" 알림을 폰(ntfy 앱)으로 보낸다. 토픽 이름은 GitHub Secret NTFY_TOPIC.
 FORCE=1 이면 시간과 상관없이 테스트 알림을 보낸다.
+목요일(KST)은 운영자 휴무라 보내지 않는다 (FORCE=1 테스트는 예외).
 """
 import datetime as dt
 import json
@@ -21,6 +22,8 @@ if not topic:
     print("NTFY_TOPIC secret not set — skip"); sys.exit(0)
 
 now = dt.datetime.now(dt.timezone(dt.timedelta(hours=9)))
+if now.weekday() == 3 and os.environ.get("FORCE") != "1":  # 목요일은 운영자 휴무 — 알림 안 보냄
+    print("thursday off — skip", now.isoformat()); sys.exit(0)
 cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
 times = cfg["accounts"]["seoul"]["publish_time_kst"]["weekend" if now.weekday() >= 5 else "weekday"]
 
