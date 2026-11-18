@@ -3,7 +3,7 @@
   "date": "2026-11-18",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "숫자 고백+A vs B: 비·기온 뚝 → 걸음수 3천 보 → 만보기 밴드",
   "sources": [
     "https://supple.kr/news/cmwfr0iqt1kt9al9pg6lxq4sx",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-18T12:30:00+09:00"
+  "result": {
+    "threads": "18122924336055156",
+    "threads_comment": "18291269809290530",
+    "instagram": "18115595108586357"
+  },
+  "publish_at": "2026-11-18T12:30:00+09:00",
+  "posted_at": "2026-11-18T12:31:16.030235+09:00"
 }
