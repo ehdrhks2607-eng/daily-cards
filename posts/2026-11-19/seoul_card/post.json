@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 회복운 (정유일, 수능 당일 저녁)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-19T18:30:00+09:00"
+  "result": {
+    "instagram": "18442679650199674"
+  },
+  "publish_at": "2026-11-19T18:30:00+09:00",
+  "posted_at": "2026-11-19T18:31:19.933388+09:00"
 }
