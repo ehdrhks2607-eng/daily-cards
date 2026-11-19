@@ -1,0 +1,37 @@
+{
+  "account": "jak",
+  "date": "2026-11-20",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 블프 장바구니 23만 원 → 루프밴드 하나만 남김 (jak_lunch)",
+  "sources": [
+    "https://www.segye.com/newsView/20251115501769",
+    "https://biz.sbs.co.kr/article/20000347671",
+    "https://view.asiae.co.kr/article/2026111921562359234",
+    "https://www.thereport.co.kr/news/articleView.html?idxno=93543"
+  ],
+  "reel": {
+    "hook": "블프 장바구니\n*얼마* 담겼어?",
+    "count": {
+      "to": 230000,
+      "suffix": "원",
+      "label": "블프 장바구니 합계"
+    },
+    "pain": "다 올해 3일 하다\n멈춘 것들이더라",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "퇴근 후 10번",
+      "팔걸이에 걸기",
+      "3일 뒤 열기"
+    ],
+    "item": "루프밴드",
+    "item_sub": "하나만 남기고 리뷰 비교 중",
+    "cta": "골라둔 *루프밴드*는\n프로필 링크에",
+    "caption": "올해 시작했다 멈춘 것, 장바구니에도 남아 있나요?\n📌 저장해두고 3일만 같이 해봐요.\n\n골라둔 루프밴드는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #블랙프라이데이 #홈트 #연말정리 #습관만들기",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-11-20T19:30:00+09:00"
+}

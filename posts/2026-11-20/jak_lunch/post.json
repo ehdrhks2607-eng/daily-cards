@@ -1,0 +1,68 @@
+{
+  "account": "jak",
+  "date": "2026-11-20",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·블프): 블프 장바구니 23만 원 = 올해 3일 하다 멈춘 것들 → 영하라 실내 루프밴드 하나만 남김",
+  "sources": [
+    "https://www.segye.com/newsView/20251115501769",
+    "https://biz.sbs.co.kr/article/20000347671",
+    "https://view.asiae.co.kr/article/2026111921562359234",
+    "https://www.thereport.co.kr/news/articleView.html?idxno=93543"
+  ],
+  "threads": {
+    "text": "블프 장바구니에 23만 원어치 담겨 있더라\n\n하나씩 보니까 다 올해 3일 하다 멈춘 것들\n러닝화, 요가 블록, 단백질 바\n\n오늘 아침 영하 3도라 저녁 걷기도 또 못 나갈 거 같고\n그래서 23만 원어치는 다 지우고\n집에서 하는 밴드 하나만 남겨둠\n아직 결제 전이고 리뷰 수만 비교하는 중\n\n3일만 해볼 것\n- 퇴근하고 옷 갈아입기 전에 밴드 10번\n- 밴드는 소파 팔걸이에 걸어두기\n- 장바구니는 3일 뒤에 다시 열기\n\n너 지금 장바구니에 몇 개 담겨 있어? 숫자만",
+    "comment": "추워서 밖에 운동 못 나가는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4Sx0aV9E\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "블프 장바구니\n23만 원어치",
+      "sub": "다 지우고 하나만 남긴 이유"
+    },
+    {
+      "type": "tip",
+      "label": "장바구니 합계",
+      "title": "23만 원",
+      "body": "전부 올해\n3일 하다 멈춘 것들"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "옷 갈아입기 전\n밴드 10번",
+      "body": "갈아입으면\n그대로 눕게 되니까"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "소파 팔걸이에\n걸어두기",
+      "body": "서랍에 넣으면\n안 꺼내게 돼"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "장바구니는\n3일 뒤에 열기",
+      "body": "3일 지나도 필요하면\n그때 다시 보기"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 루프밴드는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "지금 장바구니에 담긴 것 중, 올해 시작했다 멈춘 건 몇 개인가요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #블랙프라이데이 #홈트 #연말정리 #습관만들기",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-20T12:30:00+09:00"
+}

@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-11-20",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B: 금요일 아침 서울 영하 3도·강풍 → 롱패딩 꺼냄 vs 버팀",
+  "sources": [
+    "https://biz.sbs.co.kr/article/20000347671",
+    "https://view.asiae.co.kr/article/2026111921562359234",
+    "https://www.thereport.co.kr/news/articleView.html?idxno=93543"
+  ],
+  "threads": {
+    "text": "오늘 아침 서울 영하 3도래\n바람까지 불어서 체감은 더 낮다고\n\n현관 앞에서 롱패딩 꺼낼까 말까\n3분 서 있다가 결국 꺼냄\n\n작년엔 12월까지 버텼는데 올해는 못 버티겠더라\n\n너는 벌써 꺼냈어? 꺼냄 vs 버팀, ㄲ 아니면 ㅂ",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-20T07:30:00+09:00"
+}
