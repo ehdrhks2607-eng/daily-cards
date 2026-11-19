@@ -3,7 +3,7 @@
   "date": "2026-11-19",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(수능·연말 시즌): 수험생 1년 끝나는 날, 내 다이어리는 3월에 멈춤 → 2027 다이어리",
   "sources": [
     "https://huffingtonpost.kr/article/262041",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-19T12:30:00+09:00"
+  "result": {
+    "threads": "18165785467498439",
+    "threads_comment": "18119239376085384",
+    "instagram": "18056324171813288"
+  },
+  "publish_at": "2026-11-19T12:30:00+09:00",
+  "posted_at": "2026-11-19T12:31:01.135150+09:00"
 }
