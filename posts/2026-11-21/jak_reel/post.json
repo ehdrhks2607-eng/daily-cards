@@ -1,0 +1,37 @@
+{
+  "account": "jak",
+  "date": "2026-11-21",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 추워서 배달비 5만 2천 원 + 김장 김치 → 도시락 싸 가기 (jak_lunch)",
+  "sources": [
+    "https://m.news.nate.com/view/20261121n00484",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=94941",
+    "https://biz.heraldcorp.com/article/10944396",
+    "https://www.todayan.com/news/articleView.html?idxno=637559"
+  ],
+  "reel": {
+    "hook": "이번 주 배달\n*몇 번* 했어?",
+    "count": {
+      "to": 52000,
+      "suffix": "원",
+      "label": "추워서 시킨 배달비"
+    },
+    "pain": "김장 김치 오는데\n또 시켜 먹은 거지",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "밥 3개 소분",
+      "김치는 따로",
+      "배달앱 숨기기"
+    ],
+    "item": "도시락 용기",
+    "item_sub": "냄새 얘기 위주로 리뷰 봄",
+    "cta": "골라둔 *도시락 용기*는\n프로필 링크에",
+    "caption": "추운 주말, 배달앱부터 열게 되지 않나요?\n📌 저장해두고 3일만 같이 해봐요.\n\n골라둔 도시락 용기는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #도시락 #김장 #배달비절약 #밀프렙",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-21T20:30:00+09:00"
+}

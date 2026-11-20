@@ -1,0 +1,68 @@
+{
+  "account": "jak",
+  "date": "2026-11-21",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·김장철): 추워서 이번 주 배달비 5만 2천 원 + 김장 김치 온다 → 다음 주 점심 싸 가기, 밀프렙 도시락 용기",
+  "sources": [
+    "https://m.news.nate.com/view/20261121n00484",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=94941",
+    "https://biz.heraldcorp.com/article/10944396",
+    "https://www.todayan.com/news/articleView.html?idxno=637559"
+  ],
+  "threads": {
+    "text": "추워서 이번 주 배달비만 5만 2천 원\n4번 다 나가기 싫어서 시킨 거야\n\n근데 엄마가 김장했다고\n김치 한 통 보내준다는 연락이 왔어\n김치 있으면 밥만 있으면 되는데 또 시켜 먹은 거지\n\n그래서 다음 주 점심은 싸 가보려고\n김치 국물 냄새 밴다는 얘기가 있어서\n도시락 용기는 그거 위주로 리뷰만 보는 중, 아직 안 삼\n\n3일만 해볼 것\n- 일요일 밤에 밥 3개만 소분\n- 김치는 따로 작은 통에\n- 배달앱은 폰 둘째 화면으로\n\n너네 집 김장 했어? 함 vs 안 함, ㅎ 아니면 ㅇ",
+    "comment": "김장 김치 받아놓고 또 배달 시키는 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4XHUSBd6\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "이번 주 배달비\n5만 2천 원",
+      "sub": "김장 김치 오는 날에 알게 됨"
+    },
+    {
+      "type": "tip",
+      "label": "이번 주 배달",
+      "title": "4번 · 5만 2천 원",
+      "body": "추워서 나가기 싫은 날\n전부 배달이었어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "일요일 밤\n밥 3개만 소분",
+      "body": "5개는 또 멈출 거 같아서\n딱 3일치만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "김치는\n작은 통에 따로",
+      "body": "밥이랑 같이 담으면\n냄새가 다 배니까"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "배달앱은\n둘째 화면으로",
+      "body": "첫 화면에 있으면\n손이 먼저 가"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 도시락 용기는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "김장 김치 받아놓고도 배달앱부터 열어본 적 있나요?\n같이 할 친구를 태그해 주세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #도시락 #김장 #배달비절약 #밀프렙",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-21T13:30:00+09:00"
+}
