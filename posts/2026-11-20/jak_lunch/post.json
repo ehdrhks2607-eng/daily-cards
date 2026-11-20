@@ -3,7 +3,7 @@
   "date": "2026-11-20",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·블프): 블프 장바구니 23만 원 = 올해 3일 하다 멈춘 것들 → 영하라 실내 루프밴드 하나만 남김",
   "sources": [
     "https://www.segye.com/newsView/20251115501769",
@@ -63,6 +63,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-20T12:30:00+09:00"
+  "result": {
+    "threads": "17965129527211272",
+    "threads_comment": "17913664131308092",
+    "instagram": "17982078546142943"
+  },
+  "publish_at": "2026-11-20T12:30:00+09:00",
+  "posted_at": "2026-11-20T12:31:16.737743+09:00"
 }
