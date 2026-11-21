@@ -3,7 +3,7 @@
   "date": "2026-11-21",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 추워서 배달비 5만 2천 원 + 김장 김치 → 도시락 싸 가기 (jak_lunch)",
   "sources": [
     "https://m.news.nate.com/view/20261121n00484",
@@ -32,6 +32,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-21T20:30:00+09:00"
+  "result": {
+    "reel": "17897177706434662"
+  },
+  "publish_at": "2026-11-21T20:30:00+09:00",
+  "posted_at": "2026-11-21T20:31:19.055520+09:00"
 }
