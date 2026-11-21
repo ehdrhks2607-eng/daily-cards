@@ -1,0 +1,36 @@
+{
+  "account": "jak",
+  "date": "2026-11-22",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 소설 영하 4도, 지난달 가스비 3만 9천 원 → 보일러 1도 낮추고 매트 위 10분 (jak_lunch)",
+  "sources": [
+    "https://www.asiatoday.co.kr/kn/view.php?key=20261121010008209",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95016",
+    "https://view.asiae.co.kr/article/2026112120463840325",
+    "https://www.wikitree.co.kr/articles/1171875",
+    "https://datedb.net/calendar/day/20261122/"
+  ],
+  "reel": {
+    "hook": "가스비\n*얼마* 나왔어?",
+    "count": {
+      "to": 39000,
+      "suffix": "원",
+      "label": "지난달 가스비 고지서"
+    },
+    "pain": "보일러 계속 돌리면\n이번 달이 무서워",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "보일러 1도↓",
+      "매트 위 10분",
+      "수면양말"
+    ],
+    "item": "운동 매트",
+    "item_sub": "두꺼운 거 리뷰만 비교함",
+    "cta": "골라둔 *운동 매트*는\n프로필 링크에",
+    "caption": "집에 있는 일요일, 보일러 온도 몇 도로 두세요?\n같이 할 친구를 태그해 주세요.\n\n골라둔 운동 매트는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #난방비 #소설 #홈트 #절약"
+  },
+  "result": {},
+  "publish_at": "2026-11-22T20:30:00+09:00"
+}

@@ -1,0 +1,69 @@
+{
+  "account": "jak",
+  "date": "2026-11-22",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·첫눈·난방비): 소설 영하 4도 일요일 집콕, 지난달 가스비 3만 9천 원 → 보일러 1도 낮추고 매트 위 스트레칭 → 요가매트",
+  "sources": [
+    "https://www.asiatoday.co.kr/kn/view.php?key=20261121010008209",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95016",
+    "https://view.asiae.co.kr/article/2026112120463840325",
+    "https://www.wikitree.co.kr/articles/1171875",
+    "https://datedb.net/calendar/day/20261122/"
+  ],
+  "threads": {
+    "text": "지난달 가스비 고지서 3만 9천 원\n11월인데 벌써 그만큼 나왔어\n\n오늘 소설이라 아침 영하 4도\n일요일이라 하루 종일 집인데\n보일러 계속 돌리면 이번 달은 얼마일지 무서움\n\n그래서 보일러 1도 낮추고\n몸 먼저 데우는 쪽으로 3일만 해보려고\n근데 바닥이 차서 맨바닥 스트레칭은 못 하겠더라\n두꺼운 매트 몇 개 리뷰만 비교하는 중, 아직 안 삼\n\n3일만 해볼 것\n- 보일러 1도만 낮추기\n- 일어나면 매트 위에서 10분\n- 양말은 수면양말로\n\n너네 집 보일러 몇 도에 맞춰놔? 숫자만",
+    "comment": "보일러 낮추고 집에서 몸부터 데우고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hnLfoMQTMi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "지난달 가스비\n3만 9천 원",
+      "sub": "오늘 소설, 아침 영하 4도"
+    },
+    {
+      "type": "tip",
+      "label": "지난달 고지서",
+      "title": "3만 9천 원",
+      "body": "11월인데 벌써\n이만큼 나왔어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "보일러\n1도만 낮추기",
+      "body": "2도는 또 멈출 거 같아서\n딱 1도만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "일어나면\n매트 위에서 10분",
+      "body": "찬 바닥 대신\n몸부터 데우기"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "양말은\n수면양말로",
+      "body": "발이 따뜻하면\n보일러 손이 덜 가"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 운동 매트는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "보일러 켜기 전에 고지서부터 떠오르지 않나요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #난방비 #소설 #홈트 #절약",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-22T13:30:00+09:00"
+}
