@@ -3,7 +3,7 @@
   "date": "2026-11-21",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·김장철): 추워서 이번 주 배달비 5만 2천 원 + 김장 김치 온다 → 다음 주 점심 싸 가기, 밀프렙 도시락 용기",
   "sources": [
     "https://m.news.nate.com/view/20261121n00484",
@@ -63,6 +63,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-21T13:30:00+09:00"
+  "result": {
+    "threads": "18104546942359403",
+    "threads_comment": "18437361712182147",
+    "instagram": "17976133995177301"
+  },
+  "publish_at": "2026-11-21T13:30:00+09:00",
+  "posted_at": "2026-11-21T13:31:07.503713+09:00"
 }
