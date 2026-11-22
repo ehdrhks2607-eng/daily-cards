@@ -3,7 +3,7 @@
   "date": "2026-11-22",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 소설 영하 4도, 지난달 가스비 3만 9천 원 → 보일러 1도 낮추고 매트 위 10분 (jak_lunch)",
   "sources": [
     "https://www.asiatoday.co.kr/kn/view.php?key=20261121010008209",
@@ -33,6 +33,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-22T20:30:00+09:00"
+  "result": {
+    "reel": "18152785177570003"
+  },
+  "publish_at": "2026-11-22T20:30:00+09:00",
+  "posted_at": "2026-11-22T20:31:10.907144+09:00"
 }
