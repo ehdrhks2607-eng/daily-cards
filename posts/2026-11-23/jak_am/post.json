@@ -3,7 +3,7 @@
   "date": "2026-11-23",
   "slot": "am",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "A vs B(ㄱ/ㅈ): 월요일 전국 비·눈·강풍, 서울 아침 1도 → 출근길 우산 고르기",
   "sources": [
     "https://www.thefairnews.co.kr/news/articleView.html?idxno=95057",
@@ -14,6 +14,9 @@
     "text": "월요일인데 비 아니면 눈이래\n서울 아침 1도, 바람까지 분대\n\n현관에서 우산 두 개 들고\n어느 걸 챙길지 한참 서 있었어\n\n결국 큰 거 들었는데 손이 너무 시림\n\n너는 오늘 긴 우산 vs 작은 우산, ㄱ 아니면 ㅈ",
     "comment": ""
   },
-  "result": {},
-  "publish_at": "2026-11-23T07:30:00+09:00"
+  "result": {
+    "threads": "18108655742558813"
+  },
+  "publish_at": "2026-11-23T07:30:00+09:00",
+  "posted_at": "2026-11-23T07:31:16.224813+09:00"
 }
