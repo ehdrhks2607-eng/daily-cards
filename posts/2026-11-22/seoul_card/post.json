@@ -3,7 +3,7 @@
   "date": "2026-11-22",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 온기운 (경자일 · 소설)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-22T19:00:00+09:00"
+  "result": {
+    "instagram": "18127206583925153"
+  },
+  "publish_at": "2026-11-22T19:00:00+09:00",
+  "posted_at": "2026-11-22T19:01:19.930369+09:00"
 }
