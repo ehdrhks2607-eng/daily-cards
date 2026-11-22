@@ -1,0 +1,66 @@
+{
+  "account": "jak",
+  "date": "2026-11-23",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·송년회): 작년 12월 송년회 4번 18만 원, 올해 날짜 투표 벌써 3번째 → 12월 전 매일 체중 기록 → 스마트 체중계",
+  "sources": [
+    "https://kbthink.com/life/card/2026-black-friday.html",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95057"
+  ],
+  "threads": {
+    "text": "작년 12월 송년회만 4번, 18만 원 썼더라\n\n오늘 단톡방에 송년회 날짜 투표가 또 올라왔어\n벌써 세 번째야\n\n작년엔 다 끝나고 1월에 체중계 올라갔다가\n3kg 늘어 있는 거 보고 그냥 내려옴\n\n그래서 올해는 12월 오기 전에\n숫자부터 매일 적어보려고\n앱에 기록 넘어가는 체중계, 아직 고르는 중이야\n리뷰 수만 비교해서 두 개로 줄여둠\n\n3일만 해볼 것\n- 일어나자마자 한 번 재기\n- 숫자는 메모에 한 줄만\n- 약속 사이 3일은 비워두기\n\n너는 올해 송년회 몇 번 잡혔어? 숫자만",
+    "comment": "송년회 시즌 전에 체중 숫자부터 적어두고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI5buPonoi\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "작년 송년회비\n18만 원",
+      "sub": "오늘 날짜 투표 또 올라옴"
+    },
+    {
+      "type": "tip",
+      "label": "작년 12월",
+      "title": "송년회 4번",
+      "body": "끝나고 1월에\n3kg 늘어 있었어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "일어나자마자\n한 번 재기",
+      "body": "옷 입기 전,\n같은 시간에"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "숫자는\n메모에 한 줄만",
+      "body": "분석 말고\n적기만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "약속 사이\n3일은 비워두기",
+      "body": "연달아 잡히면\n또 멈출 거 같아서"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 체중계는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "12월 달력, 벌써 약속으로 채워지고 있나요?\n같이 할 친구를 태그해 주세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #송년회 #연말 #다이어트 #체중기록",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-23T12:30:00+09:00"
+}

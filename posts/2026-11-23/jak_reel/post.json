@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-23",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 작년 12월 송년회 4번 18만 원 → 12월 전 매일 체중 기록 (jak_lunch)",
+  "sources": [
+    "https://kbthink.com/life/card/2026-black-friday.html",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95057"
+  ],
+  "reel": {
+    "hook": "송년회비\n*얼마* 썼어?",
+    "count": {
+      "to": 180000,
+      "suffix": "원",
+      "label": "작년 12월 송년회 4번"
+    },
+    "pain": "올해도 날짜 투표가\n벌써 세 번째야",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "아침에 재기",
+      "메모 한 줄",
+      "약속 사이 3일"
+    ],
+    "item": "체중계",
+    "item_sub": "리뷰 수만 비교해 두 개로",
+    "cta": "골라둔 *체중계*는\n프로필 링크에",
+    "caption": "12월 약속, 몇 개쯤 잡혀 있으세요?\n📌 저장해두고 3일만 해보세요.\n\n골라둔 체중계는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #송년회 #연말 #다이어트 #체중기록",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-23T19:30:00+09:00"
+}
