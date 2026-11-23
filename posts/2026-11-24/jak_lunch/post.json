@@ -1,0 +1,67 @@
+{
+  "account": "jak",
+  "date": "2026-11-24",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·블프 주간): 지난주 23만 원어치 블프 장바구니 14개 중 11개 지움 + 영하 출근길 → 겨울 아침용 미니 전기포트만 남김",
+  "sources": [
+    "https://kbthink.com/life/card/2026-black-friday.html",
+    "https://www.fnnews.com/news/202611231733249324",
+    "https://www.topstarnews.net/news/articleView.html?idxno=16284351"
+  ],
+  "threads": {
+    "text": "블프 장바구니 다시 열어봤어, 14개 있더라\n\n지난주엔 23만 원어치였는데\n오늘 아침 빙판길 걸으면서 생각해보니\n거의 다 '언젠가 쓸 것'들이었어\n\n그래서 11개 지웠어\n남긴 건 이번 겨울 아침에 바로 쓸 것만\n그중 하나가 미니 전기포트인데\n아직 결제는 안 했고 후기 제일 많은 거 하나만 남겨둠\n\n3일만 해볼 것\n- 장바구니 하루 1개씩 지우기\n- 담기 전에 '이번 주에 쓰나' 묻기\n- 결제는 3일 뒤로 미루기\n\n너는 블프 때 사는 편 vs 참는 편? ㅅ 아니면 ㅊ",
+    "comment": "추운 아침에 따뜻한 물 바로 마시고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI4BINIOwS\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "블프 장바구니\n14개",
+      "sub": "지난주엔 23만 원어치였어"
+    },
+    {
+      "type": "tip",
+      "label": "다시 열어보니",
+      "title": "11개는\n'언젠가 쓸 것'",
+      "body": "그래서 오늘\n전부 지웠어"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "장바구니\n하루 1개씩 지우기",
+      "body": "한 번에 말고\n하나씩만"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "담기 전에\n'이번 주에 쓰나'",
+      "body": "아니면\n안 담기"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "결제는\n3일 뒤로 미루기",
+      "body": "3일 지나도 필요하면\n그때 생각"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 미니 전기포트는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "장바구니에 담아만 둔 물건, 몇 개쯤 있으세요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #블랙프라이데이 #연말 #장바구니 #절약",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-24T12:30:00+09:00"
+}
