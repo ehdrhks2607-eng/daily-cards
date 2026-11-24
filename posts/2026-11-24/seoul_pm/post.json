@@ -3,7 +3,7 @@
   "date": "2026-11-24",
   "slot": "pm",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🔮 내일의 운세 (11/25 계묘일 · 더 추워지는 수요일) + 상시 무료 리포트",
   "sources": [
     "scripts/ganji.py",
@@ -14,6 +14,10 @@
     "comment": "무료 리포트 신청하신 분은 카톡으로 정보를 보내주세요 👇\nhttps://pf.kakao.com/_MrAxeX/chat\n\n\"무료 신청\"이라고 보내주시면 양식이 도착해요.\n하루 5분까지 받고, 마감되면 다음 날 다시 열려요.\n사주 × MBTI 맞춤 리포트 · 참고와 재미로 보는 콘텐츠예요",
     "video": "../seoul_reel_pm/reel.mp4"
   },
-  "result": {},
-  "publish_at": "2026-11-24T22:30:00+09:00"
+  "result": {
+    "threads": "18122964064766844",
+    "threads_comment": "18174598912467888"
+  },
+  "publish_at": "2026-11-24T22:30:00+09:00",
+  "posted_at": "2026-11-24T22:32:07.340695+09:00"
 }
