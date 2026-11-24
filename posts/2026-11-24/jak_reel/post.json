@@ -3,7 +3,7 @@
   "date": "2026-11-24",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 블프 장바구니 23만 원어치 14개 중 11개 지움 → 미니 전기포트만 남김 (jak_lunch)",
   "sources": [
     "https://kbthink.com/life/card/2026-black-friday.html",
@@ -31,6 +31,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-24T19:30:00+09:00"
+  "result": {
+    "reel": "18383884369243382"
+  },
+  "publish_at": "2026-11-24T19:30:00+09:00",
+  "posted_at": "2026-11-24T19:31:45.287220+09:00"
 }
