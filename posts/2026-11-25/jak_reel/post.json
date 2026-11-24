@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-25",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 작년 연말정산 8만 원 더 냄 → 미리보기·카드값 적기·영수증 모으기 + 2027 플래너 (jak_lunch)",
+  "sources": [
+    "https://www.korea.kr/news/policyNewsView.do?newsId=148974171",
+    "https://biz.sbs.co.kr/amp/article/20000270057"
+  ],
+  "reel": {
+    "hook": "연말정산\n*받았어*?",
+    "count": {
+      "to": 80000,
+      "suffix": "원",
+      "label": "작년에 더 낸 돈"
+    },
+    "pain": "카드만 긁고\n적은 건 0줄",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "미리보기 열기",
+      "카드값만 적기",
+      "영수증 모으기"
+    ],
+    "item": "플래너",
+    "item_sub": "후기 보고 두 개로 줄여둠",
+    "cta": "골라둔 *플래너*는\n프로필 링크에",
+    "caption": "올해는 13월의 월급, 받을 수 있을까요?\n📌 저장해두고 3일만 해보세요.\n\n골라둔 2027 플래너는 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #연말정산 #연말 #가계부 #2027플래너",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-25T19:30:00+09:00"
+}
