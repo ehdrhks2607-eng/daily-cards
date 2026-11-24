@@ -3,7 +3,7 @@
   "date": "2026-11-24",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·블프 주간): 지난주 23만 원어치 블프 장바구니 14개 중 11개 지움 + 영하 출근길 → 겨울 아침용 미니 전기포트만 남김",
   "sources": [
     "https://kbthink.com/life/card/2026-black-friday.html",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-24T12:30:00+09:00"
+  "result": {
+    "threads": "18026867432712115",
+    "threads_comment": "18155241133546891",
+    "instagram": "18651962161047070"
+  },
+  "publish_at": "2026-11-24T12:30:00+09:00",
+  "posted_at": "2026-11-24T12:31:15.685006+09:00"
 }
