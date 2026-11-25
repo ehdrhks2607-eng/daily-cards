@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·연말정산): 홈택스 연말정산 미리보기 12/18까지 운영 → 작년 8만 원 더 낸 기억, 지출 기록 → 2027 플래너",
   "sources": [
     "https://www.korea.kr/news/policyNewsView.do?newsId=148974171",
@@ -61,6 +61,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-25T12:30:00+09:00"
+  "result": {
+    "threads": "18122708797966485",
+    "threads_comment": "18111128210252609",
+    "instagram": "18112483343184043"
+  },
+  "publish_at": "2026-11-25T12:30:00+09:00",
+  "posted_at": "2026-11-25T12:31:24.450855+09:00"
 }
