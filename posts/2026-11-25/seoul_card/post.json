@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 채움운 (계묘일 · 이번 주 가장 추운 아침)",
   "sources": [
     "scripts/ganji.py"
@@ -21,6 +21,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-25T18:30:00+09:00"
+  "result": {
+    "instagram": "18652115770057302"
+  },
+  "publish_at": "2026-11-25T18:30:00+09:00",
+  "posted_at": "2026-11-25T18:31:21.920775+09:00"
 }
