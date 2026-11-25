@@ -1,0 +1,67 @@
+{
+  "account": "jak",
+  "date": "2026-11-26",
+  "slot": "lunch",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백(연말 시즌·김장): 주말 본가 김장 배추 20포기, 작년엔 다음 날 허리 못 펴서 마사지 6만 원 → 미리 몸 풀기 3일 → 폼롤러(경도 불만 기준으로 리뷰 비교)",
+  "sources": [
+    "https://wikidocs.net/blog/@Ounwan/21360/",
+    "https://www.news1.kr/society/weather-disaster/6365154",
+    "https://www.newsian.co.kr/news/articleView.html?idxno=102013"
+  ],
+  "threads": {
+    "text": "주말에 본가 김장 간대, 배추 20포기\n\n작년엔 절인 배추 나르다가\n다음 날 허리를 못 펴서 마사지에 6만 원 썼어\n\n올해는 미리 몸부터 풀어두려고\n폼롤러 찾아보는데, 초보한텐 너무 딱딱하다는 얘기가 있더라\n그래서 아직 사진 않고 리뷰에서 경도 얘기만 비교하는 중\n\n3일만 해볼 것\n- 자기 전 허리 펴기 5분\n- 물건 들 때 무릎 먼저 굽히기\n- 엘리베이터 대신 계단 2층\n\n너는 김장 몇 포기 해? 숫자만 남겨줘",
+    "comment": "김장 전에 뭉친 허리 미리 풀어두고 싶은 사람은 이거 봐봐\nhttps://link.coupang.com/a/hI5goL5TNs\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "video": "../jak_reel/reel.mp4"
+  },
+  "cards": [
+    {
+      "type": "cover",
+      "title": "본가 김장\n배추 20포기",
+      "sub": "작년엔 다음 날 허리를 못 폈어"
+    },
+    {
+      "type": "tip",
+      "label": "작년 김장 다음 날",
+      "title": "마사지에\n6만 원",
+      "body": "허리 한 번\n삐끗한 값"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ①",
+      "title": "자기 전\n허리 펴기 5분",
+      "body": "누워서 천천히\n숨 쉬면서"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ②",
+      "title": "들 때는\n무릎 먼저",
+      "body": "허리 말고\n다리로 들기"
+    },
+    {
+      "type": "tip",
+      "label": "3일만 해볼 것 ③",
+      "title": "계단\n2층만",
+      "body": "엘리베이터 대신\n딱 두 층"
+    },
+    {
+      "type": "end",
+      "title": "📌 저장해두고\n3일만 해보기",
+      "sub": "골라둔 폼롤러는\n프로필 링크에"
+    }
+  ],
+  "instagram": {
+    "caption": "김장하고 나면 허리부터 아프신 편이세요?\n📌 저장해두고 3일만 해보세요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #김장 #허리스트레칭 #폼롤러 #연말",
+    "images": [
+      "card_1.png",
+      "card_2.png",
+      "card_3.png",
+      "card_4.png",
+      "card_5.png",
+      "card_6.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-26T12:30:00+09:00"
+}

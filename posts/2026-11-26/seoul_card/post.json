@@ -1,0 +1,27 @@
+{
+  "account": "seoul",
+  "date": "2026-11-26",
+  "slot": "card",
+  "approved": true,
+  "status": "pending",
+  "issue": "🍀 오늘의 행운 카드 — 풀림운 (갑진일 · 어제보다 9도 포근한 목요일)",
+  "sources": [
+    "scripts/ganji.py",
+    "https://www.news1.kr/society/weather-disaster/6365154"
+  ],
+  "luck_card": {
+    "date_label": "11월 26일 목요일 · 갑진일(甲辰)",
+    "keyword": "풀림운",
+    "line1": "어제보다 포근해진 아침,",
+    "line2": "굳었던 어깨부터 천천히 풀어 봐요",
+    "character": "reunion"
+  },
+  "instagram": {
+    "caption": "날이 풀린 목요일, 오늘 마음도 조금 풀리셨어요?\n'풀림운'은 큰 나무(甲)가 촉촉한 흙(辰)에 뿌리 내리듯, 굳은 것이 천천히 느슨해지는 기운이라는 뜻이에요.\n📌 저장해 두고 필요할 때 꺼내 보세요.\n이 카드가 필요한 친구에게 보내 주세요.\n댓글에 '받을게요'와 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n참고와 재미로 보는 콘텐츠예요.\n\n#오늘의운세 #행운카드 #띠별운세 #사주 #도아도령",
+    "images": [
+      "card_1.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-26T18:30:00+09:00"
+}
