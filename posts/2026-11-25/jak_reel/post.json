@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 작년 연말정산 8만 원 더 냄 → 미리보기·카드값 적기·영수증 모으기 + 2027 플래너 (jak_lunch)",
   "sources": [
     "https://www.korea.kr/news/policyNewsView.do?newsId=148974171",
@@ -30,6 +30,9 @@
     "video": "reel.mp4",
     "template": "stack"
   },
-  "result": {},
-  "publish_at": "2026-11-25T19:30:00+09:00"
+  "result": {
+    "reel": "17919659439498747"
+  },
+  "publish_at": "2026-11-25T19:30:00+09:00",
+  "posted_at": "2026-11-25T19:31:26.147533+09:00"
 }
