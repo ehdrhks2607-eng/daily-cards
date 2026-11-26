@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "slot": "reel",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백: 김장 다음 날 마사지 6만 원 → 허리 펴기·무릎 먼저·계단 2층 + 폼롤러 (jak_lunch)",
   "sources": [
     "https://wikidocs.net/blog/@Ounwan/21360/"
@@ -29,6 +29,9 @@
     "video": "reel.mp4",
     "template": "diary"
   },
-  "result": {},
-  "publish_at": "2026-11-26T19:30:00+09:00"
+  "result": {
+    "reel": "17919846132489881"
+  },
+  "publish_at": "2026-11-26T19:30:00+09:00",
+  "posted_at": "2026-11-26T19:31:20.004818+09:00"
 }
