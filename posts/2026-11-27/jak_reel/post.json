@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-27",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 올해 헬스장 36만 원·11번 → 12월 집에서 3일만(스쿼트·팔 들기·벽 팔굽혀) + 덤벨 (jak_lunch)",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95611",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008865835"
+  ],
+  "reel": {
+    "hook": "올해 헬스장\n*11번* 갔어",
+    "count": {
+      "to": 360000,
+      "suffix": "원",
+      "label": "올해 헬스장에 낸 돈"
+    },
+    "pain": "한 번에 3만 3천 원꼴\n12월엔 집에서 3일만",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "양치하며 스쿼트",
+      "광고 땐 팔 들기",
+      "벽 팔굽혀 5개"
+    ],
+    "item": "덤벨",
+    "item_sub": "1kg·3kg 리뷰만 비교함",
+    "cta": "골라둔 *덤벨*은\n프로필 링크에",
+    "caption": "올해 운동, 몇 번이나 하셨어요?\n📌 저장해두고 12월에 3일만 같이 해봐요.\n\n골라둔 덤벨은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #홈트 #연말결산 #덤벨 #12월목표",
+    "video": "reel.mp4",
+    "template": "stack"
+  },
+  "result": {},
+  "publish_at": "2026-11-27T19:30:00+09:00"
+}

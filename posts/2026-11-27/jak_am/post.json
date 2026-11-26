@@ -1,0 +1,19 @@
+{
+  "account": "jak",
+  "date": "2026-11-27",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B(ㄱ/ㅁ): 금요일 서울 아침 9도로 이번 주 가장 포근, 오후 비 60%·저녁 미세먼지 나쁨 → 금요일 저녁 약속 감 vs 미룸",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95611",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008865835",
+    "https://view.asiae.co.kr/article/2026112620325261800"
+  ],
+  "threads": {
+    "text": "오늘 아침 9도래, 어제보다 4도 높대\n근데 오후엔 비 60%래\n\n패딩 지퍼는 열고 나왔는데\n가방은 우산 넣느라 꽉 찼어\n\n금요일 저녁 약속 하나 있는데\n비 오면 미룰까 벌써 고민 중\n\n비 오는 금요일 약속, 감 vs 미룸? ㄱ 아니면 ㅁ",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-27T07:30:00+09:00"
+}
