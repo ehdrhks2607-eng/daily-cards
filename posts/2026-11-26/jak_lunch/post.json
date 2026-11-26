@@ -3,7 +3,7 @@
   "date": "2026-11-26",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·김장): 주말 본가 김장 배추 20포기, 작년엔 다음 날 허리 못 펴서 마사지 6만 원 → 미리 몸 풀기 3일 → 폼롤러(경도 불만 기준으로 리뷰 비교)",
   "sources": [
     "https://wikidocs.net/blog/@Ounwan/21360/",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-26T12:30:00+09:00"
+  "result": {
+    "threads": "18436029070146512",
+    "threads_comment": "18417860986095072",
+    "instagram": "18121993691051854"
+  },
+  "publish_at": "2026-11-26T12:30:00+09:00",
+  "posted_at": "2026-11-26T12:31:11.628728+09:00"
 }
