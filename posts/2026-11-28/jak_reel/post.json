@@ -1,0 +1,35 @@
+{
+  "account": "jak",
+  "date": "2026-11-28",
+  "slot": "reel",
+  "approved": true,
+  "status": "pending",
+  "issue": "돈 고백: 12월 송년회 3개·회비 15만 원 예정 → 송년회 주간 3일 도시락(반찬 2가지·밥 소분·수요일까지) + 도시락통 (jak_lunch)",
+  "sources": [
+    "https://vegannews.co.kr/news/article.html?no=412291",
+    "https://www.newswhoplus.com/news/articleView.html?idxno=75680"
+  ],
+  "reel": {
+    "hook": "송년회만\n*3개* 잡혔어",
+    "count": {
+      "to": 150000,
+      "suffix": "원",
+      "label": "송년회 회비 예정"
+    },
+    "pain": "점심까지 사 먹으면\n한 끼 1만 2천 원",
+    "tips_title": "그래서 3일만 해보기로 함",
+    "tips": [
+      "반찬 2가지만",
+      "밥 3칸 소분",
+      "수요일까지 싸가기"
+    ],
+    "item": "도시락통",
+    "item_sub": "재질만 비교해봄",
+    "cta": "골라둔 *도시락통*은\n프로필 링크에",
+    "caption": "송년회 주간, 점심은 어떻게 하실 거예요?\n같이 할 친구를 태그해 주세요.\n\n골라둔 도시락통은 프로필 링크에 있어요.\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\n\n#작심삼일 #도시락 #송년회 #연말 #점심값",
+    "video": "reel.mp4",
+    "template": "diary"
+  },
+  "result": {},
+  "publish_at": "2026-11-28T20:30:00+09:00"
+}

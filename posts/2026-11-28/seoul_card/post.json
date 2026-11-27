@@ -1,0 +1,27 @@
+{
+  "account": "seoul",
+  "date": "2026-11-28",
+  "slot": "card",
+  "approved": true,
+  "status": "pending",
+  "issue": "🍀 오늘의 행운 카드 — 채비운 (병오일 · 내일 영하권 앞둔 토요일)",
+  "sources": [
+    "scripts/ganji.py",
+    "https://vegannews.co.kr/news/article.html?no=412291"
+  ],
+  "luck_card": {
+    "date_label": "11월 28일 토요일 · 병오일(丙午)",
+    "keyword": "채비운",
+    "line1": "추워지기 전 하루, 미리 챙겨 둔 것이",
+    "line2": "내일의 나를 한결 편하게 해 줘요",
+    "character": "career"
+  },
+  "instagram": {
+    "caption": "내일 아침 영하라는데, 오늘 미리 챙겨 둔 것 있으세요?\n'채비운'은 불(丙)에 불(午)이 겹친 따뜻한 날, 다가올 추위를 미리 준비하기 좋은 기운이라는 뜻이에요.\n📌 저장해 두고 필요할 때 꺼내 보세요.\n이 카드가 필요한 친구에게 보내 주세요.\n댓글에 '받을게요'와 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n참고와 재미로 보는 콘텐츠예요.\n\n#오늘의운세 #행운카드 #띠별운세 #사주 #도아도령",
+    "images": [
+      "card_1.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-28T19:00:00+09:00"
+}
