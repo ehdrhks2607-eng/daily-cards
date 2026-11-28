@@ -3,7 +3,7 @@
   "date": "2026-11-28",
   "slot": "lunch",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "돈 고백(연말 시즌·송년회 주간): 다음 주 12월 송년회 3개·회비 15만 원 예정, 점심까지 사 먹으면 한 끼 1만 2천 원 + 일요일 아침 영하 2도라 집에 있는 주말 → 반찬 2가지·3일 도시락 → 밀프렙 도시락 용기(재질 불만 기준 리뷰 비교)",
   "sources": [
     "https://vegannews.co.kr/news/article.html?no=412291",
@@ -62,6 +62,11 @@
       "card_6.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-28T13:30:00+09:00"
+  "result": {
+    "threads": "18049439705830628",
+    "threads_comment": "17929157253201733",
+    "instagram": "18124858834987789"
+  },
+  "publish_at": "2026-11-28T13:30:00+09:00",
+  "posted_at": "2026-11-28T13:31:18.380702+09:00"
 }
