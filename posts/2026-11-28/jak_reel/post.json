@@ -32,5 +32,5 @@
   },
   "result": {},
   "publish_at": "2026-11-28T20:30:00+09:00",
-  "last_error": "reel: 400 https://graph.instagram.com/v21.0/me: {\"error\":{\"message\":\"Error validating access token: The user has not authorized application 2160922401300032.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AQUORC-G-K2ZJmrLald3YnW\"}}"
+  "last_error": "reel: 400 https://graph.instagram.com/v21.0/me: {\"error\":{\"message\":\"Error validating access token: The user has not authorized application 2160922401300032.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AqFgbm1X2B20AcVZLjpjPCS\"}}"
 }
