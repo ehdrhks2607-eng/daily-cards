@@ -1,0 +1,27 @@
+{
+  "account": "seoul",
+  "date": "2026-11-29",
+  "slot": "card",
+  "approved": true,
+  "status": "pending",
+  "issue": "🍀 오늘의 행운 카드 — 쉼표운 (정미일 · 영하권 일요일)",
+  "sources": [
+    "scripts/ganji.py",
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95840"
+  ],
+  "luck_card": {
+    "date_label": "11월 29일 일요일 · 정미일(丁未)",
+    "keyword": "쉼표운",
+    "line1": "서두르지 않아도 괜찮은 일요일,",
+    "line2": "쉬어 간 만큼 마음이 한결 느긋해져요",
+    "character": "reunion"
+  },
+  "instagram": {
+    "caption": "이번 주말, 나를 위해 쉬어 간 시간 있으셨어요?\n'쉼표운'은 작은 불(丁)이 흙(未)을 천천히 데우는 날, 서두르지 않고 쉬며 힘을 채우기 좋은 기운이라는 뜻이에요.\n📌 저장해 두고 필요할 때 꺼내 보세요.\n이 카드가 필요한 친구에게 보내 주세요.\n댓글에 '받을게요'와 띠를 남겨 주시면 한 줄씩 답해 드릴게요.\n\n참고와 재미로 보는 콘텐츠예요.\n\n#오늘의운세 #행운카드 #띠별운세 #사주 #도아도령",
+    "images": [
+      "card_1.png"
+    ]
+  },
+  "result": {},
+  "publish_at": "2026-11-29T19:00:00+09:00"
+}

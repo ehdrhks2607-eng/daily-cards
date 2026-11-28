@@ -1,0 +1,18 @@
+{
+  "account": "jak",
+  "date": "2026-11-29",
+  "slot": "am",
+  "approved": true,
+  "status": "pending",
+  "issue": "A vs B(ㅎ/ㅇ): 일요일 서울 아침 영하 1도·낮 8도, 강풍에 체감 더 낮지만 미세먼지 좋음 → 추운 날 환기",
+  "sources": [
+    "https://www.thefairnews.co.kr/news/articleView.html?idxno=95840",
+    "https://www.fnnews.com/news/202611280905523018"
+  ],
+  "threads": {
+    "text": "오늘 아침 영하 1도인데 미세먼지는 좋음이래\n환기하려고 창문 열었다가\n1분 만에 닫았어\n\n일요일이라 나갈 일도 없는데\n방 공기는 텁텁하고\n\n결국 이불 뒤집어쓰고 5분만 열어둠\n\n추운 날 환기, 5분 함 vs 그냥 안 엶? ㅎ 아니면 ㅇ",
+    "comment": ""
+  },
+  "result": {},
+  "publish_at": "2026-11-29T08:30:00+09:00"
+}
