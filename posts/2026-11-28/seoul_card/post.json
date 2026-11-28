@@ -3,7 +3,7 @@
   "date": "2026-11-28",
   "slot": "card",
   "approved": true,
-  "status": "pending",
+  "status": "posted",
   "issue": "🍀 오늘의 행운 카드 — 채비운 (병오일 · 내일 영하권 앞둔 토요일)",
   "sources": [
     "scripts/ganji.py",
@@ -22,6 +22,9 @@
       "card_1.png"
     ]
   },
-  "result": {},
-  "publish_at": "2026-11-28T19:00:00+09:00"
+  "result": {
+    "instagram": "17975122794190796"
+  },
+  "publish_at": "2026-11-28T19:00:00+09:00",
+  "posted_at": "2026-11-28T19:01:19.693409+09:00"
 }
